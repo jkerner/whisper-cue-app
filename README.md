@@ -51,6 +51,10 @@ whisper-cue-app/
 └── assets/               # App icons and images
 ```
 
+## Pose Library
+
+Source pose data lives in `src/data/`. The editable reference file is maintained at `~/Whisper cue content/source_poses.md`.
+
 ## Roadmap
 
 - **Phase 0** — MVP: 1 sequence, live teach mode
