@@ -7,8 +7,8 @@
 
 ## Owner Background
 
-- Yoga teacher and founder — the app content (sequences, meditations) comes from real classes
-- Staff-level PM with CS background (not a professional developer)
+- Yoga teacher, product and experience builder and founder — the app content (sequences, meditations) comes from real classes
+- Staff-level PM  (not a professional developer)
 - Uses Claude Code (Opus 4.6) for writing code and running commands
 - Previously built a React Native version (FlowCue) that got over-scoped — this time keeping it simple
 - Cares deeply about design and UX
@@ -30,7 +30,7 @@
 5. **Then move** to the next thing
 
 ### Scope Discipline
-- We are building **Phase 0 only**: 1 seeded sequence (~20 postures) + Live Teach screen
+- We are building **Phase 0 only to start**: 1 seeded sequence (~20 postures) + Live Teach screen
 - Do NOT add Phase 1/2/3 features unless explicitly asked
 - No backend, no auth, no AI, no database — just local JSON and screens
 - When in doubt, build less
@@ -74,7 +74,7 @@ whisper-cue-app/
 - [x] Expo project scaffolded
 - [x] Expo Router navigation working
 - [x] Verified on device via Expo Go
-- [ ] TypeScript data model (posture/sequence types)
+- [x] TypeScript data model (posture/sequence types)
 - [ ] Seed data (1 sequence, ~20 postures)
 - [ ] Live Teach screen
 

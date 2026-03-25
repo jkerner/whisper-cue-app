@@ -12,7 +12,7 @@ WhisperCue helps yoga teachers deliver classes with confidence by providing real
 **Phase 0 — MVP (in progress)**
 - [x] Expo project scaffolded (SDK 54, Expo Router)
 - [x] Verified working on device via Expo Go
-- [ ] TypeScript data model for postures/sequences
+- [x] TypeScript data model for postures/sequences
 - [ ] Seed data (1 sequence, ~20 postures)
 - [ ] Live Teach screen
 
