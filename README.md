@@ -8,6 +8,7 @@ WhisperCue helps yoga teachers deliver classes with confidence by providing real
 
 ## Current Status
 
+
 **Phase 0 — MVP (in progress)**
 - [x] Expo project scaffolded (SDK 54, Expo Router)
 - [x] Verified working on device via Expo Go
