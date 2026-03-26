@@ -6,617 +6,842 @@
       {
         "poseId": "easy-pose",
         "orderIndex": 1,
-        "cues": ["Sit tall, hands on thighs", "3 cleansing breaths, sigh it out", "Inhale 4, exhale 7, three rounds", "Set intention for the hour"]
+        "section": "Centering",
+        "cues": ["Find your seat. Hands rest on the thighs, spine tall.", "Take 3 cleansing breaths — inhale through the nose, exhale sigh it out through the mouth.", "Now settle into a count: inhale for 4, exhale for 7. Three rounds here.", "Set an intention for the next hour. Something simple, something true."],
+        "breaths": 8
       },
       {
         "poseId": "child-pose",
         "orderIndex": 2,
-        "cues": ["Knees wide, big toes touch", "Forehead to mat, arms long"]
+        "section": "Centering",
+        "cues": ["Knees wide, big toes kiss. Walk your hands forward and let the forehead find the mat.", "Melt the heart down with every exhale. Stay here, 5 slow breaths."],
+        "breaths": 5
       },
       {
         "poseId": "table-top-pose",
         "orderIndex": 3,
-        "cues": ["Wrists under shoulders", "Knees under hips"]
+        "section": "Centering",
+        "cues": ["Rise to all fours. Wrists right under the shoulders, knees under the hips.", "Spread the fingers wide — press the earth away."]
       },
       {
         "poseId": "cat-cow-pose",
         "orderIndex": 4,
-        "cues": ["Inhale drop belly, lift gaze", "Exhale round spine, tuck chin", "Three rounds"]
+        "section": "Centering",
+        "cues": ["On your inhale, drop the belly, lift the gaze — let the heart pour forward.", "As you exhale, round the spine, tuck the chin, press the floor away.", "Three rounds, let the breath move you."],
+        "breaths": 3
       },
       {
         "poseId": "downward-facing-dog-pose",
         "orderIndex": 5,
-        "cues": ["Tuck toes, hips lift high", "Hands shoulder width, spread fingers", "Pedal the feet"]
+        "section": "Warm-Up",
+        "cues": ["Tuck the toes, lift the hips high and back. First down dog — make it yours.", "Hands shoulder-width, spread the fingers. Pedal the feet, shake the head yes and no.", "Stay here, 5 breaths. Let the body wake up."],
+        "breaths": 5
       },
       {
         "poseId": "plank-pose",
         "orderIndex": 6,
-        "cues": ["Shoulders over wrists", "Body one long line", "Belly draws in"]
+        "section": "Warm-Up",
+        "cues": ["On your inhale, roll forward to plank. Shoulders right over the wrists.", "One long line from the crown of your head to your heels. Belly draws in, 3 breaths."],
+        "breaths": 3
       },
       {
         "poseId": "cobra-pose",
         "orderIndex": 7,
-        "cues": ["Hands under shoulders", "Inhale peel chest up", "Elbows stay bent, shoulders back"]
+        "section": "Warm-Up",
+        "cues": ["Lower all the way down. Hands under the shoulders, inhale peel the chest up.", "Keep the elbows bent and hugging in. Shoulders roll back and down."],
+        "breaths": 2
       },
       {
         "poseId": "downward-facing-dog-pose",
         "orderIndex": 8,
-        "cues": ["Hips lift high", "Heels reach toward mat"]
+        "section": "Warm-Up",
+        "cues": ["Exhale, press back to down dog. Hips lift high, heels reach toward the mat.", "Settle in here, 3 full breaths."],
+        "breaths": 3
       },
       {
         "poseId": "dangling-pose",
         "orderIndex": 9,
-        "cues": ["Feet hip width, knees soft", "Head heavy, arms dangle"]
+        "section": "Sun Salutation Prep",
+        "cues": ["Walk your feet to the top of the mat. Feet hip-width, soft bend in the knees.", "Let the head hang heavy, maybe grab opposite elbows and sway. 3 breaths."],
+        "breaths": 3
       },
       {
         "poseId": "half-way-lift",
         "orderIndex": 10,
-        "cues": ["Hands to shins", "Flat back, long spine"]
+        "section": "Sun Salutation Prep",
+        "cues": ["Inhale, hands to the shins, flat back. Long spine, gaze just past your mat."]
       },
       {
         "poseId": "standing-forward-fold-pose",
         "orderIndex": 11,
-        "cues": ["Hinge at hips", "Head heavy, knees soft"]
+        "section": "Sun Salutation Prep",
+        "cues": ["Exhale, fold. Hinge at the hips, let the head go heavy. Knees as soft as they need to be."]
       },
       {
         "poseId": "mountain-pose",
         "orderIndex": 12,
-        "cues": ["Stand tall, feet together", "Arms by sides, palms forward"]
+        "section": "Sun Salutation Prep",
+        "cues": ["Inhale, rise all the way to standing. Feet together, arms by your sides, palms open.", "Stand tall — feel the ground under your feet. One breath here."],
+        "breaths": 1
       },
       {
         "poseId": "volcano-pose",
         "orderIndex": 13,
-        "cues": ["Arms sweep overhead", "Palms face each other", "Ribs knit in"]
+        "section": "Sun A",
+        "cues": ["Inhale, sweep the arms overhead. Palms face each other, ribs knit in.", "Reach through the fingertips, lengthen the side body."]
       },
       {
         "poseId": "standing-forward-fold-pose",
         "orderIndex": 14,
-        "cues": ["Hinge at hips, swan dive down", "Head heavy, knees soft"]
+        "section": "Sun A",
+        "cues": ["Exhale, swan dive down. Hinge at the hips, belly toward the thighs."]
       },
       {
         "poseId": "half-way-lift",
         "orderIndex": 15,
-        "cues": ["Hands to shins", "Flat back, long spine"]
+        "section": "Sun A",
+        "cues": ["Inhale, halfway lift. Hands to the shins, flat back, long spine."]
       },
       {
         "poseId": "low-plank",
         "orderIndex": 16,
-        "cues": ["Elbows hug ribs", "Lower halfway down", "Shoulders no lower than elbows"]
+        "section": "Sun A",
+        "cues": ["Exhale, plant the hands, step back, lower halfway. Elbows hug the ribs."],
+        "adjustment": "Shoulders should stay no lower than the elbows — protect the joint."
       },
       {
         "poseId": "cobra-pose",
         "orderIndex": 17,
-        "cues": ["Hands under shoulders", "Inhale peel chest up", "Elbows stay bent"]
+        "section": "Sun A",
+        "cues": ["Inhale, cobra. Peel the chest forward and up, elbows stay bent."]
       },
       {
         "poseId": "downward-facing-dog-pose",
         "orderIndex": 18,
-        "cues": ["Hips lift high", "Press chest toward thighs"]
+        "section": "Sun A",
+        "cues": ["Exhale, press back to down dog. Press the chest toward the thighs, 5 breaths.", "Find stillness here. Let the breath be steady."],
+        "breaths": 5
       },
       {
         "poseId": "half-way-lift",
         "orderIndex": 19,
-        "cues": ["Hands to shins", "Flat back, long spine"]
+        "section": "Sun A",
+        "cues": ["Inhale, look forward. Step or float to the top — halfway lift, flat back."]
       },
       {
         "poseId": "standing-forward-fold-pose",
         "orderIndex": 20,
-        "cues": ["Hinge at hips", "Let head hang heavy"]
+        "section": "Sun A",
+        "cues": ["Exhale, fold forward. Let the head hang heavy."]
       },
       {
         "poseId": "volcano-pose",
         "orderIndex": 21,
-        "cues": ["Arms sweep overhead", "Reach through fingertips"]
+        "section": "Sun A",
+        "cues": ["Inhale, rise all the way up. Arms sweep overhead, reach through the fingertips."]
       },
       {
         "poseId": "mountain-pose-namaste",
         "orderIndex": 22,
-        "cues": ["Hands to heart center", "Stand tall"]
+        "section": "Sun A",
+        "cues": ["Exhale, hands to heart center. Stand tall, one breath."]
       },
       {
         "poseId": "volcano-pose",
         "orderIndex": 23,
-        "cues": ["Arms sweep overhead", "Breath leads the movement"]
+        "section": "Sun A · Round 2",
+        "cues": ["Inhale, arms sweep overhead. Let the breath lead the movement."]
       },
       {
         "poseId": "standing-forward-fold-pose",
         "orderIndex": 24,
-        "cues": ["Hinge at hips", "Belly toward thighs"]
+        "section": "Sun A · Round 2",
+        "cues": ["Exhale, fold. Belly draws toward the thighs."]
       },
       {
         "poseId": "half-way-lift",
         "orderIndex": 25,
-        "cues": ["Hands to shins", "Flat back, long spine"]
+        "section": "Sun A · Round 2",
+        "cues": ["Inhale, halfway lift. Flat back, long spine."]
       },
       {
         "poseId": "low-plank",
         "orderIndex": 26,
-        "cues": ["Elbows hug ribs", "Lower halfway down"]
+        "section": "Sun A · Round 2",
+        "cues": ["Exhale, chaturanga. Elbows hug in, lower halfway."]
       },
       {
         "poseId": "cobra-pose",
         "orderIndex": 27,
-        "cues": ["Hands under shoulders", "Chest peels up"]
+        "section": "Sun A · Round 2",
+        "cues": ["Inhale, cobra. Chest peels up, shoulders back."]
       },
       {
         "poseId": "downward-facing-dog-pose",
         "orderIndex": 28,
-        "cues": ["Hips lift high", "One breath here"]
+        "section": "Sun A · Round 2",
+        "cues": ["Exhale, down dog. Hips high, one breath here."]
       },
       {
         "poseId": "half-way-lift",
         "orderIndex": 29,
-        "cues": ["Hands to shins", "Flat back, long spine"]
+        "section": "Sun A · Round 2",
+        "cues": ["Inhale, look forward, step or float — halfway lift."]
       },
       {
         "poseId": "standing-forward-fold-pose",
         "orderIndex": 30,
-        "cues": ["Hinge at hips", "Head heavy"]
+        "section": "Sun A · Round 2",
+        "cues": ["Exhale, fold. Head heavy, let it all go."]
       },
       {
         "poseId": "volcano-pose",
         "orderIndex": 31,
-        "cues": ["Arms sweep overhead", "Reach tall"]
+        "section": "Sun A · Round 2",
+        "cues": ["Inhale, rise. Arms sweep overhead, reach tall."]
       },
       {
         "poseId": "mountain-pose-namaste",
         "orderIndex": 32,
-        "cues": ["Hands to heart center", "Stand tall"]
+        "section": "Sun A · Round 2",
+        "cues": ["Exhale, hands to heart. Stand tall, pause here."]
       },
       {
         "poseId": "chair-pose",
         "orderIndex": 33,
-        "cues": ["Feet together, sit deep", "Weight in heels", "Chest lifts, arms overhead"]
+        "section": "Sun B",
+        "cues": ["Inhale, bend the knees deep — sit into chair. Weight in the heels, chest lifts, arms strong overhead.", "Sink a little deeper. 3 breaths here."],
+        "adjustment": "Keep the weight back in the heels — you should be able to wiggle the toes.",
+        "breaths": 3
       },
       {
         "poseId": "standing-forward-fold-pose",
         "orderIndex": 34,
-        "cues": ["Hinge at hips", "Head heavy, knees soft"]
+        "section": "Sun B",
+        "cues": ["Exhale, fold forward. Hands frame the feet, head heavy."]
       },
       {
         "poseId": "half-way-lift",
         "orderIndex": 35,
-        "cues": ["Hands to shins", "Flat back, long spine"]
+        "section": "Sun B",
+        "cues": ["Inhale, halfway lift. Flat back, long spine."]
       },
       {
         "poseId": "low-plank",
         "orderIndex": 36,
-        "cues": ["Elbows hug ribs", "Lower halfway down"]
+        "section": "Sun B",
+        "cues": ["Exhale, chaturanga. Elbows hug the ribs, lower halfway."]
       },
       {
         "poseId": "cobra-pose",
         "orderIndex": 37,
-        "cues": ["Hands under shoulders", "Chest lifts, shoulders back"]
+        "section": "Sun B",
+        "cues": ["Inhale, cobra. Chest lifts, shoulders roll back and down."]
       },
       {
         "poseId": "downward-facing-dog-pose",
         "orderIndex": 38,
-        "cues": ["Hips lift high", "Hands shoulder width"]
+        "section": "Sun B",
+        "cues": ["Exhale, down dog. Hands shoulder-width, hips lift high."]
       },
       {
         "poseId": "three-legged-downward-facing-dog-pose",
         "orderIndex": 39,
-        "cues": ["Right leg lifts, hips square", "Foot flexed, reach through heel"]
+        "section": "Sun B · Standing Flow",
+        "cues": ["On your inhale, right leg lifts. Keep the hips square, flex the foot, reach through the heel."]
       },
       {
         "poseId": "warrior-pose-i",
         "orderIndex": 40,
-        "cues": ["Back heel grounds down", "Arms strong overhead", "Front knee over ankle"]
+        "section": "Sun B · Standing Flow",
+        "cues": ["Exhale, step the right foot forward. Back heel grounds down at 45 degrees.", "Inhale, rise up — arms strong overhead. Sink into the front knee, 3 breaths."],
+        "adjustment": "Front knee stacks right over the ankle — don't let it drift past the toes.",
+        "breaths": 3
       },
       {
         "poseId": "warrior-pose-ii",
         "orderIndex": 41,
-        "cues": ["Front knee over ankle", "Arms wide, shoulders down", "Gaze over front fingers"]
+        "section": "Sun B · Standing Flow",
+        "cues": ["Open it up — warrior two. Arms wide, shoulders drop away from the ears.", "Sink deep into the front knee, gaze over the front fingers. 3 breaths."],
+        "adjustment": "Watch that front knee — let it track right over the second toe, not caving inward.",
+        "breaths": 3
       },
       {
         "poseId": "reverse-warrior-pose",
         "orderIndex": 42,
-        "cues": ["Back hand slides down back leg", "Front arm arcs long overhead"]
+        "section": "Sun B · Standing Flow",
+        "cues": ["Inhale, flip it — reverse warrior. Back hand slides down the back leg, front arm arcs long overhead.", "Keep the bend in the front knee. Open the side body."],
+        "breaths": 2
       },
       {
         "poseId": "low-plank",
         "orderIndex": 43,
-        "cues": ["Elbows hug ribs", "Lower halfway down"]
+        "section": "Sun B · Standing Flow",
+        "cues": ["Exhale, cartwheel the hands down, step back — chaturanga."]
       },
       {
         "poseId": "cobra-pose",
         "orderIndex": 44,
-        "cues": ["Hands under shoulders", "Chest peels up"]
+        "section": "Sun B · Standing Flow",
+        "cues": ["Inhale, cobra. Chest peels up."]
       },
       {
         "poseId": "downward-facing-dog-pose",
         "orderIndex": 45,
-        "cues": ["Hips lift high", "Heels reach down"]
+        "section": "Sun B · Standing Flow",
+        "cues": ["Exhale, down dog. Reset, one breath."]
       },
       {
         "poseId": "three-legged-downward-facing-dog-pose",
         "orderIndex": 46,
-        "cues": ["Left leg lifts, hips square", "Foot flexed, reach through heel"]
+        "section": "Sun B · Standing Flow",
+        "cues": ["Inhale, left leg lifts. Hips stay square, flex the foot, reach through the heel."]
       },
       {
         "poseId": "warrior-pose-i",
         "orderIndex": 47,
-        "cues": ["Back heel grounds down", "Arms strong overhead", "Front knee over ankle"]
+        "section": "Sun B · Standing Flow",
+        "cues": ["Exhale, step the left foot forward. Back heel grounds down.", "Inhale, rise — arms strong overhead. Sink into the front knee, 3 breaths."],
+        "adjustment": "Front knee stacks right over the ankle — don't let it drift past the toes.",
+        "breaths": 3
       },
       {
         "poseId": "warrior-pose-ii",
         "orderIndex": 48,
-        "cues": ["Front knee over ankle", "Arms wide, shoulders down", "Gaze over front fingers"]
+        "section": "Sun B · Standing Flow",
+        "cues": ["Open it up — warrior two. Arms wide, shoulders melt down.", "Sink deep, gaze steady over the front fingers. 3 breaths."],
+        "adjustment": "Front knee tracks over the second toe — keep it honest.",
+        "breaths": 3
       },
       {
         "poseId": "reverse-warrior-pose",
         "orderIndex": 49,
-        "cues": ["Back hand slides down back leg", "Front arm arcs long overhead"]
+        "section": "Sun B · Standing Flow",
+        "cues": ["Inhale, reverse warrior. Back hand slides, front arm reaches long.", "Stay deep in the legs, open the side body."],
+        "breaths": 2
       },
       {
         "poseId": "low-plank",
         "orderIndex": 50,
-        "cues": ["Elbows hug ribs", "Lower halfway down"]
+        "section": "Sun B · Standing Flow",
+        "cues": ["Exhale, hands down, step back — chaturanga."]
       },
       {
         "poseId": "cobra-pose",
         "orderIndex": 51,
-        "cues": ["Hands under shoulders", "Chest peels up"]
+        "section": "Sun B · Standing Flow",
+        "cues": ["Inhale, cobra. Chest peels up."]
       },
       {
         "poseId": "downward-facing-dog-pose",
         "orderIndex": 52,
-        "cues": ["Hips lift high", "5 breaths"]
+        "section": "Sun B · Standing Flow",
+        "cues": ["Exhale, down dog. Stay here, 5 deep breaths. Let the hamstrings lengthen, the shoulders settle."],
+        "breaths": 5
       },
       {
         "poseId": "half-way-lift",
         "orderIndex": 53,
-        "cues": ["Hands to shins", "Flat back, long spine"]
+        "section": "Integration",
+        "cues": ["Inhale, look forward. Step or float to the top — halfway lift, flat back."]
       },
       {
         "poseId": "chair-pose",
         "orderIndex": 54,
-        "cues": ["Feet together, sit deep", "Weight in heels", "Chest lifts"]
+        "section": "Integration",
+        "cues": ["Inhale, bend the knees, sit deep into chair. Weight in the heels, chest lifts.", "Stay low, 3 breaths. Feel the legs working."],
+        "adjustment": "Shift the weight back — you should be able to lift all ten toes.",
+        "breaths": 3
       },
       {
         "poseId": "standing-forward-fold-pose",
         "orderIndex": 55,
-        "cues": ["Hinge at hips", "Head heavy"]
+        "section": "Integration",
+        "cues": ["Exhale, fold forward. Head heavy, let the breath settle."]
       },
       {
         "poseId": "mountain-pose",
         "orderIndex": 56,
-        "cues": ["Stand tall, feet together", "Arms by sides"]
+        "section": "Integration",
+        "cues": ["Inhale, rise all the way up. Stand tall, feet together, arms by your sides.", "Pause here. Feel the warmth in the body. One full breath."],
+        "breaths": 1
       },
       {
         "poseId": "three-legged-downward-facing-dog-pose",
         "orderIndex": 57,
-        "cues": ["Right leg lifts, hips square", "Reach through heel"]
+        "section": "Peak Flow · Right",
+        "cues": ["From down dog, inhale the right leg high. Hips square, reach through the heel."]
       },
       {
         "poseId": "knee-to-nose-pose",
         "orderIndex": 58,
-        "cues": ["Round the back, shoulders over wrists", "Navel draws in, knee to nose"]
+        "section": "Peak Flow · Right",
+        "cues": ["Exhale, round the back, draw the knee toward the nose. Shoulders stack over the wrists.", "Hollow the belly, squeeze everything in. Hold for one breath."],
+        "adjustment": "Push the floor away — don't let the shoulders collapse."
       },
       {
         "poseId": "three-legged-downward-facing-dog-pose",
         "orderIndex": 59,
-        "cues": ["Leg lifts back high", "Hips stay square"]
+        "section": "Peak Flow · Right",
+        "cues": ["Inhale, send the leg back high. Hips stay square, energy through the heel."]
       },
       {
         "poseId": "revolved-low-lunge-pose-knee-on-the-floor",
         "orderIndex": 60,
-        "cues": ["Back knee down, stack front knee", "Right arm lifts, twist opens", "Gaze follows top hand"]
+        "section": "Peak Flow · Right",
+        "cues": ["Exhale, step the foot through. Back knee lowers down, front knee stacks.", "Inhale, right arm reaches to the sky — twist opens. Gaze follows the top hand.", "Stay here, 3 breaths. Let the twist wring you out."],
+        "adjustment": "Keep the front knee right over the ankle — don't let it push forward.",
+        "breaths": 3
       },
       {
         "poseId": "warrior-pose-ii",
         "orderIndex": 61,
-        "cues": ["Front knee over ankle", "Arms wide, sink low", "Gaze over front fingers"]
+        "section": "Peak Flow · Right",
+        "cues": ["Tuck the back toes, lift the back knee — warrior two. Arms wide, sink low.", "Gaze over the front fingers. 3 breaths, strong and steady."],
+        "adjustment": "Front knee tracks over the second toe. Let it be heavy, not lazy.",
+        "breaths": 3
       },
       {
         "poseId": "extended-side-angle-pose",
         "orderIndex": 62,
-        "cues": ["Forearm to thigh or hand down", "Top arm extends over the ear", "Long line from heel to fingertips"]
+        "section": "Peak Flow · Right",
+        "cues": ["Inhale, reach the front arm long — exhale, extended side angle. Forearm to thigh or hand to the floor.", "Top arm extends over the ear. One long line from the back heel to the fingertips. 3 breaths."],
+        "adjustment": "Don't collapse into the bottom arm — keep the chest open, stacking the shoulders.",
+        "breaths": 3
       },
       {
         "poseId": "reverse-warrior-pose",
         "orderIndex": 63,
-        "cues": ["Back hand slides down back leg", "Front arm arcs long overhead"]
+        "section": "Peak Flow · Right",
+        "cues": ["Inhale, reverse warrior. Back hand slides down, front arm sweeps overhead.", "Keep the depth in the front knee."],
+        "breaths": 2
       },
       {
         "poseId": "half-moon-pose",
         "orderIndex": 64,
-        "cues": ["Hand to floor or block", "Stack hips, top arm reaches up", "Back leg strong and lifted", "3 breaths"]
+        "section": "Peak Flow · Right",
+        "cues": ["Cartwheel forward, right hand to the floor or a block. Inhale, open into half moon.", "Stack the hips, top arm reaches up. Back leg lifts strong and alive. 3 breaths."],
+        "adjustment": "Flex the top foot and engage the lifted leg — it's not just hanging there. Micro-bend the standing leg.",
+        "breaths": 3
       },
       {
         "poseId": "reverse-triangle-pose",
         "orderIndex": 65,
-        "cues": ["Top arm sweeps back overhead", "Open the chest, hips stay stacked", "2 breaths"]
+        "section": "Peak Flow · Right",
+        "cues": ["Top arm sweeps back overhead — reverse triangle. Open the chest, hips stay stacked.", "2 breaths here. Find the length."],
+        "breaths": 2
       },
       {
         "poseId": "low-plank",
         "orderIndex": 66,
-        "cues": ["Elbows hug ribs", "Lower halfway down"]
+        "section": "Peak Flow · Right",
+        "cues": ["Exhale, hands down, step back — chaturanga. Quick and clean."]
       },
       {
         "poseId": "cobra-pose",
         "orderIndex": 67,
-        "cues": ["Hands under shoulders", "Chest peels up"]
+        "section": "Peak Flow · Right",
+        "cues": ["Inhale, cobra. Chest peels up."]
       },
       {
         "poseId": "downward-facing-dog-pose",
         "orderIndex": 68,
-        "cues": ["Hips lift high", "Heels reach down"]
+        "section": "Peak Flow · Right",
+        "cues": ["Exhale, down dog. One breath to reset."]
       },
       {
         "poseId": "three-legged-downward-facing-dog-pose",
         "orderIndex": 69,
-        "cues": ["Left leg lifts, hips square", "Reach through heel"]
+        "section": "Peak Flow · Left",
+        "cues": ["Inhale, left leg lifts. Hips square, reach through the heel."]
       },
       {
         "poseId": "knee-to-nose-pose",
         "orderIndex": 70,
-        "cues": ["Round the back, shoulders over wrists", "Navel draws in, knee to nose"]
+        "section": "Peak Flow · Left",
+        "cues": ["Exhale, round the back, knee draws to the nose. Shoulders over wrists, belly hollow.", "One breath, squeeze everything in."],
+        "adjustment": "Push the floor away — don't let the shoulders collapse."
       },
       {
         "poseId": "three-legged-downward-facing-dog-pose",
         "orderIndex": 71,
-        "cues": ["Leg lifts back high", "Hips stay square"]
+        "section": "Peak Flow · Left",
+        "cues": ["Inhale, leg lifts back high. Hips stay square."]
       },
       {
         "poseId": "revolved-low-lunge-pose-knee-on-the-floor",
         "orderIndex": 72,
-        "cues": ["Back knee down, stack front knee", "Left arm lifts, twist opens", "Gaze follows top hand"]
+        "section": "Peak Flow · Left",
+        "cues": ["Exhale, step the foot through. Back knee lowers, front knee stacks.", "Inhale, left arm reaches up — twist opens. Gaze follows the top hand.", "3 breaths. Let the twist do its work."],
+        "adjustment": "Keep the front knee right over the ankle.",
+        "breaths": 3
       },
       {
         "poseId": "warrior-pose-ii",
         "orderIndex": 73,
-        "cues": ["Front knee over ankle", "Arms wide, sink low", "Gaze over front fingers"]
+        "section": "Peak Flow · Left",
+        "cues": ["Tuck the back toes, lift the knee — warrior two. Arms wide, sink low.", "Gaze steady, 3 breaths."],
+        "adjustment": "Front knee tracks over the second toe. Stay honest.",
+        "breaths": 3
       },
       {
         "poseId": "extended-side-angle-pose",
         "orderIndex": 74,
-        "cues": ["Forearm to thigh or hand down", "Top arm extends over the ear", "Long line from heel to fingertips"]
+        "section": "Peak Flow · Left",
+        "cues": ["Extended side angle. Forearm to thigh or hand down, top arm over the ear.", "One long line from the back heel to fingertips. 3 breaths."],
+        "adjustment": "Keep the chest open — don't dump into the bottom arm.",
+        "breaths": 3
       },
       {
         "poseId": "reverse-warrior-pose",
         "orderIndex": 75,
-        "cues": ["Back hand slides down back leg", "Front arm arcs long overhead"]
+        "section": "Peak Flow · Left",
+        "cues": ["Inhale, reverse warrior. Back hand slides, front arm sweeps long.", "Keep the depth in that front knee."],
+        "breaths": 2
       },
       {
         "poseId": "half-moon-pose",
         "orderIndex": 76,
-        "cues": ["Hand to floor or block", "Stack hips, top arm reaches up", "Back leg strong and lifted", "3 breaths"]
+        "section": "Peak Flow · Left",
+        "cues": ["Cartwheel forward, left hand down. Inhale, open into half moon.", "Stack the hips, top arm up. Back leg lifts strong. 3 breaths."],
+        "adjustment": "Flex the top foot, engage the lifted leg. Micro-bend the standing leg.",
+        "breaths": 3
       },
       {
         "poseId": "reverse-triangle-pose",
         "orderIndex": 77,
-        "cues": ["Top arm sweeps back overhead", "Open the chest, hips stay stacked", "2 breaths"]
+        "section": "Peak Flow · Left",
+        "cues": ["Top arm sweeps overhead — reverse triangle. Chest stays open, hips stacked.", "2 breaths. Find the length."],
+        "breaths": 2
       },
       {
         "poseId": "low-plank",
         "orderIndex": 78,
-        "cues": ["Elbows hug ribs", "Lower halfway down"]
+        "section": "Peak Flow · Left",
+        "cues": ["Exhale, hands down, step back — chaturanga."]
       },
       {
         "poseId": "cobra-pose",
         "orderIndex": 79,
-        "cues": ["Hands under shoulders", "Chest peels up"]
+        "section": "Peak Flow · Left",
+        "cues": ["Inhale, cobra. Chest peels up."]
       },
       {
         "poseId": "downward-facing-dog-pose",
         "orderIndex": 80,
-        "cues": ["Hips lift high", "5 breaths"]
+        "section": "Peak Flow · Left",
+        "cues": ["Exhale, down dog. Stay here, 5 deep breaths. You've earned this pause. Let the heart rate settle."],
+        "breaths": 5
       },
       {
         "poseId": "chair-pose",
         "orderIndex": 81,
-        "cues": ["Feet together, sit deep", "Weight in heels", "Arms overhead"]
+        "section": "Balance Series",
+        "cues": ["Step or float to the top. Inhale, chair pose — sit deep, arms overhead.", "Weight in the heels, chest lifts. 2 breaths to land."],
+        "adjustment": "Shift the weight back — you should be able to wiggle the toes.",
+        "breaths": 2
       },
       {
         "poseId": "eagle-pose",
         "orderIndex": 82,
-        "cues": ["Right arm under left, wrap", "Right leg over left, sit low", "Squeeze midline, elbows lift", "4 breaths"]
+        "section": "Balance Series",
+        "cues": ["Right arm sweeps under the left, wrap at the wrists. Right leg crosses over the left, sit low.", "Squeeze everything to the midline, lift the elbows. 4 breaths — find your focus."],
+        "adjustment": "If the wrap doesn't happen, press the backs of the hands together. Elbows lift to shoulder height.",
+        "breaths": 4
       },
       {
         "poseId": "one-legged-mountain-pose",
         "orderIndex": 83,
-        "cues": ["Unwrap, arms wide", "Stand tall on left leg", "Right knee lifts"]
+        "section": "Balance Series",
+        "cues": ["Inhale, unwrap — arms wide. Stand tall on the left leg, right knee lifts.", "Find one point to focus on. Steady here, 2 breaths."],
+        "breaths": 2
       },
       {
         "poseId": "tree-pose",
         "orderIndex": 84,
-        "cues": ["Right foot to inner calf or thigh", "Avoid the knee joint", "Hands to heart or arms rise", "4 breaths"]
+        "section": "Balance Series",
+        "cues": ["Right foot finds the inner calf or inner thigh — never the knee.", "Hands to heart or let the arms rise. Root down to rise up. 4 breaths."],
+        "adjustment": "Press the foot into the leg and the leg into the foot — equal pressure keeps you steady.",
+        "breaths": 4
       },
       {
         "poseId": "standing-forward-fold-pose",
         "orderIndex": 85,
-        "cues": ["Hinge at hips", "Head heavy, let it go"]
+        "section": "Balance Series",
+        "cues": ["Exhale, release. Fold forward, let everything go. Shake it out if you need to."]
       },
       {
         "poseId": "eagle-pose",
         "orderIndex": 86,
-        "cues": ["Left arm under right, wrap", "Left leg over right, sit low", "Squeeze midline, elbows lift", "4 breaths"]
+        "section": "Balance Series",
+        "cues": ["Left arm sweeps under the right, wrap. Left leg crosses over the right, sit low.", "Squeeze the midline, lift the elbows. 4 breaths — second side."],
+        "adjustment": "Backs of hands together if the full wrap isn't there. Elbows lift to shoulder height.",
+        "breaths": 4
       },
       {
         "poseId": "one-legged-mountain-pose",
         "orderIndex": 87,
-        "cues": ["Unwrap, arms wide", "Stand tall on right leg", "Left knee lifts"]
+        "section": "Balance Series",
+        "cues": ["Inhale, unwrap — arms wide. Stand tall on the right leg, left knee lifts.", "Steady gaze, steady breath. 2 breaths."],
+        "breaths": 2
       },
       {
         "poseId": "tree-pose",
         "orderIndex": 88,
-        "cues": ["Left foot to inner calf or thigh", "Avoid the knee joint", "Hands to heart or arms rise", "4 breaths"]
+        "section": "Balance Series",
+        "cues": ["Left foot to inner calf or inner thigh — never the knee.", "Hands to heart or arms rise. Root down, rise up. 4 breaths."],
+        "adjustment": "Equal pressure — foot into leg, leg into foot.",
+        "breaths": 4
       },
       {
         "poseId": "standing-forward-fold-pose",
         "orderIndex": 89,
-        "cues": ["Hinge at hips", "Head heavy, let it go"]
+        "section": "Balance Series",
+        "cues": ["Exhale, fold forward. Let it all go. Head heavy, breath settles."]
       },
       {
         "poseId": "low-plank",
         "orderIndex": 90,
-        "cues": ["Elbows hug ribs", "Lower halfway, or skip"]
+        "section": "Standing Sequence · Right",
+        "cues": ["Plant the hands, step back — chaturanga, or skip it and go straight to the belly."]
       },
       {
         "poseId": "cobra-pose",
         "orderIndex": 91,
-        "cues": ["Hands under shoulders", "Chest peels up"]
+        "section": "Standing Sequence · Right",
+        "cues": ["Inhale, cobra. Chest peels up, shoulders back."]
       },
       {
         "poseId": "downward-facing-dog-pose",
         "orderIndex": 92,
-        "cues": ["Hips lift high", "Heels reach down"]
+        "section": "Standing Sequence · Right",
+        "cues": ["Exhale, down dog. Hips lift, heels reach down."]
       },
       {
         "poseId": "intense-side-stretch-pose",
         "orderIndex": 93,
-        "cues": ["Right foot forward, shorten stance", "Hinge over front leg, flat back", "Hands frame the front foot", "3 breaths"]
+        "section": "Standing Sequence · Right",
+        "cues": ["Step the right foot forward, shorten the stance. Square the hips, inhale lengthen the spine.", "Exhale, fold over the front leg. Hands frame the front foot. 3 breaths."],
+        "adjustment": "Keep the back hip pulling forward to stay square. A micro-bend in the front knee is fine.",
+        "breaths": 3
       },
       {
         "poseId": "standing-split-pose",
         "orderIndex": 94,
-        "cues": ["Shift weight into front foot", "Back leg lifts, hips square", "Hands to floor or ankle", "3 breaths"]
+        "section": "Standing Sequence · Right",
+        "cues": ["Shift the weight into the front foot. Inhale, back leg lifts — hips stay square.", "Hands to the floor or the front ankle. 3 breaths, find your edge."],
+        "adjustment": "It's not about how high the leg goes — keep the hips level and square.",
+        "breaths": 3
       },
       {
         "poseId": "low-lunge-pose",
         "orderIndex": 95,
-        "cues": ["Back knee lowers to mat", "Front knee stacks over ankle", "Hips sink forward and down"]
+        "section": "Standing Sequence · Right",
+        "cues": ["Bend the standing knee, step back to low lunge. Back knee lowers to the mat.", "Inhale, let the hips sink forward and down. Feel the stretch through the hip flexor. 3 breaths."],
+        "adjustment": "Front knee stays right over the ankle — don't let it push past the toes.",
+        "breaths": 3
       },
       {
         "poseId": "warrior-pose-ii",
         "orderIndex": 96,
-        "cues": ["Front knee over ankle", "Arms wide, shoulders down", "Gaze over front fingers"]
+        "section": "Standing Sequence · Right",
+        "cues": ["Tuck the back toes, lift the back knee — warrior two. Arms wide, shoulders drop.", "Gaze over the front fingers. Sit deep, 3 breaths."],
+        "adjustment": "Front knee tracks over the second toe.",
+        "breaths": 3
       },
       {
         "poseId": "triangle-pose",
         "orderIndex": 97,
-        "cues": ["Front leg straightens", "Hand to shin or floor, top arm up", "Stack shoulders, open chest", "3 breaths"]
+        "section": "Standing Sequence · Right",
+        "cues": ["Straighten the front leg. Inhale, reach forward — exhale, triangle. Hand to the shin or the floor, top arm rises.", "Stack the shoulders, open the chest. 3 breaths."],
+        "adjustment": "Don't lock the front knee — keep a micro-bend. Reach the top arm straight up, not forward.",
+        "breaths": 3
       },
       {
         "poseId": "five-pointed-star-pose",
         "orderIndex": 98,
-        "cues": ["Step wide, arms broad", "Legs strong, feet parallel"]
+        "section": "Standing Sequence · Right",
+        "cues": ["Inhale, rise up. Step wide, arms broad — five-pointed star. Legs strong, feet parallel.", "One big breath here, take up space."],
+        "breaths": 1
       },
       {
         "poseId": "intense-leg-stretch-pose",
         "orderIndex": 99,
-        "cues": ["Hands between feet", "Crown of head reaches down", "Legs strong, slight bend OK", "3 breaths"]
+        "section": "Standing Sequence · Right",
+        "cues": ["Hands to hips, inhale lengthen. Exhale, fold — hands between the feet, crown of the head reaches down.", "Legs strong, a slight bend in the knees is fine. 3 breaths."],
+        "breaths": 3
       },
       {
         "poseId": "mountain-pose",
         "orderIndex": 100,
-        "cues": ["Stand tall, feet together", "Arms by sides"]
+        "section": "Standing Sequence · Right",
+        "cues": ["Walk the feet together. Inhale, rise all the way up to mountain. Stand tall, arms by your sides.", "Pause. Notice how the body feels."],
+        "breaths": 1
       },
       {
         "poseId": "low-plank",
         "orderIndex": 101,
-        "cues": ["Elbows hug ribs", "Lower halfway down"]
+        "section": "Standing Sequence · Left",
+        "cues": ["Plant the hands, step back — chaturanga. Elbows hug in, lower halfway."]
       },
       {
         "poseId": "cobra-pose",
         "orderIndex": 102,
-        "cues": ["Hands under shoulders", "Chest lifts"]
+        "section": "Standing Sequence · Left",
+        "cues": ["Inhale, cobra. Chest lifts, shoulders back."]
       },
       {
         "poseId": "downward-facing-dog-pose",
         "orderIndex": 103,
-        "cues": ["Hips lift high", "Heels reach down"]
+        "section": "Standing Sequence · Left",
+        "cues": ["Exhale, down dog. Hips high, heels reach down."]
       },
       {
         "poseId": "intense-side-stretch-pose",
         "orderIndex": 104,
-        "cues": ["Left foot forward, shorten stance", "Hinge over front leg, flat back", "Hands frame the front foot", "3 breaths"]
+        "section": "Standing Sequence · Left",
+        "cues": ["Step the left foot forward, shorten the stance. Hips square, inhale lengthen.", "Exhale, fold over the front leg. Hands frame the foot. 3 breaths."],
+        "adjustment": "Pull the back hip forward to stay square. Micro-bend in the front knee is fine.",
+        "breaths": 3
       },
       {
         "poseId": "standing-split-pose",
         "orderIndex": 105,
-        "cues": ["Shift weight into front foot", "Back leg lifts, hips square", "Hands to floor or ankle", "3 breaths"]
+        "section": "Standing Sequence · Left",
+        "cues": ["Shift weight into the front foot. Inhale, back leg lifts — hips stay square.", "Hands to the floor or the ankle. 3 breaths, find your edge."],
+        "adjustment": "Hips stay level — it's not about height, it's about integrity.",
+        "breaths": 3
       },
       {
         "poseId": "low-lunge-pose",
         "orderIndex": 106,
-        "cues": ["Back knee lowers to mat", "Front knee stacks over ankle", "Hips sink forward and down"]
+        "section": "Standing Sequence · Left",
+        "cues": ["Bend the standing knee, step back to low lunge. Back knee lowers.", "Inhale, hips sink forward and down. Feel the hip flexor open. 3 breaths."],
+        "adjustment": "Front knee right over the ankle.",
+        "breaths": 3
       },
       {
         "poseId": "warrior-pose-ii",
         "orderIndex": 107,
-        "cues": ["Front knee over ankle", "Arms wide, shoulders down", "Gaze over front fingers"]
+        "section": "Standing Sequence · Left",
+        "cues": ["Tuck the back toes, lift the knee — warrior two. Arms wide, sit deep.", "Gaze steady over the front fingers. 3 breaths."],
+        "adjustment": "Front knee tracks over the second toe.",
+        "breaths": 3
       },
       {
         "poseId": "triangle-pose",
         "orderIndex": 108,
-        "cues": ["Front leg straightens", "Hand to shin or floor, top arm up", "Stack shoulders, open chest", "3 breaths"]
+        "section": "Standing Sequence · Left",
+        "cues": ["Straighten the front leg. Reach forward, then tip into triangle. Hand to shin or floor, top arm rises.", "Stack the shoulders, open the chest wide. 3 breaths."],
+        "adjustment": "Micro-bend the front knee. Top arm stacks straight up, not drifting forward.",
+        "breaths": 3
       },
       {
         "poseId": "five-pointed-star-pose",
         "orderIndex": 109,
-        "cues": ["Step wide, arms broad", "Legs strong, feet parallel"]
+        "section": "Standing Sequence · Left",
+        "cues": ["Inhale, rise. Step wide, arms broad — five-pointed star.", "One big breath, take up space."],
+        "breaths": 1
       },
       {
         "poseId": "intense-leg-stretch-pose",
         "orderIndex": 110,
-        "cues": ["Hands between feet", "Crown of head reaches down", "Legs strong, slight bend OK", "3 breaths"]
+        "section": "Standing Sequence · Left",
+        "cues": ["Hands to hips, inhale lengthen. Exhale, fold — hands between the feet, crown reaches down.", "3 breaths. Legs strong, slight bend OK."],
+        "breaths": 3
       },
       {
         "poseId": "mountain-pose",
         "orderIndex": 111,
-        "cues": ["Stand tall, feet together", "Arms by sides"]
+        "section": "Standing Sequence · Left",
+        "cues": ["Walk the feet together, rise to mountain. Stand tall, arms by your sides.", "Pause and feel. Notice what's different."],
+        "breaths": 1
       },
       {
         "poseId": "low-plank",
         "orderIndex": 112,
-        "cues": ["Elbows hug ribs", "Lower halfway down"]
+        "section": "Vinyasa",
+        "cues": ["Last vinyasa. Plant the hands, step back — chaturanga."]
       },
       {
         "poseId": "cobra-pose",
         "orderIndex": 113,
-        "cues": ["Hands under shoulders", "Chest lifts"]
+        "section": "Vinyasa",
+        "cues": ["Inhale, cobra. Take your time with this one — slow, deliberate."]
       },
       {
         "poseId": "downward-facing-dog-pose",
         "orderIndex": 114,
-        "cues": ["Hips lift high", "Heels reach down"]
+        "section": "Vinyasa",
+        "cues": ["Exhale, down dog. Slow it down, the pace starts to shift here. Heels reach down."]
       },
       {
         "poseId": "locust-pose",
         "orderIndex": 115,
-        "cues": ["Arms long by sides, palms down", "Chest and legs lift off mat", "Squeeze shoulder blades together", "3 breaths"]
+        "section": "Backbends",
+        "cues": ["Lower all the way down. Arms long by your sides, palms face down.", "Inhale, lift everything — chest, arms, legs. Squeeze the shoulder blades together like you're cracking a walnut.", "3 breaths. Stay lifted, stay breathing."],
+        "adjustment": "Keep the gaze down to protect the neck — don't crank the head back.",
+        "breaths": 3
       },
       {
         "poseId": "bow-pose",
         "orderIndex": 116,
-        "cues": ["Bend knees, hold outer ankles", "Kick feet into hands, chest lifts", "Shoulders away from ears", "3 breaths"]
+        "section": "Backbends",
+        "cues": ["Bend the knees, reach back and grab the outer ankles.", "Inhale, kick the feet into the hands — chest lifts, shoulders pull away from the ears.", "3 breaths. Keep kicking, keep lifting."],
+        "adjustment": "Knees stay hip-width — don't let them splay wide. Kick back, not up.",
+        "breaths": 3
       },
       {
         "poseId": "child-pose",
         "orderIndex": 117,
-        "cues": ["Knees wide, hips to heels", "Forehead to mat, arms long", "Two full breaths"]
+        "section": "Cool Down",
+        "cues": ["Exhale, release and press back to child's pose. Knees wide, hips to heels, forehead to the mat.", "Two full breaths here. Let the back body soften. Counter everything you just did."],
+        "breaths": 2
       },
       {
         "poseId": "seated-forward-bend-pose",
         "orderIndex": 118,
-        "cues": ["Legs long, flex the feet", "Inhale lengthen, exhale fold", "Let breath do the work", "5 breaths"]
+        "section": "Seated & Floor",
+        "cues": ["Come to seated, legs long in front of you. Flex the feet.", "Inhale, lengthen the spine. Exhale, fold forward — let the breath do the work, not the muscles.", "Stay here, 5 deep breaths. Soften a little more with each exhale."],
+        "breaths": 5
       },
       {
         "poseId": "head-to-knee-pose",
         "orderIndex": 119,
-        "cues": ["Right foot to inner left thigh", "Fold over extended leg", "Square torso to straight leg", "4 breaths"]
+        "section": "Seated & Floor",
+        "cues": ["Right foot to the inner left thigh. Square the torso toward the straight leg.", "Inhale, lengthen. Exhale, fold over the extended leg. 4 breaths — no forcing."],
+        "adjustment": "Keep the extended foot flexed and the kneecap pointing straight up.",
+        "breaths": 4
       },
       {
         "poseId": "head-to-knee-pose",
         "orderIndex": 120,
-        "cues": ["Left foot to inner right thigh", "Fold over extended leg", "Square torso to straight leg", "4 breaths"]
+        "section": "Seated & Floor",
+        "cues": ["Switch sides — left foot to inner right thigh. Square the torso over the straight leg.", "Inhale, lengthen. Exhale, fold. 4 breaths, same patience."],
+        "adjustment": "Keep the extended foot flexed and the kneecap pointing straight up.",
+        "breaths": 4
       },
       {
         "poseId": "half-pigeon-pose",
         "orderIndex": 121,
-        "cues": ["Right shin forward, hips square", "Walk hands forward and fold", "Let the hip release", "8 breaths"]
+        "section": "Seated & Floor",
+        "cues": ["Come to pigeon on the right side. Right shin forward, hips work toward square.", "Walk the hands forward and fold down. Let the hip release on its own time.", "8 slow breaths. This is where the practice really lands."],
+        "adjustment": "If the hip is floating, slide a blanket or block underneath for support.",
+        "breaths": 8
       },
       {
         "poseId": "half-pigeon-pose",
         "orderIndex": 122,
-        "cues": ["Left shin forward, hips square", "Walk hands forward and fold", "Let the hip release", "8 breaths"]
+        "section": "Seated & Floor",
+        "cues": ["Switch sides — left shin forward. Walk the hands out and fold.", "8 breaths. Same patience, same softness. Let gravity do the work."],
+        "adjustment": "Support the hip with a blanket or block if it's not reaching the floor.",
+        "breaths": 8
       },
       {
         "poseId": "corpse-pose",
         "orderIndex": 123,
-        "cues": ["Legs long, feet fall open", "Palms up, shoulders melt down", "Close eyes, let everything settle"]
+        "section": "Savasana",
+        "cues": ["Roll onto your back. Legs long, feet fall open naturally. Arms a few inches from the body, palms face up.", "Close the eyes. Let the shoulders melt into the mat. Let everything settle.", "Nothing left to do. Nowhere to be. Just rest."]
       }
     ]
   }

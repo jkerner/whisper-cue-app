@@ -13,7 +13,10 @@ export interface Pose {
 export interface SequenceStep {
   poseId: string;
   orderIndex: number;
+  section: string;
   cues: string[];
+  adjustment?: string;
+  breaths?: number;
 }
 
 /** A teaching sequence made up of ordered poses */
