@@ -75,7 +75,7 @@ whisper-cue-app/
 - [x] Expo Router navigation working
 - [x] Verified on device via Expo Go
 - [x] TypeScript data model (posture/sequence types)
-- [ ] Seed data (1 sequence, ~20 postures)
+- [x] Seed data (1 sequence, ~20 postures)
 - [ ] Live Teach screen
 
 ---
