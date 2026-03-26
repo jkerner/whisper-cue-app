@@ -1,0 +1,776 @@
+[
+  {
+    "id": "balancing-table-pose",
+    "kind": "pose",
+    "englishName": "Balancing Table Pose",
+    "sanskritName": "Dandayamana Bharmanasana"
+  },
+  {
+    "id": "balancing-table-pose-with-knee-to-nose",
+    "kind": "pose",
+    "englishName": "Balancing Table Pose With Knee To Nose",
+    "sanskritName": "Dandayamana Bharmanasana"
+  },
+  {
+    "id": "banana-pose",
+    "kind": "pose",
+    "englishName": "Banana Pose",
+    "sanskritName": "Bananasana"
+  },
+  {
+    "id": "boat-pose",
+    "kind": "pose",
+    "englishName": "Boat Pose",
+    "sanskritName": "Navasana"
+  },
+  {
+    "id": "boat-pose-variation-1",
+    "kind": "pose",
+    "englishName": "Boat Pose Variation 1",
+    "sanskritName": "Navasana"
+  },
+  {
+    "id": "bound-angle-pose",
+    "kind": "pose",
+    "englishName": "Bound Angle Pose",
+    "sanskritName": "Baddha Konasana"
+  },
+  {
+    "id": "bow-pose",
+    "kind": "pose",
+    "englishName": "Bow Pose",
+    "sanskritName": "Dhanurasana"
+  },
+  {
+    "id": "bridge-pose",
+    "kind": "pose",
+    "englishName": "Bridge Pose",
+    "sanskritName": "Setubandha Sarvangasana"
+  },
+  {
+    "id": "butterfly-pose-variation-forward-bend",
+    "kind": "pose",
+    "englishName": "Butterfly Pose Variation Forward Bend",
+    "sanskritName": "Tarasana"
+  },
+  {
+    "id": "camel-pose",
+    "kind": "pose",
+    "englishName": "Camel Pose",
+    "sanskritName": "Ustrasana"
+  },
+  {
+    "id": "cat-cow-pose",
+    "kind": "pose",
+    "englishName": "Cat Cow Pose",
+    "sanskritName": "Bitilasana Marjaryasana"
+  },
+  {
+    "id": "chair-pose",
+    "kind": "pose",
+    "englishName": "Chair Pose",
+    "sanskritName": "Utkatasana"
+  },
+  {
+    "id": "child-pose",
+    "kind": "pose",
+    "englishName": "Child Pose",
+    "sanskritName": "Balasana"
+  },
+  {
+    "id": "child-pose",
+    "kind": "pose",
+    "englishName": "Child Pose",
+    "sanskritName": "Balasana"
+  },
+  {
+    "id": "cobra-pose",
+    "kind": "pose",
+    "englishName": "Cobra Pose",
+    "sanskritName": "Bhujangasana"
+  },
+  {
+    "id": "constructive-rest-pose",
+    "kind": "pose",
+    "englishName": "Constructive Rest Pose",
+    "sanskritName": "Savasana"
+  },
+  {
+    "id": "corpse-pose",
+    "kind": "pose",
+    "englishName": "Corpse Pose",
+    "sanskritName": "Savasana"
+  },
+  {
+    "id": "crescent-low-lunge-hamstring-stretch",
+    "kind": "pose",
+    "englishName": "Crescent Low Lunge Hamstring Stretch",
+    "sanskritName": "Anjaneyasana"
+  },
+  {
+    "id": "crescent-low-lunge-pose-variation",
+    "kind": "pose",
+    "englishName": "Crescent Low Lunge Pose Variation",
+    "sanskritName": "Ashwa Sanchalanasana"
+  },
+  {
+    "id": "crocodile-pose",
+    "kind": "pose",
+    "englishName": "Crocodile Pose",
+    "sanskritName": "Makarasana"
+  },
+  {
+    "id": "dancer-pose",
+    "kind": "pose",
+    "englishName": "Dancer Pose",
+    "sanskritName": "Natarajasana"
+  },
+  {
+    "id": "dangling-pose",
+    "kind": "pose",
+    "englishName": "Dangling Pose",
+    "sanskritName": "Baddha Hasta Uttanasana"
+  },
+  {
+    "id": "dolphin-pose",
+    "kind": "pose",
+    "englishName": "Dolphin Pose",
+    "sanskritName": "Catur Svanasana"
+  },
+  {
+    "id": "downward-facing-dog",
+    "kind": "flow",
+    "englishName": "Downward Facing Dog",
+    "sanskritName": "Adho Mukha Svanasana"
+  },
+  {
+    "id": "downward-facing-dog-pose",
+    "kind": "pose",
+    "englishName": "Downward Facing Dog Pose",
+    "sanskritName": "Adho Mukha Svanasana"
+  },
+  {
+    "id": "eagle-pose",
+    "kind": "pose",
+    "englishName": "Eagle Pose",
+    "sanskritName": "Garudasana"
+  },
+  {
+    "id": "easy-pose",
+    "kind": "pose",
+    "englishName": "Easy Pose",
+    "sanskritName": "Sukhasana"
+  },
+  {
+    "id": "easy-pose",
+    "kind": "flow",
+    "englishName": "Easy Pose",
+    "sanskritName": "Sukhasana"
+  },
+  {
+    "id": "easy-pose-neck-side-stretch",
+    "kind": "pose",
+    "englishName": "Easy Pose Neck Side Stretch",
+    "sanskritName": "Sukhasana"
+  },
+  {
+    "id": "easy-pose-side-bend",
+    "kind": "pose",
+    "englishName": "Easy Pose Side Bend",
+    "sanskritName": "Sukhasana"
+  },
+  {
+    "id": "easy-pose-variation-arms-knees",
+    "kind": "pose",
+    "englishName": "Easy Pose Variation Arms Knees",
+    "sanskritName": "Sukhasana Variation Arms Knees"
+  },
+  {
+    "id": "extended-mountain-pose-with-backbend",
+    "kind": "pose",
+    "englishName": "Extended Mountain Pose With Backbend",
+    "sanskritName": "Utthita Tadasana"
+  },
+  {
+    "id": "extended-side-angle-pose",
+    "kind": "pose",
+    "englishName": "Extended Side Angle Pose",
+    "sanskritName": "Utthita Parsvakonasana"
+  },
+  {
+    "id": "extended-side-angle-pose-variation",
+    "kind": "pose",
+    "englishName": "Extended Side Angle Pose Variation",
+    "sanskritName": "Utthita Parsvakonasana"
+  },
+  {
+    "id": "fish-pose",
+    "kind": "pose",
+    "englishName": "Fish Pose",
+    "sanskritName": "Matsyasana"
+  },
+  {
+    "id": "five-pointed-star-pose",
+    "kind": "pose",
+    "englishName": "Five Pointed Star Pose",
+    "sanskritName": "Utthita Tadasana"
+  },
+  {
+    "id": "five-pointed-star-pose-arms-up",
+    "kind": "pose",
+    "englishName": "Five Pointed Star Pose Arms Up",
+    "sanskritName": "Utthita Tadasana"
+  },
+  {
+    "id": "flow-i",
+    "kind": "flow",
+    "englishName": "Flow I",
+    "sanskritName": "Vinyasa I"
+  },
+  {
+    "id": "forearm-plank-pose",
+    "kind": "pose",
+    "englishName": "Forearm Plank Pose",
+    "sanskritName": "Phalakasana II"
+  },
+  {
+    "id": "forward-fold-flow",
+    "kind": "flow",
+    "englishName": "Forward Fold Flow",
+    "sanskritName": "Uttanasana Vinyasa"
+  },
+  {
+    "id": "low-plank",
+    "kind": "pose",
+    "englishName": "Low Plank",
+    "sanskritName": "Chaturanga Dandasana"
+  },
+  {
+    "id": "full-body-stretch-pose",
+    "kind": "pose",
+    "englishName": "Full Body Stretch Pose",
+    "sanskritName": "Supta Utthita Tadasana"
+  },
+  {
+    "id": "garland-pose",
+    "kind": "pose",
+    "englishName": "Garland Pose",
+    "sanskritName": "Malasana"
+  },
+  {
+    "id": "goddess-pose",
+    "kind": "pose",
+    "englishName": "Goddess Pose",
+    "sanskritName": "Utkata Konasana"
+  },
+  {
+    "id": "half-chair-pose",
+    "kind": "pose",
+    "englishName": "Half Chair Pose",
+    "sanskritName": "Ardha Utkatasana"
+  },
+  {
+    "id": "half-forward-fold-hands-on-floor",
+    "kind": "pose",
+    "englishName": "Half Forward Fold Hands On Floor",
+    "sanskritName": "Ardha Uttanasana"
+  },
+  {
+    "id": "half-lord-of-the-fishes-pose-variation",
+    "kind": "pose",
+    "englishName": "Half Lord Of The Fishes Pose Variation",
+    "sanskritName": "Ardha Matsyendrasana"
+  },
+  {
+    "id": "half-moon-pose",
+    "kind": "pose",
+    "englishName": "Half Moon Pose",
+    "sanskritName": "Ardha Chandrasana"
+  },
+  {
+    "id": "half-moon-variation",
+    "kind": "pose",
+    "englishName": "Half Moon Variation",
+    "sanskritName": "Ardha Chandrasana"
+  },
+  {
+    "id": "half-pigeon-pose",
+    "kind": "pose",
+    "englishName": "Half Pigeon Pose",
+    "sanskritName": "Ardha Kapotasana"
+  },
+  {
+    "id": "half-splits-pose",
+    "kind": "pose",
+    "englishName": "Half Splits Pose",
+    "sanskritName": "Ardha Hanumanasana"
+  },
+  {
+    "id": "half-way-lift",
+    "kind": "pose",
+    "englishName": "Half Way Lift",
+    "sanskritName": "Ardha Uttanasana"
+  },
+  {
+    "id": "half-wind-release-pose",
+    "kind": "pose",
+    "englishName": "Half Wind Release Pose",
+    "sanskritName": "Ardha Pavanmuktasana"
+  },
+  {
+    "id": "happy-baby-pose",
+    "kind": "pose",
+    "englishName": "Happy Baby Pose",
+    "sanskritName": "Ananda Balasana"
+  },
+  {
+    "id": "head-to-knee-pose",
+    "kind": "pose",
+    "englishName": "Head To Knee Pose",
+    "sanskritName": "Janu Sirsasana"
+  },
+  {
+    "id": "high-lunge-pose",
+    "kind": "pose",
+    "englishName": "High Lunge Pose",
+    "sanskritName": "Ashta Chandrasana"
+  },
+  {
+    "id": "intense-leg-stretch-pose",
+    "kind": "pose",
+    "englishName": "Intense Leg Stretch Pose",
+    "sanskritName": "Prasarita Padottanasana"
+  },
+  {
+    "id": "intense-side-stretch-pose",
+    "kind": "pose",
+    "englishName": "Intense Side Stretch Pose",
+    "sanskritName": "Parsvottanasana"
+  },
+  {
+    "id": "knee-to-nose-pose",
+    "kind": "pose",
+    "englishName": "Knee To Nose Pose",
+    "sanskritName": "Eka Pada Adho Mukha Svanasana"
+  },
+  {
+    "id": "lizard-pose",
+    "kind": "pose",
+    "englishName": "Lizard Pose",
+    "sanskritName": "Utthan Pristhasana"
+  },
+  {
+    "id": "locust-pose",
+    "kind": "pose",
+    "englishName": "Locust Pose",
+    "sanskritName": "Salabhasana"
+  },
+  {
+    "id": "low-lunge-hands-to-knee",
+    "kind": "pose",
+    "englishName": "Low Lunge Hands To Knee",
+    "sanskritName": "Anjaneyasana"
+  },
+  {
+    "id": "low-lunge-pose",
+    "kind": "pose",
+    "englishName": "Low Lunge Pose",
+    "sanskritName": "Anjaneyasana"
+  },
+  {
+    "id": "meditation",
+    "kind": "practice",
+    "englishName": "Meditation",
+    "sanskritName": "Dhyanam"
+  },
+  {
+    "id": "mountain-pose",
+    "kind": "pose",
+    "englishName": "Mountain Pose",
+    "sanskritName": "Tadasana"
+  },
+  {
+    "id": "mountain-pose-namaste",
+    "kind": "pose",
+    "englishName": "Mountain Pose Namaste",
+    "sanskritName": "Pranamasana"
+  },
+  {
+    "id": "one-legged-mountain-pose",
+    "kind": "pose",
+    "englishName": "One-Legged Mountain Pose",
+    "sanskritName": "Eka Pada Tadasana"
+  },
+  {
+    "id": "palm-tree-pose",
+    "kind": "pose",
+    "englishName": "Palm Tree Pose",
+    "sanskritName": "Urdhva Hastottanasana"
+  },
+  {
+    "id": "palm-tree-pose-side-bend",
+    "kind": "pose",
+    "englishName": "Palm Tree Pose Side Bend",
+    "sanskritName": "Parsva Bhanga"
+  },
+  {
+    "id": "plank-pose",
+    "kind": "pose",
+    "englishName": "Plank Pose",
+    "sanskritName": "Phalakasana"
+  },
+  {
+    "id": "plough-pose",
+    "kind": "pose",
+    "englishName": "Plough Pose",
+    "sanskritName": "Halasana"
+  },
+  {
+    "id": "puppy-dog-pose",
+    "kind": "pose",
+    "englishName": "Puppy Dog Pose",
+    "sanskritName": "Uttana Shishosana"
+  },
+  {
+    "id": "reclined-knee-circles",
+    "kind": "pose",
+    "englishName": "Reclined Knee Circles",
+    "sanskritName": "Supta Janu Chakra"
+  },
+  {
+    "id": "reclined-revolved-figure-four-pose",
+    "kind": "pose",
+    "englishName": "Reclined Revolved Figure Four Pose",
+    "sanskritName": "Supta Parivritta Sucirandhrasana"
+  },
+  {
+    "id": "reclining-bound-angle-pose",
+    "kind": "pose",
+    "englishName": "Reclining Bound Angle Pose",
+    "sanskritName": "Supta Baddha Konasana"
+  },
+  {
+    "id": "reverse-pigeon-pose",
+    "kind": "pose",
+    "englishName": "Reverse Pigeon Pose",
+    "sanskritName": "Sucirandhrasana"
+  },
+  {
+    "id": "reverse-triangle-pose",
+    "kind": "pose",
+    "englishName": "Reverse Triangle Pose",
+    "sanskritName": "Viparita Trikonasana"
+  },
+  {
+    "id": "reverse-warrior-pose",
+    "kind": "pose",
+    "englishName": "Reverse Warrior Pose",
+    "sanskritName": "Viparita Virabhadrasana"
+  },
+  {
+    "id": "revolved-chair-pose",
+    "kind": "pose",
+    "englishName": "Revolved Chair Pose",
+    "sanskritName": "Parivrtta Utkatasana"
+  },
+  {
+    "id": "revolved-easy-pose",
+    "kind": "pose",
+    "englishName": "Revolved Easy Pose",
+    "sanskritName": "Parivritta Sukhasana"
+  },
+  {
+    "id": "revolved-head-to-knee-pose-prep",
+    "kind": "pose",
+    "englishName": "Revolved Head To Knee Pose Prep",
+    "sanskritName": "Parivritta Janu Sirsasana"
+  },
+  {
+    "id": "revolved-low-lunge-pose-knee-on-the-floor",
+    "kind": "pose",
+    "englishName": "Revolved Low Lunge Pose Knee On The Floor",
+    "sanskritName": "Parivritta Anjaneyasana"
+  },
+  {
+    "id": "revolved-lunge-pose",
+    "kind": "pose",
+    "englishName": "Revolved Lunge Pose",
+    "sanskritName": "Parivrtta Utthita Ashwa Sanchalanasana"
+  },
+  {
+    "id": "revolved-side-angle-pose",
+    "kind": "pose",
+    "englishName": "Revolved Side Angle Pose",
+    "sanskritName": "Parivritta Parsvakonasana"
+  },
+  {
+    "id": "revolved-wide-legged-forward-bend",
+    "kind": "pose",
+    "englishName": "Revolved Wide Legged Forward Bend",
+    "sanskritName": "Parivritta Prasarita Padottanasana"
+  },
+  {
+    "id": "runners-lunge-pose",
+    "kind": "pose",
+    "englishName": "Runners Lunge Pose",
+    "sanskritName": "Utthita Ashwa Sanchalanasana"
+  },
+  {
+    "id": "seated-cat-cow-pose",
+    "kind": "pose",
+    "englishName": "Seated Cat Cow Pose",
+    "sanskritName": "Upavistha Bitilasana Marjaryasana"
+  },
+  {
+    "id": "seated-forward-bend-pose",
+    "kind": "pose",
+    "englishName": "Seated Forward Bend Pose",
+    "sanskritName": "Paschimottanasana"
+  },
+  {
+    "id": "seated-neck-rolls",
+    "kind": "pose",
+    "englishName": "Seated Neck Rolls",
+    "sanskritName": "Greeva Sanchalana"
+  },
+  {
+    "id": "seated-shoulder-rolls",
+    "kind": "pose",
+    "englishName": "Seated Shoulder Rolls",
+    "sanskritName": "Upavistha Skandha Vrtta"
+  },
+  {
+    "id": "seated-straddle-pose",
+    "kind": "pose",
+    "englishName": "Seated Straddle Pose",
+    "sanskritName": "Upavistha Konasana"
+  },
+  {
+    "id": "seated-torso-circles",
+    "kind": "pose",
+    "englishName": "Seated Torso Circles",
+    "sanskritName": "Kundalini Circles"
+  },
+  {
+    "id": "seated-windshield-wiper-pose",
+    "kind": "pose",
+    "englishName": "Seated Windshield Wiper Pose",
+    "sanskritName": "Upavistha Jathara Parivartanasana"
+  },
+  {
+    "id": "shoulderstand-pose",
+    "kind": "pose",
+    "englishName": "Shoulderstand Pose",
+    "sanskritName": "Sarvangasana"
+  },
+  {
+    "id": "side-lying-corpse-pose",
+    "kind": "pose",
+    "englishName": "Side Lying Corpse Pose",
+    "sanskritName": "Parsva Savasana"
+  },
+  {
+    "id": "side-plank-pose",
+    "kind": "pose",
+    "englishName": "Side Plank Pose",
+    "sanskritName": "Vasisthasana"
+  },
+  {
+    "id": "side-plank-pose",
+    "kind": "pose",
+    "englishName": "Side Plank Pose",
+    "sanskritName": "Vasisthasana Variation"
+  },
+  {
+    "id": "sleeping-swan-pose",
+    "kind": "pose",
+    "englishName": "Sleeping Swan Pose",
+    "sanskritName": "Kapotasana II"
+  },
+  {
+    "id": "sphinx-pose",
+    "kind": "pose",
+    "englishName": "Sphinx Pose",
+    "sanskritName": "Salamba Bhujangasana"
+  },
+  {
+    "id": "staff-pose",
+    "kind": "pose",
+    "englishName": "Staff Pose",
+    "sanskritName": "Dandasana"
+  },
+  {
+    "id": "standing-forward-fold-pose",
+    "kind": "pose",
+    "englishName": "Standing Forward Fold Pose",
+    "sanskritName": "Uttanasana"
+  },
+  {
+    "id": "standing-split-pose",
+    "kind": "pose",
+    "englishName": "Standing Split Pose",
+    "sanskritName": "Urdhva Prasarita Eka Padasana"
+  },
+  {
+    "id": "standing-wide-legged-pose-hands-on-hips",
+    "kind": "pose",
+    "englishName": "Standing Wide Legged Pose Hands On Hips",
+    "sanskritName": "Prasarita Tadasana"
+  },
+  {
+    "id": "standing-wind-release-pose",
+    "kind": "pose",
+    "englishName": "Standing Wind Release Pose",
+    "sanskritName": "Tadasana Pavanmuktasana"
+  },
+  {
+    "id": "sun-salutation",
+    "kind": "flow",
+    "englishName": "Sun Salutation",
+    "sanskritName": "Surya Namaskar"
+  },
+  {
+    "id": "sun-salutation-a",
+    "kind": "flow",
+    "englishName": "Sun Salutation A",
+    "sanskritName": "Surya Namaskar A"
+  },
+  {
+    "id": "sun-salutation-a",
+    "kind": "flow",
+    "englishName": "Sun Salutation A",
+    "sanskritName": "Surya Namaskar A"
+  },
+  {
+    "id": "sun-salutation-b",
+    "kind": "flow",
+    "englishName": "Sun Salutation B",
+    "sanskritName": "Surya Namaskar B"
+  },
+  {
+    "id": "supine-spinal-twist-pose-ii",
+    "kind": "pose",
+    "englishName": "Supine Spinal Twist Pose II",
+    "sanskritName": "Supta Matsyendrasana II"
+  },
+  {
+    "id": "supine-spinal-twist-yoga-pose-i",
+    "kind": "pose",
+    "englishName": "Supine Spinal Twist Yoga Pose I",
+    "sanskritName": "Supta Matsyendrasana I"
+  },
+  {
+    "id": "table-top-pose",
+    "kind": "pose",
+    "englishName": "Table Top Pose",
+    "sanskritName": "Bharmanasana"
+  },
+  {
+    "id": "thread-the-needle-pose",
+    "kind": "pose",
+    "englishName": "Thread The Needle Pose",
+    "sanskritName": "Urdhva Mukha Pasasana"
+  },
+  {
+    "id": "thread-the-needle-pose-flow",
+    "kind": "flow",
+    "englishName": "Thread The Needle Pose Flow",
+    "sanskritName": "Urdhva Mukha Pasasana"
+  },
+  {
+    "id": "three-legged-dog",
+    "kind": "flow",
+    "englishName": "Three Legged Dog",
+    "sanskritName": "Tri Pada Adho Mukha Svanasana"
+  },
+  {
+    "id": "three-legged-downward-facing-dog-pose",
+    "kind": "pose",
+    "englishName": "Three Legged Downward Facing Dog Pose",
+    "sanskritName": "Tri Pada Adho Mukha Svanasana"
+  },
+  {
+    "id": "thunderbolt-pose",
+    "kind": "pose",
+    "englishName": "Thunderbolt Pose",
+    "sanskritName": "Vajrasana"
+  },
+  {
+    "id": "tiger-pose-variation-1",
+    "kind": "pose",
+    "englishName": "Tiger Pose Variation 1",
+    "sanskritName": "Vyaghrasana Variation 1"
+  },
+  {
+    "id": "tree-pose",
+    "kind": "pose",
+    "englishName": "Tree Pose",
+    "sanskritName": "Vrksasana"
+  },
+  {
+    "id": "triangle-pose",
+    "kind": "pose",
+    "englishName": "Triangle Pose",
+    "sanskritName": "Trikonasana"
+  },
+  {
+    "id": "upward-facing-dog-pose",
+    "kind": "pose",
+    "englishName": "Upward Facing Dog Pose",
+    "sanskritName": "Urdhva Mukha Svanasana"
+  },
+  {
+    "id": "volcano-pose",
+    "kind": "pose",
+    "englishName": "Volcano Pose",
+    "sanskritName": "Urdhva Hastasana"
+  },
+  {
+    "id": "warrior-pose-i",
+    "kind": "pose",
+    "englishName": "Warrior Pose I",
+    "sanskritName": "Virabhadrasana I"
+  },
+  {
+    "id": "warrior-pose-ii",
+    "kind": "pose",
+    "englishName": "Warrior Pose II",
+    "sanskritName": "Virabhadrasana II"
+  },
+  {
+    "id": "warrior-pose-iii",
+    "kind": "pose",
+    "englishName": "Warrior Pose III",
+    "sanskritName": "Virabhadrasana III"
+  },
+  {
+    "id": "wide-child-pose",
+    "kind": "pose",
+    "englishName": "Wide Child Pose",
+    "sanskritName": "Prasarita Balasana"
+  },
+  {
+    "id": "wide-legged-squat-over-one-leg",
+    "kind": "pose",
+    "englishName": "Wide Legged Squat Over One Leg",
+    "sanskritName": "Skandasana"
+  },
+  {
+    "id": "wild-thing-pose",
+    "kind": "pose",
+    "englishName": "Wild Thing Pose",
+    "sanskritName": "Camatkarasana"
+  },
+  {
+    "id": "wind-release-pose",
+    "kind": "pose",
+    "englishName": "Wind Release Pose",
+    "sanskritName": "Pavanmuktasana"
+  },
+  {
+    "id": "wind-release-pose-nose-to-knee",
+    "kind": "pose",
+    "englishName": "Wind Release Pose Nose To Knee",
+    "sanskritName": "Pavanmuktasana"
+  }
+]

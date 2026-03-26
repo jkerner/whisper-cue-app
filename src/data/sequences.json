@@ -1,0 +1,623 @@
+[
+  {
+    "id": "rise-and-root-60",
+    "name": "Rise & Root — 60 Min Power Vinyasa",
+    "steps": [
+      {
+        "poseId": "easy-pose",
+        "orderIndex": 1,
+        "cues": ["Sit tall, hands on thighs", "3 cleansing breaths, sigh it out", "Inhale 4, exhale 7, three rounds", "Set intention for the hour"]
+      },
+      {
+        "poseId": "child-pose",
+        "orderIndex": 2,
+        "cues": ["Knees wide, big toes touch", "Forehead to mat, arms long"]
+      },
+      {
+        "poseId": "table-top-pose",
+        "orderIndex": 3,
+        "cues": ["Wrists under shoulders", "Knees under hips"]
+      },
+      {
+        "poseId": "cat-cow-pose",
+        "orderIndex": 4,
+        "cues": ["Inhale drop belly, lift gaze", "Exhale round spine, tuck chin", "Three rounds"]
+      },
+      {
+        "poseId": "downward-facing-dog-pose",
+        "orderIndex": 5,
+        "cues": ["Tuck toes, hips lift high", "Hands shoulder width, spread fingers", "Pedal the feet"]
+      },
+      {
+        "poseId": "plank-pose",
+        "orderIndex": 6,
+        "cues": ["Shoulders over wrists", "Body one long line", "Belly draws in"]
+      },
+      {
+        "poseId": "cobra-pose",
+        "orderIndex": 7,
+        "cues": ["Hands under shoulders", "Inhale peel chest up", "Elbows stay bent, shoulders back"]
+      },
+      {
+        "poseId": "downward-facing-dog-pose",
+        "orderIndex": 8,
+        "cues": ["Hips lift high", "Heels reach toward mat"]
+      },
+      {
+        "poseId": "dangling-pose",
+        "orderIndex": 9,
+        "cues": ["Feet hip width, knees soft", "Head heavy, arms dangle"]
+      },
+      {
+        "poseId": "half-way-lift",
+        "orderIndex": 10,
+        "cues": ["Hands to shins", "Flat back, long spine"]
+      },
+      {
+        "poseId": "standing-forward-fold-pose",
+        "orderIndex": 11,
+        "cues": ["Hinge at hips", "Head heavy, knees soft"]
+      },
+      {
+        "poseId": "mountain-pose",
+        "orderIndex": 12,
+        "cues": ["Stand tall, feet together", "Arms by sides, palms forward"]
+      },
+      {
+        "poseId": "volcano-pose",
+        "orderIndex": 13,
+        "cues": ["Arms sweep overhead", "Palms face each other", "Ribs knit in"]
+      },
+      {
+        "poseId": "standing-forward-fold-pose",
+        "orderIndex": 14,
+        "cues": ["Hinge at hips, swan dive down", "Head heavy, knees soft"]
+      },
+      {
+        "poseId": "half-way-lift",
+        "orderIndex": 15,
+        "cues": ["Hands to shins", "Flat back, long spine"]
+      },
+      {
+        "poseId": "low-plank",
+        "orderIndex": 16,
+        "cues": ["Elbows hug ribs", "Lower halfway down", "Shoulders no lower than elbows"]
+      },
+      {
+        "poseId": "cobra-pose",
+        "orderIndex": 17,
+        "cues": ["Hands under shoulders", "Inhale peel chest up", "Elbows stay bent"]
+      },
+      {
+        "poseId": "downward-facing-dog-pose",
+        "orderIndex": 18,
+        "cues": ["Hips lift high", "Press chest toward thighs"]
+      },
+      {
+        "poseId": "half-way-lift",
+        "orderIndex": 19,
+        "cues": ["Hands to shins", "Flat back, long spine"]
+      },
+      {
+        "poseId": "standing-forward-fold-pose",
+        "orderIndex": 20,
+        "cues": ["Hinge at hips", "Let head hang heavy"]
+      },
+      {
+        "poseId": "volcano-pose",
+        "orderIndex": 21,
+        "cues": ["Arms sweep overhead", "Reach through fingertips"]
+      },
+      {
+        "poseId": "mountain-pose-namaste",
+        "orderIndex": 22,
+        "cues": ["Hands to heart center", "Stand tall"]
+      },
+      {
+        "poseId": "volcano-pose",
+        "orderIndex": 23,
+        "cues": ["Arms sweep overhead", "Breath leads the movement"]
+      },
+      {
+        "poseId": "standing-forward-fold-pose",
+        "orderIndex": 24,
+        "cues": ["Hinge at hips", "Belly toward thighs"]
+      },
+      {
+        "poseId": "half-way-lift",
+        "orderIndex": 25,
+        "cues": ["Hands to shins", "Flat back, long spine"]
+      },
+      {
+        "poseId": "low-plank",
+        "orderIndex": 26,
+        "cues": ["Elbows hug ribs", "Lower halfway down"]
+      },
+      {
+        "poseId": "cobra-pose",
+        "orderIndex": 27,
+        "cues": ["Hands under shoulders", "Chest peels up"]
+      },
+      {
+        "poseId": "downward-facing-dog-pose",
+        "orderIndex": 28,
+        "cues": ["Hips lift high", "One breath here"]
+      },
+      {
+        "poseId": "half-way-lift",
+        "orderIndex": 29,
+        "cues": ["Hands to shins", "Flat back, long spine"]
+      },
+      {
+        "poseId": "standing-forward-fold-pose",
+        "orderIndex": 30,
+        "cues": ["Hinge at hips", "Head heavy"]
+      },
+      {
+        "poseId": "volcano-pose",
+        "orderIndex": 31,
+        "cues": ["Arms sweep overhead", "Reach tall"]
+      },
+      {
+        "poseId": "mountain-pose-namaste",
+        "orderIndex": 32,
+        "cues": ["Hands to heart center", "Stand tall"]
+      },
+      {
+        "poseId": "chair-pose",
+        "orderIndex": 33,
+        "cues": ["Feet together, sit deep", "Weight in heels", "Chest lifts, arms overhead"]
+      },
+      {
+        "poseId": "standing-forward-fold-pose",
+        "orderIndex": 34,
+        "cues": ["Hinge at hips", "Head heavy, knees soft"]
+      },
+      {
+        "poseId": "half-way-lift",
+        "orderIndex": 35,
+        "cues": ["Hands to shins", "Flat back, long spine"]
+      },
+      {
+        "poseId": "low-plank",
+        "orderIndex": 36,
+        "cues": ["Elbows hug ribs", "Lower halfway down"]
+      },
+      {
+        "poseId": "cobra-pose",
+        "orderIndex": 37,
+        "cues": ["Hands under shoulders", "Chest lifts, shoulders back"]
+      },
+      {
+        "poseId": "downward-facing-dog-pose",
+        "orderIndex": 38,
+        "cues": ["Hips lift high", "Hands shoulder width"]
+      },
+      {
+        "poseId": "three-legged-downward-facing-dog-pose",
+        "orderIndex": 39,
+        "cues": ["Right leg lifts, hips square", "Foot flexed, reach through heel"]
+      },
+      {
+        "poseId": "warrior-pose-i",
+        "orderIndex": 40,
+        "cues": ["Back heel grounds down", "Arms strong overhead", "Front knee over ankle"]
+      },
+      {
+        "poseId": "warrior-pose-ii",
+        "orderIndex": 41,
+        "cues": ["Front knee over ankle", "Arms wide, shoulders down", "Gaze over front fingers"]
+      },
+      {
+        "poseId": "reverse-warrior-pose",
+        "orderIndex": 42,
+        "cues": ["Back hand slides down back leg", "Front arm arcs long overhead"]
+      },
+      {
+        "poseId": "low-plank",
+        "orderIndex": 43,
+        "cues": ["Elbows hug ribs", "Lower halfway down"]
+      },
+      {
+        "poseId": "cobra-pose",
+        "orderIndex": 44,
+        "cues": ["Hands under shoulders", "Chest peels up"]
+      },
+      {
+        "poseId": "downward-facing-dog-pose",
+        "orderIndex": 45,
+        "cues": ["Hips lift high", "Heels reach down"]
+      },
+      {
+        "poseId": "three-legged-downward-facing-dog-pose",
+        "orderIndex": 46,
+        "cues": ["Left leg lifts, hips square", "Foot flexed, reach through heel"]
+      },
+      {
+        "poseId": "warrior-pose-i",
+        "orderIndex": 47,
+        "cues": ["Back heel grounds down", "Arms strong overhead", "Front knee over ankle"]
+      },
+      {
+        "poseId": "warrior-pose-ii",
+        "orderIndex": 48,
+        "cues": ["Front knee over ankle", "Arms wide, shoulders down", "Gaze over front fingers"]
+      },
+      {
+        "poseId": "reverse-warrior-pose",
+        "orderIndex": 49,
+        "cues": ["Back hand slides down back leg", "Front arm arcs long overhead"]
+      },
+      {
+        "poseId": "low-plank",
+        "orderIndex": 50,
+        "cues": ["Elbows hug ribs", "Lower halfway down"]
+      },
+      {
+        "poseId": "cobra-pose",
+        "orderIndex": 51,
+        "cues": ["Hands under shoulders", "Chest peels up"]
+      },
+      {
+        "poseId": "downward-facing-dog-pose",
+        "orderIndex": 52,
+        "cues": ["Hips lift high", "5 breaths"]
+      },
+      {
+        "poseId": "half-way-lift",
+        "orderIndex": 53,
+        "cues": ["Hands to shins", "Flat back, long spine"]
+      },
+      {
+        "poseId": "chair-pose",
+        "orderIndex": 54,
+        "cues": ["Feet together, sit deep", "Weight in heels", "Chest lifts"]
+      },
+      {
+        "poseId": "standing-forward-fold-pose",
+        "orderIndex": 55,
+        "cues": ["Hinge at hips", "Head heavy"]
+      },
+      {
+        "poseId": "mountain-pose",
+        "orderIndex": 56,
+        "cues": ["Stand tall, feet together", "Arms by sides"]
+      },
+      {
+        "poseId": "three-legged-downward-facing-dog-pose",
+        "orderIndex": 57,
+        "cues": ["Right leg lifts, hips square", "Reach through heel"]
+      },
+      {
+        "poseId": "knee-to-nose-pose",
+        "orderIndex": 58,
+        "cues": ["Round the back, shoulders over wrists", "Navel draws in, knee to nose"]
+      },
+      {
+        "poseId": "three-legged-downward-facing-dog-pose",
+        "orderIndex": 59,
+        "cues": ["Leg lifts back high", "Hips stay square"]
+      },
+      {
+        "poseId": "revolved-low-lunge-pose-knee-on-the-floor",
+        "orderIndex": 60,
+        "cues": ["Back knee down, stack front knee", "Right arm lifts, twist opens", "Gaze follows top hand"]
+      },
+      {
+        "poseId": "warrior-pose-ii",
+        "orderIndex": 61,
+        "cues": ["Front knee over ankle", "Arms wide, sink low", "Gaze over front fingers"]
+      },
+      {
+        "poseId": "extended-side-angle-pose",
+        "orderIndex": 62,
+        "cues": ["Forearm to thigh or hand down", "Top arm extends over the ear", "Long line from heel to fingertips"]
+      },
+      {
+        "poseId": "reverse-warrior-pose",
+        "orderIndex": 63,
+        "cues": ["Back hand slides down back leg", "Front arm arcs long overhead"]
+      },
+      {
+        "poseId": "half-moon-pose",
+        "orderIndex": 64,
+        "cues": ["Hand to floor or block", "Stack hips, top arm reaches up", "Back leg strong and lifted", "3 breaths"]
+      },
+      {
+        "poseId": "reverse-triangle-pose",
+        "orderIndex": 65,
+        "cues": ["Top arm sweeps back overhead", "Open the chest, hips stay stacked", "2 breaths"]
+      },
+      {
+        "poseId": "low-plank",
+        "orderIndex": 66,
+        "cues": ["Elbows hug ribs", "Lower halfway down"]
+      },
+      {
+        "poseId": "cobra-pose",
+        "orderIndex": 67,
+        "cues": ["Hands under shoulders", "Chest peels up"]
+      },
+      {
+        "poseId": "downward-facing-dog-pose",
+        "orderIndex": 68,
+        "cues": ["Hips lift high", "Heels reach down"]
+      },
+      {
+        "poseId": "three-legged-downward-facing-dog-pose",
+        "orderIndex": 69,
+        "cues": ["Left leg lifts, hips square", "Reach through heel"]
+      },
+      {
+        "poseId": "knee-to-nose-pose",
+        "orderIndex": 70,
+        "cues": ["Round the back, shoulders over wrists", "Navel draws in, knee to nose"]
+      },
+      {
+        "poseId": "three-legged-downward-facing-dog-pose",
+        "orderIndex": 71,
+        "cues": ["Leg lifts back high", "Hips stay square"]
+      },
+      {
+        "poseId": "revolved-low-lunge-pose-knee-on-the-floor",
+        "orderIndex": 72,
+        "cues": ["Back knee down, stack front knee", "Left arm lifts, twist opens", "Gaze follows top hand"]
+      },
+      {
+        "poseId": "warrior-pose-ii",
+        "orderIndex": 73,
+        "cues": ["Front knee over ankle", "Arms wide, sink low", "Gaze over front fingers"]
+      },
+      {
+        "poseId": "extended-side-angle-pose",
+        "orderIndex": 74,
+        "cues": ["Forearm to thigh or hand down", "Top arm extends over the ear", "Long line from heel to fingertips"]
+      },
+      {
+        "poseId": "reverse-warrior-pose",
+        "orderIndex": 75,
+        "cues": ["Back hand slides down back leg", "Front arm arcs long overhead"]
+      },
+      {
+        "poseId": "half-moon-pose",
+        "orderIndex": 76,
+        "cues": ["Hand to floor or block", "Stack hips, top arm reaches up", "Back leg strong and lifted", "3 breaths"]
+      },
+      {
+        "poseId": "reverse-triangle-pose",
+        "orderIndex": 77,
+        "cues": ["Top arm sweeps back overhead", "Open the chest, hips stay stacked", "2 breaths"]
+      },
+      {
+        "poseId": "low-plank",
+        "orderIndex": 78,
+        "cues": ["Elbows hug ribs", "Lower halfway down"]
+      },
+      {
+        "poseId": "cobra-pose",
+        "orderIndex": 79,
+        "cues": ["Hands under shoulders", "Chest peels up"]
+      },
+      {
+        "poseId": "downward-facing-dog-pose",
+        "orderIndex": 80,
+        "cues": ["Hips lift high", "5 breaths"]
+      },
+      {
+        "poseId": "chair-pose",
+        "orderIndex": 81,
+        "cues": ["Feet together, sit deep", "Weight in heels", "Arms overhead"]
+      },
+      {
+        "poseId": "eagle-pose",
+        "orderIndex": 82,
+        "cues": ["Right arm under left, wrap", "Right leg over left, sit low", "Squeeze midline, elbows lift", "4 breaths"]
+      },
+      {
+        "poseId": "one-legged-mountain-pose",
+        "orderIndex": 83,
+        "cues": ["Unwrap, arms wide", "Stand tall on left leg", "Right knee lifts"]
+      },
+      {
+        "poseId": "tree-pose",
+        "orderIndex": 84,
+        "cues": ["Right foot to inner calf or thigh", "Avoid the knee joint", "Hands to heart or arms rise", "4 breaths"]
+      },
+      {
+        "poseId": "standing-forward-fold-pose",
+        "orderIndex": 85,
+        "cues": ["Hinge at hips", "Head heavy, let it go"]
+      },
+      {
+        "poseId": "eagle-pose",
+        "orderIndex": 86,
+        "cues": ["Left arm under right, wrap", "Left leg over right, sit low", "Squeeze midline, elbows lift", "4 breaths"]
+      },
+      {
+        "poseId": "one-legged-mountain-pose",
+        "orderIndex": 87,
+        "cues": ["Unwrap, arms wide", "Stand tall on right leg", "Left knee lifts"]
+      },
+      {
+        "poseId": "tree-pose",
+        "orderIndex": 88,
+        "cues": ["Left foot to inner calf or thigh", "Avoid the knee joint", "Hands to heart or arms rise", "4 breaths"]
+      },
+      {
+        "poseId": "standing-forward-fold-pose",
+        "orderIndex": 89,
+        "cues": ["Hinge at hips", "Head heavy, let it go"]
+      },
+      {
+        "poseId": "low-plank",
+        "orderIndex": 90,
+        "cues": ["Elbows hug ribs", "Lower halfway, or skip"]
+      },
+      {
+        "poseId": "cobra-pose",
+        "orderIndex": 91,
+        "cues": ["Hands under shoulders", "Chest peels up"]
+      },
+      {
+        "poseId": "downward-facing-dog-pose",
+        "orderIndex": 92,
+        "cues": ["Hips lift high", "Heels reach down"]
+      },
+      {
+        "poseId": "intense-side-stretch-pose",
+        "orderIndex": 93,
+        "cues": ["Right foot forward, shorten stance", "Hinge over front leg, flat back", "Hands frame the front foot", "3 breaths"]
+      },
+      {
+        "poseId": "standing-split-pose",
+        "orderIndex": 94,
+        "cues": ["Shift weight into front foot", "Back leg lifts, hips square", "Hands to floor or ankle", "3 breaths"]
+      },
+      {
+        "poseId": "low-lunge-pose",
+        "orderIndex": 95,
+        "cues": ["Back knee lowers to mat", "Front knee stacks over ankle", "Hips sink forward and down"]
+      },
+      {
+        "poseId": "warrior-pose-ii",
+        "orderIndex": 96,
+        "cues": ["Front knee over ankle", "Arms wide, shoulders down", "Gaze over front fingers"]
+      },
+      {
+        "poseId": "triangle-pose",
+        "orderIndex": 97,
+        "cues": ["Front leg straightens", "Hand to shin or floor, top arm up", "Stack shoulders, open chest", "3 breaths"]
+      },
+      {
+        "poseId": "five-pointed-star-pose",
+        "orderIndex": 98,
+        "cues": ["Step wide, arms broad", "Legs strong, feet parallel"]
+      },
+      {
+        "poseId": "intense-leg-stretch-pose",
+        "orderIndex": 99,
+        "cues": ["Hands between feet", "Crown of head reaches down", "Legs strong, slight bend OK", "3 breaths"]
+      },
+      {
+        "poseId": "mountain-pose",
+        "orderIndex": 100,
+        "cues": ["Stand tall, feet together", "Arms by sides"]
+      },
+      {
+        "poseId": "low-plank",
+        "orderIndex": 101,
+        "cues": ["Elbows hug ribs", "Lower halfway down"]
+      },
+      {
+        "poseId": "cobra-pose",
+        "orderIndex": 102,
+        "cues": ["Hands under shoulders", "Chest lifts"]
+      },
+      {
+        "poseId": "downward-facing-dog-pose",
+        "orderIndex": 103,
+        "cues": ["Hips lift high", "Heels reach down"]
+      },
+      {
+        "poseId": "intense-side-stretch-pose",
+        "orderIndex": 104,
+        "cues": ["Left foot forward, shorten stance", "Hinge over front leg, flat back", "Hands frame the front foot", "3 breaths"]
+      },
+      {
+        "poseId": "standing-split-pose",
+        "orderIndex": 105,
+        "cues": ["Shift weight into front foot", "Back leg lifts, hips square", "Hands to floor or ankle", "3 breaths"]
+      },
+      {
+        "poseId": "low-lunge-pose",
+        "orderIndex": 106,
+        "cues": ["Back knee lowers to mat", "Front knee stacks over ankle", "Hips sink forward and down"]
+      },
+      {
+        "poseId": "warrior-pose-ii",
+        "orderIndex": 107,
+        "cues": ["Front knee over ankle", "Arms wide, shoulders down", "Gaze over front fingers"]
+      },
+      {
+        "poseId": "triangle-pose",
+        "orderIndex": 108,
+        "cues": ["Front leg straightens", "Hand to shin or floor, top arm up", "Stack shoulders, open chest", "3 breaths"]
+      },
+      {
+        "poseId": "five-pointed-star-pose",
+        "orderIndex": 109,
+        "cues": ["Step wide, arms broad", "Legs strong, feet parallel"]
+      },
+      {
+        "poseId": "intense-leg-stretch-pose",
+        "orderIndex": 110,
+        "cues": ["Hands between feet", "Crown of head reaches down", "Legs strong, slight bend OK", "3 breaths"]
+      },
+      {
+        "poseId": "mountain-pose",
+        "orderIndex": 111,
+        "cues": ["Stand tall, feet together", "Arms by sides"]
+      },
+      {
+        "poseId": "low-plank",
+        "orderIndex": 112,
+        "cues": ["Elbows hug ribs", "Lower halfway down"]
+      },
+      {
+        "poseId": "cobra-pose",
+        "orderIndex": 113,
+        "cues": ["Hands under shoulders", "Chest lifts"]
+      },
+      {
+        "poseId": "downward-facing-dog-pose",
+        "orderIndex": 114,
+        "cues": ["Hips lift high", "Heels reach down"]
+      },
+      {
+        "poseId": "locust-pose",
+        "orderIndex": 115,
+        "cues": ["Arms long by sides, palms down", "Chest and legs lift off mat", "Squeeze shoulder blades together", "3 breaths"]
+      },
+      {
+        "poseId": "bow-pose",
+        "orderIndex": 116,
+        "cues": ["Bend knees, hold outer ankles", "Kick feet into hands, chest lifts", "Shoulders away from ears", "3 breaths"]
+      },
+      {
+        "poseId": "child-pose",
+        "orderIndex": 117,
+        "cues": ["Knees wide, hips to heels", "Forehead to mat, arms long", "Two full breaths"]
+      },
+      {
+        "poseId": "seated-forward-bend-pose",
+        "orderIndex": 118,
+        "cues": ["Legs long, flex the feet", "Inhale lengthen, exhale fold", "Let breath do the work", "5 breaths"]
+      },
+      {
+        "poseId": "head-to-knee-pose",
+        "orderIndex": 119,
+        "cues": ["Right foot to inner left thigh", "Fold over extended leg", "Square torso to straight leg", "4 breaths"]
+      },
+      {
+        "poseId": "head-to-knee-pose",
+        "orderIndex": 120,
+        "cues": ["Left foot to inner right thigh", "Fold over extended leg", "Square torso to straight leg", "4 breaths"]
+      },
+      {
+        "poseId": "half-pigeon-pose",
+        "orderIndex": 121,
+        "cues": ["Right shin forward, hips square", "Walk hands forward and fold", "Let the hip release", "8 breaths"]
+      },
+      {
+        "poseId": "half-pigeon-pose",
+        "orderIndex": 122,
+        "cues": ["Left shin forward, hips square", "Walk hands forward and fold", "Let the hip release", "8 breaths"]
+      },
+      {
+        "poseId": "corpse-pose",
+        "orderIndex": 123,
+        "cues": ["Legs long, feet fall open", "Palms up, shoulders melt down", "Close eyes, let everything settle"]
+      }
+    ]
+  }
+]
