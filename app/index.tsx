@@ -145,9 +145,9 @@ export default function HomeScreen() {
       <View style={styles.container}>
         {/* Logo area with sunbeam rays */}
         <View style={styles.logoArea}>
-          {/* Sunbeam rays — arcing from left up over top and down right */}
-          {[...Array(13)].map((_, i) => (
-            <SunbeamRay key={i} angle={-160 + i * 15} delay={i * 120} />
+          {/* Sunbeam rays — arcing across the top */}
+          {[...Array(9)].map((_, i) => (
+            <SunbeamRay key={i} angle={-120 + i * 30} delay={i * 100} />
           ))}
           <Animated.View style={[styles.logoInner, { opacity: logoFade }]}>
             <Image
