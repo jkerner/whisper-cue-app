@@ -15,6 +15,8 @@ export default function RootLayout() {
       "CormorantGaramond-SemiBold": require("@expo-google-fonts/cormorant-garamond/600SemiBold"),
       "CormorantGaramond-Bold": require("@expo-google-fonts/cormorant-garamond/700Bold"),
       "CormorantGaramond-BoldItalic": require("@expo-google-fonts/cormorant-garamond/700Bold_Italic"),
+      "DancingScript-Regular": require("@expo-google-fonts/dancing-script/400Regular"),
+      "DancingScript-Bold": require("@expo-google-fonts/dancing-script/700Bold"),
     }).catch(() => {
       // Fonts failed to load — app still works with system fonts
     });
