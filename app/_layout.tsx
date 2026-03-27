@@ -3,6 +3,17 @@ import { View, ActivityIndicator, StyleSheet, Platform } from "react-native";
 import { Slot, useRouter, useSegments } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import * as Font from "expo-font";
+import {
+  CormorantGaramond_300Light,
+  CormorantGaramond_300Light_Italic,
+  CormorantGaramond_400Regular,
+  CormorantGaramond_400Regular_Italic,
+  CormorantGaramond_500Medium,
+  CormorantGaramond_500Medium_Italic,
+  CormorantGaramond_600SemiBold,
+  CormorantGaramond_700Bold,
+  CormorantGaramond_700Bold_Italic,
+} from "@expo-google-fonts/cormorant-garamond";
 import { supabase } from "../src/lib/supabase";
 import { Session } from "@supabase/supabase-js";
 
@@ -16,18 +27,24 @@ export default function RootLayout() {
   useEffect(() => {
     // Load fonts
     Font.loadAsync({
-      "CormorantGaramond-Light": require("@expo-google-fonts/cormorant-garamond/300Light"),
-      "CormorantGaramond-LightItalic": require("@expo-google-fonts/cormorant-garamond/300Light_Italic"),
-      "CormorantGaramond-Regular": require("@expo-google-fonts/cormorant-garamond/400Regular"),
-      "CormorantGaramond-Italic": require("@expo-google-fonts/cormorant-garamond/400Regular_Italic"),
-      "CormorantGaramond-Medium": require("@expo-google-fonts/cormorant-garamond/500Medium"),
-      "CormorantGaramond-MediumItalic": require("@expo-google-fonts/cormorant-garamond/500Medium_Italic"),
-      "CormorantGaramond-SemiBold": require("@expo-google-fonts/cormorant-garamond/600SemiBold"),
-      "CormorantGaramond-Bold": require("@expo-google-fonts/cormorant-garamond/700Bold"),
-      "CormorantGaramond-BoldItalic": require("@expo-google-fonts/cormorant-garamond/700Bold_Italic"),
+      "CormorantGaramond-Light": CormorantGaramond_300Light,
+      "CormorantGaramond-LightItalic": CormorantGaramond_300Light_Italic,
+      "CormorantGaramond-Regular": CormorantGaramond_400Regular,
+      "CormorantGaramond-Italic": CormorantGaramond_400Regular_Italic,
+      "CormorantGaramond-Medium": CormorantGaramond_500Medium,
+      "CormorantGaramond-MediumItalic": CormorantGaramond_500Medium_Italic,
+      "CormorantGaramond-SemiBold": CormorantGaramond_600SemiBold,
+      "CormorantGaramond-Bold": CormorantGaramond_700Bold,
+      "CormorantGaramond-BoldItalic": CormorantGaramond_700Bold_Italic,
     })
-      .then(() => setFontsLoaded(true))
-      .catch(() => setFontsLoaded(true)); // Render anyway if fonts fail
+      .then(() => {
+        console.log("✅ Fonts loaded successfully");
+        setFontsLoaded(true);
+      })
+      .catch((err) => {
+        console.error("❌ Font loading failed:", err);
+        setFontsLoaded(true);
+      });
 
     // Load auth session
     supabase.auth.getSession().then(({ data: { session } }) => {
