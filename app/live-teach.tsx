@@ -237,7 +237,7 @@ export default function LiveTeachScreen() {
 
       {/* Back hint — subtle, bottom */}
       <Pressable style={styles.backHint} onPress={goPrev}>
-        <Text style={styles.backHintText}>← previous</Text>
+        <Text style={styles.backHintText}>← PREVIOUS</Text>
       </Pressable>
     </View>
   );
@@ -434,8 +434,9 @@ const styles = StyleSheet.create({
   },
   backHintText: {
     color: "#7999C1",
-    fontSize: 12,
-    fontFamily: "CormorantGaramond-Italic",
+    fontSize: 9,
+    fontWeight: "500",
+    letterSpacing: 2,
     opacity: 0.4,
   },
 });

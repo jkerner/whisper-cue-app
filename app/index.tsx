@@ -1,4 +1,4 @@
-import { View, Text, Pressable, StyleSheet, SafeAreaView } from "react-native";
+import { View, Text, Image, Pressable, StyleSheet, SafeAreaView } from "react-native";
 import { useRouter } from "expo-router";
 
 export default function HomeScreen() {
@@ -7,9 +7,16 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.safe}>
       <View style={styles.container}>
+        {/* Logo icon */}
+        <Image
+          source={require("../assets/poses/whisper-cue.png")}
+          style={styles.logoIcon}
+          resizeMode="contain"
+        />
+
         <Text style={styles.title}>Whisper Cue</Text>
         <Text style={styles.subtitle}>
-          Real-time cueing for yoga teachers
+          REAL-TIME CUEING FOR YOGA TEACHERS
         </Text>
 
         <Pressable
@@ -18,9 +25,9 @@ export default function HomeScreen() {
         >
           <Text style={styles.cardEyebrow}>READY TO TEACH</Text>
           <Text style={styles.cardTitle}>
-            Rise & Root — 60 Min Power Vinyasa
+            Root & Rise — 60 Min Power Vinyasa
           </Text>
-          <Text style={styles.cardMeta}>123 cues · ~60 min</Text>
+          <Text style={styles.cardMeta}>133 CUES · ~60 MIN</Text>
         </Pressable>
       </View>
     </SafeAreaView>
@@ -38,15 +45,22 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     padding: 24,
   },
+  logoIcon: {
+    width: 80,
+    height: 80,
+    borderRadius: 40,
+    marginBottom: 16,
+  },
   title: {
     fontSize: 36,
-    fontWeight: "300",
-    fontStyle: "italic",
+    fontFamily: "CormorantGaramond-LightItalic",
     color: "#F8F9FA",
     marginBottom: 8,
   },
   subtitle: {
-    fontSize: 14,
+    fontSize: 9,
+    fontWeight: "500",
+    letterSpacing: 3,
     color: "#7999C1",
     marginBottom: 64,
   },
@@ -58,19 +72,21 @@ const styles = StyleSheet.create({
   },
   cardEyebrow: {
     color: "#43B1E8",
-    fontSize: 10,
+    fontSize: 9,
     letterSpacing: 3.5,
+    fontWeight: "500",
     marginBottom: 8,
   },
   cardTitle: {
     color: "#F8F9FA",
     fontSize: 20,
-    fontWeight: "700",
+    fontFamily: "CormorantGaramond-Bold",
     letterSpacing: -0.3,
     marginBottom: 8,
   },
   cardMeta: {
     color: "#7999C1",
-    fontSize: 13,
+    fontSize: 9,
+    letterSpacing: 2,
   },
 });

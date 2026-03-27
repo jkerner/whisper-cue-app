@@ -1,44 +1,100 @@
-import { View, Text, Pressable, StyleSheet, SafeAreaView } from "react-native";
-import { useRouter, useLocalSearchParams } from "expo-router";
-
-function formatTime(seconds: number): string {
-  const m = Math.floor(seconds / 60);
-  const s = seconds % 60;
-  return `${m}:${s.toString().padStart(2, "0")}`;
-}
+import { useEffect, useRef } from "react";
+import {
+  View,
+  Text,
+  Image,
+  Pressable,
+  StyleSheet,
+  SafeAreaView,
+  Animated,
+  Easing,
+} from "react-native";
+import { useRouter } from "expo-router";
 
 export default function PracticeCompleteScreen() {
   const router = useRouter();
-  const { elapsed } = useLocalSearchParams<{ elapsed: string }>();
-  const totalSeconds = parseInt(elapsed || "0", 10);
+
+  // Fade in everything
+  const fadeAnim = useRef(new Animated.Value(0)).current;
+  // Float the image gently
+  const floatAnim = useRef(new Animated.Value(0)).current;
+  // Glow ring pulse
+  const pulseAnim = useRef(new Animated.Value(0.4)).current;
+
+  useEffect(() => {
+    // Fade in
+    Animated.timing(fadeAnim, {
+      toValue: 1,
+      duration: 1200,
+      easing: Easing.out(Easing.cubic),
+      useNativeDriver: true,
+    }).start();
+
+    // Gentle float
+    Animated.loop(
+      Animated.sequence([
+        Animated.timing(floatAnim, {
+          toValue: -8,
+          duration: 3000,
+          easing: Easing.inOut(Easing.sin),
+          useNativeDriver: true,
+        }),
+        Animated.timing(floatAnim, {
+          toValue: 0,
+          duration: 3000,
+          easing: Easing.inOut(Easing.sin),
+          useNativeDriver: true,
+        }),
+      ])
+    ).start();
+
+    // Ring pulse
+    Animated.loop(
+      Animated.sequence([
+        Animated.timing(pulseAnim, {
+          toValue: 0.8,
+          duration: 2500,
+          easing: Easing.inOut(Easing.sin),
+          useNativeDriver: true,
+        }),
+        Animated.timing(pulseAnim, {
+          toValue: 0.4,
+          duration: 2500,
+          easing: Easing.inOut(Easing.sin),
+          useNativeDriver: true,
+        }),
+      ])
+    ).start();
+  }, []);
 
   return (
     <SafeAreaView style={styles.safe}>
-      <View style={styles.container}>
-        {/* Completion graphic area */}
-        <View style={styles.glowArea}>
-          <View style={styles.glowOuter}>
-            <View style={styles.glowInner}>
-              <Text style={styles.checkmark}>✦</Text>
-            </View>
-          </View>
-        </View>
+      <Animated.View style={[styles.container, { opacity: fadeAnim }]}>
+        {/* Floating pose image with pulsing ring */}
+        <Animated.View
+          style={[styles.imageArea, { transform: [{ translateY: floatAnim }] }]}
+        >
+          <Animated.View style={[styles.glowRing, { opacity: pulseAnim }]} />
+          <Image
+            source={require("../assets/poses/sukhasana.png")}
+            style={styles.poseImage}
+            resizeMode="contain"
+          />
+        </Animated.View>
 
-        {/* Display text */}
+        {/* Title */}
         <Text style={styles.title}>Practice Complete</Text>
 
-        {/* Stats */}
-        <View style={styles.stats}>
-          <View style={styles.statItem}>
-            <Text style={styles.statValue}>{formatTime(totalSeconds)}</Text>
-            <Text style={styles.statLabel}>DURATION</Text>
-          </View>
-        </View>
+        {/* Eyebrow */}
+        <Text style={styles.eyebrow}>NAMASTE</Text>
 
-        {/* Breathe easy cue */}
+        {/* Breathe cue */}
         <Text style={styles.breatheCue}>
-          Let the breath return to its natural rhythm.{"\n"}You gave your
-          students a beautiful practice.
+          Let the breath return to its natural rhythm.
+          {"\n\n"}
+          You rooted down. You rose up.
+          {"\n"}
+          You gave your students a beautiful practice.
         </Text>
 
         {/* Return CTA */}
@@ -46,9 +102,9 @@ export default function PracticeCompleteScreen() {
           style={styles.cta}
           onPress={() => router.replace("/")}
         >
-          <Text style={styles.ctaText}>Return Home</Text>
+          <Text style={styles.ctaText}>RETURN HOME</Text>
         </Pressable>
-      </View>
+      </Animated.View>
     </SafeAreaView>
   );
 }
@@ -65,75 +121,56 @@ const styles = StyleSheet.create({
     padding: 32,
   },
 
-  // Glow graphic
-  glowArea: {
-    marginBottom: 40,
-  },
-  glowOuter: {
-    width: 120,
-    height: 120,
-    borderRadius: 60,
-    backgroundColor: "#0d1117",
+  // Floating image + glow
+  imageArea: {
+    width: 160,
+    height: 160,
     alignItems: "center",
     justifyContent: "center",
+    marginBottom: 40,
+  },
+  glowRing: {
+    position: "absolute",
+    width: 160,
+    height: 160,
+    borderRadius: 80,
     borderWidth: 1.5,
     borderColor: "#43B1E8",
   },
-  glowInner: {
-    width: 80,
-    height: 80,
-    borderRadius: 40,
-    backgroundColor: "#131820",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  checkmark: {
-    color: "#43B1E8",
-    fontSize: 32,
+  poseImage: {
+    width: 120,
+    height: 120,
   },
 
-  // Text
+  // Title — Cormorant Garamond Light Italic
   title: {
     color: "#F8F9FA",
     fontSize: 36,
-    fontWeight: "300",
-    fontStyle: "italic",
+    fontFamily: "CormorantGaramond-LightItalic",
+    marginBottom: 12,
+  },
+
+  // Eyebrow — SQ Market role
+  eyebrow: {
+    color: "#43B1E8",
+    fontSize: 9,
+    fontWeight: "500",
+    letterSpacing: 4,
     marginBottom: 32,
   },
 
-  // Stats
-  stats: {
-    flexDirection: "row",
-    marginBottom: 40,
-  },
-  statItem: {
-    alignItems: "center",
-    gap: 4,
-  },
-  statValue: {
-    color: "#43B1E8",
-    fontSize: 40,
-    fontWeight: "300",
-    fontVariant: ["tabular-nums"],
-  },
-  statLabel: {
-    color: "#7999C1",
-    fontSize: 10,
-    letterSpacing: 3,
-  },
-
-  // Breathe cue
+  // Breathe cue — Cormorant Garamond Italic
   breatheCue: {
     color: "#7999C1",
-    fontSize: 16,
-    fontStyle: "italic",
+    fontSize: 17,
+    fontFamily: "CormorantGaramond-Italic",
     textAlign: "center",
-    lineHeight: 26,
+    lineHeight: 28,
     marginBottom: 48,
-    maxWidth: 320,
+    maxWidth: 300,
   },
 
-  // CTA
+  // CTA — SQ Market role, uppercase, outline
   cta: {
     borderWidth: 1,
     borderColor: "#7999C1",
@@ -143,8 +180,8 @@ const styles = StyleSheet.create({
   },
   ctaText: {
     color: "#F8F9FA",
-    fontSize: 15,
-    fontWeight: "500",
-    letterSpacing: 0.3,
+    fontSize: 10,
+    fontWeight: "600",
+    letterSpacing: 3,
   },
 });
