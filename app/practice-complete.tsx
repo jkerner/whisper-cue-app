@@ -14,52 +14,83 @@ import { useRouter } from "expo-router";
 export default function PracticeCompleteScreen() {
   const router = useRouter();
 
-  // Fade in everything
   const fadeAnim = useRef(new Animated.Value(0)).current;
-  // Float the image gently
+  const scalePop = useRef(new Animated.Value(0.6)).current;
   const floatAnim = useRef(new Animated.Value(0)).current;
-  // Glow ring pulse
-  const pulseAnim = useRef(new Animated.Value(0.4)).current;
+  const ringScale = useRef(new Animated.Value(0.8)).current;
+  const ringOpacity = useRef(new Animated.Value(0)).current;
+  const textFade = useRef(new Animated.Value(0)).current;
+  const btnFade = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
-    // Fade in
-    Animated.timing(fadeAnim, {
-      toValue: 1,
-      duration: 1200,
-      easing: Easing.out(Easing.cubic),
-      useNativeDriver: true,
-    }).start();
+    // 1. Icon pops in with scale
+    Animated.parallel([
+      Animated.timing(fadeAnim, {
+        toValue: 1,
+        duration: 800,
+        easing: Easing.out(Easing.cubic),
+        useNativeDriver: true,
+      }),
+      Animated.spring(scalePop, {
+        toValue: 1,
+        friction: 6,
+        tension: 40,
+        useNativeDriver: true,
+      }),
+    ]).start();
 
-    // Gentle float
+    // 2. Ring expands outward
+    Animated.sequence([
+      Animated.delay(400),
+      Animated.parallel([
+        Animated.spring(ringScale, {
+          toValue: 1,
+          friction: 5,
+          tension: 30,
+          useNativeDriver: true,
+        }),
+        Animated.timing(ringOpacity, {
+          toValue: 1,
+          duration: 600,
+          useNativeDriver: true,
+        }),
+      ]),
+    ]).start();
+
+    // 3. Text fades in after icon
+    Animated.sequence([
+      Animated.delay(900),
+      Animated.timing(textFade, {
+        toValue: 1,
+        duration: 1000,
+        easing: Easing.out(Easing.cubic),
+        useNativeDriver: true,
+      }),
+    ]).start();
+
+    // 4. Button fades in last
+    Animated.sequence([
+      Animated.delay(1800),
+      Animated.timing(btnFade, {
+        toValue: 1,
+        duration: 800,
+        easing: Easing.out(Easing.cubic),
+        useNativeDriver: true,
+      }),
+    ]).start();
+
+    // 5. Gentle continuous float
     Animated.loop(
       Animated.sequence([
         Animated.timing(floatAnim, {
-          toValue: -8,
-          duration: 3000,
+          toValue: -6,
+          duration: 4000,
           easing: Easing.inOut(Easing.sin),
           useNativeDriver: true,
         }),
         Animated.timing(floatAnim, {
           toValue: 0,
-          duration: 3000,
-          easing: Easing.inOut(Easing.sin),
-          useNativeDriver: true,
-        }),
-      ])
-    ).start();
-
-    // Ring pulse
-    Animated.loop(
-      Animated.sequence([
-        Animated.timing(pulseAnim, {
-          toValue: 0.8,
-          duration: 2500,
-          easing: Easing.inOut(Easing.sin),
-          useNativeDriver: true,
-        }),
-        Animated.timing(pulseAnim, {
-          toValue: 0.4,
-          duration: 2500,
+          duration: 4000,
           easing: Easing.inOut(Easing.sin),
           useNativeDriver: true,
         }),
@@ -69,12 +100,27 @@ export default function PracticeCompleteScreen() {
 
   return (
     <SafeAreaView style={styles.safe}>
-      <Animated.View style={[styles.container, { opacity: fadeAnim }]}>
-        {/* Floating pose image with pulsing ring */}
+      <View style={styles.container}>
+        {/* Floating icon with expanding ring */}
         <Animated.View
-          style={[styles.imageArea, { transform: [{ translateY: floatAnim }] }]}
+          style={[
+            styles.imageArea,
+            {
+              opacity: fadeAnim,
+              transform: [{ translateY: floatAnim }, { scale: scalePop }],
+            },
+          ]}
         >
-          <Animated.View style={[styles.glowRing, { opacity: pulseAnim }]} />
+          {/* Pulsing ring */}
+          <Animated.View
+            style={[
+              styles.glowRing,
+              {
+                opacity: ringOpacity,
+                transform: [{ scale: ringScale }],
+              },
+            ]}
+          />
           <Image
             source={require("../assets/poses/sukhasana.png")}
             style={styles.poseImage}
@@ -82,29 +128,21 @@ export default function PracticeCompleteScreen() {
           />
         </Animated.View>
 
-        {/* Title */}
-        <Text style={styles.title}>Practice Complete</Text>
-
-        {/* Eyebrow */}
-        <Text style={styles.eyebrow}>NAMASTE</Text>
-
-        {/* Breathe cue */}
-        <Text style={styles.breatheCue}>
-          Let the breath return to its natural rhythm.
-          {"\n\n"}
-          You rooted down. You rose up.
-          {"\n"}
+        {/* Message */}
+        <Animated.Text style={[styles.message, { opacity: textFade }]}>
           You gave your students a beautiful practice.
-        </Text>
+        </Animated.Text>
 
         {/* Return CTA */}
-        <Pressable
-          style={styles.cta}
-          onPress={() => router.replace("/")}
-        >
-          <Text style={styles.ctaText}>RETURN HOME</Text>
-        </Pressable>
-      </Animated.View>
+        <Animated.View style={{ opacity: btnFade }}>
+          <Pressable
+            style={styles.cta}
+            onPress={() => router.replace("/")}
+          >
+            <Text style={styles.ctaText}>RETURN HOME</Text>
+          </Pressable>
+        </Animated.View>
+      </View>
     </SafeAreaView>
   );
 }
@@ -121,19 +159,19 @@ const styles = StyleSheet.create({
     padding: 32,
   },
 
-  // Floating image + glow
+  // Icon + ring
   imageArea: {
-    width: 160,
-    height: 160,
+    width: 180,
+    height: 180,
     alignItems: "center",
     justifyContent: "center",
-    marginBottom: 40,
+    marginBottom: 56,
   },
   glowRing: {
     position: "absolute",
-    width: 160,
-    height: 160,
-    borderRadius: 80,
+    width: 180,
+    height: 180,
+    borderRadius: 90,
     borderWidth: 1.5,
     borderColor: "#43B1E8",
   },
@@ -142,35 +180,18 @@ const styles = StyleSheet.create({
     height: 120,
   },
 
-  // Title — Cormorant Garamond Light Italic
-  title: {
-    color: "#F8F9FA",
-    fontSize: 36,
-    fontFamily: "CormorantGaramond-LightItalic",
-    marginBottom: 12,
-  },
-
-  // Eyebrow — SQ Market role
-  eyebrow: {
-    color: "#43B1E8",
-    fontSize: 9,
-    fontWeight: "500",
-    letterSpacing: 4,
-    marginBottom: 32,
-  },
-
-  // Breathe cue — Cormorant Garamond Italic
-  breatheCue: {
+  // Message — Cormorant Garamond Italic
+  message: {
     color: "#7999C1",
-    fontSize: 17,
+    fontSize: 20,
     fontFamily: "CormorantGaramond-Italic",
     textAlign: "center",
-    lineHeight: 28,
-    marginBottom: 48,
-    maxWidth: 300,
+    lineHeight: 32,
+    marginBottom: 64,
+    maxWidth: 280,
   },
 
-  // CTA — SQ Market role, uppercase, outline
+  // CTA
   cta: {
     borderWidth: 1,
     borderColor: "#7999C1",

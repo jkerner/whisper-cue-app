@@ -7,7 +7,8 @@ import {
   Animated,
   Dimensions,
 } from "react-native";
-import { useRouter } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
+import { Feather } from "@expo/vector-icons";
 import { Pose, Sequence } from "../src/types";
 import sequencesData from "../src/data/sequences.json";
 import posesData from "../src/data/poses.json";
@@ -17,7 +18,7 @@ const sequences = sequencesData as Sequence[];
 const poses = posesData as Pose[];
 const sequence = sequences[0];
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
-const RING_SIZE = SCREEN_WIDTH * 0.72;
+const RING_SIZE = SCREEN_WIDTH * 0.55;
 
 function getPose(poseId: string): Pose | undefined {
   return poses.find((p) => p.id === poseId);
@@ -84,7 +85,10 @@ function ProgressRing({
 
 export default function LiveTeachScreen() {
   const router = useRouter();
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const { startIndex } = useLocalSearchParams<{ startIndex?: string }>();
+  const [currentIndex, setCurrentIndex] = useState(
+    startIndex ? parseInt(startIndex, 10) : 0
+  );
   const [elapsed, setElapsed] = useState(0);
   const [paused, setPaused] = useState(false);
   const fadeAnim = useRef(new Animated.Value(1)).current;
@@ -152,17 +156,35 @@ export default function LiveTeachScreen() {
       {/* Top bar */}
       <View style={styles.topBar}>
         <View style={styles.topLeft}>
-          <Text style={styles.sectionName}>{section}</Text>
-          <Text style={styles.sectionDivider}> | </Text>
-          <Text style={styles.sectionStep}>
-            {currentIndex + 1}
-            <Text style={styles.sectionMuted}> / {totalSteps}</Text>
-          </Text>
+          <Pressable onPress={() => router.back()} style={styles.topBtn}>
+            <Feather name="list" size={18} color="#7999C1" />
+          </Pressable>
+          <View>
+            <Text style={styles.sectionName}>{section}</Text>
+            <Text style={styles.sectionStep}>
+              {currentIndex + 1}
+              <Text style={styles.sectionMuted}> / {totalSteps}</Text>
+            </Text>
+          </View>
         </View>
         <View style={styles.topRight}>
           <Text style={styles.topTimer}>{formatTime(elapsed)}</Text>
+          <Pressable onPress={() => setPaused((p) => !p)} style={styles.topBtn}>
+            <Feather
+              name={paused ? "play" : "pause"}
+              size={18}
+              color={paused ? "#43B1E8" : "#7999C1"}
+            />
+          </Pressable>
         </View>
       </View>
+
+      {/* Paused overlay */}
+      {paused && (
+        <View style={styles.pausedBanner}>
+          <Text style={styles.pausedText}>PAUSED</Text>
+        </View>
+      )}
 
       {/* Progress bar */}
       <View style={styles.progressBarTrack}>
@@ -191,7 +213,7 @@ export default function LiveTeachScreen() {
             {/* Sanskrit */}
             {pose?.sanskritName && (
               <Text style={styles.sanskrit}>
-                {pose.sanskritName.toLowerCase()}
+                {pose.sanskritName.replace(/^\w/, (c: string) => c.toUpperCase())}
               </Text>
             )}
 
@@ -223,7 +245,7 @@ export default function LiveTeachScreen() {
             <Text style={styles.upNextName}>{nextPose.englishName}</Text>
             {nextPose.sanskritName && (
               <Text style={styles.upNextSanskrit}>
-                {nextPose.sanskritName.toLowerCase()}
+                {nextPose.sanskritName.replace(/^\w/, (c: string) => c.toUpperCase())}
               </Text>
             )}
           </>
@@ -262,21 +284,27 @@ const styles = StyleSheet.create({
   topLeft: {
     flexDirection: "row",
     alignItems: "center",
+    gap: 12,
+  },
+  topBtn: {
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    backgroundColor: "#0d1117",
+    alignItems: "center",
+    justifyContent: "center",
   },
   sectionName: {
     color: "#F8F9FA",
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: "600",
-    letterSpacing: 0.5,
-  },
-  sectionDivider: {
-    color: "#1a2230",
-    fontSize: 14,
+    letterSpacing: 1,
   },
   sectionStep: {
     color: "#7999C1",
-    fontSize: 13,
+    fontSize: 11,
     fontVariant: ["tabular-nums"],
+    marginTop: 1,
   },
   sectionMuted: {
     color: "#7999C1",
@@ -285,13 +313,23 @@ const styles = StyleSheet.create({
   topRight: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 6,
+    gap: 12,
   },
   topTimer: {
     color: "#7999C1",
     fontSize: 15,
     fontWeight: "300",
     fontVariant: ["tabular-nums"],
+  },
+  pausedBanner: {
+    alignItems: "center",
+    paddingVertical: 6,
+  },
+  pausedText: {
+    color: "#43B1E8",
+    fontSize: 9,
+    fontWeight: "600",
+    letterSpacing: 4,
   },
 
   // Progress bar
@@ -339,16 +377,16 @@ const styles = StyleSheet.create({
     letterSpacing: -0.3,
     textAlign: "center",
   },
-  // Cormorant Garamond Italic — Sanskrit
+  // Cormorant Garamond Italic — Sanskrit in Chandra (light purple)
   sanskrit: {
-    color: "#43B1E8",
+    color: "#AAA8D6",
     fontSize: 16,
     fontFamily: "CormorantGaramond-Italic",
     textAlign: "center",
     marginTop: 2,
   },
 
-  // Cue — Cormorant Garamond Regular, larger, centered
+  // Cue — Circular (system sans), centered
   cueArea: {
     flex: 1,
     justifyContent: "flex-start",
@@ -357,11 +395,11 @@ const styles = StyleSheet.create({
   },
   cueText: {
     color: "#F8F9FA",
-    fontSize: 20,
-    fontFamily: "CormorantGaramond-Regular",
-    lineHeight: 32,
+    fontSize: 16,
+    fontWeight: "400",
+    lineHeight: 27,
     textAlign: "center",
-    opacity: 0.9,
+    opacity: 0.85,
   },
   // SQ Market Regular, uppercase — adjustment
   adjustmentRow: {
@@ -413,11 +451,11 @@ const styles = StyleSheet.create({
     color: "#43B1E8",
     fontSize: 16,
   },
-  // SQ Market Bold
+  // Cormorant Garamond Bold — matches pose name in ring
   upNextName: {
     color: "#F8F9FA",
-    fontSize: 17,
-    fontWeight: "600",
+    fontSize: 18,
+    fontFamily: "CormorantGaramond-Bold",
   },
   // Cormorant Garamond Italic
   upNextSanskrit: {

@@ -1,4 +1,4 @@
-import { useEffect, useCallback } from "react";
+import { useEffect } from "react";
 import { Slot } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import * as Font from "expo-font";

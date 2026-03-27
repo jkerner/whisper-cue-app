@@ -97,7 +97,7 @@ Yoga pose figures use a watercolor illustration style — bold, simple silhouett
 | **Style** | Watercolor silhouettes — bold shapes with soft, bleeding color washes. Hand-painted feel, minimal detail. Must read clearly at small sizes (24–48px). |
 | **Color Washes** | Each pose gets a single dominant color wash. Rotate through palette-adjacent tones: indigo, teal, coral, amber, sage, lavender, terracotta. No outlines. |
 | **Diversity** | Figures represent diverse body types, skin tones, genders, hair textures, and clothing. The practice is for everyone. |
-| **Backgrounds** | Transparent. Icons float on the app's dark surfaces — no card or container background behind the figure. |
+| **Backgrounds** | MUST be transparent. Icons float on the app's `#030303` Void background — black on black, no visible square or container behind the figure. When exporting or regenerating icons, always strip dark pixels (r<45, g<45, b<55) to ensure transparency. |
 | **Sizes** | 24px (inline label), 48px (sequence list card), 96px (Live Teach active pose), 150px (library/detail hero). |
 | **Format** | PNG with transparency, generated from AI watercolor prompts. Source `.pen` file at `docs/design/pose-icons.pen`. |
 
@@ -156,20 +156,23 @@ spacing-xl:  40px
 
 ## Screen Specifications
 
-### Home
+### Home (index.tsx)
 
-**Purpose:** The main landing experience offering quick starts, templates, and inspiration.
+**Purpose:** The main landing screen. Simple entry point to begin teaching.
 
-**Layout:** Top greeting, followed by horizontally scrolling sections for AI Recommendations and Templates. Strictly dark mode.
+**Layout:** Centered content within SafeAreaView. `#030303` background. Strictly dark mode.
 
 **Key Elements:**
-- **Greeting Header:** SQ Market Bold, 28px, "Good Evening"
-- **AI Recommendations Section:** Section title (SQ Market Regular, 9px, `#7999C1`, uppercase, tracking 0.35em), followed by cards suggesting sequences based on time of day or past habits
-- **Templates List:** Pre-built sequence bases (e.g., "Morning Flow", "Deep Rest") paired with custom illustrative yoga figure icons that can be cloned and modified
+- **Logo Icon:** WhisperCue watercolor icon (120px, circular clip), centered
+- **Title:** Cormorant Garamond Light Italic, 36px, `#F8F9FA`, "Whisper Cue"
+- **Subtitle:** 9px, weight 500, tracking 3, `#7999C1`, uppercase, "REAL-TIME CUEING FOR YOGA TEACHERS"
+- **Sequence Card:** `#0d1117` background, 16px radius, full width, 24px padding. Contains:
+  - Eyebrow: 9px, `#43B1E8`, tracking 3.5, weight 500, "READY TO TEACH"
+  - Title: Cormorant Garamond Bold, 20px, `#F8F9FA`
+  - Meta: 9px, `#7999C1`, tracking 2, "133 CUES . ~60 MIN"
 
 **Interactions:**
-- **Tap Template:** Opens the Sequence Builder with the template pre-loaded
-- **Tap AI Recommendation:** Navigates directly to Sequence Detail
+- **Tap Sequence Card:** Pushes to Sequence Overview (`/sequence`)
 
 ### Library
 
@@ -206,85 +209,99 @@ spacing-xl:  40px
 - **Drag & Drop:** Reorder cues
 - **Save:** Returns to Library or proceeds to Sequence Detail
 
-### Sequence Detail
+### Sequence Overview (sequence.tsx)
 
 **Purpose:** Review the class plan before hitting "Begin."
 
-**Layout:** Sticky top header with title and duration. Scrollable timeline of poses in the middle. Sticky bottom CTA. Strictly dark mode.
+**Layout:** Back arrow top-left, title area with eyebrow/title/stats, scrollable section cards, sticky bottom CTA. Strictly dark mode.
 
 **Key Elements:**
-- **Class Title:** SQ Market Bold, 36px
-- **Pose Timeline:** Vertical line (`#7999C1`, 2px wide) on the left. Nodes for each pose (8px dot, `#43B1E8`)
-- **Pose Item:** Illustrative icon alongside Name (SQ Market Bold, 24px) with Sanskrit label (Cormorant Garamond Italic, 13px, `#43B1E8`) and Duration (SQ Market Regular, 9px, uppercase, `#7999C1`)
-- **Begin CTA:** 100% width button pinned to bottom, `#43B1E8` background, black text, "Begin Class"
+- **Back Arrow:** Feather `arrow-left`, 20px, `#43B1E8`
+- **Eyebrow:** 9px, `#7999C1`, tracking 3.5, "SEQUENCE"
+- **Class Title:** Cormorant Garamond Bold, 26px, `#F8F9FA`
+- **Stats Row:** Four stats (Cues, Poses, Sections, Minutes) separated by 1px `#1a2230` dividers. Values: 20px light weight. Labels: 8px, `#7999C1`, tracking 2
+- **Section Cards:** `#0d1117` background, 12px radius. Each has a Feather icon in a `#131820` pill (32px), section name (13px, weight 600, tracking 2), and pose/cue count. Chevron toggles expand/collapse.
+- **Expanded Pose List:** Indented under card header. 4px `#1a2230` dots, pose name (14px, 0.8 opacity), Sanskrit in uppercase `#43B1E8` 9px
+- **Begin CTA:** Full-width `#43B1E8` button, 16px radius, "BEGIN CLASS" in `#030303`
 
 **Interactions:**
-- **Tap Begin CTA:** Fades instantly to Live Teach screen. Hides status bar.
+- **Tap Back Arrow:** Returns to Home
+- **Tap Section Card:** Expands/collapses pose list within that section
+- **Tap Begin CTA:** Pushes to Live Teach screen
 
-### Live Teach
+### Live Teach (live-teach.tsx)
 
 **Purpose:** The core teleprompter. Ultra-glanceable cueing.
 
-**Layout:** Edge-to-edge full screen. Strictly dark mode. Central ring is the focal point containing pose info and timer. Cue text below. Transport controls pinned to bottom.
+**Layout:** Edge-to-edge full screen (`paddingTop: 60`). Strictly dark mode. Central ring is the focal point containing pose info. Cue text below. Up Next card and back hint at bottom.
 
 **Top Bar:**
-- **Section Label (left):** SQ Market Regular, 14px, `#F8F9FA` for current step, `#7999C1` for total (e.g., "SUN B | 42:15" or "1 of 123")
-- **Class Timer (right):** SQ Market Light, 15px, `#7999C1`, tabular nums — overall elapsed time
+- **Left cluster:** List icon button (`#0d1117` pill, 36px) to return to sequence overview + section name (12px, weight 600) + step counter (11px, `#7999C1`, tabular nums, e.g., "42 / 133")
+- **Right cluster:** Elapsed class timer (15px, `#7999C1`, weight 300, tabular nums) + pause/play button (`#0d1117` pill, 36px). Paused state shows "PAUSED" banner (9px, `#43B1E8`, tracking 4)
 
 **Progress Bar:**
-- Thin 2px horizontal bar spanning full width below top bar
-- Track: `#1a2230`, Fill: `#43B1E8` — represents overall sequence progress
+- 2px horizontal bar below top bar, `marginHorizontal: 24`
+- Track: `#1a2230`, Fill: `#43B1E8` -- width proportional to `(currentIndex + 1) / totalSteps`
 
 **Central Ring (focal point):**
-- Large circle, ~72% of screen width, `#43B1E8` 2.5px stroke
+- Circle ~72% of screen width, `#43B1E8` 2.5px stroke (progress arc via SVG `stroke-dashoffset`)
 - Dashed inner decorative ring: `#1a2230`, 1px, dash pattern 4/6
 - Contents vertically centered inside:
-  - **Hold Label:** SQ Market Regular, 10px, `#43B1E8`, uppercase, tracking 0.35em (e.g., "HOLD 5 BREATHS")
-  - **Pose Name:** SQ Market Bold, 30px, `#F8F9FA`, centered
-  - **Sanskrit Label:** Cormorant Garamond Italic, 15px, `#43B1E8`, centered
-  - **Step Timer:** SQ Market Light, 36px, tabular nums, `#43B1E8` for elapsed / `#7999C1` for total (e.g., "0:12 / 0:30")
+  - **Breath Label (conditional):** 10px, `#43B1E8`, weight 500, tracking 3 (e.g., "HOLD 5 BREATHS")
+  - **Pose Name:** Cormorant Garamond Bold, 30px, `#F8F9FA`, centered
+  - **Sanskrit Label:** Cormorant Garamond Italic, 16px, `#AAA8D6` (Chandra), centered
 
 **Cue Text (below ring):**
-- Cormorant Garamond Regular, 20px, `#F8F9FA`, opacity 0.9, centered, leading 1.6, max-width 480px
-- Cues joined with " · " separator for glanceability
+- System sans, 16px, `#F8F9FA`, weight 400, line-height 27, centered, opacity 0.85
+- All cues for the step joined with spaces
 
-**Adjustment Callout (optional):**
-- Lightning bolt icon (`#F59E0B` Agni) + SQ Market Regular, 9px, `#F59E0B`, uppercase, tracking 0.35em
-- Only shown when step has an adjustment cue
+**Adjustment Callout (conditional):**
+- Lightning bolt emoji + 10px, `#F59E0B` (Agni), weight 500, tracking 2, uppercase, centered, max-width 300
+- Only shown when step has an `adjustment` field
 
-**Up Next Card:**
-- `#0d1117` (Cave) background, 12px radius, 1px `#1a2230` border
-- **Eyebrow:** SQ Market Regular, 9px, `#7999C1`, tracking 3px, "UP NEXT"
-- **Pose Name:** SQ Market Bold, 17px, `#F8F9FA`
-- **Side Indicator (optional):** Cormorant Garamond Italic, 14px, `#7999C1` (e.g., "Right Side")
-- **Arrow:** `#43B1E8`, 16px, right-aligned
+**Up Next Card (tappable -- primary navigation):**
+- `#0d1117` background, 12px radius, 1px `#1a2230` border, `marginHorizontal: 24`
+- **Eyebrow row:** "UP NEXT" (9px, `#7999C1`, weight 500, tracking 3) + arrow (16px, `#43B1E8`)
+- **Pose Name:** Cormorant Garamond Bold, 18px, `#F8F9FA`
+- **Sanskrit:** Cormorant Garamond Italic, 13px, `#43B1E8`
 
 **Back Hint (bottom):**
-- Subtle "← previous" text link, 12px, `#7999C1`, opacity 0.4
-- Unobtrusive — the teacher shouldn't need to go back often
+- Centered "PREVIOUS" text, 9px, `#7999C1`, weight 500, tracking 2, opacity 0.4
 
 **States:**
-- **End of Sequence:** Up Next card reads "PRACTICE COMPLETE" / "Return to stillness". Tapping advances to Post-Class Wrap.
+- **End of Sequence:** Up Next card reads "PRACTICE COMPLETE" / "Return to stillness". Tapping navigates to practice-complete screen via `router.replace`.
+- **Paused:** Timer stops, play icon replaces pause icon (turns `#43B1E8`), "PAUSED" banner appears
+
+**Transitions:**
+- Pose changes use a 150ms fade-out / 200ms fade-in Animated sequence on the ring area and cue text
 
 **Interactions:**
-- **Tap Up Next card:** Primary navigation — advances to the next pose with fade transition
-- **Tap "← previous":** Go back to previous pose
-- **Long Press:** Pauses timer, pulses `#43B1E8` ring
+- **Tap Up Next card:** Advances to next pose (or to Practice Complete on last step)
+- **Tap back hint:** Go back to previous pose
+- **Tap pause/play button:** Toggle timer pause
+- **Tap list icon:** Return to sequence overview
 
-### Post-Class Wrap
+### Practice Complete (practice-complete.tsx)
 
-**Purpose:** Confirmation the class is done, log the actual time taught.
+**Purpose:** Confirmation the class is done. Warm, quiet celebration.
 
-**Layout:** Centered content, highly minimalist. Strictly dark mode.
+**Layout:** Centered content, highly minimalist. Strictly dark mode. `SafeAreaView` with 32px padding.
 
 **Key Elements:**
-- **Completion Graphic:** Soft pulsing `#43B1E8` glowing orb in center, with an overlaid illustrative icon representing rest
-- **Congrats Text:** Cormorant Garamond Light Italic, 48px, "Practice Complete"
-- **Stats:** Actual duration vs Planned duration
-- **Done CTA:** Outline button, 1px `#7999C1` border, "Return to Library"
+- **Floating Icon:** Sukhasana watercolor pose image (120px) inside a 180px area with a continuous gentle float animation (translateY oscillates +/-6px over 8s). Icon pops in with spring scale (0.6 to 1).
+- **Glow Ring:** 180px circle, 1.5px `#43B1E8` border, scales from 0.8 to 1 with spring animation. Appears with 400ms delay.
+- **Message:** Cormorant Garamond Italic, 20px, `#7999C1`, centered, line-height 32, max-width 280. Text: "You gave your students a beautiful practice." Fades in at 900ms.
+- **Return CTA:** Outline button, 1px `#7999C1` border, 16px radius, "RETURN HOME" in 10px, weight 600, `#F8F9FA`, tracking 3. Fades in at 1800ms.
+
+**Animation Sequence:**
+1. Icon and scale pop (0ms)
+2. Ring expands (400ms delay)
+3. Message text fades in (900ms delay)
+4. Button fades in (1800ms delay)
+5. Continuous gentle float loop (ongoing)
 
 **Interactions:**
-- **Tap Done CTA:** Fades to Library.
+- **Tap Return CTA:** Replaces to Home screen (`/`).
 
 ---
 

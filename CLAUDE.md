@@ -1,16 +1,16 @@
-# Claude Code Briefing — WhisperCue
+# Claude Code Briefing -- WhisperCue
 
-**Project:** WhisperCue — real-time cueing app for yoga teachers
-**Last updated:** March 25, 2026
+**Project:** WhisperCue -- real-time cueing app for yoga teachers
+**Last updated:** March 27, 2026
 
 ---
 
 ## Owner Background
 
-- Yoga teacher, product and experience builder and founder — the app content (sequences, meditations) comes from real classes
+- Yoga teacher, product and experience builder and founder -- the app content (sequences, meditations) comes from real classes
 - Staff-level PM  (not a professional developer)
 - Uses Claude Code (Opus 4.6) for writing code and running commands
-- Previously built a React Native version (FlowCue) that got over-scoped — this time keeping it simple
+- Previously built a React Native version (FlowCue) that got over-scoped -- this time keeping it simple
 - Cares deeply about design and UX
 
 ---
@@ -19,7 +19,7 @@
 
 ### NEVER One-Shot Build
 - Do NOT try to build entire features from start to finish in one go
-- Work incrementally — one small piece at a time
+- Work incrementally -- one small piece at a time
 - Each change should be testable and verifiable independently
 
 ### Incremental Workflow
@@ -32,7 +32,7 @@
 ### Scope Discipline
 - We are building **Phase 0 only to start**: 1 seeded sequence (~20 postures) + Live Teach screen
 - Do NOT add Phase 1/2/3 features unless explicitly asked
-- No backend, no auth, no AI, no database — just local JSON and screens
+- No backend, no auth, no AI, no database -- just local JSON and screens
 - When in doubt, build less
 
 ### Communication
@@ -54,21 +54,33 @@
 | Language | TypeScript |
 | Data | Local JSON (no backend for Phase 0) |
 | Testing | Expo Go on physical device |
-| Design tools | Stitch (design systems), Pencil (.pen files) — on request |
+| Design tools | Stitch (design systems), Pencil (.pen files) -- on request |
 
 ### Project Structure
 ```
 whisper-cue-app/
 ├── app/                  # Screens (file-based routing)
-│   ├── _layout.tsx       # Root layout (Slot-based)
+│   ├── _layout.tsx       # Root layout (Slot-based, font loading)
 │   ├── index.tsx         # Home screen
-│   └── live-teach.tsx    # Live teach screen
+│   ├── sequence.tsx      # Sequence overview (section cards)
+│   ├── live-teach.tsx    # Live teach screen (karaoke cueing)
+│   └── practice-complete.tsx  # End-of-class screen
 ├── src/
 │   ├── data/             # Seed data (JSON)
 │   └── types/            # TypeScript types
-├── docs/                 # PRD and project docs
-└── assets/               # App icons and images
+├── docs/
+│   ├── design.md         # Design system and screen specs
+│   └── whispercue_prd.docx
+└── assets/
+    ├── poses/            # Watercolor pose icon PNGs (transparent bg)
+    └── ...               # App icons and images
 ```
+
+### Pose Icon Rules
+- All pose icon PNGs in `assets/poses/` MUST have transparent backgrounds (no dark squares)
+- Icons float on the app's `#030303` Void background -- black on black, no visible container
+- When regenerating or adding new pose icons, always remove dark backgrounds before committing
+- Source .pen file at `docs/design/pose-icons.pen` -- images may not persist in Pencil, but exported PNGs are the source of truth
 
 ### Phase 0 Progress
 - [x] Expo project scaffolded
@@ -76,38 +88,41 @@ whisper-cue-app/
 - [x] Verified on device via Expo Go
 - [x] TypeScript data model (posture/sequence types)
 - [x] Seed data (1 sequence, ~20 postures)
-- [ ] Live Teach screen
+- [x] Live Teach screen
 
 ---
 
 ## Debugging Protocol
 
 When something fails:
-1. **STOP** — don't plow ahead with more changes
-2. **Add logging** — targeted console.log to narrow down the issue
-3. **Have owner reproduce** — let them trigger the bug and share output
-4. **Read the logs** — let evidence point to root cause
-5. **Propose** — suggest a specific fix
-6. **Execute** — one focused change
-7. **Verify** — confirm with owner it worked
-8. **Clean up** — remove debug logging
+1. **STOP** -- don't plow ahead with more changes
+2. **Add logging** -- targeted console.log to narrow down the issue
+3. **Have owner reproduce** -- let them trigger the bug and share output
+4. **Read the logs** -- let evidence point to root cause
+5. **Propose** -- suggest a specific fix
+6. **Execute** -- one focused change
+7. **Verify** -- confirm with owner it worked
+8. **Clean up** -- remove debug logging
 
 ---
 
 ## Expo Go Gotchas
 
-- Current Expo Go on App Store is **SDK 54** — project must match
+- Current Expo Go on App Store is **SDK 54** -- project must match
 - `Stack` from expo-router had type errors on SDK 54; using `Slot` in _layout.tsx instead
 - Shake phone to open dev menu and reload
 - If hot reload fails, re-scan QR code from Expo Go home screen
+- Font loading must be **non-blocking** -- use `Font.loadAsync` inside a `useEffect` with `.catch()` so the app renders immediately with system fonts while custom fonts load
+- Use `--legacy-peer-deps` flag when running `npm install` to avoid peer dependency conflicts
+- Web requires `react-dom` and `react-native-web` packages (already in dependencies)
 
 ---
 
 ## Maintenance
 
-- **README.md** — keep updated when pushing to git, especially at milestones (current status checklist, project structure, tech stack changes)
-- **CLAUDE.md** (this file) — update when architecture decisions change, new gotchas are discovered, or phase progress advances
-- **PRD** — lives at docs/whispercue_prd.docx
+- **README.md** -- keep updated when pushing to git, especially at milestones (current status checklist, project structure, tech stack changes)
+- **CLAUDE.md** (this file) -- update when architecture decisions change, new gotchas are discovered, or phase progress advances
+- **PRD** -- lives at docs/whispercue_prd.docx
 
 ---
 

@@ -434,7 +434,7 @@
   {
     "id": "pranayama-4-7",
     "kind": "practice",
-    "englishName": "Pranayama 4-in / 7-out",
+    "englishName": "Breathing 4-in / 7-out",
     "sanskritName": "Pranayama"
   },
   {
@@ -808,5 +808,11 @@
     "kind": "pose",
     "englishName": "Yogi Toe Lock Pose",
     "sanskritName": "Padangusthasana"
+  },
+  {
+    "id": "closing",
+    "kind": "practice",
+    "englishName": "Closing",
+    "sanskritName": null
   }
 ]

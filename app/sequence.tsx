@@ -41,17 +41,20 @@ const sectionIcons: Record<string, string> = {
 // Group steps by section, dedup consecutive poses within each section
 interface SectionGroup {
   section: string;
-  poses: { pose: Pose; count: number }[];
+  poses: { pose: Pose; count: number; stepIndex: number }[];
   stepCount: number;
+  firstStepIndex: number;
 }
 
 function getSections(steps: SequenceStep[]): SectionGroup[] {
   const sections: SectionGroup[] = [];
   let currentSection = "";
-  let currentPoses: { pose: Pose; count: number }[] = [];
+  let currentPoses: { pose: Pose; count: number; stepIndex: number }[] = [];
   let prevPoseId = "";
+  let firstStepIndex = 0;
 
-  for (const step of steps) {
+  for (let i = 0; i < steps.length; i++) {
+    const step = steps[i];
     const section = (step as any).section || "Untitled";
     const pose = getPose(step.poseId);
     if (!pose) continue;
@@ -63,15 +66,17 @@ function getSections(steps: SequenceStep[]): SectionGroup[] {
           poses: currentPoses,
           stepCount: steps.filter((s) => (s as any).section === currentSection)
             .length,
+          firstStepIndex,
         });
       }
       currentSection = section;
-      currentPoses = [{ pose, count: 1 }];
+      currentPoses = [{ pose, count: 1, stepIndex: i }];
       prevPoseId = pose.id;
+      firstStepIndex = i;
     } else if (pose.id === prevPoseId) {
       currentPoses[currentPoses.length - 1].count++;
     } else {
-      currentPoses.push({ pose, count: 1 });
+      currentPoses.push({ pose, count: 1, stepIndex: i });
       prevPoseId = pose.id;
     }
   }
@@ -82,6 +87,7 @@ function getSections(steps: SequenceStep[]): SectionGroup[] {
       poses: currentPoses,
       stepCount: steps.filter((s) => (s as any).section === currentSection)
         .length,
+      firstStepIndex,
     });
   }
 
@@ -90,7 +96,7 @@ function getSections(steps: SequenceStep[]): SectionGroup[] {
 
 const sections = getSections(sequence.steps);
 
-function SectionCard({ group, index }: { group: SectionGroup; index: number }) {
+function SectionCard({ group, index, onStartAt }: { group: SectionGroup; index: number; onStartAt: (stepIndex: number) => void }) {
   const [expanded, setExpanded] = useState(false);
   const iconName = sectionIcons[group.section] || "circle";
 
@@ -116,17 +122,22 @@ function SectionCard({ group, index }: { group: SectionGroup; index: number }) {
       {expanded && (
         <View style={sStyles.poseList}>
           {group.poses.map((item, i) => (
-            <View key={`${item.pose.id}-${i}`} style={sStyles.poseRow}>
+            <Pressable
+              key={`${item.pose.id}-${i}`}
+              style={sStyles.poseRow}
+              onPress={() => onStartAt(item.stepIndex)}
+            >
               <View style={sStyles.poseDot} />
               <View style={sStyles.poseInfo}>
-                <Text style={sStyles.poseName}>{item.pose.englishName.toUpperCase()}</Text>
+                <Text style={sStyles.poseName}>{item.pose.englishName}</Text>
                 {item.pose.sanskritName && (
                   <Text style={sStyles.poseSanskrit}>
                     {item.pose.sanskritName.toUpperCase()}
                   </Text>
                 )}
               </View>
-            </View>
+              <Feather name="play" size={12} color="#7999C1" style={{ opacity: 0.4 }} />
+            </Pressable>
           ))}
         </View>
       )}
@@ -251,7 +262,17 @@ export default function SequenceScreen() {
           showsVerticalScrollIndicator={false}
         >
           {sections.map((group, i) => (
-            <SectionCard key={`${group.section}-${i}`} group={group} index={i} />
+            <SectionCard
+              key={`${group.section}-${i}`}
+              group={group}
+              index={i}
+              onStartAt={(stepIndex) =>
+                router.push({
+                  pathname: "/live-teach",
+                  params: { startIndex: stepIndex.toString() },
+                })
+              }
+            />
           ))}
         </ScrollView>
 

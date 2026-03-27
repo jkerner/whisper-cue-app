@@ -46,10 +46,10 @@ const styles = StyleSheet.create({
     padding: 24,
   },
   logoIcon: {
-    width: 80,
-    height: 80,
-    borderRadius: 40,
-    marginBottom: 16,
+    width: 120,
+    height: 120,
+    borderRadius: 60,
+    marginBottom: 8,
   },
   title: {
     fontSize: 36,
