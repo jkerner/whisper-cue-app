@@ -30,9 +30,8 @@
 5. **Then move** to the next thing
 
 ### Scope Discipline
-- We are building **Phase 0 only to start**: 1 seeded sequence (~20 postures) + Live Teach screen
-- Do NOT add Phase 1/2/3 features unless explicitly asked
-- No backend, no auth, no AI, no database -- just local JSON and screens
+- Phase 0 is complete; we are now in **Phase 1** (auth, Supabase, sequence builder)
+- Do NOT add Phase 2/3 features unless explicitly asked
 - When in doubt, build less
 
 ### Communication
@@ -52,7 +51,8 @@
 | Framework | React Native + Expo SDK 54 (managed workflow) |
 | Navigation | Expo Router v6 (file-based) |
 | Language | TypeScript |
-| Data | Local JSON (no backend for Phase 0) |
+| Backend | Supabase (Postgres + Auth) |
+| Data | Local JSON seed data + Supabase for Phase 1 |
 | Testing | Expo Go on physical device |
 | Design tools | Stitch (design systems), Pencil (.pen files) -- on request |
 
@@ -60,17 +60,21 @@
 ```
 whisper-cue-app/
 ├── app/                  # Screens (file-based routing)
-│   ├── _layout.tsx       # Root layout (Slot-based, font loading)
+│   ├── _layout.tsx       # Root layout (auth guard, font loading)
 │   ├── index.tsx         # Home screen
+│   ├── auth.tsx          # Auth screen (email/password + Google OAuth)
 │   ├── sequence.tsx      # Sequence overview (section cards)
 │   ├── live-teach.tsx    # Live teach screen (karaoke cueing)
 │   └── practice-complete.tsx  # End-of-class screen
 ├── src/
+│   ├── lib/
+│   │   └── supabase.ts   # Supabase client (reads from .env)
 │   ├── data/             # Seed data (JSON)
 │   └── types/            # TypeScript types
 ├── docs/
 │   ├── design.md         # Design system and screen specs
 │   └── whispercue_prd.docx
+├── .env                  # Supabase credentials (git-ignored)
 └── assets/
     ├── poses/            # Watercolor pose icon PNGs (transparent bg)
     └── ...               # App icons and images
@@ -93,7 +97,8 @@ whisper-cue-app/
 ### Phase 1 Progress
 - [x] Supabase project created + database schema
 - [x] Poses seeded (136 entries)
-- [ ] Auth — Google + Email (development)
+- [x] Auth screen + auth guard (email/password + Google OAuth UI)
+- [ ] Auth — test and verify Google OAuth flow
 - [ ] Auth — Phone OTP via Twilio (production, add before App Store)
 - [ ] Auth — Apple Sign-In (required for App Store)
 - [ ] Library screen
@@ -128,6 +133,7 @@ When something fails:
 - Font loading must be **non-blocking** -- use `Font.loadAsync` inside a `useEffect` with `.catch()` so the app renders immediately with system fonts while custom fonts load
 - Use `--legacy-peer-deps` flag when running `npm install` to avoid peer dependency conflicts
 - Web requires `react-dom` and `react-native-web` packages (already in dependencies)
+- **`.env` file required** -- Supabase credentials live in `.env` (git-ignored). Copy from another dev or create with `EXPO_PUBLIC_SUPABASE_URL` and `EXPO_PUBLIC_SUPABASE_ANON_KEY`
 
 ---
 

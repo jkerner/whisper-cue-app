@@ -13,6 +13,13 @@ Real-time cueing app for yoga teachers. A calm, glanceable teleprompter for sequ
 
 **Seed data:** "Root & Rise -- 60 Min Power Vinyasa" with 133 steps across 13 sections.
 
+**Phase 1 -- In Progress**
+
+- Supabase backend (Postgres + Auth)
+- 136 poses seeded in database
+- Auth screen (email/password + Google OAuth)
+- Auth guard in root layout
+
 ## Tech Stack
 
 | Layer | Choice |
@@ -20,7 +27,8 @@ Real-time cueing app for yoga teachers. A calm, glanceable teleprompter for sequ
 | Framework | React Native + Expo SDK 54 (managed workflow) |
 | Navigation | Expo Router v6 (file-based) |
 | Language | TypeScript |
-| Data | Local JSON (no backend) |
+| Backend | Supabase (Postgres + Auth) |
+| Data | Local JSON seed data + Supabase |
 | Design | Raga color palette, Cormorant Garamond + system sans typography, watercolor pose icons |
 
 ## Getting Started
@@ -29,6 +37,12 @@ Real-time cueing app for yoga teachers. A calm, glanceable teleprompter for sequ
 git clone git@github.com:jkerner/whisper-cue-app.git
 cd whisper-cue-app
 npm install --legacy-peer-deps
+
+# Create .env with Supabase credentials
+cp .env.example .env     # or create manually with:
+# EXPO_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+# EXPO_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+
 npx expo start           # Device via Expo Go
 npx expo start -c --web  # Web browser
 ```
@@ -40,12 +54,15 @@ Web requires `react-dom` and `react-native-web` (already in dependencies).
 ```
 whisper-cue-app/
 ├── app/
-│   ├── _layout.tsx            # Root layout (Slot-based, font loading)
+│   ├── _layout.tsx            # Root layout (auth guard, font loading)
 │   ├── index.tsx              # Home screen
+│   ├── auth.tsx               # Auth screen (email/password + Google)
 │   ├── sequence.tsx           # Sequence overview (section cards)
 │   ├── live-teach.tsx         # Live teach (karaoke cueing)
 │   └── practice-complete.tsx  # End-of-class screen
 ├── src/
+│   ├── lib/
+│   │   └── supabase.ts        # Supabase client
 │   ├── data/                  # Seed data (JSON)
 │   └── types/                 # TypeScript types
 ├── assets/
@@ -63,6 +80,6 @@ Source pose data lives in `src/data/`. The editable reference file is maintained
 ## Roadmap
 
 - **Phase 0** -- MVP: 1 sequence, live teach mode (complete)
-- **Phase 1** -- Launch: Auth, sequence builder, full pose library, seeded content
+- **Phase 1** -- Launch: Auth, sequence builder, full pose library, seeded content (in progress)
 - **Phase 2** -- AI: Drafting, live suggestions, audio detection, meditation builder
 - **Phase 3** -- Community: Marketplace, multi-teacher, music integration, Apple Watch

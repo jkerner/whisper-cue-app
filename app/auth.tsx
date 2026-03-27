@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   View,
   Text,
@@ -9,12 +9,75 @@ import {
   Alert,
   ActivityIndicator,
   Image,
+  Animated,
+  Easing,
 } from "react-native";
 import { useRouter } from "expo-router";
 import { Feather } from "@expo/vector-icons";
 import { supabase } from "../src/lib/supabase";
 
 type Step = "choose" | "email" | "password";
+
+const TITLE = "Whisper Cue";
+const LETTER_DELAY = 80;
+const RING_SIZE = 220;
+
+function SunbeamRay({ angle, delay }: { angle: number; delay: number }) {
+  const rayFade = useRef(new Animated.Value(0)).current;
+  const rayShoot = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    Animated.loop(
+      Animated.sequence([
+        Animated.delay(delay),
+        Animated.parallel([
+          Animated.timing(rayFade, {
+            toValue: 0.25,
+            duration: 1500,
+            easing: Easing.out(Easing.cubic),
+            useNativeDriver: true,
+          }),
+          Animated.timing(rayShoot, {
+            toValue: -12,
+            duration: 1500,
+            easing: Easing.out(Easing.cubic),
+            useNativeDriver: true,
+          }),
+        ]),
+        Animated.parallel([
+          Animated.timing(rayFade, {
+            toValue: 0,
+            duration: 1500,
+            easing: Easing.in(Easing.cubic),
+            useNativeDriver: true,
+          }),
+          Animated.timing(rayShoot, {
+            toValue: 0,
+            duration: 1500,
+            useNativeDriver: true,
+          }),
+        ]),
+        Animated.delay(1500 - delay),
+      ])
+    ).start();
+  }, []);
+
+  return (
+    <Animated.View
+      style={[
+        styles.ray,
+        {
+          opacity: rayFade,
+          transform: [
+            { rotate: `${angle}deg` },
+            { translateY: -90 },
+            { translateY: rayShoot as any },
+          ],
+        },
+      ]}
+    />
+  );
+}
 
 export default function AuthScreen() {
   const router = useRouter();
@@ -23,6 +86,72 @@ export default function AuthScreen() {
   const [password, setPassword] = useState("");
   const [isSignUp, setIsSignUp] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  // Animations for choose step
+  const [visibleCount, setVisibleCount] = useState(0);
+  const logoFade = useRef(new Animated.Value(0)).current;
+  const wordmarkFade = useRef(new Animated.Value(0)).current;
+  const subtitleFade = useRef(new Animated.Value(0)).current;
+  const buttonsFade = useRef(new Animated.Value(0)).current;
+  const buttonsSlide = useRef(new Animated.Value(20)).current;
+
+  useEffect(() => {
+    // 1. Logo icon fades in
+    Animated.sequence([
+      Animated.delay(300),
+      Animated.timing(logoFade, {
+        toValue: 1,
+        duration: 800,
+        easing: Easing.out(Easing.cubic),
+        useNativeDriver: true,
+      }),
+    ]).start();
+
+    // 2. Type out title letter by letter
+    const startDelay = 900;
+    for (let i = 0; i <= TITLE.length; i++) {
+      setTimeout(() => setVisibleCount(i), startDelay + i * LETTER_DELAY);
+    }
+
+    // 2b. Wordmark fade (for container)
+    Animated.sequence([
+      Animated.delay(900),
+      Animated.timing(wordmarkFade, {
+        toValue: 1,
+        duration: 800,
+        easing: Easing.out(Easing.cubic),
+        useNativeDriver: true,
+      }),
+    ]).start();
+
+    // 3. Subtitle
+    Animated.sequence([
+      Animated.delay(1400),
+      Animated.timing(subtitleFade, {
+        toValue: 1,
+        duration: 600,
+        useNativeDriver: true,
+      }),
+    ]).start();
+
+    // 4. Buttons slide up
+    Animated.sequence([
+      Animated.delay(1800),
+      Animated.parallel([
+        Animated.timing(buttonsFade, {
+          toValue: 1,
+          duration: 500,
+          useNativeDriver: true,
+        }),
+        Animated.timing(buttonsSlide, {
+          toValue: 0,
+          duration: 500,
+          easing: Easing.out(Easing.cubic),
+          useNativeDriver: true,
+        }),
+      ]),
+    ]).start();
+  }, []);
 
   const handleGoogleAuth = async () => {
     const { error } = await supabase.auth.signInWithOAuth({
@@ -66,20 +195,51 @@ export default function AuthScreen() {
     }
   };
 
-  // Step 1: Choose method
+  // Step 1: Choose method — branded hero with animations
   if (step === "choose") {
     return (
       <SafeAreaView style={styles.safe}>
-        <View style={styles.container}>
-          <Image
-            source={require("../assets/poses/whisper-cue.png")}
-            style={styles.logo}
-            resizeMode="contain"
-          />
-          <Text style={styles.heading}>Welcome</Text>
-          <Text style={styles.subtext}>BEGIN YOUR TEACHING PRACTICE</Text>
+        <View style={styles.heroContainer}>
+          {/* Logo area with sunbeam rays */}
+          <View style={styles.logoArea}>
+            {[...Array(9)].map((_, i) => (
+              <SunbeamRay key={i} angle={-120 + i * 30} delay={i * 100} />
+            ))}
+            <Animated.View style={[styles.logoInner, { opacity: logoFade }]}>
+              <Image
+                source={require("../assets/poses/whisper-cue.png")}
+                style={styles.logoIcon}
+                resizeMode="contain"
+              />
+            </Animated.View>
+          </View>
 
-          <View style={styles.bottom}>
+          {/* Title — letter by letter */}
+          <Animated.View style={{ opacity: wordmarkFade }}>
+            <Text style={styles.title}>
+              {TITLE.split("").map((char, i) => (
+                <Text key={i} style={{ opacity: i < visibleCount ? 1 : 0 }}>
+                  {char}
+                </Text>
+              ))}
+            </Text>
+          </Animated.View>
+
+          {/* Subtitle */}
+          <Animated.Text style={[styles.subtitle, { opacity: subtitleFade }]}>
+            REAL-TIME CUEING FOR YOGA TEACHERS
+          </Animated.Text>
+
+          {/* Auth buttons */}
+          <Animated.View
+            style={[
+              styles.bottom,
+              {
+                opacity: buttonsFade,
+                transform: [{ translateY: buttonsSlide }],
+              },
+            ]}
+          >
             <Pressable style={styles.googleBtn} onPress={handleGoogleAuth}>
               <Text style={styles.googleText}>CONTINUE WITH GOOGLE</Text>
             </Pressable>
@@ -102,7 +262,7 @@ export default function AuthScreen() {
             >
               <Text style={styles.toggle}>NEW HERE? CREATE AN ACCOUNT</Text>
             </Pressable>
-          </View>
+          </Animated.View>
         </View>
       </SafeAreaView>
     );
@@ -112,7 +272,7 @@ export default function AuthScreen() {
   if (step === "email") {
     return (
       <SafeAreaView style={styles.safe}>
-        <View style={styles.container}>
+        <View style={styles.formContainer}>
           <Pressable onPress={() => setStep("choose")} style={styles.back}>
             <Feather name="arrow-left" size={22} color="#7999C1" />
           </Pressable>
@@ -147,7 +307,7 @@ export default function AuthScreen() {
   // Step 3: Password
   return (
     <SafeAreaView style={styles.safe}>
-      <View style={styles.container}>
+      <View style={styles.formContainer}>
         <Pressable onPress={() => setStep("email")} style={styles.back}>
           <Feather name="arrow-left" size={22} color="#7999C1" />
         </Pressable>
@@ -192,18 +352,58 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#030303",
   },
-  container: {
+
+  // Step 1: branded hero layout (centered like home screen)
+  heroContainer: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 24,
+  },
+  logoArea: {
+    width: RING_SIZE,
+    height: RING_SIZE,
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: -20,
+  },
+  ray: {
+    position: "absolute",
+    width: 1,
+    height: 24,
+    backgroundColor: "#AAA8D6",
+    borderRadius: 1,
+    borderStyle: "dashed",
+  },
+  logoInner: {
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  logoIcon: {
+    width: 160,
+    height: 160,
+  },
+  title: {
+    fontSize: 36,
+    fontFamily: "CormorantGaramond-LightItalic",
+    color: "#F8F9FA",
+    marginBottom: 12,
+  },
+  subtitle: {
+    fontSize: 9,
+    fontWeight: "500",
+    letterSpacing: 3,
+    color: "#7999C1",
+    marginBottom: 64,
+  },
+
+  // Steps 2 & 3: form layout
+  formContainer: {
     flex: 1,
     padding: 32,
     paddingTop: 80,
   },
   back: {
-    marginBottom: 24,
-  },
-  logo: {
-    width: 80,
-    height: 80,
-    alignSelf: "center",
     marginBottom: 24,
   },
   heading: {
@@ -229,6 +429,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#1a2230",
   },
+
+  // Shared bottom button area
   bottom: {
     position: "absolute",
     bottom: 48,
@@ -237,7 +439,7 @@ const styles = StyleSheet.create({
     gap: 16,
   },
   googleBtn: {
-    backgroundColor: "#F8F9FA",
+    backgroundColor: "#AAA8D6",
     borderRadius: 16,
     paddingVertical: 20,
     alignItems: "center",

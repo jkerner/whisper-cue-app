@@ -281,6 +281,39 @@ spacing-xl:  40px
 - **Tap pause/play button:** Toggle timer pause
 - **Tap list icon:** Return to sequence overview
 
+### Auth (auth.tsx)
+
+**Purpose:** Sign in or create an account. Three-step flow: choose method → enter email → enter password.
+
+**Layout:** Full screen, `#030303` background, 32px padding, content top-aligned at 80px. Buttons pinned to bottom (48px from bottom edge). Strictly dark mode.
+
+**Step 1 — Choose Method:**
+- **Logo:** WhisperCue watercolor icon (80px), centered
+- **Heading:** Cormorant Garamond Bold, 40px, `#F8F9FA`, "Welcome"
+- **Subtext:** 11px, `#7999C1`, tracking 3, "BEGIN YOUR TEACHING PRACTICE"
+- **Google Button:** `#F8F9FA` background, 16px radius, 20px vertical padding. Text: 13px, `#030303`, weight 600, tracking 2, "CONTINUE WITH GOOGLE"
+- **Email Button:** `#0d1117` background, 1px `#1a2230` border, 16px radius. Text: 13px, `#F8F9FA`, weight 600, tracking 2, "SIGN IN WITH EMAIL"
+- **Toggle:** 11px, `#7999C1`, tracking 2, centered, "NEW HERE? CREATE AN ACCOUNT"
+
+**Step 2 — Email:**
+- **Back Arrow:** Feather `arrow-left`, 22px, `#7999C1`
+- **Heading:** Cormorant Garamond Bold, 40px, `#F8F9FA`, "Enter your email"
+- **Subtext:** Context-aware ("WE'LL CREATE YOUR ACCOUNT" or "WE'LL SIGN YOU IN")
+- **Input:** `#0d1117` background, 1px `#1a2230` border, 16px radius, 20px/22px padding. Text: 18px, `#F8F9FA`. Placeholder: `#7999C1`
+- **Continue CTA:** `#AAA8D6` (Chandra) background, 16px radius. Text: 13px, `#030303`, weight 600, tracking 3
+
+**Step 3 — Password:**
+- Same layout as Step 2 with `secureTextEntry` input
+- **CTA:** "CREATE ACCOUNT" or "SIGN IN" depending on flow
+- **Loading state:** `ActivityIndicator` replaces button text
+
+**Interactions:**
+- **Tap Google:** Initiates OAuth flow via Supabase
+- **Tap Email/Sign Up:** Advances to email step
+- **Tap Continue:** Advances to password step
+- **Tap CTA:** Signs in or creates account. On success, `_layout.tsx` auth guard redirects to Home
+- **Tap Back Arrow:** Returns to previous step
+
 ### Practice Complete (practice-complete.tsx)
 
 **Purpose:** Confirmation the class is done. Warm, quiet celebration.
