@@ -90,6 +90,19 @@ whisper-cue-app/
 - [x] Seed data (1 sequence, ~20 postures)
 - [x] Live Teach screen
 
+### Phase 1 Progress
+- [x] Supabase project created + database schema
+- [x] Poses seeded (136 entries)
+- [ ] Auth — Google + Email (development)
+- [ ] Auth — Phone OTP via Twilio (production, add before App Store)
+- [ ] Auth — Apple Sign-In (required for App Store)
+- [ ] Library screen
+- [ ] Sequence Builder — create
+- [ ] Sequence Builder — edit / reorder
+- [ ] Cue editor
+- [ ] Wire Live Teach to Supabase
+- [ ] Migrate Home screen to user library
+
 ---
 
 ## Debugging Protocol
