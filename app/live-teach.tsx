@@ -6,6 +6,7 @@ import {
   StyleSheet,
   Animated,
   Dimensions,
+  ScrollView,
 } from "react-native";
 import { useRouter, useLocalSearchParams } from "expo-router";
 import { Feather } from "@expo/vector-icons";
@@ -223,15 +224,20 @@ export default function LiveTeachScreen() {
 
       {/* Cue text */}
       <Animated.View style={[styles.cueArea, { opacity: fadeAnim }]}>
-        <Text style={styles.cueText}>{cueText}</Text>
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={styles.cueScroll}
+        >
+          <Text style={styles.cueText}>{cueText}</Text>
 
-        {/* Adjustment callout */}
-        {adjustment ? (
-          <View style={styles.adjustmentRow}>
-            <Text style={styles.adjustmentIcon}>⚡</Text>
-            <Text style={styles.adjustmentText}>{adjustment}</Text>
-          </View>
-        ) : null}
+          {/* Adjustment callout */}
+          {adjustment ? (
+            <View style={styles.adjustmentRow}>
+              <Text style={styles.adjustmentIcon}>⚡</Text>
+              <Text style={styles.adjustmentText}>{adjustment}</Text>
+            </View>
+          ) : null}
+        </ScrollView>
       </Animated.View>
 
       {/* Up Next card — tappable to advance */}
@@ -360,6 +366,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     gap: 4,
+    paddingHorizontal: RING_SIZE * 0.15,
   },
   // SQ Market Regular, uppercase, tracked
   breathLabel: {
@@ -372,8 +379,9 @@ const styles = StyleSheet.create({
   // SQ Market Bold — pose name
   poseName: {
     color: "#F8F9FA",
-    fontSize: 30,
-    fontFamily: "CormorantGaramond-Bold",
+    fontSize: 26,
+    fontFamily: "CircularStd-Bold",
+    fontWeight: "normal",
     letterSpacing: -0.3,
     textAlign: "center",
   },
@@ -382,6 +390,7 @@ const styles = StyleSheet.create({
     color: "#AAA8D6",
     fontSize: 16,
     fontFamily: "CormorantGaramond-Italic",
+    fontVariant: ["lining-nums"],
     textAlign: "center",
     marginTop: 2,
   },
@@ -389,15 +398,18 @@ const styles = StyleSheet.create({
   // Cue — Circular (system sans), centered
   cueArea: {
     flex: 1,
-    justifyContent: "flex-start",
     paddingHorizontal: 32,
     paddingTop: 20,
   },
+  cueScroll: {
+    paddingBottom: 16,
+  },
   cueText: {
     color: "#F8F9FA",
-    fontSize: 16,
-    fontWeight: "400",
-    lineHeight: 27,
+    fontSize: 20,
+    fontFamily: "CircularStd-Book",
+    fontWeight: "normal",
+    lineHeight: 32,
     textAlign: "center",
     opacity: 0.85,
   },
@@ -428,8 +440,8 @@ const styles = StyleSheet.create({
   upNextCard: {
     marginHorizontal: 24,
     backgroundColor: "#0d1117",
-    borderRadius: 12,
-    padding: 16,
+    borderRadius: 16,
+    padding: 22,
     marginBottom: 16,
     borderWidth: 1,
     borderColor: "#1a2230",
@@ -438,31 +450,33 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginBottom: 4,
+    marginBottom: 8,
   },
   // SQ Market Regular, uppercase, tracked
   upNextLabel: {
     color: "#7999C1",
-    fontSize: 9,
+    fontSize: 11,
     fontWeight: "500",
     letterSpacing: 3,
   },
   upNextArrow: {
     color: "#43B1E8",
-    fontSize: 16,
+    fontSize: 20,
   },
   // Cormorant Garamond Bold — matches pose name in ring
   upNextName: {
     color: "#F8F9FA",
-    fontSize: 18,
-    fontFamily: "CormorantGaramond-Bold",
+    fontSize: 24,
+    fontFamily: "CircularStd-Bold",
+    fontWeight: "normal",
   },
   // Cormorant Garamond Italic
   upNextSanskrit: {
     color: "#43B1E8",
-    fontSize: 13,
+    fontSize: 16,
     fontFamily: "CormorantGaramond-Italic",
-    marginTop: 2,
+    fontVariant: ["lining-nums"],
+    marginTop: 4,
   },
 
   // Back hint

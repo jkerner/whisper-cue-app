@@ -29,7 +29,7 @@ Real-time cueing app for yoga teachers. A calm, glanceable teleprompter for sequ
 | Language | TypeScript |
 | Backend | Supabase (Postgres + Auth) |
 | Data | Local JSON seed data + Supabase |
-| Design | Raga color palette, Cormorant Garamond + system sans typography, watercolor pose icons |
+| Design | Raga color palette, Circular Std + Cormorant Garamond + SQ Market typography, watercolor pose icons |
 
 ## Getting Started
 
@@ -66,6 +66,7 @@ whisper-cue-app/
 │   ├── data/                  # Seed data (JSON)
 │   └── types/                 # TypeScript types
 ├── assets/
+│   ├── fonts/                 # Circular Std, SQ Market (commercial, git-tracked)
 │   └── poses/                 # Watercolor pose icon PNGs
 ├── docs/
 │   ├── design.md              # Design system and screen specs

@@ -407,7 +407,8 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 36,
-    fontFamily: "CormorantGaramond-LightItalic",
+    fontFamily: "CircularStd-Bold",
+    fontWeight: "normal",
     color: "#F8F9FA",
     marginBottom: 12,
   },
@@ -431,7 +432,8 @@ const styles = StyleSheet.create({
   heading: {
     color: "#F8F9FA",
     fontSize: 40,
-    fontFamily: "CormorantGaramond-Bold",
+    fontFamily: "CircularStd-Bold",
+    fontWeight: "normal",
     lineHeight: 48,
     marginBottom: 14,
   },

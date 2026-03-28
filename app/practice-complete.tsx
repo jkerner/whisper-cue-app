@@ -185,6 +185,7 @@ const styles = StyleSheet.create({
     color: "#7999C1",
     fontSize: 20,
     fontFamily: "CormorantGaramond-Italic",
+    fontVariant: ["lining-nums"],
     textAlign: "center",
     lineHeight: 32,
     marginBottom: 64,

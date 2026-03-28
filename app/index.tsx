@@ -237,7 +237,8 @@ const styles = StyleSheet.create({
   // Title
   title: {
     fontSize: 36,
-    fontFamily: "CormorantGaramond-LightItalic",
+    fontFamily: "CircularStd-Bold",
+    fontWeight: "normal",
     color: "#F8F9FA",
     marginBottom: 12,
   },
@@ -268,7 +269,8 @@ const styles = StyleSheet.create({
   cardTitle: {
     color: "#F8F9FA",
     fontSize: 20,
-    fontFamily: "CormorantGaramond-Bold",
+    fontFamily: "CircularStd-Bold",
+    fontWeight: "normal",
     letterSpacing: -0.3,
     marginBottom: 8,
   },

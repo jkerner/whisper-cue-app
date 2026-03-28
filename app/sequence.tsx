@@ -316,7 +316,8 @@ const styles = StyleSheet.create({
   title: {
     color: "#F8F9FA",
     fontSize: 26,
-    fontFamily: "CormorantGaramond-Bold",
+    fontFamily: "CircularStd-Bold",
+    fontWeight: "normal",
     letterSpacing: -0.3,
     marginBottom: 16,
   },

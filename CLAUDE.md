@@ -1,7 +1,7 @@
 # Claude Code Briefing -- WhisperCue
 
 **Project:** WhisperCue -- real-time cueing app for yoga teachers
-**Last updated:** March 27, 2026
+**Last updated:** March 28, 2026
 
 ---
 
@@ -76,6 +76,7 @@ whisper-cue-app/
 │   └── whispercue_prd.docx
 ├── .env                  # Supabase credentials (git-ignored)
 └── assets/
+    ├── fonts/            # Circular Std (Book, Bold, Black), SQ Market (Light, Bold)
     ├── poses/            # Watercolor pose icon PNGs (transparent bg)
     └── ...               # App icons and images
 ```

@@ -65,15 +65,15 @@ _Drawn from sky at dusk, water at dawn, and the indigo of deep meditation._
 
 ### Typography
 
-Three font families: **Cormorant Garamond** for display/Sanskrit, **SQ Market** for headings and UI, **Circular** for body text.
+Three font families: **Circular Std** for titles, headings, pose names, and body text, **Cormorant Garamond** for Sanskrit labels and decorative italic text, **SQ Market** for labels and UI elements.
 
 | Role | Font | Weight | Size | Notes |
 |------|------|--------|------|-------|
-| Display / Sanskrit | Cormorant Garamond | Light Italic | 48–96px | tracking: −0.01em |
-| Sanskrit Label | Cormorant Garamond | Italic | 13–16px | color: accent-primary |
-| Heading / Pose Name | SQ Market | Bold | 24–36px | tracking: −0.02em |
-| Cue / Body Text | Circular | Regular | 14–16px | leading: 1.7, max-width: 480px |
-| Label / Eyebrow | SQ Market | Regular | 9–10px | tracking: 0.35em, UPPERCASE |
+| App Title / Wordmark | Circular Std | Bold | 36px | "Whisper Cue" |
+| Heading / Pose Name | Circular Std | Bold | 24–30px | tracking: −0.02em |
+| Cue / Body Text | Circular Std | Book | 20px | leading: 1.6, max-width: 480px |
+| Sanskrit Label | Cormorant Garamond | Italic | 13–16px | color: accent-data (Chandra) or accent-primary (Akasha) |
+| Label / Eyebrow | SQ Market | Regular | 9–11px | tracking: 0.35em, UPPERCASE |
 | Timer / Mono | SQ Market | Light | 32–48px | tabular nums |
 
 ### Iconography — Bindu
@@ -138,9 +138,10 @@ accent-data:    #AAA8D6   (Chandra)
 accent-warm:    #F59E0B   (Agni)
 text:           #F8F9FA
 
-font-display:   Cormorant Garamond
-font-heading:   SQ Market
-font-body:      Circular
+font-title:     Circular Std Bold
+font-body:      Circular Std Book
+font-sanskrit:  Cormorant Garamond Italic
+font-label:     SQ Market
 
 radius-sm:   8px
 radius-md:   16px

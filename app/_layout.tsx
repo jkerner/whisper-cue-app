@@ -36,6 +36,11 @@ export default function RootLayout() {
       "CormorantGaramond-SemiBold": CormorantGaramond_600SemiBold,
       "CormorantGaramond-Bold": CormorantGaramond_700Bold,
       "CormorantGaramond-BoldItalic": CormorantGaramond_700Bold_Italic,
+      "CircularStd-Black": require("../assets/fonts/CircularStd-Black.otf"),
+      "CircularStd-Book": require("../assets/fonts/CircularStd-Book.otf"),
+      "CircularStd-Bold": require("../assets/fonts/CircularStd-Bold.otf"),
+      "SQMarket-Light": require("../assets/fonts/SQMarket-Light.otf"),
+      "SQMarket-Bold": require("../assets/fonts/SQMarket-Bold.otf"),
     })
       .then(() => setFontsLoaded(true))
       .catch(() => setFontsLoaded(true));
