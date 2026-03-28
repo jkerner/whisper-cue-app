@@ -14,6 +14,8 @@ import {
 } from "react-native";
 import { useRouter } from "expo-router";
 import { Feather } from "@expo/vector-icons";
+import * as WebBrowser from "expo-web-browser";
+import * as Linking from "expo-linking";
 import { supabase } from "../src/lib/supabase";
 
 type Step = "choose" | "email" | "password";
@@ -154,10 +156,30 @@ export default function AuthScreen() {
   }, []);
 
   const handleGoogleAuth = async () => {
-    const { error } = await supabase.auth.signInWithOAuth({
+    const redirectUrl = Linking.createURL("/");
+    const { data, error } = await supabase.auth.signInWithOAuth({
       provider: "google",
+      options: { redirectTo: redirectUrl, skipBrowserRedirect: true },
     });
-    if (error) Alert.alert("Something shifted.", error.message);
+    if (error) {
+      Alert.alert("Something shifted.", error.message);
+      return;
+    }
+    if (data?.url) {
+      const subscription = Linking.addEventListener("url", async (event) => {
+        subscription.remove();
+        const url = new URL(event.url);
+        // Tokens can be in hash fragment or query params
+        const params = new URLSearchParams(url.hash.substring(1) || url.search.substring(1));
+        const accessToken = params.get("access_token");
+        const refreshToken = params.get("refresh_token");
+        if (accessToken && refreshToken) {
+          await supabase.auth.setSession({ access_token: accessToken, refresh_token: refreshToken });
+        }
+        WebBrowser.dismissBrowser();
+      });
+      await WebBrowser.openBrowserAsync(data.url);
+    }
   };
 
   const handleEmailContinue = () => {

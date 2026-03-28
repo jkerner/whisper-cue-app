@@ -37,14 +37,8 @@ export default function RootLayout() {
       "CormorantGaramond-Bold": CormorantGaramond_700Bold,
       "CormorantGaramond-BoldItalic": CormorantGaramond_700Bold_Italic,
     })
-      .then(() => {
-        console.log("✅ Fonts loaded successfully");
-        setFontsLoaded(true);
-      })
-      .catch((err) => {
-        console.error("❌ Font loading failed:", err);
-        setFontsLoaded(true);
-      });
+      .then(() => setFontsLoaded(true))
+      .catch(() => setFontsLoaded(true));
 
     // Load auth session
     supabase.auth.getSession().then(({ data: { session } }) => {
