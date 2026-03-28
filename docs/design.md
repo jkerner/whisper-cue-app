@@ -101,9 +101,11 @@ Yoga pose figures use a watercolor illustration style — bold, simple silhouett
 | **Sizes** | 24px (inline label), 48px (sequence list card), 96px (Live Teach active pose), 150px (library/detail hero). |
 | **Format** | PNG with transparency, generated from AI watercolor prompts. Source `.pen` file at `docs/design/pose-icons.pen`. |
 
-**Pose Library (Phase 0)**
+**Pose Library**
 
-All icons exported as 2x PNG with transparency at `assets/poses/`.
+All icons exported as 2x PNG at `assets/poses/`. Background color: `#0B1119`. Source .pen file at `docs/design/section-icons.pen`.
+
+**Original Icons (Phase 0)**
 
 | Pose | Sanskrit | File |
 |------|----------|------|
@@ -120,6 +122,24 @@ All icons exported as 2x PNG with transparency at `assets/poses/`.
 | Low Plank | caturaṅga daṇḍāsana | `assets/poses/chaturanga-dandasana.png` |
 | Wheel | ūrdhva dhanurāsana | `assets/poses/urdhva-dhanurasana.png` |
 | Whisper Cue (logo) | — | `assets/poses/whisper-cue.png` |
+
+**Section Icons (Phase 1)**
+
+| Section | Pose | File | Color |
+|---------|------|------|-------|
+| Integration | Easy Seat | `assets/poses/sukhasana.png` | Blue |
+| Warm-Up | Child's Pose | `assets/poses/balasana.png` | Teal |
+| Sun A | Mountain Pose | `assets/poses/tadasana.png` | Coral |
+| Sun B | Chair Pose | `assets/poses/utkatasana.png` | Amber |
+| Chair Twists | Revolved Chair | `assets/poses/parivrtta-utkatasana.png` | White |
+| Sun B+ | Knee to Nose | `assets/poses/knee-to-nose.png` | Lavender |
+| Balance Series | Eagle Pose | `assets/poses/garudasana.png` | Sage |
+| Standing Peak | Side Stretch | `assets/poses/parsvottanasana.png` | White |
+| Backbends | Bow Pose | `assets/poses/dhanurasana.png` | Coral |
+| Seated Folds | Forward Bend | `assets/poses/paschimottanasana.png` | Blue |
+| Hip Openers + Bridge | Wheel | `assets/poses/urdhva-dhanurasana.png` | Blue |
+| Cooling Shapes | Constructive Rest | `assets/poses/constructive-rest.png` | Sage |
+| Savasana + Close | Corpse Pose | `assets/poses/savasana.png` | Pink |
 
 ### Style Notes
 

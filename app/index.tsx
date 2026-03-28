@@ -77,7 +77,9 @@ export default function HomeScreen() {
   const router = useRouter();
   const [visibleCount, setVisibleCount] = useState(0);
   const logoFade = useRef(new Animated.Value(0)).current;
+  const logoPulse = useRef(new Animated.Value(1)).current;
   const wordmarkFade = useRef(new Animated.Value(0)).current;
+  const wordmarkPulse = useRef(new Animated.Value(1)).current;
   const subtitleFade = useRef(new Animated.Value(0)).current;
   const cardFade = useRef(new Animated.Value(0)).current;
   const cardSlide = useRef(new Animated.Value(20)).current;
@@ -93,6 +95,24 @@ export default function HomeScreen() {
         useNativeDriver: true,
       }),
     ]).start();
+
+    // 2. Logo gentle pulse
+    Animated.loop(
+      Animated.sequence([
+        Animated.timing(logoPulse, {
+          toValue: 1.06,
+          duration: 3000,
+          easing: Easing.inOut(Easing.sin),
+          useNativeDriver: true,
+        }),
+        Animated.timing(logoPulse, {
+          toValue: 1,
+          duration: 3000,
+          easing: Easing.inOut(Easing.sin),
+          useNativeDriver: true,
+        }),
+      ])
+    ).start();
 
     // 3. Type out title letter by letter
     const startDelay = 900;
@@ -120,6 +140,27 @@ export default function HomeScreen() {
         useNativeDriver: true,
       }),
     ]).start();
+
+    // 4b. Wordmark pulse after letters finish
+    const lettersFinishAt = 900 + TITLE.length * LETTER_DELAY + 200;
+    setTimeout(() => {
+      Animated.loop(
+        Animated.sequence([
+          Animated.timing(wordmarkPulse, {
+            toValue: 1.04,
+            duration: 3000,
+            easing: Easing.inOut(Easing.sin),
+            useNativeDriver: true,
+          }),
+          Animated.timing(wordmarkPulse, {
+            toValue: 1,
+            duration: 3000,
+            easing: Easing.inOut(Easing.sin),
+            useNativeDriver: true,
+          }),
+        ])
+      ).start();
+    }, lettersFinishAt);
 
     // 5. Card slides up
     Animated.sequence([
@@ -149,7 +190,7 @@ export default function HomeScreen() {
           {[...Array(9)].map((_, i) => (
             <SunbeamRay key={i} angle={-120 + i * 30} delay={i * 100} />
           ))}
-          <Animated.View style={[styles.logoInner, { opacity: logoFade }]}>
+          <Animated.View style={[styles.logoInner, { opacity: logoFade, transform: [{ scale: logoPulse }] }]}>
             <Image
               source={require("../assets/poses/whisper-cue.png")}
               style={styles.logoIcon}
@@ -159,7 +200,7 @@ export default function HomeScreen() {
         </View>
 
         {/* Title — letter by letter */}
-        <Animated.View style={{ opacity: wordmarkFade }}>
+        <Animated.View style={{ opacity: wordmarkFade, transform: [{ scale: wordmarkPulse }] }}>
           <Text style={styles.title}>
             {TITLE.split("").map((char, i) => (
               <Text key={i} style={{ opacity: i < visibleCount ? 1 : 0 }}>
@@ -186,9 +227,8 @@ export default function HomeScreen() {
             onPress={() => router.push("/sequence")}
           >
             <Text style={styles.cardEyebrow}>READY TO TEACH</Text>
-            <Text style={styles.cardTitle}>
-              Root & Rise — 60 Min Power Vinyasa
-            </Text>
+            <Text style={styles.cardTitle}>Power Vinyasa — 60 Min</Text>
+            <Text style={styles.cardSub}>Root & Rise</Text>
             <Text style={styles.cardMeta}>133 CUES · ~60 MIN</Text>
           </Pressable>
         </Animated.View>
@@ -236,8 +276,8 @@ const styles = StyleSheet.create({
 
   // Title
   title: {
-    fontSize: 36,
-    fontFamily: "CircularStd-Bold",
+    fontSize: 42,
+    fontFamily: "DancingScript-Bold",
     fontWeight: "normal",
     color: "#F8F9FA",
     marginBottom: 12,
@@ -272,6 +312,13 @@ const styles = StyleSheet.create({
     fontFamily: "CircularStd-Bold",
     fontWeight: "normal",
     letterSpacing: -0.3,
+    marginBottom: 2,
+  },
+  cardSub: {
+    color: "#7999C1",
+    fontSize: 15,
+    fontFamily: "CormorantGaramond-Italic",
+    fontVariant: ["lining-nums"],
     marginBottom: 8,
   },
   cardMeta: {

@@ -14,6 +14,7 @@ import {
   CormorantGaramond_700Bold,
   CormorantGaramond_700Bold_Italic,
 } from "@expo-google-fonts/cormorant-garamond";
+import { DancingScript_700Bold } from "@expo-google-fonts/dancing-script";
 import { supabase } from "../src/lib/supabase";
 import { Session } from "@supabase/supabase-js";
 
@@ -41,6 +42,7 @@ export default function RootLayout() {
       "CircularStd-Bold": require("../assets/fonts/CircularStd-Bold.otf"),
       "SQMarket-Light": require("../assets/fonts/SQMarket-Light.otf"),
       "SQMarket-Bold": require("../assets/fonts/SQMarket-Bold.otf"),
+      "DancingScript-Bold": DancingScript_700Bold,
     })
       .then(() => setFontsLoaded(true))
       .catch(() => setFontsLoaded(true));

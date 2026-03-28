@@ -92,7 +92,9 @@ export default function AuthScreen() {
   // Animations for choose step
   const [visibleCount, setVisibleCount] = useState(0);
   const logoFade = useRef(new Animated.Value(0)).current;
+  const logoPulse = useRef(new Animated.Value(1)).current;
   const wordmarkFade = useRef(new Animated.Value(0)).current;
+  const wordmarkPulse = useRef(new Animated.Value(1)).current;
   const subtitleFade = useRef(new Animated.Value(0)).current;
   const buttonsFade = useRef(new Animated.Value(0)).current;
   const buttonsSlide = useRef(new Animated.Value(20)).current;
@@ -108,6 +110,24 @@ export default function AuthScreen() {
         useNativeDriver: true,
       }),
     ]).start();
+
+    // 1b. Logo gentle pulse
+    Animated.loop(
+      Animated.sequence([
+        Animated.timing(logoPulse, {
+          toValue: 1.06,
+          duration: 3000,
+          easing: Easing.inOut(Easing.sin),
+          useNativeDriver: true,
+        }),
+        Animated.timing(logoPulse, {
+          toValue: 1,
+          duration: 3000,
+          easing: Easing.inOut(Easing.sin),
+          useNativeDriver: true,
+        }),
+      ])
+    ).start();
 
     // 2. Type out title letter by letter
     const startDelay = 900;
@@ -135,6 +155,27 @@ export default function AuthScreen() {
         useNativeDriver: true,
       }),
     ]).start();
+
+    // 3b. Wordmark pulse after letters finish
+    const lettersFinishAt = 900 + TITLE.length * LETTER_DELAY + 200;
+    setTimeout(() => {
+      Animated.loop(
+        Animated.sequence([
+          Animated.timing(wordmarkPulse, {
+            toValue: 1.04,
+            duration: 3000,
+            easing: Easing.inOut(Easing.sin),
+            useNativeDriver: true,
+          }),
+          Animated.timing(wordmarkPulse, {
+            toValue: 1,
+            duration: 3000,
+            easing: Easing.inOut(Easing.sin),
+            useNativeDriver: true,
+          }),
+        ])
+      ).start();
+    }, lettersFinishAt);
 
     // 4. Buttons slide up
     Animated.sequence([
@@ -227,7 +268,7 @@ export default function AuthScreen() {
             {[...Array(9)].map((_, i) => (
               <SunbeamRay key={i} angle={-120 + i * 30} delay={i * 100} />
             ))}
-            <Animated.View style={[styles.logoInner, { opacity: logoFade }]}>
+            <Animated.View style={[styles.logoInner, { opacity: logoFade, transform: [{ scale: logoPulse }] }]}>
               <Image
                 source={require("../assets/poses/whisper-cue.png")}
                 style={styles.logoIcon}
@@ -237,7 +278,7 @@ export default function AuthScreen() {
           </View>
 
           {/* Title — letter by letter */}
-          <Animated.View style={{ opacity: wordmarkFade }}>
+          <Animated.View style={{ opacity: wordmarkFade, transform: [{ scale: wordmarkPulse }] }}>
             <Text style={styles.title}>
               {TITLE.split("").map((char, i) => (
                 <Text key={i} style={{ opacity: i < visibleCount ? 1 : 0 }}>
@@ -406,8 +447,8 @@ const styles = StyleSheet.create({
     height: 160,
   },
   title: {
-    fontSize: 36,
-    fontFamily: "CircularStd-Bold",
+    fontSize: 42,
+    fontFamily: "DancingScript-Bold",
     fontWeight: "normal",
     color: "#F8F9FA",
     marginBottom: 12,

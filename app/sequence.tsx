@@ -2,10 +2,12 @@ import { useState } from "react";
 import {
   View,
   Text,
+  Image,
   ScrollView,
   Pressable,
   StyleSheet,
   SafeAreaView,
+  ImageSourcePropType,
 } from "react-native";
 import { useRouter } from "expo-router";
 import { Feather } from "@expo/vector-icons";
@@ -21,21 +23,27 @@ function getPose(poseId: string): Pose | undefined {
   return poses.find((p) => p.id === poseId);
 }
 
-// Map section names to Feather icons
-const sectionIcons: Record<string, string> = {
-  "Integration": "sun",
-  "Warm-Up": "wind",
-  "Sun A": "sunrise",
-  "Sun B": "sunrise",
-  "Chair Twists + Fold Series": "refresh-cw",
-  "Sun B+": "zap",
-  "Balance Series": "anchor",
-  "Standing Peak Series": "triangle",
-  "Backbends": "heart",
-  "Seated Folds": "chevrons-down",
-  "Hip Openers + Bridge": "maximize-2",
-  "Cooling Shapes": "moon",
-  "Savasana + Close": "cloud",
+// Map section names to pose icon images
+const sectionImages: Record<string, ImageSourcePropType> = {
+  "Integration": require("../assets/poses/sukhasana.png"),
+  "Warm-Up": require("../assets/poses/tabletop.png"),
+  "Sun A": require("../assets/poses/tadasana.png"),
+  "Sun B": require("../assets/poses/utkatasana.png"),
+  "Chair Twists + Fold Series": require("../assets/poses/parivrtta-utkatasana.png"),
+  "Sun B+": require("../assets/poses/knee-to-nose.png"),
+  "Balance Series": require("../assets/poses/garudasana.png"),
+  "Standing Peak Series": require("../assets/poses/parsvottanasana.png"),
+  "Backbends": require("../assets/poses/dhanurasana.png"),
+  "Seated Folds": require("../assets/poses/paschimottanasana.png"),
+  "Hip Openers + Bridge": require("../assets/poses/urdhva-dhanurasana.png"),
+  "Cooling Shapes": require("../assets/poses/constructive-rest.png"),
+  "Savasana + Close": require("../assets/poses/savasana.png"),
+};
+
+// Per-section icon size overrides (default 50)
+const sectionIconSizes: Record<string, number> = {
+  "Backbends": 42,
+  "Hip Openers + Bridge": 54,
 };
 
 // Group steps by section, dedup consecutive poses within each section
@@ -98,13 +106,18 @@ const sections = getSections(sequence.steps);
 
 function SectionCard({ group, index, onStartAt }: { group: SectionGroup; index: number; onStartAt: (stepIndex: number) => void }) {
   const [expanded, setExpanded] = useState(false);
-  const iconName = sectionIcons[group.section] || "circle";
+  const sectionImage = sectionImages[group.section];
+  const iconSize = sectionIconSizes[group.section] || 50;
 
   return (
     <View style={sStyles.card}>
       <Pressable style={sStyles.cardHeader} onPress={() => setExpanded(!expanded)}>
         <View style={sStyles.iconWrap}>
-          <Feather name={iconName as any} size={16} color="#43B1E8" />
+          {sectionImage ? (
+            <Image source={sectionImage} style={{ width: iconSize, height: iconSize }} resizeMode="contain" />
+          ) : (
+            <Feather name="circle" size={16} color="#43B1E8" />
+          )}
         </View>
         <View style={sStyles.cardLeft}>
           <Text style={sStyles.sectionName}>{group.section.toUpperCase()}</Text>
@@ -159,12 +172,13 @@ const sStyles = StyleSheet.create({
     gap: 12,
   },
   iconWrap: {
-    width: 32,
-    height: 32,
-    borderRadius: 8,
-    backgroundColor: "#131820",
+    width: 48,
+    height: 48,
+    borderRadius: 12,
+    backgroundColor: "#0B1119",
     alignItems: "center",
     justifyContent: "center",
+    overflow: "hidden",
   },
   cardLeft: {
     flex: 1,
@@ -231,7 +245,8 @@ export default function SequenceScreen() {
         {/* Title area */}
         <View style={styles.titleArea}>
           <Text style={styles.eyebrow}>SEQUENCE</Text>
-          <Text style={styles.title}>{sequence.name}</Text>
+          <Text style={styles.title}>Power Vinyasa — 60 Min</Text>
+          <Text style={styles.titleSub}>Root & Rise</Text>
           <View style={styles.metaRow}>
             <View style={styles.metaItem}>
               <Text style={styles.metaValue}>{sequence.steps.length}</Text>
@@ -319,6 +334,13 @@ const styles = StyleSheet.create({
     fontFamily: "CircularStd-Bold",
     fontWeight: "normal",
     letterSpacing: -0.3,
+    marginBottom: 4,
+  },
+  titleSub: {
+    color: "#7999C1",
+    fontSize: 18,
+    fontFamily: "CormorantGaramond-Italic",
+    fontVariant: ["lining-nums"],
     marginBottom: 16,
   },
   metaRow: {
