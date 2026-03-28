@@ -26,7 +26,7 @@ function getPose(poseId: string): Pose | undefined {
 // Map section names to pose icon images
 const sectionImages: Record<string, ImageSourcePropType> = {
   "Integration": require("../assets/poses/sukhasana.png"),
-  "Warm-Up": require("../assets/poses/tabletop.png"),
+  "Warm-Up": require("../assets/poses/balasana.png"),
   "Sun A": require("../assets/poses/tadasana.png"),
   "Sun B": require("../assets/poses/utkatasana.png"),
   "Chair Twists + Fold Series": require("../assets/poses/parivrtta-utkatasana.png"),

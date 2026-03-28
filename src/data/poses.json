@@ -80,7 +80,7 @@
   {
     "id": "child-pose",
     "kind": "pose",
-    "englishName": "Child Pose",
+    "englishName": "Child's Pose",
     "sanskritName": "Balasana"
   },
   {
@@ -776,7 +776,7 @@
   {
     "id": "wide-child-pose",
     "kind": "pose",
-    "englishName": "Wide Child Pose",
+    "englishName": "Wide Child's Pose",
     "sanskritName": "Prasarita Balasana"
   },
   {
