@@ -10,6 +10,7 @@ import {
   Easing,
 } from "react-native";
 import { useRouter } from "expo-router";
+import { Feather } from "@expo/vector-icons";
 
 const TITLE = "Whisper Cue";
 const LETTER_DELAY = 80;
@@ -232,6 +233,15 @@ export default function HomeScreen() {
             <Text style={styles.cardMeta}>133 CUES · ~60 MIN</Text>
           </Pressable>
         </Animated.View>
+
+        {/* Create new sequence */}
+        <Pressable
+          style={styles.createButton}
+          onPress={() => router.push("/builder")}
+        >
+          <Feather name="plus" size={14} color="#43B1E8" />
+          <Text style={styles.createText}>CREATE NEW SEQUENCE</Text>
+        </Pressable>
       </View>
     </SafeAreaView>
   );
@@ -325,5 +335,20 @@ const styles = StyleSheet.create({
     color: "#7999C1",
     fontSize: 9,
     letterSpacing: 2,
+  },
+  createButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 8,
+    paddingVertical: 16,
+    marginTop: 12,
+    width: "100%",
+  },
+  createText: {
+    color: "#43B1E8",
+    fontSize: 11,
+    fontWeight: "600",
+    letterSpacing: 3,
   },
 });

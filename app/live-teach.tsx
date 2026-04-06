@@ -7,6 +7,7 @@ import {
   Animated,
   Dimensions,
   ScrollView,
+  PanResponder,
 } from "react-native";
 import { useRouter, useLocalSearchParams } from "expo-router";
 import { Feather } from "@expo/vector-icons";
@@ -146,6 +147,42 @@ export default function LiveTeachScreen() {
     animateTransition(() => setCurrentIndex((i) => i - 1));
   };
 
+  // Ring scrub — drag around the ring to jump to a step
+  const [scrubbing, setScrubbing] = useState(false);
+  const lastScrubIndex = useRef(currentIndex);
+
+  const panResponder = useRef(
+    PanResponder.create({
+      onStartShouldSetPanResponder: (evt) => {
+        const { locationX, locationY } = evt.nativeEvent;
+        const dx = locationX - RING_SIZE / 2;
+        const dy = locationY - RING_SIZE / 2;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        const ringRadius = RING_SIZE / 2;
+        return dist > ringRadius * 0.55 && dist < ringRadius * 1.15;
+      },
+      onMoveShouldSetPanResponder: () => true,
+      onPanResponderGrant: () => {
+        setScrubbing(true);
+      },
+      onPanResponderMove: (evt) => {
+        const { locationX, locationY } = evt.nativeEvent;
+        const dx = locationX - RING_SIZE / 2;
+        const dy = locationY - RING_SIZE / 2;
+        let angle = Math.atan2(dx, -dy) / (2 * Math.PI);
+        if (angle < 0) angle += 1;
+        const idx = Math.max(0, Math.min(totalSteps - 1, Math.round(angle * (totalSteps - 1))));
+        if (idx !== lastScrubIndex.current) {
+          lastScrubIndex.current = idx;
+          setCurrentIndex(idx);
+        }
+      },
+      onPanResponderRelease: () => {
+        setScrubbing(false);
+      },
+    })
+  ).current;
+
   // Join cues into readable text
   const cueText = step.cues.join(" ");
   const section = (step as any).section || "";
@@ -195,8 +232,11 @@ export default function LiveTeachScreen() {
       </View>
 
       {/* Central ring area */}
-      <Animated.View style={[styles.ringArea, { opacity: fadeAnim }]}>
-        <View style={[styles.ringContainer, { width: RING_SIZE, height: RING_SIZE }]}>
+      <Animated.View style={[styles.ringArea, { opacity: scrubbing ? 1 : fadeAnim }]}>
+        <View
+          style={[styles.ringContainer, { width: RING_SIZE, height: RING_SIZE }]}
+          {...panResponder.panHandlers}
+        >
           <ProgressRing progress={progress} size={RING_SIZE} strokeWidth={2.5} />
 
           {/* Content inside ring */}
