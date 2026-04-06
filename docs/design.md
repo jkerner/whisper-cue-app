@@ -103,27 +103,15 @@ Yoga pose figures use a watercolor illustration style — bold, simple silhouett
 
 **Pose Library**
 
-All icons exported as 2x PNG at `assets/poses/`. Background color: `#0B1119`. Source .pen file at `docs/design/section-icons.pen`.
+All 123 poses have watercolor icon PNGs at `assets/poses/`. Background color: `#0B1119`. Figures are monotone watercolor with varied colors (teal, coral, amber, sage, lavender, indigo, terracotta, dusty rose, mint, peach).
 
-**Original Icons (Phase 0)**
+Source .pen files:
+- `docs/design/section-icons.pen` — 13 section header icons for sequence overview
+- `docs/design/pose-library.pen` — full pose library icons for sequence builder
 
-| Pose | Sanskrit | File |
-|------|----------|------|
-| Easy Seat | sukhasana | `assets/poses/sukhasana.png` |
-| Garland | mālāsana | `assets/poses/malasana.png` |
-| Warrior II | vīrabhadrāsana II | `assets/poses/virabhadrasana-ii.png` |
-| Lotus | padmāsana | `assets/poses/padmasana.png` |
-| Tree | vṛkṣāsana | `assets/poses/vrksasana.png` |
-| Crow | bakāsana | `assets/poses/bakasana.png` |
-| Low Lunge | añjaneyāsana | `assets/poses/anjaneyasana.png` |
-| Downward Dog | adho mukha śvānāsana | `assets/poses/adho-mukha-svanasana.png` |
-| Hero | vīrāsana | `assets/poses/virasana.png` |
-| Butterfly | baddha koṇāsana | `assets/poses/baddha-konasana.png` |
-| Low Plank | caturaṅga daṇḍāsana | `assets/poses/chaturanga-dandasana.png` |
-| Wheel | ūrdhva dhanurāsana | `assets/poses/urdhva-dhanurasana.png` |
-| Whisper Cue (logo) | — | `assets/poses/whisper-cue.png` |
+Image map: `src/lib/pose-images.ts` — maps all 123 pose IDs to their require() paths.
 
-**Section Icons (Phase 1)**
+**Section Icons**
 
 | Section | Pose | File | Color |
 |---------|------|------|-------|
