@@ -16,6 +16,9 @@
 - AI Recommendations
 - Live Teach Mode
 
+**Product Docs:**
+- `docs/sequence-builder-prd.md` — requirements for sequence creation, sections, pose authoring, and validation
+
 **Design Direction:** Ethereal, soft, nocturnal — strictly dark mode with blurred glowing accents, minimalist dark UI, elegant typography, and custom illustrative icons for poses and navigation. Three-font type system: Cormorant Garamond for display/Sanskrit, SQ Market for headings and UI, Circular for body text — optimized for low-light studio environments. All screens must be strictly in dark mode.
 
 **Inspired by:** Endel, Calm
