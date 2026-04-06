@@ -47,6 +47,13 @@ npx expo start           # Device via Expo Go
 npx expo start -c --web  # Web browser
 ```
 
+Important: run Expo commands from this repo root, not from `~/Whisper cue content`.
+
+```bash
+cd "/Users/julieshome/Code/whisper-cue-app"
+npx expo start
+```
+
 Web requires `react-dom` and `react-native-web` (already in dependencies).
 
 ## Project Structure
