@@ -13,12 +13,20 @@ import {
 } from "react-native";
 import { useRouter, useLocalSearchParams } from "expo-router";
 import { Feather } from "@expo/vector-icons";
-import { Pose } from "../src/types";
+import { Pose, SequencePose } from "../src/types";
 import posesData from "../src/data/poses.json";
 import { builderStore } from "../src/lib/builder-store";
 import poseImages from "../src/lib/pose-images";
 
 const allPoses = (posesData as Pose[]).filter((p) => p.kind === "pose");
+
+// Build a map of english name (lowercase) → sanskrit name for auto-populate
+const sanskritLookup: Record<string, string> = {};
+for (const p of allPoses) {
+  if (p.sanskritName) {
+    sanskritLookup[p.englishName.toLowerCase()] = p.sanskritName;
+  }
+}
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 const CARD_GAP = 10;
 const CARD_SIZE = (SCREEN_WIDTH - 48 - CARD_GAP * 2) / 3;
@@ -34,6 +42,28 @@ export default function SectionEditorScreen() {
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [newPoseName, setNewPoseName] = useState("");
   const [newPoseSanskrit, setNewPoseSanskrit] = useState("");
+  const [sanskritAutoFilled, setSanskritAutoFilled] = useState(false);
+  const [newPoseDescription, setNewPoseDescription] = useState("");
+  const [newPoseDeepening, setNewPoseDeepening] = useState("");
+  const [newPoseNotes, setNewPoseNotes] = useState("");
+
+  const handlePoseNameChange = (text: string) => {
+    setNewPoseName(text);
+    // Auto-populate sanskrit if the user hasn't manually edited it
+    const match = sanskritLookup[text.trim().toLowerCase()];
+    if (match) {
+      setNewPoseSanskrit(match);
+      setSanskritAutoFilled(true);
+    } else if (sanskritAutoFilled) {
+      setNewPoseSanskrit("");
+      setSanskritAutoFilled(false);
+    }
+  };
+
+  const handleSanskritChange = (text: string) => {
+    setNewPoseSanskrit(text);
+    setSanskritAutoFilled(false);
+  };
 
   useEffect(() => {
     return builderStore.subscribe(() => {
@@ -53,8 +83,22 @@ export default function SectionEditorScreen() {
     );
   }, [search]);
 
-  const addPose = (pose: Pose) => {
-    if (sectionId) builderStore.addPose(sectionId, pose);
+  // Fast mode: tap + icon, adds instantly, stays on grid
+  const quickAddPose = (pose: Pose) => {
+    if (!sectionId) return;
+    builderStore.addPose(sectionId, pose);
+  };
+
+  // Intentional mode: tap card, opens editor as preview with "Add to Section" CTA
+  const previewPose = (pose: Pose) => {
+    router.push({
+      pathname: "/pose-editor",
+      params: {
+        sectionId,
+        sourcePoseId: pose.id,
+        mode: "preview",
+      },
+    });
   };
 
   const removePose = (index: number) => {
@@ -62,14 +106,23 @@ export default function SectionEditorScreen() {
   };
 
   const createCustomPose = () => {
-    if (!newPoseName.trim()) return;
-    const pose = builderStore.addCustomPose(
+    if (!newPoseName.trim() || !newPoseDescription.trim()) return;
+    if (!sectionId) return;
+    const customPose = builderStore.addCustomPose(
+      sectionId,
       newPoseName.trim(),
       newPoseSanskrit.trim() || undefined
     );
-    addPose(pose);
+    customPose.description = newPoseDescription.trim();
+    customPose.deepening = newPoseDeepening.trim() || undefined;
+    customPose.additionalNotes = newPoseNotes.trim() || undefined;
+    builderStore.addCustomPoseToSection(sectionId, customPose);
     setNewPoseName("");
     setNewPoseSanskrit("");
+    setSanskritAutoFilled(false);
+    setNewPoseDescription("");
+    setNewPoseDeepening("");
+    setNewPoseNotes("");
     setShowCreateModal(false);
   };
 
@@ -100,17 +153,31 @@ export default function SectionEditorScreen() {
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
               {addedPoses.map((pose, i) => (
                 <View key={`added-${i}`} style={styles.addedChip}>
-                  {poseImages[pose.id] && (
-                    <Image
-                      source={poseImages[pose.id]}
-                      style={styles.addedChipImage}
-                      resizeMode="contain"
-                    />
-                  )}
-                  <Text style={styles.addedChipText} numberOfLines={1}>
-                    {pose.englishName}
-                  </Text>
-                  <Pressable onPress={() => removePose(i)}>
+                  <Pressable
+                    style={styles.addedChipTouchable}
+                    onPress={() =>
+                      router.push({
+                        pathname: "/pose-editor",
+                        params: { sectionId, poseId: pose.id },
+                      })
+                    }
+                  >
+                    {pose.sourcePoseId && poseImages[pose.sourcePoseId] && (
+                      <Image
+                        source={poseImages[pose.sourcePoseId]}
+                        style={styles.addedChipImage}
+                        resizeMode="contain"
+                      />
+                    )}
+                    <Text style={styles.addedChipText} numberOfLines={1}>
+                      {pose.title}
+                    </Text>
+                  </Pressable>
+                  <Pressable
+                    onPress={() => removePose(i)}
+                    hitSlop={8}
+                    style={styles.addedChipRemove}
+                  >
                     <Feather name="x" size={12} color="#7999C1" />
                   </Pressable>
                 </View>
@@ -159,8 +226,19 @@ export default function SectionEditorScreen() {
               <Pressable
                 key={pose.id}
                 style={styles.poseCard}
-                onPress={() => addPose(pose)}
+                onPress={() => previewPose(pose)}
               >
+                {/* Quick-add + button */}
+                <Pressable
+                  style={styles.quickAddButton}
+                  onPress={(e) => {
+                    e.stopPropagation();
+                    quickAddPose(pose);
+                  }}
+                  hitSlop={4}
+                >
+                  <Feather name="plus" size={14} color="#43B1E8" />
+                </Pressable>
                 {hasImage ? (
                   <Image
                     source={poseImages[pose.id]}
@@ -218,35 +296,73 @@ export default function SectionEditorScreen() {
               </Pressable>
             </View>
 
-            <Text style={styles.modalLabel}>POSE NAME</Text>
-            <TextInput
-              style={styles.modalInput}
-              value={newPoseName}
-              onChangeText={setNewPoseName}
-              placeholder="e.g. Fallen Triangle"
-              placeholderTextColor="#7999C1"
-              autoFocus
-            />
+            <ScrollView showsVerticalScrollIndicator={false} keyboardShouldPersistTaps="handled">
+              <Text style={styles.modalLabel}>POSE NAME</Text>
+              <TextInput
+                style={styles.modalInput}
+                value={newPoseName}
+                onChangeText={handlePoseNameChange}
+                placeholder="e.g. Fallen Triangle"
+                placeholderTextColor="#7999C1"
+                autoFocus
+              />
 
-            <Text style={styles.modalLabel}>SANSKRIT (OPTIONAL)</Text>
-            <TextInput
-              style={styles.modalInput}
-              value={newPoseSanskrit}
-              onChangeText={setNewPoseSanskrit}
-              placeholder="e.g. Patita Trikonasana"
-              placeholderTextColor="#7999C1"
-            />
+              <Text style={styles.modalLabel}>SANSKRIT (OPTIONAL)</Text>
+              <TextInput
+                style={styles.modalInput}
+                value={newPoseSanskrit}
+                onChangeText={handleSanskritChange}
+                placeholder="Auto-fills if pose name matches library"
+                placeholderTextColor="#7999C1"
+              />
 
-            <Pressable
-              style={[
-                styles.modalCta,
-                !newPoseName.trim() && styles.ctaDisabled,
-              ]}
-              onPress={createCustomPose}
-              disabled={!newPoseName.trim()}
-            >
-              <Text style={styles.ctaText}>ADD TO SECTION</Text>
-            </Pressable>
+              <Text style={styles.modalLabel}>DESCRIPTION</Text>
+              <Text style={styles.modalHelpText}>
+                What you will say while you're teaching.
+              </Text>
+              <TextInput
+                style={[styles.modalInput, styles.modalInputMultiline]}
+                value={newPoseDescription}
+                onChangeText={setNewPoseDescription}
+                placeholder="Describe the pose cue..."
+                placeholderTextColor="#7999C1"
+                multiline
+                textAlignVertical="top"
+              />
+
+              <Text style={styles.modalLabel}>DEEPENING (OPTIONAL)</Text>
+              <TextInput
+                style={[styles.modalInput, styles.modalInputMultiline]}
+                value={newPoseDeepening}
+                onChangeText={setNewPoseDeepening}
+                placeholder="Guidance for students who want to go further..."
+                placeholderTextColor="#7999C1"
+                multiline
+                textAlignVertical="top"
+              />
+
+              <Text style={styles.modalLabel}>NOTES (OPTIONAL)</Text>
+              <TextInput
+                style={[styles.modalInput, styles.modalInputMultiline]}
+                value={newPoseNotes}
+                onChangeText={setNewPoseNotes}
+                placeholder="Personal reminders..."
+                placeholderTextColor="#7999C1"
+                multiline
+                textAlignVertical="top"
+              />
+
+              <Pressable
+                style={[
+                  styles.modalCta,
+                  (!newPoseName.trim() || !newPoseDescription.trim()) && styles.ctaDisabled,
+                ]}
+                onPress={createCustomPose}
+                disabled={!newPoseName.trim() || !newPoseDescription.trim()}
+              >
+                <Text style={styles.ctaText}>ADD TO SECTION</Text>
+              </Pressable>
+            </ScrollView>
           </View>
         </View>
       </Modal>
@@ -319,6 +435,14 @@ const styles = StyleSheet.create({
     height: 24,
     borderRadius: 12,
   },
+  addedChipTouchable: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+  },
+  addedChipRemove: {
+    padding: 4,
+  },
   addedChipText: {
     color: "#F8F9FA",
     fontSize: 12,
@@ -380,6 +504,21 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     padding: 8,
     alignItems: "center",
+    position: "relative",
+  },
+  quickAddButton: {
+    position: "absolute",
+    top: 6,
+    right: 6,
+    width: 26,
+    height: 26,
+    borderRadius: 13,
+    backgroundColor: "#131820",
+    borderWidth: 1,
+    borderColor: "#1a2230",
+    alignItems: "center",
+    justifyContent: "center",
+    zIndex: 1,
   },
   poseCardImage: {
     width: CARD_SIZE - 16,
@@ -480,6 +619,17 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     borderWidth: 1,
     borderColor: "#1a2230",
+  },
+  modalInputMultiline: {
+    minHeight: 80,
+    paddingTop: 16,
+  },
+  modalHelpText: {
+    color: "#7999C1",
+    fontSize: 12,
+    fontFamily: "CormorantGaramond-Italic",
+    marginBottom: 8,
+    marginTop: -4,
   },
   modalCta: {
     backgroundColor: "#43B1E8",

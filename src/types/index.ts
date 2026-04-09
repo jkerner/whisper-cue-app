@@ -9,6 +9,19 @@ export interface Pose {
   sanskritName: string | null;
 }
 
+/** A pose instance within a sequence section (editable copy, not the library original) */
+export interface SequencePose {
+  id: string;
+  sourcePoseId?: string;
+  title: string;
+  sanskrit?: string;
+  description: string;
+  deepening?: string;
+  additionalNotes?: string;
+  orderIndex: number;
+  isCustom: boolean;
+}
+
 /** A step within a sequence (a pose + cues for that context) */
 export interface SequenceStep {
   poseId: string;

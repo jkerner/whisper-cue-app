@@ -237,7 +237,7 @@ export default function HomeScreen() {
         {/* Create new sequence */}
         <Pressable
           style={styles.createButton}
-          onPress={() => router.push("/builder")}
+          onPress={() => router.push("/builder-entry")}
         >
           <Feather name="plus" size={14} color="#43B1E8" />
           <Text style={styles.createText}>CREATE NEW SEQUENCE</Text>
