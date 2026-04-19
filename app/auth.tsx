@@ -90,7 +90,6 @@ export default function AuthScreen() {
     native: "whispercue://auth",
     path: "auth",
   });
-  const [authDebug, setAuthDebug] = useState<string>("");
   const [step, setStep] = useState<Step>("choose");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -205,59 +204,33 @@ export default function AuthScreen() {
   }, []);
 
   const handleGoogleAuth = async () => {
-    console.log("[auth] redirectUrl", redirectUrl);
-    setAuthDebug(`redirect: ${redirectUrl}`);
-
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: { redirectTo: redirectUrl, skipBrowserRedirect: true },
     });
 
     if (error) {
-      setAuthDebug(`oauth error: ${error.message}`);
       Alert.alert("Something shifted.", error.message);
       return;
     }
 
     if (data?.url) {
-      setAuthDebug((prev) => `${prev}\nopened: yes`);
-      const result = await WebBrowser.openAuthSessionAsync(
-        data.url,
-        redirectUrl
-      );
+      const result = await WebBrowser.openAuthSessionAsync(data.url, redirectUrl);
 
-      setAuthDebug(
-        (prev) =>
-          `${prev}\nresult: ${result.type}${
-            "url" in result && result.url ? `\nreturned: ${result.url}` : ""
-          }`
-      );
-
-      if (result.type !== "success" || !result.url) {
-        return;
-      }
+      if (result.type !== "success" || !result.url) return;
 
       const url = new URL(result.url);
-      // Tokens can be in hash fragment or query params
       const params = new URLSearchParams(
         url.hash.substring(1) || url.search.substring(1)
       );
       const accessToken = params.get("access_token");
       const refreshToken = params.get("refresh_token");
 
-      setAuthDebug(
-        (prev) =>
-          `${prev}\naccess token: ${accessToken ? "yes" : "no"}\nrefresh token: ${
-            refreshToken ? "yes" : "no"
-          }`
-      );
-
       if (accessToken && refreshToken) {
         await supabase.auth.setSession({
           access_token: accessToken,
           refresh_token: refreshToken,
         });
-        setAuthDebug((prev) => `${prev}\nsession set: yes`);
       }
     }
   };
@@ -364,30 +337,13 @@ export default function AuthScreen() {
               },
             ]}
           >
-            <AppleAuthentication.AppleAuthenticationButton
-              buttonType={AppleAuthentication.AppleAuthenticationButtonType.SIGN_IN}
-              buttonStyle={AppleAuthentication.AppleAuthenticationButtonStyle.WHITE}
-              cornerRadius={16}
-              style={styles.appleBtn}
-              onPress={handleAppleAuth}
-            />
-
             <Pressable style={styles.googleBtn} onPress={handleGoogleAuth}>
               <Text style={styles.googleText}>CONTINUE WITH GOOGLE</Text>
             </Pressable>
 
-            {__DEV__ && (
-              <View style={styles.devDebugBox}>
-                <Text style={styles.devRedirectText} selectable>
-                  Redirect URL: {redirectUrl}
-                </Text>
-                {authDebug ? (
-                  <Text style={styles.devRedirectText} selectable>
-                    {authDebug}
-                  </Text>
-                ) : null}
-              </View>
-            )}
+            <Pressable style={styles.emailBtn} onPress={handleAppleAuth}>
+              <Text style={styles.emailText}>CONTINUE WITH APPLE</Text>
+            </Pressable>
 
             <Pressable
               style={styles.emailBtn}
@@ -584,10 +540,6 @@ const styles = StyleSheet.create({
     left: 32,
     right: 32,
     gap: 16,
-  },
-  appleBtn: {
-    height: 60,
-    width: "100%",
   },
   googleBtn: {
     backgroundColor: "#AAA8D6",

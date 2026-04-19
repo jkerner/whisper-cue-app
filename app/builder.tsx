@@ -7,19 +7,24 @@ import {
   Pressable,
   StyleSheet,
   SafeAreaView,
+  Alert,
+  ActivityIndicator,
 } from "react-native";
-import { useRouter } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
 import { Feather } from "@expo/vector-icons";
 import { builderStore, Section } from "../src/lib/builder-store";
+import { supabase } from "../src/lib/supabase";
 
 export default function BuilderScreen() {
   const router = useRouter();
-  const [title, setTitle] = useState("");
-  const [subtitle, setSubtitle] = useState("");
+  const params = useLocalSearchParams<{ sequenceId?: string; sequenceName?: string; sequenceSubtitle?: string }>();
+  const [title, setTitle] = useState(params.sequenceName || "");
+  const [subtitle, setSubtitle] = useState(params.sequenceSubtitle || "");
   const [sections, setSections] = useState<Section[]>(
     builderStore.getSections()
   );
   const [editingId, setEditingId] = useState<string | null>(null);
+  const [saving, setSaving] = useState(false);
 
   useEffect(() => {
     return builderStore.subscribe(() => {
@@ -28,6 +33,35 @@ export default function BuilderScreen() {
   }, []);
 
   const totalPoses = sections.reduce((sum, s) => sum + s.poses.length, 0);
+
+  const handleSave = async () => {
+    if (sections.length === 0) {
+      Alert.alert("Add sections first", "Your sequence needs at least one section.");
+      return;
+    }
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) {
+      Alert.alert("Sign in required", "Please sign in to save sequences.");
+      return;
+    }
+    setSaving(true);
+    try {
+      const { error } = await supabase.from("sequences").insert({
+        user_id: user.id,
+        name: title || "Untitled Sequence",
+        description: subtitle || null,
+        sections: sections,
+      });
+      if (error) throw error;
+      Alert.alert("Saved!", "Your sequence has been saved.", [
+        { text: "OK", onPress: () => router.replace("/") },
+      ]);
+    } catch (err: any) {
+      Alert.alert("Couldn't save", err.message);
+    } finally {
+      setSaving(false);
+    }
+  };
 
   return (
     <SafeAreaView style={styles.safe}>
@@ -193,13 +227,15 @@ export default function BuilderScreen() {
         {/* Save CTA */}
         <View style={styles.ctaContainer}>
           <Pressable
-            style={[
-              styles.cta,
-              sections.length === 0 && styles.ctaDisabled,
-            ]}
-            disabled={sections.length === 0}
+            style={[styles.cta, saving && styles.ctaDisabled]}
+            disabled={saving}
+            onPress={handleSave}
           >
-            <Text style={styles.ctaText}>SAVE SEQUENCE</Text>
+            {saving ? (
+              <ActivityIndicator color="#030303" />
+            ) : (
+              <Text style={styles.ctaText}>SAVE SEQUENCE</Text>
+            )}
           </Pressable>
         </View>
       </View>
