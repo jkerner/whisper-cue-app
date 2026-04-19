@@ -13,7 +13,11 @@
       "backgroundColor": "#121212"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "app.whispercue",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -34,9 +38,18 @@
           "origin": "https://whispercue.app"
         }
       ],
+      "expo-apple-authentication",
       "expo-asset",
       "expo-font",
       "expo-web-browser"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": "https://whispercue.app"
+      },
+      "eas": {
+        "projectId": "16a4eb08-824e-474b-8be3-c27027a21525"
+      }
+    }
   }
 }

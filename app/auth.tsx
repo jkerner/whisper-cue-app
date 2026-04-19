@@ -14,8 +14,9 @@ import {
 } from "react-native";
 import { useRouter } from "expo-router";
 import { Feather } from "@expo/vector-icons";
+import * as AuthSession from "expo-auth-session";
 import * as WebBrowser from "expo-web-browser";
-import * as Linking from "expo-linking";
+import * as AppleAuthentication from "expo-apple-authentication";
 import { supabase } from "../src/lib/supabase";
 
 type Step = "choose" | "email" | "password";
@@ -23,6 +24,8 @@ type Step = "choose" | "email" | "password";
 const TITLE = "Whisper Cue";
 const LETTER_DELAY = 80;
 const RING_SIZE = 220;
+
+WebBrowser.maybeCompleteAuthSession();
 
 function SunbeamRay({ angle, delay }: { angle: number; delay: number }) {
   const rayFade = useRef(new Animated.Value(0)).current;
@@ -83,6 +86,11 @@ function SunbeamRay({ angle, delay }: { angle: number; delay: number }) {
 
 export default function AuthScreen() {
   const router = useRouter();
+  const redirectUrl = AuthSession.makeRedirectUri({
+    native: "whispercue://auth",
+    path: "auth",
+  });
+  const [authDebug, setAuthDebug] = useState<string>("");
   const [step, setStep] = useState<Step>("choose");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -197,29 +205,82 @@ export default function AuthScreen() {
   }, []);
 
   const handleGoogleAuth = async () => {
-    const redirectUrl = Linking.createURL("/");
+    console.log("[auth] redirectUrl", redirectUrl);
+    setAuthDebug(`redirect: ${redirectUrl}`);
+
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: { redirectTo: redirectUrl, skipBrowserRedirect: true },
     });
+
     if (error) {
+      setAuthDebug(`oauth error: ${error.message}`);
       Alert.alert("Something shifted.", error.message);
       return;
     }
+
     if (data?.url) {
-      const subscription = Linking.addEventListener("url", async (event) => {
-        subscription.remove();
-        const url = new URL(event.url);
-        // Tokens can be in hash fragment or query params
-        const params = new URLSearchParams(url.hash.substring(1) || url.search.substring(1));
-        const accessToken = params.get("access_token");
-        const refreshToken = params.get("refresh_token");
-        if (accessToken && refreshToken) {
-          await supabase.auth.setSession({ access_token: accessToken, refresh_token: refreshToken });
-        }
-        WebBrowser.dismissBrowser();
+      setAuthDebug((prev) => `${prev}\nopened: yes`);
+      const result = await WebBrowser.openAuthSessionAsync(
+        data.url,
+        redirectUrl
+      );
+
+      setAuthDebug(
+        (prev) =>
+          `${prev}\nresult: ${result.type}${
+            "url" in result && result.url ? `\nreturned: ${result.url}` : ""
+          }`
+      );
+
+      if (result.type !== "success" || !result.url) {
+        return;
+      }
+
+      const url = new URL(result.url);
+      // Tokens can be in hash fragment or query params
+      const params = new URLSearchParams(
+        url.hash.substring(1) || url.search.substring(1)
+      );
+      const accessToken = params.get("access_token");
+      const refreshToken = params.get("refresh_token");
+
+      setAuthDebug(
+        (prev) =>
+          `${prev}\naccess token: ${accessToken ? "yes" : "no"}\nrefresh token: ${
+            refreshToken ? "yes" : "no"
+          }`
+      );
+
+      if (accessToken && refreshToken) {
+        await supabase.auth.setSession({
+          access_token: accessToken,
+          refresh_token: refreshToken,
+        });
+        setAuthDebug((prev) => `${prev}\nsession set: yes`);
+      }
+    }
+  };
+
+  const handleAppleAuth = async () => {
+    try {
+      const credential = await AppleAuthentication.signInAsync({
+        requestedScopes: [
+          AppleAuthentication.AppleAuthenticationScope.FULL_NAME,
+          AppleAuthentication.AppleAuthenticationScope.EMAIL,
+        ],
       });
-      await WebBrowser.openBrowserAsync(data.url);
+      if (credential.identityToken) {
+        const { error } = await supabase.auth.signInWithIdToken({
+          provider: "apple",
+          token: credential.identityToken,
+        });
+        if (error) Alert.alert("Something shifted.", error.message);
+      }
+    } catch (err: any) {
+      if (err.code !== "ERR_REQUEST_CANCELED") {
+        Alert.alert("Something shifted.", err.message);
+      }
     }
   };
 
@@ -303,9 +364,30 @@ export default function AuthScreen() {
               },
             ]}
           >
+            <AppleAuthentication.AppleAuthenticationButton
+              buttonType={AppleAuthentication.AppleAuthenticationButtonType.SIGN_IN}
+              buttonStyle={AppleAuthentication.AppleAuthenticationButtonStyle.WHITE}
+              cornerRadius={16}
+              style={styles.appleBtn}
+              onPress={handleAppleAuth}
+            />
+
             <Pressable style={styles.googleBtn} onPress={handleGoogleAuth}>
               <Text style={styles.googleText}>CONTINUE WITH GOOGLE</Text>
             </Pressable>
+
+            {__DEV__ && (
+              <View style={styles.devDebugBox}>
+                <Text style={styles.devRedirectText} selectable>
+                  Redirect URL: {redirectUrl}
+                </Text>
+                {authDebug ? (
+                  <Text style={styles.devRedirectText} selectable>
+                    {authDebug}
+                  </Text>
+                ) : null}
+              </View>
+            )}
 
             <Pressable
               style={styles.emailBtn}
@@ -503,6 +585,10 @@ const styles = StyleSheet.create({
     right: 32,
     gap: 16,
   },
+  appleBtn: {
+    height: 60,
+    width: "100%",
+  },
   googleBtn: {
     backgroundColor: "#AAA8D6",
     borderRadius: 16,
@@ -547,5 +633,14 @@ const styles = StyleSheet.create({
     letterSpacing: 2,
     textAlign: "center",
     marginTop: 4,
+  },
+  devRedirectText: {
+    color: "#7999C1",
+    fontSize: 10,
+    lineHeight: 14,
+    textAlign: "center",
+  },
+  devDebugBox: {
+    gap: 6,
   },
 });
