@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   View,
   Text,
@@ -6,349 +6,277 @@ import {
   Pressable,
   StyleSheet,
   SafeAreaView,
-  Animated,
-  Easing,
+  ScrollView,
+  ActivityIndicator,
 } from "react-native";
 import { useRouter } from "expo-router";
 import { Feather } from "@expo/vector-icons";
+import { supabase } from "../src/lib/supabase";
 
-const TITLE = "Whisper Cue";
-const LETTER_DELAY = 80;
-
-function SunbeamRay({ angle, delay }: { angle: number; delay: number }) {
-  const rayFade = useRef(new Animated.Value(0)).current;
-  const rayShoot = useRef(new Animated.Value(0)).current;
-
-  useEffect(() => {
-    Animated.loop(
-      Animated.sequence([
-        Animated.delay(delay),
-        Animated.parallel([
-          Animated.timing(rayFade, {
-            toValue: 0.25,
-            duration: 1500,
-            easing: Easing.out(Easing.cubic),
-            useNativeDriver: true,
-          }),
-          Animated.timing(rayShoot, {
-            toValue: -12,
-            duration: 1500,
-            easing: Easing.out(Easing.cubic),
-            useNativeDriver: true,
-          }),
-        ]),
-        Animated.parallel([
-          Animated.timing(rayFade, {
-            toValue: 0,
-            duration: 1500,
-            easing: Easing.in(Easing.cubic),
-            useNativeDriver: true,
-          }),
-          Animated.timing(rayShoot, {
-            toValue: 0,
-            duration: 1500,
-            useNativeDriver: true,
-          }),
-        ]),
-        Animated.delay(1500 - delay),
-      ])
-    ).start();
-  }, []);
-
-  return (
-    <Animated.View
-      style={[
-        styles.ray,
-        {
-          opacity: rayFade,
-          transform: [
-            { rotate: `${angle}deg` },
-            { translateY: -90 },
-            { translateY: rayShoot as any },
-          ],
-        },
-      ]}
-    />
-  );
+interface SavedSequence {
+  id: string;
+  name: string;
+  description: string | null;
+  estimated_minutes: number | null;
+  sections: any[];
+  created_at: string;
 }
 
-const RING_SIZE = 220;
+function greeting() {
+  const h = new Date().getHours();
+  if (h < 12) return "Good morning";
+  if (h < 17) return "Good afternoon";
+  return "Good evening";
+}
 
 export default function HomeScreen() {
   const router = useRouter();
-  const [visibleCount, setVisibleCount] = useState(0);
-  const logoFade = useRef(new Animated.Value(0)).current;
-  const logoPulse = useRef(new Animated.Value(1)).current;
-  const wordmarkFade = useRef(new Animated.Value(0)).current;
-  const wordmarkPulse = useRef(new Animated.Value(1)).current;
-  const subtitleFade = useRef(new Animated.Value(0)).current;
-  const cardFade = useRef(new Animated.Value(0)).current;
-  const cardSlide = useRef(new Animated.Value(20)).current;
+  const [userName, setUserName] = useState<string | null>(null);
+  const [sequences, setSequences] = useState<SavedSequence[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // 1. Logo icon fades in
-    Animated.sequence([
-      Animated.delay(300),
-      Animated.timing(logoFade, {
-        toValue: 1,
-        duration: 800,
-        easing: Easing.out(Easing.cubic),
-        useNativeDriver: true,
-      }),
-    ]).start();
+    const load = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) { setLoading(false); return; }
 
-    // 2. Logo gentle pulse
-    Animated.loop(
-      Animated.sequence([
-        Animated.timing(logoPulse, {
-          toValue: 1.06,
-          duration: 3000,
-          easing: Easing.inOut(Easing.sin),
-          useNativeDriver: true,
-        }),
-        Animated.timing(logoPulse, {
-          toValue: 1,
-          duration: 3000,
-          easing: Easing.inOut(Easing.sin),
-          useNativeDriver: true,
-        }),
-      ])
-    ).start();
+      const name = user.user_metadata?.full_name?.split(" ")[0]
+        || user.user_metadata?.name?.split(" ")[0]
+        || null;
+      setUserName(name);
 
-    // 3. Type out title letter by letter
-    const startDelay = 900;
-    for (let i = 0; i <= TITLE.length; i++) {
-      setTimeout(() => setVisibleCount(i), startDelay + i * LETTER_DELAY);
-    }
-
-    // 3b. Wordmark fade (for container)
-    Animated.sequence([
-      Animated.delay(900),
-      Animated.timing(wordmarkFade, {
-        toValue: 1,
-        duration: 800,
-        easing: Easing.out(Easing.cubic),
-        useNativeDriver: true,
-      }),
-    ]).start();
-
-    // 4. Subtitle
-    Animated.sequence([
-      Animated.delay(1400),
-      Animated.timing(subtitleFade, {
-        toValue: 1,
-        duration: 600,
-        useNativeDriver: true,
-      }),
-    ]).start();
-
-    // 4b. Wordmark pulse after letters finish
-    const lettersFinishAt = 900 + TITLE.length * LETTER_DELAY + 200;
-    setTimeout(() => {
-      Animated.loop(
-        Animated.sequence([
-          Animated.timing(wordmarkPulse, {
-            toValue: 1.04,
-            duration: 3000,
-            easing: Easing.inOut(Easing.sin),
-            useNativeDriver: true,
-          }),
-          Animated.timing(wordmarkPulse, {
-            toValue: 1,
-            duration: 3000,
-            easing: Easing.inOut(Easing.sin),
-            useNativeDriver: true,
-          }),
-        ])
-      ).start();
-    }, lettersFinishAt);
-
-    // 5. Card slides up
-    Animated.sequence([
-      Animated.delay(1800),
-      Animated.parallel([
-        Animated.timing(cardFade, {
-          toValue: 1,
-          duration: 500,
-          useNativeDriver: true,
-        }),
-        Animated.timing(cardSlide, {
-          toValue: 0,
-          duration: 500,
-          easing: Easing.out(Easing.cubic),
-          useNativeDriver: true,
-        }),
-      ]),
-    ]).start();
+      const { data } = await supabase
+        .from("sequences")
+        .select("id, name, description, estimated_minutes, sections, created_at")
+        .eq("user_id", user.id)
+        .order("updated_at", { ascending: false });
+      setSequences(data || []);
+      setLoading(false);
+    };
+    load();
   }, []);
+
+  const totalPoses = (seq: SavedSequence) =>
+    (seq.sections || []).reduce((sum: number, s: any) => sum + (s.poses?.length || 0), 0);
 
   return (
     <SafeAreaView style={styles.safe}>
       <View style={styles.container}>
-        {/* Logo area with sunbeam rays */}
-        <View style={styles.logoArea}>
-          {/* Sunbeam rays — arcing across the top */}
-          {[...Array(9)].map((_, i) => (
-            <SunbeamRay key={i} angle={-120 + i * 30} delay={i * 100} />
-          ))}
-          <Animated.View style={[styles.logoInner, { opacity: logoFade, transform: [{ scale: logoPulse }] }]}>
-            <Image
-              source={require("../assets/poses/whisper-cue.png")}
-              style={styles.logoIcon}
-              resizeMode="contain"
-            />
-          </Animated.View>
+        {/* Header */}
+        <View style={styles.header}>
+          <View>
+            <Text style={styles.greeting}>{greeting()}{userName ? `, ${userName}` : ""}</Text>
+            <Text style={styles.headerSub}>WHISPER CUE</Text>
+          </View>
+          <Pressable style={styles.accountBtn} onPress={() => router.push("/account")}>
+            <Feather name="user" size={18} color="#7999C1" />
+          </Pressable>
         </View>
 
-        {/* Title — letter by letter */}
-        <Animated.View style={{ opacity: wordmarkFade, transform: [{ scale: wordmarkPulse }] }}>
-          <Text style={styles.title}>
-            {TITLE.split("").map((char, i) => (
-              <Text key={i} style={{ opacity: i < visibleCount ? 1 : 0 }}>
-                {char}
+        <ScrollView
+          style={styles.scroll}
+          contentContainerStyle={styles.scrollContent}
+          showsVerticalScrollIndicator={false}
+        >
+          <Text style={styles.sectionLabel}>YOUR SEQUENCES</Text>
+
+          {loading ? (
+            <ActivityIndicator color="#43B1E8" style={{ marginTop: 40 }} />
+          ) : sequences.length === 0 ? (
+            <View style={styles.emptyState}>
+              <Image
+                source={require("../assets/poses/whisper-cue.png")}
+                style={styles.emptyIcon}
+                resizeMode="contain"
+              />
+              <Text style={styles.emptyTitle}>No sequences yet</Text>
+              <Text style={styles.emptyDesc}>
+                Build your first class flow and it will live here.
               </Text>
-            ))}
-          </Text>
-        </Animated.View>
+            </View>
+          ) : (
+            <View style={styles.sequenceList}>
+              {sequences.map((seq) => {
+                const poseCount = totalPoses(seq);
+                const sectionCount = (seq.sections || []).length;
+                return (
+                  <Pressable
+                    key={seq.id}
+                    style={styles.card}
+                    onPress={() => router.push("/sequence")}
+                  >
+                    <View style={styles.cardTop}>
+                      <View style={styles.cardMeta}>
+                        {seq.estimated_minutes ? (
+                          <Text style={styles.cardDuration}>{seq.estimated_minutes} MIN</Text>
+                        ) : null}
+                        <Text style={styles.cardStat}>{sectionCount} SECTIONS</Text>
+                        {poseCount > 0 && (
+                          <Text style={styles.cardStat}>{poseCount} POSES</Text>
+                        )}
+                      </View>
+                      <Feather name="play-circle" size={20} color="#43B1E8" />
+                    </View>
+                    <Text style={styles.cardName}>{seq.name}</Text>
+                    {seq.description ? (
+                      <Text style={styles.cardDesc}>{seq.description}</Text>
+                    ) : null}
+                  </Pressable>
+                );
+              })}
+            </View>
+          )}
+        </ScrollView>
 
-        {/* Subtitle */}
-        <Animated.Text style={[styles.subtitle, { opacity: subtitleFade }]}>
-          REAL-TIME CUEING FOR YOGA TEACHERS
-        </Animated.Text>
-
-        {/* Sequence card */}
-        <Animated.View
-          style={[
-            styles.cardWrap,
-            { opacity: cardFade, transform: [{ translateY: cardSlide }] },
-          ]}
-        >
+        {/* Build CTA */}
+        <View style={styles.ctaContainer}>
           <Pressable
-            style={styles.card}
-            onPress={() => router.push("/sequence")}
+            style={styles.cta}
+            onPress={() => router.push("/builder-entry")}
           >
-            <Text style={styles.cardEyebrow}>READY TO TEACH</Text>
-            <Text style={styles.cardTitle}>Power Vinyasa — 60 Min</Text>
-            <Text style={styles.cardSub}>Root & Rise</Text>
-            <Text style={styles.cardMeta}>133 CUES · ~60 MIN</Text>
+            <Feather name="plus" size={16} color="#030303" />
+            <Text style={styles.ctaText}>BUILD A SEQUENCE</Text>
           </Pressable>
-        </Animated.View>
-
-        {/* Create new sequence */}
-        <Pressable
-          style={styles.createButton}
-          onPress={() => router.push("/builder-entry")}
-        >
-          <Feather name="plus" size={14} color="#43B1E8" />
-          <Text style={styles.createText}>CREATE NEW SEQUENCE</Text>
-        </Pressable>
+        </View>
       </View>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  safe: {
-    flex: 1,
-    backgroundColor: "#030303",
-  },
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    padding: 24,
-  },
+  safe: { flex: 1, backgroundColor: "#030303" },
+  container: { flex: 1 },
 
-  // Logo + ring
-  logoArea: {
-    width: RING_SIZE,
-    height: RING_SIZE,
+  header: {
+    flexDirection: "row",
     alignItems: "center",
-    justifyContent: "center",
-    marginBottom: -20,
+    justifyContent: "space-between",
+    paddingHorizontal: 24,
+    paddingTop: 16,
+    paddingBottom: 24,
   },
-  ray: {
-    position: "absolute",
-    width: 1,
-    height: 24,
-    backgroundColor: "#AAA8D6",
-    borderRadius: 1,
-    borderStyle: "dashed",
-  },
-  logoInner: {
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  logoIcon: {
-    width: 160,
-    height: 160,
-  },
-
-  // Title
-  title: {
-    fontSize: 42,
-    fontFamily: "DancingScript-Bold",
-    fontWeight: "normal",
+  greeting: {
     color: "#F8F9FA",
-    marginBottom: 12,
-  },
-
-  subtitle: {
-    fontSize: 9,
-    fontWeight: "500",
-    letterSpacing: 3,
-    color: "#7999C1",
-    marginBottom: 64,
-  },
-  cardWrap: {
-    width: "100%",
-  },
-  card: {
-    backgroundColor: "#0d1117",
-    borderRadius: 16,
-    padding: 24,
-    width: "100%",
-  },
-  cardEyebrow: {
-    color: "#43B1E8",
-    fontSize: 9,
-    letterSpacing: 3.5,
-    fontWeight: "500",
-    marginBottom: 8,
-  },
-  cardTitle: {
-    color: "#F8F9FA",
-    fontSize: 20,
+    fontSize: 24,
     fontFamily: "CircularStd-Bold",
     fontWeight: "normal",
     letterSpacing: -0.3,
     marginBottom: 2,
   },
-  cardSub: {
-    color: "#7999C1",
-    fontSize: 15,
-    fontFamily: "CormorantGaramond-Italic",
-    fontVariant: ["lining-nums"],
-    marginBottom: 8,
+  headerSub: {
+    color: "#43B1E8",
+    fontSize: 9,
+    letterSpacing: 3.5,
+    fontWeight: "600",
   },
-  cardMeta: {
+  accountBtn: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: "#0d1117",
+    borderWidth: 1,
+    borderColor: "#1a2230",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
+  scroll: { flex: 1 },
+  scrollContent: { paddingHorizontal: 24, paddingBottom: 24 },
+
+  sectionLabel: {
     color: "#7999C1",
     fontSize: 9,
+    letterSpacing: 3.5,
+    fontWeight: "600",
+    marginBottom: 16,
+  },
+
+  emptyState: {
+    alignItems: "center",
+    paddingTop: 48,
+    paddingBottom: 32,
+    gap: 12,
+  },
+  emptyIcon: {
+    width: 120,
+    height: 120,
+    opacity: 0.4,
+    marginBottom: 8,
+  },
+  emptyTitle: {
+    color: "#F8F9FA",
+    fontSize: 20,
+    fontFamily: "CircularStd-Bold",
+    fontWeight: "normal",
+  },
+  emptyDesc: {
+    color: "#7999C1",
+    fontSize: 14,
+    fontFamily: "CormorantGaramond-Italic",
+    textAlign: "center",
+    lineHeight: 22,
+    paddingHorizontal: 24,
+  },
+
+  sequenceList: { gap: 12 },
+  card: {
+    backgroundColor: "#0d1117",
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#1a2230",
+    padding: 20,
+  },
+  cardTop: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 10,
+  },
+  cardMeta: { flexDirection: "row", gap: 12, alignItems: "center" },
+  cardDuration: {
+    color: "#F8F9FA",
+    fontSize: 10,
+    fontWeight: "600",
     letterSpacing: 2,
   },
-  createButton: {
+  cardStat: {
+    color: "#7999C1",
+    fontSize: 9,
+    fontWeight: "600",
+    letterSpacing: 2,
+  },
+  cardName: {
+    color: "#F8F9FA",
+    fontSize: 22,
+    fontFamily: "CircularStd-Bold",
+    fontWeight: "normal",
+    letterSpacing: -0.3,
+    marginBottom: 4,
+  },
+  cardDesc: {
+    color: "#7999C1",
+    fontSize: 14,
+    fontFamily: "CormorantGaramond-Italic",
+  },
+
+  ctaContainer: {
+    paddingHorizontal: 24,
+    paddingBottom: 24,
+    paddingTop: 12,
+  },
+  cta: {
+    backgroundColor: "#43B1E8",
+    borderRadius: 20,
+    paddingVertical: 18,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    gap: 8,
-    paddingVertical: 16,
-    marginTop: 12,
-    width: "100%",
+    gap: 10,
   },
-  createText: {
-    color: "#43B1E8",
-    fontSize: 11,
-    fontWeight: "600",
+  ctaText: {
+    color: "#030303",
+    fontSize: 13,
+    fontWeight: "700",
     letterSpacing: 3,
   },
 });

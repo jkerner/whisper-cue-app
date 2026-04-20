@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"http://localhost:8081/app/index.bundle?platform=ios&dev=true&minify=false\")",
+      "Bash(node -e \"const d=require\\(''./src/data/sequences.json''\\); const sections=[...new Set\\(d[0].steps.map\\(s=>s.section\\)\\)]; sections.forEach\\(s=>{const steps=d[0].steps.filter\\(st=>st.section===s\\); console.log\\(s+'' \\(''+steps.length+'' steps\\)''\\);}\\)\")",
+      "Bash(ipconfig getifaddr:*)",
+      "Bash(lsof -ti:8081,8082,8083,8084,8085,8086,8087,8088)",
+      "Bash(curl -s http://localhost:8081)",
+      "Bash(eas submit *)"
+    ],
+    "additionalDirectories": [
+      "/tmp"
+    ]
+  }
+}
