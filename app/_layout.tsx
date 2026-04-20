@@ -66,8 +66,9 @@ export default function RootLayout() {
   useEffect(() => {
     if (!authReady || !fontsLoaded) return;
     const onAuthScreen = segments[0] === "auth";
+    const onPublicScreen = segments[0] === "s";
 
-    if (!session && !onAuthScreen) {
+    if (!session && !onAuthScreen && !onPublicScreen) {
       router.replace("/auth");
     } else if (session && onAuthScreen) {
       router.replace("/");

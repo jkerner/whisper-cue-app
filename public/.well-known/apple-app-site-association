@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "7C4QWW584V.app.whispercue",
+        "paths": ["/s/*"]
+      }
+    ]
+  }
+}

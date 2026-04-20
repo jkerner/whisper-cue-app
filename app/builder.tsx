@@ -46,12 +46,17 @@ export default function BuilderScreen() {
     }
     setSaving(true);
     try {
-      const { error } = await supabase.from("sequences").insert({
+      const sequenceId = params.sequenceId;
+      const payload = {
         user_id: user.id,
         name: title || "Untitled Sequence",
         description: subtitle || null,
         sections: sections,
-      });
+        updated_at: new Date().toISOString(),
+      };
+      const { error } = sequenceId
+        ? await supabase.from("sequences").update(payload).eq("id", sequenceId).eq("user_id", user.id)
+        : await supabase.from("sequences").insert(payload);
       if (error) throw error;
       Alert.alert("Saved!", "Your sequence has been saved.", [
         { text: "OK", onPress: () => router.replace("/") },
@@ -75,7 +80,7 @@ export default function BuilderScreen() {
 
         {/* Title area */}
         <View style={styles.titleArea}>
-          <Text style={styles.eyebrow}>NEW SEQUENCE</Text>
+          <Text style={styles.eyebrow}>{params.sequenceId ? "EDIT SEQUENCE" : "NEW SEQUENCE"}</Text>
           <TextInput
             style={styles.titleInput}
             value={title}
