@@ -18,12 +18,12 @@
       "Lying on your back, walk both your feet and both your hands to the right. Make a crescent shape with your whole body.",
       "Cross your left ankle over your right. Let your left side body open completely."
     ],
-    "adjustment": "Keep both your shoulders and both your hips on the mat. The stretch should travel your entire side body."
+    "adjustment": "Keep both your shoulders and both your hips on the mat. Let the stretch travel your entire side body."
   },
   "boat-pose": {
     "cues": [
       "Sit tall, lean back slightly and lift your feet off the floor. Your shins parallel to the earth.",
-      "Reach your arms forward alongside your knees. Your chest stays lifted — breathe here."
+      "Reach your arms forward alongside your knees. Keep your chest lifted — breathe here."
     ],
     "adjustment": "Keep your chest open and your spine long. If your low back rounds, bend your knees more."
   },
@@ -103,7 +103,7 @@
       "Your right hand finds the floor beside you. Inhale, sweep your left arm up and over.",
       "Side bend to your right — let your breath fill your left rib cage."
     ],
-    "adjustment": "Keep both your sit bones grounded. The bend comes from your waist, not your shoulder."
+    "adjustment": "Keep both your sit bones grounded. Bend from your waist, not your shoulder."
   },
   "easy-pose-variation-arms-knees": {
     "cues": [
@@ -117,7 +117,7 @@
       "Sweep your arms overhead. Interlace your fingers, release your index fingers to the sky.",
       "Inhale, lengthen up. Exhale, press your hips forward slightly and lift your chest into a gentle backbend."
     ],
-    "adjustment": "Engage your glutes and your core to protect your low back. The bend is in your upper back, not your lumbar."
+    "adjustment": "Engage your glutes and your core to protect your low back. Find the bend in your upper back, not your lumbar."
   },
   "extended-side-angle-pose-variation": {
     "cues": [
@@ -131,11 +131,11 @@
       "Lie on your back. Slide your hands under your hips, palms down. Press your elbows into the mat.",
       "Inhale, lift your chest high. Let the crown of your head release lightly to the floor — or hover it."
     ],
-    "adjustment": "Your weight should be in your forearms and elbows, not your head. Keep your legs active and together."
+    "adjustment": "Keep your weight in your forearms and elbows, not your head. Keep your legs active and together."
   },
   "five-pointed-star-pose-arms-up": {
     "cues": [
-      "Step your feet wide. Your arms reach out and up — you're a five-pointed star.",
+      "Step your feet wide. Reach your arms out and up — you're a five-pointed star.",
       "Spread your fingers wide. Feel the energy reach out through every point."
     ],
     "adjustment": "Your feet are parallel, your toes point forward. Engage your legs — lift your kneecaps."
@@ -145,7 +145,7 @@
       "Lower to your forearms. Walk your feet back — one long line from your head to your heels.",
       "Press your forearms down, draw your belly in. Hold here, steady breath."
     ],
-    "adjustment": "Don't let your hips sag or pike. Your gaze is between your thumbs. Breathe — don't hold."
+    "adjustment": "Don't let your hips sag or pike. Keep your gaze between your thumbs. Breathe — don't hold."
   },
   "full-body-stretch-pose": {
     "cues": [
@@ -213,9 +213,9 @@
   "high-lunge-pose": {
     "cues": [
       "From Down Dog, step your right foot forward between your hands. Stay on the ball of your back foot.",
-      "Inhale, rise — your arms reach overhead. Your front knee bends to 90, your back leg is strong and straight."
+      "Inhale, rise — your arms reach overhead. Bend your front knee to 90, your back leg is strong and straight."
     ],
-    "adjustment": "Draw your front ribs in. Stack your shoulders over your hips. Your back heel drives back."
+    "adjustment": "Draw your front ribs in. Stack your shoulders over your hips. Drive your back heel back."
   },
   "lizard-pose": {
     "cues": [
@@ -229,14 +229,15 @@
       "In your Low Lunge, walk your hands up to your front thigh. Stack your shoulders over your hips.",
       "Sink your hips forward and down. Let the hip flexor of your back leg open."
     ],
-    "adjustment": "Press your hands into your thigh to help lift your chest. Your back knee stays padded on the mat."
+    "adjustment": "Press your hands into your thigh to help lift your chest. Keep your back knee padded on the mat."
   },
   "low-lunge-pose": {
     "cues": [
-      "Step your right foot forward, lower your back knee to the mat. Untuck your back toes.",
-      "Inhale, sweep your arms overhead. Sink your hips forward and down."
+      "Exhale Low Lunge. Plant your foot in between your palms.",
+      "Stack your front knee over top of your ankle. Draw your outer hip back.",
+      "Extend through your back heel toward the wall behind you. Lengthen your spine."
     ],
-    "adjustment": "Your front knee stays over your ankle. Draw your low belly in to support your low back."
+    "adjustment": "Your back knee can lower to the mat for support. Draw your low belly in to protect your low back as you sink forward."
   },
   "palm-tree-pose": {
     "cues": [
@@ -250,7 +251,7 @@
       "Keep your fingers interlaced overhead. Exhale, lean to your right — long arc through your left side body.",
       "Inhale, come back to center. Exhale, lean to your left."
     ],
-    "adjustment": "Both your feet stay grounded. The bend comes from your waist — don't collapse your bottom side."
+    "adjustment": "Both your feet stay grounded. Bend from your waist — don't collapse your bottom side."
   },
   "plough-pose": {
     "cues": [
@@ -313,14 +314,14 @@
       "From your Low Lunge, bring your hands to prayer at your heart.",
       "Exhale, twist — hook your opposite elbow outside your front knee. Press your palms together."
     ],
-    "adjustment": "Keep your spine long as you twist. The twist comes from your mid-back, not your neck. Your back knee stays padded."
+    "adjustment": "Keep your spine long as you twist. Twist from your mid-back, not your neck. Keep your back knee padded."
   },
   "revolved-lunge-pose": {
     "cues": [
       "From your high lunge, bring your hands to prayer. Exhale, twist — your left elbow hooks outside your right knee.",
       "Stack your elbows. Press your palms to deepen your rotation."
     ],
-    "adjustment": "Keep your back leg strong and straight. Your hips stay level — don't let the twist pull one hip forward."
+    "adjustment": "Keep your back leg strong and straight. Keep your hips level — don't let the twist pull one hip forward."
   },
   "revolved-side-angle-pose": {
     "cues": [
@@ -338,10 +339,11 @@
   },
   "runners-lunge-pose": {
     "cues": [
-      "Step your right foot forward between your hands. Your back knee lifts — stay on the ball of your back foot.",
-      "Your hands frame your front foot. Long spine, your gaze just past your mat."
+      "From Dog Split, step your right foot outside of your right palm.",
+      "Drop your back knee to the mat and untuck your toes.",
+      "Either stay on your palms or lower to your forearms for a deeper hip stretch."
     ],
-    "adjustment": "Your front knee stacks over your ankle. Press your back heel toward the wall behind you."
+    "adjustment": "Let your hips sink heavy toward the floor. Breathe into your back hip flexor — breathe into it."
   },
   "seated-cat-cow-pose": {
     "cues": [
@@ -388,10 +390,11 @@
   },
   "shoulderstand-pose": {
     "cues": [
-      "From Plough or lying on your back, bring your hands to your low back for support. Lift your legs to the sky.",
-      "Walk your hands higher up your back. Stack your hips over your shoulders, your feet over your hips."
+      "Hug your knees into your chest. Extend your legs up to the sky.",
+      "Lift your hips and place your palms on your low back with fingertips facing upward.",
+      "Keep your neck long and straight on the mat — do not look side to side. Walk your elbows toward each other. Stack your ankles over your hips."
     ],
-    "adjustment": "Your weight is in your shoulders and upper arms — never your neck. If this feels like too much, stay in a supported Bridge."
+    "adjustment": "Never rotate your head in Shoulderstand. If you feel pressure in your neck, lower back down into Bridge or Waterfall."
   },
   "side-lying-corpse-pose": {
     "cues": [
@@ -419,7 +422,7 @@
       "Lie on your belly. Bring your elbows under your shoulders, your forearms parallel.",
       "Press your forearms down, lift your chest. Draw your heart forward through your arms."
     ],
-    "adjustment": "Keep your shoulders away from your ears. Your legs are active — press the tops of your feet into the mat."
+    "adjustment": "Keep your shoulders away from your ears. Keep your legs active — press the tops of your feet into the mat."
   },
   "staff-pose": {
     "cues": [
@@ -451,15 +454,16 @@
   },
   "three-legged-downward-facing-dog-pose": {
     "cues": [
-      "From Down Dog, inhale and lift your right leg to the sky. Keep your hips level.",
-      "Flex your foot, reach through your heel. Three breaths here."
+      "Inhale Dog Split. Lift your right leg to the sky.",
+      "Square your hip bones to the earth. Lengthen and extend your lifted heel.",
+      "Drop your bottom heel down toward the mat. Stay long through your standing arms."
     ],
-    "adjustment": "Keep your standing foot firmly planted. Resist the urge to open your hip — square your hips first."
+    "adjustment": "Resist the urge to open your hip to the ceiling. Square your hips first, then find the height of your lift."
   },
   "thunderbolt-pose": {
     "cues": [
       "Come to kneeling. Sit back on your heels, tops of your feet on the mat.",
-      "Your hands rest on your thighs. Your spine is tall, your shoulders are soft. Just breathe."
+      "Your hands rest on your thighs. Keep your spine tall, your shoulders are soft. Just breathe."
     ],
     "adjustment": "If this is intense on your knees or ankles, place a blanket between your calves and your thighs."
   },
@@ -510,6 +514,380 @@
       "Draw both your knees into your chest. On your exhale, curl your head and shoulders up — your nose reaches toward your knees.",
       "Hold for a breath or two, then release your head back down. Two more rounds."
     ],
-    "adjustment": "The lift comes from your core, not your neck. Keep your low back pressing into the mat."
+    "adjustment": "Lift from your core, not your neck. Keep your low back pressing into the mat."
+  },
+  "child-pose": {
+    "cues": [
+      "Bring your big toes to touch. Walk your knees as wide as your mat.",
+      "Lower your forehead to the floor. Reach your fingertips to the top of your mat.",
+      "Plant your palms into the earth. Let your hips sink back toward your heels."
+    ],
+    "adjustment": "Allow your entire spine to lengthen. With each exhale, release any tension you have been holding in your shoulders and jaw."
+  },
+  "table-top-pose": {
+    "cues": [
+      "Inhale Table Top. Stack your shoulders over your wrists, your hips over your knees.",
+      "Draw your belly button into your spine. Gaze down in between your thumbs.",
+      "Spread your fingertips wide. Press the earth away from your palms."
+    ],
+    "adjustment": "Keep your back flat like a table — no arching or rounding. Your neck is long, a natural extension of your spine."
+  },
+  "cat-cow-pose": {
+    "cues": [
+      "Inhale Cow — draw your heart open, squeeze your shoulder blades toward your spine, gaze forward.",
+      "Exhale Cat — round your spine, drop your chin to your chest, hollow out your belly.",
+      "Move with your breath. Three rounds, let your spine wake up."
+    ],
+    "adjustment": "Close your eyes and let the movement become fluid. Breathe into the places that feel tight."
+  },
+  "downward-facing-dog-pose": {
+    "cues": [
+      "Exhale Downward Facing Dog. Tuck your toes and lift your hips.",
+      "Draw your heels down toward the floor. Press the mat away from your palms.",
+      "Spread your fingertips wide. Rotate your inner thighs slightly inward. Lengthen your neck. Gaze back through the legs."
+    ],
+    "adjustment": "Bend your knees generously if your hamstrings are tight. The priority is a long spine over straight legs."
+  },
+  "plank-pose": {
+    "cues": [
+      "Inhale High Plank. Stack your shoulders directly over your wrists.",
+      "Press your palms firmly into the mat. Draw your belly button in and up.",
+      "Extend your heels toward the wall behind you. One long line from the crown of your head to your heels."
+    ],
+    "adjustment": "Do not let your hips sag or pike. Activate your core and breathe steadily — do not hold your breath."
+  },
+  "low-plank": {
+    "cues": [
+      "Exhale Chaturanga. Bend your elbows and lower halfway.",
+      "Your elbows align with your shoulders. Squeeze your elbows into your ribs.",
+      "Keep your neck long and gaze down. Hold this line — do not let your hips drop."
+    ],
+    "adjustment": "If your hips dip, lower your knees and work on building the strength. Half Chaturanga is still Chaturanga."
+  },
+  "upward-facing-dog-pose": {
+    "cues": [
+      "Inhale Upward Facing Dog. Pull your heart through your upper arms.",
+      "Open your chest from shoulder to shoulder. Squeeze your shoulder blades toward your spine.",
+      "Lengthen through the throat and neck. Gaze forward. The tops of your feet press into the mat."
+    ],
+    "adjustment": "Keep your thighs and knees lifted off the mat. If that is too much, Cobra is always an option."
+  },
+  "standing-forward-fold-pose": {
+    "cues": [
+      "Exhale Standing Forward Fold. Drop the crown of your head toward the floor.",
+      "Bring your feet to hip distance. Ground down through all four corners of your feet.",
+      "Loosen the grip of the toes. Bring a slight bend to the knees if you desire."
+    ],
+    "adjustment": "Let your upper body hang heavy — release your neck and jaw completely. On each exhale, let gravity do the work."
+  },
+  "half-way-lift": {
+    "cues": [
+      "Inhale Halfway Lift. Lengthen your spine forward.",
+      "Bring your fingertips to your shins or the earth. Draw your tailbone back.",
+      "Lengthen the crown of your head forward. Find a flat back."
+    ],
+    "adjustment": "Bend your knees if needed to get your spine long. The lift comes from your low back lengthening, not just your head rising."
+  },
+  "mountain-pose": {
+    "cues": [
+      "Inhale Mountain Pose. Reach your fingertips to the sky.",
+      "Draw your belly button in and up. Slide your shoulders away from the ears.",
+      "Lengthen through the sides of your body. Spiral the pinky edges of your fingertips inward."
+    ],
+    "adjustment": "Ground down through all four corners of both feet. Feel the energy rise from the earth up through the crown of your head."
+  },
+  "mountain-pose-namaste": {
+    "cues": [
+      "Exhale Samasthiti. Bring your palms to touch at your heart center.",
+      "Relax your shoulders. Stand at attention — present, grounded, ready."
+    ],
+    "adjustment": "Let this moment be a reset. Soften your face, soften your belly. Take one full breath before you move."
+  },
+  "chair-pose": {
+    "cues": [
+      "Inhale Chair Pose. Bend your knees and reach your fingertips to the sky.",
+      "Slide your shoulders away from your ears. Squeeze your inner thighs toward one another.",
+      "Sink your weight back and down like you are about to take a seat."
+    ],
+    "adjustment": "Keep your knees tracking over your second and third toes. Draw your low belly in to protect your low back."
+  },
+  "three-legged-dog": {
+    "cues": [
+      "Inhale Dog Split. Lift your right leg to the sky.",
+      "Square your hip bones to the earth. Lengthen and extend your lifted heel.",
+      "Drop your bottom heel down toward the mat. Stay long through your standing arms."
+    ],
+    "adjustment": "Resist the urge to open your hip to the ceiling. Square your hips first, then find the height of your lift."
+  },
+  "warrior-pose-i": {
+    "cues": [
+      "Inhale Warrior I. Step your back foot in slightly. Ground the sole of your back foot into the mat.",
+      "Reach your fingertips toward the sky. Slide your shoulders away from your ears.",
+      "Keep the front knee stacked over the front ankle. Plant the pinky edge of your back foot into the mat."
+    ],
+    "adjustment": "Square your hips toward the front of your mat. If your back heel lifts, step your feet wider apart."
+  },
+  "warrior-pose-ii": {
+    "cues": [
+      "Exhale Warrior II. Widen the stance of your legs. Open your arms to a T.",
+      "Sink back into your front knee. Square your hip bone to the side wall.",
+      "Reach your front fingertips forward just as much as you reach your back fingertips back. Gaze over your front hand."
+    ],
+    "adjustment": "Your front knee tracks over your ankle — do not let it cave inward. Ground down through the outer edge of your back foot."
+  },
+  "reverse-warrior-pose": {
+    "cues": [
+      "Inhale Reverse Warrior. Reach your front fingertips to the wall behind you.",
+      "Place your bottom palm lightly onto your back thigh. Sink back into your front knee.",
+      "Stretch through the side of your body from your hip to your fingertips."
+    ],
+    "adjustment": "Keep your front knee bent and tracking forward. Your back hand rests lightly — no pushing into your thigh."
+  },
+  "revolved-chair-pose": {
+    "cues": [
+      "Inhale Chair Pose. Exhale Revolved Chair.",
+      "Bring your palms to press together at your heart. Draw your left elbow outside of your right thigh.",
+      "Press your bottom and top palms equally into one another. Gaze up if that feels available to you."
+    ],
+    "adjustment": "Keep your knees together and level. Twist from your mid-back — do not let your hips shift."
+  },
+  "yogi-toe-lock-pose": {
+    "cues": [
+      "Separate your feet hip-distance apart. Grab your big toes with your peace fingers.",
+      "Hook and pull up on the toes as you draw them in the opposite direction toward the earth. Bend your elbows out to the sides.",
+      "Continue to lengthen your spine on the inhale. Fold your chest deeper toward your thighs on each exhale."
+    ],
+    "adjustment": "A slight bend to the knees can support this posture. Use the traction between your fingers and toes helps you go deeper without forcing."
+  },
+  "gorilla-pose": {
+    "cues": [
+      "Separate your feet hip-distance apart. Bring your palms facing up underneath of your feet.",
+      "Walk your toes into your wrist crease. Press your feet into your palms.",
+      "Lengthen your spine on the inhale. Fold deeper on each exhale."
+    ],
+    "adjustment": "A slight bend to the knees allows you to get your hands underneath. Let the weight of your head and torso do the work."
+  },
+  "knee-to-nose-pose": {
+    "cues": [
+      "Exhale Knee to Nose. Round your spine and draw your knee toward your nose.",
+      "Hollow out your belly, press the floor away from your palms. Hold for a breath."
+    ],
+    "adjustment": "Option to bring your knee toward your ribs instead. Keep your shoulders over your wrists as you round."
+  },
+  "low-lunge-twist-pose": {
+    "cues": [
+      "From your low lunge, reach your top fingertips up to the sky.",
+      "Stack your top shoulder on top of your bottom. Continue to extend through your back heel.",
+      "Keep your front knee directly over your ankle. Lengthen your spine and rotate from your ribs."
+    ],
+    "adjustment": "Use your bottom hand on the floor for stability. Twist from your mid-back, not your neck."
+  },
+  "extended-side-angle-pose": {
+    "cues": [
+      "Exhale Extended Side Angle. Bring your front elbow to gently rest on your front thigh.",
+      "Reach your top fingertips up to the sky — or extend them toward the front wall with your bicep framing your ear.",
+      "Lengthen through both sides of your body. Keep your neck long. Gaze to the side or up to the sky."
+    ],
+    "adjustment": "Do not sink into your front elbow — keep your core active. Your back foot presses firmly into the earth."
+  },
+  "half-moon-pose": {
+    "cues": [
+      "Exhale Half Moon. Bring your weight into your front foot and engage your quadricep.",
+      "Shift forward and place your fingertips on the earth or a block a few inches in front of your big toe.",
+      "Stack your top shoulder over your bottom shoulder. Extend through your back heel. Gaze to the side or up to the sky."
+    ],
+    "adjustment": "Fix your gaze on one still point on the floor. Bring your top hand to your hip if balance feels unstable."
+  },
+  "reverse-triangle-pose": {
+    "cues": [
+      "From Warrior II, inhale Reverse Triangle. Straighten your front leg.",
+      "Reach your back arm fingertips toward the wall behind you. Lengthen through that side of your body.",
+      "Press into the big toe mound of your front foot. Gaze up toward your top hand."
+    ],
+    "adjustment": "Keep a micro-bend in your front knee if your hamstrings are tight. Ground your back foot firmly."
+  },
+  "eagle-pose": {
+    "cues": [
+      "Inhale Chair Pose. Exhale Eagle.",
+      "Wrap your right arm under your left. Lift your right leg over your left.",
+      "Draw your tailbone down and the crown of your head up. Melt your shoulders away from your ears."
+    ],
+    "adjustment": "Kickstand your bottom toes to the mat if balance is challenging. You can also grab opposite shoulders with each palm."
+  },
+  "one-legged-mountain-pose": {
+    "cues": [
+      "Inhale One Legged Mountain. Reach your fingertips toward the sky.",
+      "Lift your right leg in alignment with your right hip. Keep the knee bent, flex the foot.",
+      "Activate your standing leg. Lengthen from the sole of your foot to your fingertips."
+    ],
+    "adjustment": "Fix your gaze on one still point. Keep your standing foot grounded through all four corners."
+  },
+  "standing-figure-four-pose": {
+    "cues": [
+      "Exhale Standing Figure Four. Bring your hands to your heart.",
+      "Place your right ankle on top of your left thigh bone just above the knee. Bend your standing leg.",
+      "Draw your tailbone toward the earth. Open your right hip and breathe into your outer glute."
+    ],
+    "adjustment": "Sit deeper, the deeper the hip stretch. Keep your standing knee tracking over your toes."
+  },
+  "tree-pose": {
+    "cues": [
+      "Exhale Tree Pose. Bring your hands to press at your heart center.",
+      "Bring the sole of your right foot to your inner left leg — above or below the knee, never on it.",
+      "Gently press your foot into your standing leg and your standing leg back into your foot. Lengthen your spine and draw your shoulders down."
+    ],
+    "adjustment": "Fix your gaze on one still point. Root down through your standing foot to grow taller through your crown."
+  },
+  "intense-side-stretch-pose": {
+    "cues": [
+      "Step your back foot in to create a short stance — about midway on your mat. Plant both soles of your feet into the earth.",
+      "Lengthen both legs. Draw your outer front hip back and your back hip bone forward and down.",
+      "Inhale lengthen, exhale fold — melt your forehead toward your shin."
+    ],
+    "adjustment": "Square your hips as much as possible. Your back foot is flat on the earth, angled at roughly 45 degrees."
+  },
+  "standing-split-pose": {
+    "cues": [
+      "Bring the weight of your body into your front foot. Shift forward and lift your back toes off the mat.",
+      "Drop the crown of your head toward the earth. Draw your forehead toward your shin.",
+      "Rest your fingertips underneath your shoulders. Lift your back leg to the sky."
+    ],
+    "adjustment": "Flex your lifted foot and reach through your heel. The deeper you fold, the higher your leg can rise."
+  },
+  "triangle-pose": {
+    "cues": [
+      "Exhale Triangle. Straighten your front leg.",
+      "Reach your front fingertips toward the mat, a block, or your standing ankle. Lengthen your top fingertips up to the sky.",
+      "Stack your top shoulder over your bottom shoulder. Lengthen both sides of your body equally. Gaze to the side or up to the sky."
+    ],
+    "adjustment": "Do not collapse into your bottom hand — keep your core active. Imagine your back against a wall."
+  },
+  "five-pointed-star-pose": {
+    "cues": [
+      "Inhale Star. Step your feet wide, reach your fingertips out to the sky.",
+      "Turn all ten toes slightly inward and heels slightly outward. Keep both legs straight.",
+      "Draw your shoulders away from your ears. Spread your fingertips wide. Reach out through all five points."
+    ],
+    "adjustment": "Engage your legs — lift your kneecaps. Ground through the outer edges of both feet."
+  },
+  "locust-pose": {
+    "cues": [
+      "Bring your chin to the mat. Flip your palms to face down. Squeeze your inner thighs.",
+      "Inhale Locust — lift your chin, lift your palms, lift your toes and shins off the mat.",
+      "Continue to squeeze your inner thighs and lengthen your entire back body. Breathe here."
+    ],
+    "adjustment": "Start small — just lift your chest and arms first, then add the legs. Quality over height."
+  },
+  "bound-locust-pose": {
+    "cues": [
+      "Bring your chin to the mat. Interlace your fingertips at your low spine.",
+      "Squeeze your inner thighs. Inhale — lift your chin, lift your bound palms, lift your toes and shins.",
+      "Squeeze your shoulder blades toward your spine. Lengthen your entire back body."
+    ],
+    "adjustment": "If interlacing your fingers is too intense, hold a strap between your hands instead."
+  },
+  "bow-pose": {
+    "cues": [
+      "Bring your chin to the mat. Bend your knees and lift your toes toward the sky.",
+      "Reach your fingertips back for the pinky edges of your feet. Grab hold.",
+      "Squeeze your shoulder blades toward your spine. Inhale — lift your chin and chest. Press your feet back into your palms. Keep your inner knees drawing toward each other."
+    ],
+    "adjustment": "If you cannot reach your feet, use a strap around your ankles. Press your feet away to create the arch — do not pull yourself up."
+  },
+  "seated-forward-bend-pose": {
+    "cues": [
+      "Exhale Seated Forward Fold. Extend your legs forward. Flex your feet and squeeze your inner thighs.",
+      "Reach your fingertips toward your ankles, toes, or heels. Fold your heart over your thighs.",
+      "Find a slight bend to the knees to support your lower back."
+    ],
+    "adjustment": "Hinge from your hips, not your waist. Keep your spine long — a flat back fold is better than a rounded deep one."
+  },
+  "head-to-knee-pose": {
+    "cues": [
+      "Keep your left leg extended. Bend your right knee and bring the right sole of your foot to your inner left thigh.",
+      "Reach your fingertips toward your left ankle, toes, or heel. Fold your heart over your left thigh.",
+      "Find a slight bend to your left knee to support your lower back."
+    ],
+    "adjustment": "Keep your extended foot flexed and your thigh pressing down. Rotate your torso to face your extended leg."
+  },
+  "seated-straddle-pose": {
+    "cues": [
+      "Exhale Wide Legged Seated Forward Fold. Bring your legs wide to a V shape on your mat.",
+      "Flex your feet with your toes facing up. Ground through your sit bones.",
+      "Lengthen your fingertips forward and fold your heart toward the mat."
+    ],
+    "adjustment": "Keep your spine long as you fold. Walk your hands forward only as far as your back stays straight."
+  },
+  "half-pigeon-pose": {
+    "cues": [
+      "Exhale Half Pigeon. Bring your right knee behind your right wrist, your right ankle behind your left wrist.",
+      "Draw your front shin toward parallel to the top edge of your mat. Flex your right foot.",
+      "Extend your back leg, untuck your toes. Draw your left hip bone down toward the mat. Rest your forehead toward the earth."
+    ],
+    "adjustment": "If your front hip is high off the mat, place a block or blanket underneath it. Flex your front foot to protect your knee."
+  },
+  "bridge-pose": {
+    "cues": [
+      "Inhale Bridge Pose. Bring your feet onto your mat hip-distance apart.",
+      "Reach your fingertips toward the backs of your heels. Press your feet into the mat and lift your hips.",
+      "Keep your palms facing down or interlace your fingertips at your low spine."
+    ],
+    "adjustment": "Press into the four corners of both feet equally. Draw your inner thighs toward each other and your chest toward your chin."
+  },
+  "wheel-pose": {
+    "cues": [
+      "Inhale Wheel Pose. Bring your palms by your ears, fingertips facing your shoulders. Feet hip-distance apart.",
+      "Press into your palms and feet as you lift your hips and chest off the earth.",
+      "Draw your heart through your arms toward the wall behind you. Gently squeeze your inner thighs toward one another."
+    ],
+    "adjustment": "Start in Bridge if Wheel is not available today — that is a full expression too. In Wheel, keep pressing into the earth to lift even higher."
+  },
+  "happy-baby-pose": {
+    "cues": [
+      "Hug your knees into your chest. Open your knees wide to the outside of your ribs.",
+      "Grab the pinky edges of your feet with your palms. Flex your feet.",
+      "Draw your knees wide and down toward the mat. Draw your tailbone toward the earth. Rest your shoulders into your mat."
+    ],
+    "adjustment": "If your hands do not reach your feet, hold your shins or ankles instead. Rock gently side to side to massage your low back."
+  },
+  "supine-spinal-twist-pose": {
+    "cues": [
+      "Exhale Reclined Spinal Twist. Hug your knees into your chest.",
+      "Keep your right knee bent. Extend your left leg and rest your heel on the mat.",
+      "Extend your right arm to the side. Draw your knee over to the left as you twist. Gaze over your right fingertips."
+    ],
+    "adjustment": "Keep both your shoulders on the floor. If your knee is far from the earth, rest it on a block."
+  },
+  "waterfall-pose": {
+    "cues": [
+      "Hug your knees into your chest. Extend your legs up toward the sky.",
+      "Allow your tailbone to settle heavy down to the earth. Relax your shoulders into the mat.",
+      "Palms rest by the sides of your body. Let your feet be soft."
+    ],
+    "adjustment": "Option to rest your legs up the wall for full support. Treat this as a restorative inversion — let your nervous system unwind."
+  },
+  "corpse-pose": {
+    "cues": [
+      "Exhale Savasana. Extend your legs onto the mat. Rest your palms by your sides, face up.",
+      "Allow your shoulders to rest into the earth. Let your feet fall open naturally.",
+      "Close your eyes. Rest your entire body. You have done the work — this is where it lands."
+    ],
+    "adjustment": "Nothing to fix. Nowhere to go. If your low back is uncomfortable, place a blanket under your knees."
+  },
+  "easy-pose": {
+    "cues": [
+      "Find your Easy Seat. Cross your shins, your feet beneath your knees.",
+      "Rest your hands on your thighs, spine tall. Close your eyes if that feels good.",
+      "Arrive here. Take a breath and let yourself land."
+    ],
+    "adjustment": "Sit on a blanket or block if your hips are tight or your low back rounds. The goal is length in your spine, not a specific leg position."
+  },
+  "cobra-pose": {
+    "cues": [
+      "Lower all the way to your belly. Hands under your shoulders.",
+      "Inhale Cobra — peel your chest away from the earth. Keep your elbows bent and hugging in.",
+      "Roll your shoulders back and down. Lengthen through the back of your neck."
+    ],
+    "adjustment": "Keep this a low, controlled backbend. Keep your elbows close to your ribs and avoid straightening your arms completely."
   }
 }

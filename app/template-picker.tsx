@@ -1,7 +1,11 @@
 import { View, Text, Pressable, StyleSheet, SafeAreaView, ScrollView } from "react-native";
 import { useRouter } from "expo-router";
 import { Feather } from "@expo/vector-icons";
-import { builderStore, makeId } from "../src/lib/builder-store";
+import { builderStore, makeId, poseToSequencePose } from "../src/lib/builder-store";
+import posesData from "../src/data/poses.json";
+
+const poseById: Record<string, any> = {};
+for (const p of posesData as any[]) poseById[p.id] = p;
 
 interface Template {
   id: string;
@@ -10,16 +14,26 @@ interface Template {
   duration: string;
   level: string;
   sections: string[];
+  sectionPoses?: Record<string, string[]>;
 }
 
 const TEMPLATES: Template[] = [
   {
-    id: "power-vinyasa-60",
-    name: "Power Vinyasa",
+    id: "vinyasa-flow-60",
+    name: "Vinyasa Flow",
     subtitle: "Build heat, rise to a peak, find your way home",
     duration: "60 MIN",
     level: "ALL LEVELS",
     sections: ["Set the Tone + Grounding", "Warm-Up", "Sun Salutations", "Rise to the Peak", "Peak Poses", "Wind Down", "Savasana + Close"],
+    sectionPoses: {
+      "Set the Tone + Grounding": ["easy-pose", "pranayama-4-7", "seated-cat-cow-pose", "meditation"],
+      "Warm-Up": ["child-pose", "cat-cow-pose", "table-top-pose", "thread-the-needle-pose", "downward-facing-dog-pose"],
+      "Sun Salutations": ["sun-salutation-a", "sun-salutation-b"],
+      "Rise to the Peak": ["warrior-pose-i", "warrior-pose-ii", "reverse-warrior-pose", "extended-side-angle-pose", "triangle-pose", "high-lunge-pose"],
+      "Peak Poses": ["half-moon-pose", "dancer-pose"],
+      "Wind Down": ["half-pigeon-pose", "seated-forward-bend-pose", "supine-spinal-twist-pose", "bridge-pose", "happy-baby-pose"],
+      "Savasana + Close": ["corpse-pose", "closing"],
+    },
   },
   {
     id: "power-vinyasa-90",
@@ -74,11 +88,13 @@ export default function TemplatePickerScreen() {
   const router = useRouter();
 
   const handleSelectTemplate = (template: Template) => {
-    const sections = template.sections.map((name, i) => ({
-      id: makeId(),
-      name,
-      poses: [],
-    }));
+    const sections = template.sections.map((name) => {
+      const poseIds = template.sectionPoses?.[name] ?? [];
+      const poses = poseIds
+        .map((id, idx) => poseById[id] ? poseToSequencePose(poseById[id], idx) : null)
+        .filter((p): p is NonNullable<typeof p> => p !== null);
+      return { id: makeId(), name, poses };
+    });
     builderStore.setSections(sections);
     router.push({
       pathname: "/builder",
@@ -120,6 +136,11 @@ export default function TemplatePickerScreen() {
                 <Text style={[styles.level, { color: LEVEL_COLORS[template.level] || "#43B1E8" }]}>
                   {template.level}
                 </Text>
+                {template.sectionPoses && (
+                  <View style={styles.filledBadge}>
+                    <Text style={styles.filledBadgeText}>PRE-FILLED</Text>
+                  </View>
+                )}
               </View>
               <Feather name="chevron-right" size={16} color="#7999C1" />
             </View>
@@ -218,4 +239,13 @@ const styles = StyleSheet.create({
     borderColor: "#1e2a38",
   },
   chipText: { color: "#7999C1", fontSize: 11, letterSpacing: 0.5 },
+  filledBadge: {
+    backgroundColor: "#0d2a1a",
+    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: "#7DCFA8",
+    paddingVertical: 2,
+    paddingHorizontal: 7,
+  },
+  filledBadgeText: { color: "#7DCFA8", fontSize: 8, fontWeight: "700", letterSpacing: 1.5 },
 });
