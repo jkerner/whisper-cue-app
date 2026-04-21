@@ -97,17 +97,24 @@ whisper-cue-app/
 
 ### Phase 1 Progress
 - [x] Supabase project created + database schema
-- [x] Poses seeded (136 entries)
+- [x] Poses seeded (136 entries) with TWS 200hr Manual cue language
 - [x] Auth screen + auth guard (email/password + Google OAuth UI)
-- [ ] Auth — test and verify Google OAuth flow
-- [ ] Auth — Phone OTP via Twilio (production, add before App Store)
+- [x] Animated home screen with saved sequences list
+- [x] Sequence builder — create, edit, reorder sections
+- [x] Section editor — add/remove/reorder poses with cues
+- [x] Save sequences to Supabase (upsert on edit)
+- [x] Vinyasa Flow 60-min pre-filled template
+- [x] Share a sequence — public /s/[token] view, no auth required
+- [x] Universal links configured (whispercue.app/s/[token] → app)
+- [x] EAS Build + TestFlight (build #9)
+- [x] Vercel hosting at whispercue.app
+- [x] Privacy policy at whispercue.app/privacy
+- [x] Terms of service at whispercue.app/terms
+- [x] support@whispercue.app email (Microsoft 365)
+- [ ] Bundle ID fix (com.anonymous.whisper-cue-app → app.whispercue)
 - [ ] Auth — Apple Sign-In (required for App Store)
-- [ ] Library screen
-- [ ] Sequence Builder — create
-- [ ] Sequence Builder — edit / reorder
-- [ ] Cue editor
-- [ ] Wire Live Teach to Supabase
-- [ ] Migrate Home screen to user library
+- [ ] Auth — Phone OTP via Twilio (production, add before App Store)
+- [ ] Wire Live Teach to Supabase sequences
 
 ---
 
