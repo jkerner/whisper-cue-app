@@ -15,7 +15,20 @@
     "id": "banana-pose",
     "kind": "pose",
     "englishName": "Banana Pose",
-    "sanskritName": "Bananasana"
+    "sanskritName": "Bananasana",
+    "yinName": "Supine Half Moon",
+    "styles": [
+      "yin",
+      "restorative"
+    ],
+    "meridians": [
+      "GB",
+      "Heart"
+    ],
+    "myofascialLines": [
+      "Lateral",
+      "Spiral"
+    ]
   },
   {
     "id": "boat-pose",
@@ -51,13 +64,41 @@
     "id": "bridge-pose",
     "kind": "pose",
     "englishName": "Bridge Pose",
-    "sanskritName": "Setu Bandhasana"
+    "sanskritName": "Setu Bandhasana",
+    "styles": [
+      "vinyasa",
+      "yin"
+    ],
+    "meridians": [
+      "Kidney"
+    ],
+    "myofascialLines": [
+      "SFL",
+      "Spiral"
+    ]
   },
   {
     "id": "butterfly-pose-variation-forward-bend",
     "kind": "pose",
     "englishName": "Butterfly Pose Variation Forward Bend",
-    "sanskritName": "Tarasana"
+    "sanskritName": "Tarasana",
+    "yinName": "Butterfly",
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "GB",
+      "Liver",
+      "Spleen",
+      "Kidney",
+      "Bladder"
+    ],
+    "myofascialLines": [
+      "Lateral",
+      "DFL",
+      "Spiral",
+      "SBL"
+    ]
   },
   {
     "id": "camel-pose",
@@ -81,7 +122,28 @@
     "id": "child-pose",
     "kind": "pose",
     "englishName": "Child's Pose",
-    "sanskritName": "Balasana"
+    "sanskritName": "Balasana",
+    "styles": [
+      "vinyasa",
+      "yin",
+      "restorative"
+    ],
+    "meridians": [
+      "GB",
+      "Bladder",
+      "Heart",
+      "Small Intestine",
+      "PC",
+      "Lungs"
+    ],
+    "myofascialLines": [
+      "Lateral",
+      "DFL",
+      "Spiral",
+      "SBL",
+      "SFAL",
+      "SBAL"
+    ]
   },
   {
     "id": "cleansing-breath",
@@ -105,7 +167,18 @@
     "id": "corpse-pose",
     "kind": "pose",
     "englishName": "Corpse Pose",
-    "sanskritName": "Savasana"
+    "sanskritName": "Savasana",
+    "styles": [
+      "vinyasa",
+      "yin",
+      "restorative"
+    ],
+    "meridians": [
+      "All"
+    ],
+    "myofascialLines": [
+      "All"
+    ]
   },
   {
     "id": "crescent-low-lunge-hamstring-stretch",
@@ -135,7 +208,23 @@
     "id": "dangling-pose",
     "kind": "pose",
     "englishName": "Dangling Pose",
-    "sanskritName": "Baddha Hasta Uttanasana"
+    "sanskritName": "Baddha Hasta Uttanasana",
+    "yinName": "Dangling",
+    "styles": [
+      "vinyasa",
+      "yin"
+    ],
+    "meridians": [
+      "Bladder",
+      "Triple Burner",
+      "Small Intestine"
+    ],
+    "myofascialLines": [
+      "SBL",
+      "SBAL",
+      "DBAL",
+      "Spiral"
+    ]
   },
   {
     "id": "dolphin-pose",
@@ -159,7 +248,26 @@
     "id": "easy-pose",
     "kind": "pose",
     "englishName": "Easy Pose",
-    "sanskritName": "Sukhasana"
+    "sanskritName": "Sukhasana",
+    "yinName": "Easy Cross",
+    "styles": [
+      "vinyasa",
+      "yin",
+      "restorative"
+    ],
+    "meridians": [
+      "GB",
+      "Liver",
+      "Spleen",
+      "Kidney",
+      "Bladder"
+    ],
+    "myofascialLines": [
+      "Lateral",
+      "DFL",
+      "Spiral",
+      "SBL"
+    ]
   },
   {
     "id": "easy-pose-neck-side-stretch",
@@ -201,7 +309,27 @@
     "id": "fish-pose",
     "kind": "pose",
     "englishName": "Fish Pose",
-    "sanskritName": "Matsyasana"
+    "sanskritName": "Matsyasana",
+    "styles": [
+      "vinyasa",
+      "yin",
+      "restorative"
+    ],
+    "meridians": [
+      "Kidney",
+      "Liver",
+      "Lungs",
+      "Heart",
+      "Small Intestine",
+      "PC"
+    ],
+    "myofascialLines": [
+      "DFL",
+      "SFL",
+      "Spiral",
+      "SFAL",
+      "DFAL"
+    ]
   },
   {
     "id": "five-pointed-star-pose",
@@ -243,7 +371,23 @@
     "id": "garland-pose",
     "kind": "pose",
     "englishName": "Garland Pose",
-    "sanskritName": "Malasana"
+    "sanskritName": "Malasana",
+    "yinName": "Squat",
+    "styles": [
+      "vinyasa",
+      "yin"
+    ],
+    "meridians": [
+      "Liver",
+      "GB",
+      "Kidney",
+      "Spleen"
+    ],
+    "myofascialLines": [
+      "DFL",
+      "Lateral",
+      "Spiral"
+    ]
   },
   {
     "id": "goddess-pose",
@@ -273,7 +417,24 @@
     "id": "half-lord-of-the-fishes-pose-variation",
     "kind": "pose",
     "englishName": "Half Lord Of The Fishes Pose Variation",
-    "sanskritName": "Ardha Matsyendrasana"
+    "sanskritName": "Ardha Matsyendrasana",
+    "yinName": "Half Lord of the Fishes",
+    "styles": [
+      "vinyasa",
+      "yin"
+    ],
+    "meridians": [
+      "GB",
+      "Liver",
+      "Spleen",
+      "Kidney",
+      "Bladder"
+    ],
+    "myofascialLines": [
+      "Lateral",
+      "Spiral",
+      "DFL"
+    ]
   },
   {
     "id": "half-moon-pose",
@@ -291,7 +452,26 @@
     "id": "half-pigeon-pose",
     "kind": "pose",
     "englishName": "Half Pigeon Pose",
-    "sanskritName": "Ardha Kapotasana"
+    "sanskritName": "Ardha Kapotasana",
+    "yinName": "Pigeon",
+    "styles": [
+      "vinyasa",
+      "yin"
+    ],
+    "meridians": [
+      "GB",
+      "Liver",
+      "Stomach",
+      "Spleen",
+      "Kidney",
+      "Bladder"
+    ],
+    "myofascialLines": [
+      "DFL",
+      "Lateral",
+      "Spiral",
+      "SBL"
+    ]
   },
   {
     "id": "half-splits-pose",
@@ -315,7 +495,24 @@
     "id": "happy-baby-pose",
     "kind": "pose",
     "englishName": "Happy Baby Pose",
-    "sanskritName": "Ananda Balasana"
+    "sanskritName": "Ananda Balasana",
+    "styles": [
+      "vinyasa",
+      "yin",
+      "restorative"
+    ],
+    "meridians": [
+      "GB",
+      "Liver",
+      "Kidney",
+      "Spleen"
+    ],
+    "myofascialLines": [
+      "DFL",
+      "Lateral",
+      "Spiral",
+      "SBL"
+    ]
   },
   {
     "id": "head-to-knee-pose",
@@ -369,7 +566,25 @@
     "id": "low-lunge-pose",
     "kind": "pose",
     "englishName": "Low Lunge Pose",
-    "sanskritName": "Anjaneyasana"
+    "sanskritName": "Anjaneyasana",
+    "yinName": "Dragon Lunge",
+    "styles": [
+      "vinyasa",
+      "yin"
+    ],
+    "meridians": [
+      "Spleen",
+      "Stomach",
+      "GB",
+      "Liver",
+      "Kidney"
+    ],
+    "myofascialLines": [
+      "DFL",
+      "SFL",
+      "Spiral",
+      "Lateral"
+    ]
   },
   {
     "id": "low-lunge-twist-pose",
@@ -429,7 +644,18 @@
     "id": "plough-pose",
     "kind": "pose",
     "englishName": "Plough Pose",
-    "sanskritName": "Halasana"
+    "sanskritName": "Halasana",
+    "styles": [
+      "vinyasa",
+      "yin"
+    ],
+    "meridians": [
+      "Bladder"
+    ],
+    "myofascialLines": [
+      "SBL",
+      "Spiral"
+    ]
   },
   {
     "id": "pranayama-4-7",
@@ -441,7 +667,23 @@
     "id": "puppy-dog-pose",
     "kind": "pose",
     "englishName": "Puppy Dog Pose",
-    "sanskritName": "Uttana Shishosana"
+    "sanskritName": "Uttana Shishosana",
+    "yinName": "Melting Heart",
+    "styles": [
+      "vinyasa",
+      "yin"
+    ],
+    "meridians": [
+      "Heart",
+      "PC",
+      "Lung",
+      "Stomach"
+    ],
+    "myofascialLines": [
+      "SFAL",
+      "DFAL",
+      "SFL"
+    ]
   },
   {
     "id": "reclined-knee-circles",
@@ -537,7 +779,22 @@
     "id": "seated-forward-bend-pose",
     "kind": "pose",
     "englishName": "Seated Forward Bend Pose",
-    "sanskritName": "Paschimottanasana"
+    "sanskritName": "Paschimottanasana",
+    "yinName": "Caterpillar",
+    "styles": [
+      "vinyasa",
+      "yin"
+    ],
+    "meridians": [
+      "Bladder",
+      "Triple Burner",
+      "Small Intestine"
+    ],
+    "myofascialLines": [
+      "SBL",
+      "SBAL",
+      "DBAL"
+    ]
   },
   {
     "id": "seated-neck-rolls",
@@ -549,7 +806,18 @@
     "id": "seated-rock-pose",
     "kind": "pose",
     "englishName": "Seated Rock Pose",
-    "sanskritName": "Vajrasana"
+    "sanskritName": "Vajrasana",
+    "yinName": "Hero's (Upright)",
+    "styles": [
+      "vinyasa",
+      "yin"
+    ],
+    "meridians": [
+      "Stomach"
+    ],
+    "myofascialLines": [
+      "SFL"
+    ]
   },
   {
     "id": "seated-shoulder-rolls",
@@ -561,7 +829,23 @@
     "id": "seated-straddle-pose",
     "kind": "pose",
     "englishName": "Seated Straddle Pose",
-    "sanskritName": "Upavistha Konasana"
+    "sanskritName": "Upavistha Konasana",
+    "yinName": "Dragonfly",
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "Kidney",
+      "Spleen",
+      "Liver",
+      "Bladder"
+    ],
+    "myofascialLines": [
+      "DFL",
+      "Lateral",
+      "Spiral",
+      "SBL"
+    ]
   },
   {
     "id": "seated-torso-circles",
@@ -603,7 +887,27 @@
     "id": "sphinx-pose",
     "kind": "pose",
     "englishName": "Sphinx Pose",
-    "sanskritName": "Salamba Bhujangasana"
+    "sanskritName": "Salamba Bhujangasana",
+    "styles": [
+      "yin",
+      "restorative"
+    ],
+    "meridians": [
+      "Heart",
+      "PC",
+      "Lung",
+      "LI",
+      "ST",
+      "SP",
+      "KI",
+      "LV"
+    ],
+    "myofascialLines": [
+      "SFAL",
+      "SFL",
+      "Spiral",
+      "DFL"
+    ]
   },
   {
     "id": "staff-pose",
@@ -663,7 +967,25 @@
     "id": "supine-spinal-twist-pose",
     "kind": "pose",
     "englishName": "Supine Spinal Twist Pose",
-    "sanskritName": "Supta Matsyendrasana"
+    "sanskritName": "Supta Matsyendrasana",
+    "yinName": "Supine Twist",
+    "styles": [
+      "vinyasa",
+      "yin",
+      "restorative"
+    ],
+    "meridians": [
+      "GB",
+      "Heart",
+      "PC",
+      "Lungs"
+    ],
+    "myofascialLines": [
+      "Lateral",
+      "Spiral",
+      "SFAL",
+      "DFAL"
+    ]
   },
   {
     "id": "table-top-pose",
@@ -765,7 +1087,19 @@
     "id": "waterfall-pose",
     "kind": "pose",
     "englishName": "Waterfall Pose",
-    "sanskritName": "Viparita Karani"
+    "sanskritName": "Viparita Karani",
+    "yinName": "Legs Elevated",
+    "styles": [
+      "yin",
+      "restorative"
+    ],
+    "meridians": [
+      "Bladder"
+    ],
+    "myofascialLines": [
+      "SBL",
+      "Spiral"
+    ]
   },
   {
     "id": "wheel-pose",
@@ -777,7 +1111,28 @@
     "id": "wide-child-pose",
     "kind": "pose",
     "englishName": "Wide Child's Pose",
-    "sanskritName": "Prasarita Balasana"
+    "sanskritName": "Prasarita Balasana",
+    "styles": [
+      "vinyasa",
+      "yin",
+      "restorative"
+    ],
+    "meridians": [
+      "GB",
+      "Bladder",
+      "Heart",
+      "Small Intestine",
+      "PC",
+      "Lungs"
+    ],
+    "myofascialLines": [
+      "Lateral",
+      "DFL",
+      "Spiral",
+      "SBL",
+      "SFAL",
+      "SBAL"
+    ]
   },
   {
     "id": "wide-legged-squat-over-one-leg",
@@ -795,7 +1150,20 @@
     "id": "wind-release-pose",
     "kind": "pose",
     "englishName": "Wind Release Pose",
-    "sanskritName": "Pavanmuktasana"
+    "sanskritName": "Pavanmuktasana",
+    "yinName": "Wind Relieving Pose",
+    "styles": [
+      "vinyasa",
+      "yin",
+      "restorative"
+    ],
+    "meridians": [
+      "Bladder"
+    ],
+    "myofascialLines": [
+      "Spiral",
+      "SBL"
+    ]
   },
   {
     "id": "wind-release-pose-nose-to-knee",
@@ -808,6 +1176,345 @@
     "kind": "pose",
     "englishName": "Yogi Toe Lock Pose",
     "sanskritName": "Padangusthasana"
+  },
+  {
+    "id": "cat-pulling-its-tail-pose",
+    "kind": "pose",
+    "englishName": "Cat Pulling Its Tail",
+    "sanskritName": "Marjariutkarasapucchasa",
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "GB",
+      "Stomach",
+      "Heart",
+      "Lungs"
+    ],
+    "myofascialLines": [
+      "Lateral",
+      "Spiral",
+      "SBL"
+    ]
+  },
+  {
+    "id": "deer-pose",
+    "kind": "pose",
+    "englishName": "Deer Pose",
+    "sanskritName": "Mrigasana",
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "GB",
+      "Liver",
+      "Kidney",
+      "Bladder",
+      "Spleen",
+      "Stomach"
+    ],
+    "myofascialLines": [
+      "DFL",
+      "Spiral",
+      "SBL"
+    ]
+  },
+  {
+    "id": "dragon-lunge-pose",
+    "kind": "pose",
+    "englishName": "Dragon Lunge",
+    "sanskritName": "Anjanayasana",
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "Spleen",
+      "Stomach",
+      "GB",
+      "Liver",
+      "Kidney"
+    ],
+    "myofascialLines": [
+      "DFL",
+      "SFL",
+      "Spiral",
+      "Lateral"
+    ]
+  },
+  {
+    "id": "dragonfly-pose",
+    "kind": "pose",
+    "englishName": "Dragonfly",
+    "sanskritName": "Upavistha Konasana",
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "Kidney",
+      "Spleen",
+      "Liver",
+      "Bladder"
+    ],
+    "myofascialLines": [
+      "DFL",
+      "Lateral",
+      "Spiral",
+      "SBL"
+    ]
+  },
+  {
+    "id": "eye-of-the-needle-pose",
+    "kind": "pose",
+    "englishName": "Eye of the Needle",
+    "sanskritName": "Sucirandasana",
+    "styles": [
+      "yin",
+      "restorative"
+    ],
+    "meridians": [
+      "GB",
+      "Liver"
+    ],
+    "myofascialLines": [
+      "Lateral",
+      "DFL",
+      "Spiral"
+    ]
+  },
+  {
+    "id": "firelog-pose",
+    "kind": "pose",
+    "englishName": "Firelog Pose",
+    "sanskritName": "Agnistambhasana",
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "GB",
+      "Bladder"
+    ],
+    "myofascialLines": [
+      "Lateral",
+      "Spiral",
+      "SBL"
+    ]
+  },
+  {
+    "id": "frog-pose",
+    "kind": "pose",
+    "englishName": "Frog Pose",
+    "sanskritName": "Mandukasana",
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "Liver",
+      "Kidney",
+      "Spleen"
+    ],
+    "myofascialLines": [
+      "DFL"
+    ]
+  },
+  {
+    "id": "prone-arm-cross-pose",
+    "kind": "pose",
+    "englishName": "Prone Arm Cross",
+    "sanskritName": null,
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "Small Intestine",
+      "Triple Burner",
+      "Bladder"
+    ],
+    "myofascialLines": [
+      "SBAL",
+      "DBAL",
+      "Spiral"
+    ]
+  },
+  {
+    "id": "psoas-release-pose",
+    "kind": "pose",
+    "englishName": "Psoas Release",
+    "sanskritName": null,
+    "styles": [
+      "yin",
+      "restorative"
+    ],
+    "meridians": [
+      "Liver",
+      "Stomach",
+      "Spleen",
+      "Kidney",
+      "Bladder"
+    ],
+    "myofascialLines": [
+      "DFL",
+      "SFL",
+      "Spiral"
+    ]
+  },
+  {
+    "id": "saddle-pose",
+    "kind": "pose",
+    "englishName": "Saddle",
+    "sanskritName": "Supta Virasana",
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "ST",
+      "SP",
+      "KI",
+      "GB",
+      "LV",
+      "HT",
+      "PC",
+      "LU",
+      "LI"
+    ],
+    "myofascialLines": [
+      "SFL",
+      "DFL",
+      "Lateral",
+      "SFAL",
+      "DFAL"
+    ]
+  },
+  {
+    "id": "seal-pose",
+    "kind": "pose",
+    "englishName": "Seal Pose",
+    "sanskritName": "Makarasana",
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "Kidney",
+      "Stomach",
+      "Spleen"
+    ],
+    "myofascialLines": [
+      "SFL",
+      "DFL",
+      "Spiral"
+    ]
+  },
+  {
+    "id": "shoelace-pose",
+    "kind": "pose",
+    "englishName": "Shoelace",
+    "sanskritName": "Gomukhasana",
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "GB",
+      "Kidney",
+      "Bladder"
+    ],
+    "myofascialLines": [
+      "Lateral",
+      "Spiral",
+      "SBL"
+    ]
+  },
+  {
+    "id": "snail-pose",
+    "kind": "pose",
+    "englishName": "Snail",
+    "sanskritName": "Karnapidasana",
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "Bladder"
+    ],
+    "myofascialLines": [
+      "SBL",
+      "Spiral"
+    ]
+  },
+  {
+    "id": "spiral-pose-yin",
+    "kind": "pose",
+    "englishName": "Spiral",
+    "sanskritName": "Cakrasana",
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "GB",
+      "Heart",
+      "Lung"
+    ],
+    "myofascialLines": [
+      "Spiral",
+      "Lateral",
+      "DFAL",
+      "SFAL"
+    ]
+  },
+  {
+    "id": "superior-pose",
+    "kind": "pose",
+    "englishName": "Superior",
+    "sanskritName": "Jyestikasana",
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "Bladder",
+      "Small Intestine",
+      "Triple Burner"
+    ],
+    "myofascialLines": [
+      "SBL",
+      "Spiral",
+      "DBAL",
+      "SBAL"
+    ]
+  },
+  {
+    "id": "toe-squat-pose",
+    "kind": "pose",
+    "englishName": "Toe Squat",
+    "sanskritName": "Vajrasana (on toes)",
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "Bladder",
+      "GB"
+    ],
+    "myofascialLines": [
+      "SBL",
+      "Lateral"
+    ]
+  },
+  {
+    "id": "unwinding-pose",
+    "kind": "pose",
+    "englishName": "Unwinding",
+    "sanskritName": "Vimoksasana",
+    "styles": [
+      "yin"
+    ],
+    "meridians": [
+      "Heart",
+      "Pericardium",
+      "Lungs",
+      "GB"
+    ],
+    "myofascialLines": [
+      "DFAL",
+      "SFAL",
+      "Spiral",
+      "Lateral"
+    ]
   },
   {
     "id": "closing",
