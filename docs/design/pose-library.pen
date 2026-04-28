@@ -21,78 +21,6 @@
     },
     {
       "type": "frame",
-      "id": "FpCUG",
-      "x": 220,
-      "y": 2640,
-      "name": "plank-pose",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774904401247.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "dC19V",
-      "x": 440,
-      "y": 2640,
-      "name": "plough-pose",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774904421928.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "2VvhO",
-      "x": 660,
-      "y": 2640,
-      "name": "puppy-dog-pose",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774904444080.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "NfaKN",
-      "x": 0,
-      "y": 2860,
-      "name": "reclined-knee-circles",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774904461061.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
       "id": "LdD0l",
       "x": 220,
       "y": 2860,
@@ -105,24 +33,6 @@
           "type": "image",
           "enabled": true,
           "url": "./images/generated-1774904489735.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "NDVwa",
-      "x": 440,
-      "y": 2860,
-      "name": "reclining-bound-angle",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774904512849.png",
           "mode": "fill"
         }
       ]
@@ -219,60 +129,6 @@
     },
     {
       "type": "frame",
-      "id": "5ch9M",
-      "x": 0,
-      "y": 3300,
-      "name": "revolved-low-lunge",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774904637891.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "70vBR",
-      "x": 220,
-      "y": 3300,
-      "name": "revolved-lunge",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774904657425.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "qdulI",
-      "x": 440,
-      "y": 3300,
-      "name": "revolved-side-angle",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774904679641.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
       "id": "Fnxyy",
       "x": 660,
       "y": 3300,
@@ -285,42 +141,6 @@
           "type": "image",
           "enabled": true,
           "url": "./images/generated-1774904696173.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "2nOrE",
-      "x": 660,
-      "y": 3300,
-      "name": "revolved-wide-forward-bend",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774904711663.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "VVxbG",
-      "x": 0,
-      "y": 3520,
-      "name": "runners-lunge",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774904735612.png",
           "mode": "fill"
         }
       ]
@@ -399,24 +219,6 @@
     },
     {
       "type": "frame",
-      "id": "9ktem",
-      "x": 220,
-      "y": 3740,
-      "name": "seated-straddle",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774904851209.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
       "id": "Y1equ",
       "x": 440,
       "y": 3740,
@@ -453,42 +255,6 @@
     },
     {
       "type": "frame",
-      "id": "LGDsS",
-      "x": 0,
-      "y": 3960,
-      "name": "shoulderstand-pose",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774904917246.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "l3AEn",
-      "x": 220,
-      "y": 3960,
-      "name": "side-lying-corpse",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774904936635.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
       "id": "XabBt",
       "x": 440,
       "y": 3960,
@@ -519,24 +285,6 @@
           "type": "image",
           "enabled": true,
           "url": "./images/generated-1774904974538.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "krLXe",
-      "x": 0,
-      "y": 4180,
-      "name": "sphinx-pose",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774904989507.png",
           "mode": "fill"
         }
       ]
@@ -651,78 +399,6 @@
     },
     {
       "type": "frame",
-      "id": "0d6Rc",
-      "x": 660,
-      "y": 4400,
-      "name": "supine-spinal-twist",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774905154036.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "Ee3B3",
-      "x": 0,
-      "y": 4620,
-      "name": "table-top-pose",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774905180752.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "V90Js",
-      "x": 220,
-      "y": 4620,
-      "name": "thread-the-needle",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774905188158.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "0VK4p",
-      "x": 440,
-      "y": 4620,
-      "name": "three-legged-dog",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774905209896.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
       "id": "LDVl9",
       "x": 660,
       "y": 4620,
@@ -771,24 +447,6 @@
           "type": "image",
           "enabled": true,
           "url": "./images/generated-1774905292029.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "CnST2",
-      "x": 440,
-      "y": 4840,
-      "name": "upward-facing-dog",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774905311121.png",
           "mode": "fill"
         }
       ]
@@ -885,78 +543,6 @@
     },
     {
       "type": "frame",
-      "id": "4vh3v",
-      "x": 0,
-      "y": 5280,
-      "name": "wind-release-pose",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774905457480.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "5Raf0",
-      "x": 220,
-      "y": 5280,
-      "name": "wind-release-nose-knee",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774905497702.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "AR0fq",
-      "x": 440,
-      "y": 5280,
-      "name": "wide-child-pose",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774905524222.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "dajDL",
-      "x": 660,
-      "y": 5280,
-      "name": "wide-squat-one-leg",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774905545357.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
       "id": "v22De",
       "x": 0,
       "y": 5500,
@@ -993,24 +579,6 @@
     },
     {
       "type": "frame",
-      "id": "LKlMB",
-      "x": 440,
-      "y": 5500,
-      "name": "easy-pose-side-bend",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774905609925.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
       "id": "Kd7QI",
       "x": 660,
       "y": 5500,
@@ -1029,60 +597,6 @@
     },
     {
       "type": "frame",
-      "id": "ANzZG",
-      "x": 0,
-      "y": 3960,
-      "name": "balancing-table-pose",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774908822778.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "Vun9p",
-      "x": 220,
-      "y": 3960,
-      "name": "banana-pose",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774908853412.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "zwIeg",
-      "x": 440,
-      "y": 3960,
-      "name": "boat-pose",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774908877696.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
       "id": "2pzRV",
       "x": 660,
       "y": 3960,
@@ -1095,42 +609,6 @@
           "type": "image",
           "enabled": true,
           "url": "./images/generated-1774908895261.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "FKfIR",
-      "x": 0,
-      "y": 4180,
-      "name": "bridge-pose",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774908917003.png",
-          "mode": "fill"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "HDRSd",
-      "x": 220,
-      "y": 4180,
-      "name": "bound-locust-pose",
-      "width": 200,
-      "height": 200,
-      "fill": [
-        "#0B1119",
-        {
-          "type": "image",
-          "enabled": true,
-          "url": "./images/generated-1774908932589.png",
           "mode": "fill"
         }
       ]
@@ -1167,6 +645,3038 @@
           "type": "image",
           "enabled": true,
           "url": "./images/generated-1774908985026.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "6T2o1",
+      "x": 0,
+      "y": 5740,
+      "name": "balancing-table-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774909591720.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "qVNon",
+      "x": 220,
+      "y": 5740,
+      "name": "balancing-table-knee-to-nose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774909608805.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ZC2fg",
+      "x": 440,
+      "y": 5740,
+      "name": "banana-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774909640748.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "oB9kO",
+      "x": 660,
+      "y": 5740,
+      "name": "boat-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774909640748.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "vf0eu",
+      "x": 0,
+      "y": 5960,
+      "name": "boat-pose-variation",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774909660362.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "mcg0t",
+      "x": 220,
+      "y": 5960,
+      "name": "bound-locust-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774909677981.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "5l5hk",
+      "x": 440,
+      "y": 5960,
+      "name": "bridge-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774909695496.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "HkjK9",
+      "x": 660,
+      "y": 5960,
+      "name": "butterfly-forward-bend",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924085053.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "bZtfd",
+      "x": 0,
+      "y": 6180,
+      "name": "camel-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924138740.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "0R7NP",
+      "x": 220,
+      "y": 6180,
+      "name": "cat-cow-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924201927.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "FogFe",
+      "x": 440,
+      "y": 6180,
+      "name": "cobra-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924236154.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sSPcc",
+      "x": 660,
+      "y": 6180,
+      "name": "crescent-hamstring",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924285083.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "L3R3X",
+      "x": 0,
+      "y": 6400,
+      "name": "crescent-low-lunge-variation",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924302470.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "kxB1p",
+      "x": 220,
+      "y": 6400,
+      "name": "crocodile-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924329812.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "qgfUR",
+      "x": 440,
+      "y": 6400,
+      "name": "dancer-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924373748.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "zIZpc",
+      "x": 660,
+      "y": 6400,
+      "name": "dolphin-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924419615.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "xcI9V",
+      "x": 0,
+      "y": 6620,
+      "name": "extended-mountain-backbend",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924437872.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "DtdK6",
+      "x": 220,
+      "y": 6620,
+      "name": "extended-side-angle",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924485357.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "JtI1I",
+      "x": 440,
+      "y": 6620,
+      "name": "extended-side-angle-var",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924517383.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Ei07S",
+      "x": 660,
+      "y": 6620,
+      "name": "fish-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924537178.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "hKwxK",
+      "x": 0,
+      "y": 6840,
+      "name": "five-pointed-star",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924593632.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "juRW4",
+      "x": 220,
+      "y": 6840,
+      "name": "five-pointed-star-arms-up",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924620785.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "J3kkZ",
+      "x": 440,
+      "y": 6840,
+      "name": "forearm-plank",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924660696.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "i9p0w",
+      "x": 660,
+      "y": 6840,
+      "name": "full-body-stretch",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924781719.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "634wL",
+      "x": 0,
+      "y": 7060,
+      "name": "goddess-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924731761.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "5k4Ax",
+      "x": 220,
+      "y": 7060,
+      "name": "gorilla-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924769547.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "5VEkR",
+      "x": 440,
+      "y": 7060,
+      "name": "half-chair-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924807508.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "vROrr",
+      "x": 660,
+      "y": 7060,
+      "name": "half-forward-fold",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924839489.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "pzEwt",
+      "x": 0,
+      "y": 7280,
+      "name": "half-lord-fishes",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924874777.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "MxOQe",
+      "x": 220,
+      "y": 7280,
+      "name": "half-moon-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924923652.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "flwI6",
+      "x": 440,
+      "y": 7280,
+      "name": "half-moon-variation",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924949147.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "2WLrW",
+      "x": 660,
+      "y": 7280,
+      "name": "half-splits-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924974935.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "WfuMS",
+      "x": 0,
+      "y": 7500,
+      "name": "halfway-lift",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774925018303.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "SY4JS",
+      "x": 220,
+      "y": 7500,
+      "name": "half-wind-release",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774925052548.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "PavTB",
+      "x": 440,
+      "y": 7500,
+      "name": "happy-baby-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774909578200.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "caCSW",
+      "x": 660,
+      "y": 7500,
+      "name": "head-to-knee-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774909612717.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "quHj3",
+      "x": 0,
+      "y": 7720,
+      "name": "intense-leg-stretch",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774909631824.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "p2pE2",
+      "x": 220,
+      "y": 7720,
+      "name": "lizard-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774909645672.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "eV47b",
+      "x": 440,
+      "y": 7720,
+      "name": "locust-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774909665428.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Ed1zp",
+      "x": 660,
+      "y": 7720,
+      "name": "low-lunge-hands-knee",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774909687770.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "RU3bH",
+      "x": 0,
+      "y": 7940,
+      "name": "low-lunge-twist",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774909712511.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "SzDHa",
+      "x": 220,
+      "y": 7940,
+      "name": "low-plank",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924409710.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "zbnlo",
+      "x": 440,
+      "y": 7940,
+      "name": "mountain-namaste",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924426388.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "KsR9O",
+      "x": 660,
+      "y": 7940,
+      "name": "one-legged-mountain",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924443310.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "LEWZ7",
+      "x": 0,
+      "y": 8160,
+      "name": "palm-tree-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924464938.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "b3AFK",
+      "x": 220,
+      "y": 8160,
+      "name": "plank-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924483195.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "VWjzT",
+      "x": 440,
+      "y": 8160,
+      "name": "plough-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924513281.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ffzZm",
+      "x": 660,
+      "y": 8160,
+      "name": "puppy-dog-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924530044.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "1yKlM",
+      "x": 0,
+      "y": 8380,
+      "name": "reclined-knee-circles",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924563261.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "vzj9X",
+      "x": 220,
+      "y": 8380,
+      "name": "reclining-bound-angle",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924572509.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Kre1e",
+      "x": 440,
+      "y": 8380,
+      "name": "revolved-low-lunge",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924039916.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "xAWOa",
+      "x": 660,
+      "y": 8380,
+      "name": "revolved-lunge",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924086927.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "JVaJu",
+      "x": 0,
+      "y": 8600,
+      "name": "revolved-side-angle",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924085292.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "868Ii",
+      "x": 220,
+      "y": 8600,
+      "name": "runners-lunge",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924106510.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "7fLLA",
+      "x": 440,
+      "y": 8600,
+      "name": "seated-straddle",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924134577.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "yrESU",
+      "x": 660,
+      "y": 8600,
+      "name": "shoulderstand-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924163600.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "wC4tk",
+      "x": 0,
+      "y": 8820,
+      "name": "side-lying-corpse",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924181446.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ZkQ09",
+      "x": 220,
+      "y": 8820,
+      "name": "sphinx-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924197143.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "YAOCN",
+      "x": 440,
+      "y": 8820,
+      "name": "supine-spinal-twist",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924217582.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "m5Xhp",
+      "x": 660,
+      "y": 8820,
+      "name": "table-top-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924245429.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "PxS1t",
+      "x": 0,
+      "y": 9040,
+      "name": "thread-the-needle",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924272392.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "qUwvn",
+      "x": 220,
+      "y": 9040,
+      "name": "three-legged-dog",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924289471.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "T87Q6",
+      "x": 440,
+      "y": 9040,
+      "name": "upward-facing-dog",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924300801.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "yqyDG",
+      "x": 660,
+      "y": 9040,
+      "name": "wind-release-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924320246.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ViQR6",
+      "x": 0,
+      "y": 9260,
+      "name": "wind-release-nose-knee",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924336417.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "b6VTR",
+      "x": 220,
+      "y": 9260,
+      "name": "wide-child-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924352605.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rH0ZH",
+      "x": 440,
+      "y": 9260,
+      "name": "wide-squat-one-leg",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924371531.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "3onRA",
+      "x": 660,
+      "y": 9260,
+      "name": "easy-pose-side-bend",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774924392563.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "cMF6w",
+      "x": 0,
+      "y": 5000,
+      "name": "balancing-table-pose-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775078586126.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "j9ilL",
+      "x": 220,
+      "y": 5000,
+      "name": "balancing-table-knee-nose-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775078622263.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "2Jx0z",
+      "x": 440,
+      "y": 5000,
+      "name": "banana-pose-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775078643976.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "C4MxE",
+      "x": 660,
+      "y": 5000,
+      "name": "boat-pose-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775078666523.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "CESqQ",
+      "x": 0,
+      "y": 5220,
+      "name": "boat-variation-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775078692411.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "0NAUf",
+      "x": 220,
+      "y": 5220,
+      "name": "bound-angle-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775078714561.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "M2o1A",
+      "x": 440,
+      "y": 5220,
+      "name": "bound-locust-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775078747495.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "XZFqC",
+      "x": 660,
+      "y": 5220,
+      "name": "bridge-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775078794717.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "maYYJ",
+      "x": 0,
+      "y": 5440,
+      "name": "butterfly-fwd-bend-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775078823412.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "FmrnN",
+      "x": 220,
+      "y": 5440,
+      "name": "camel-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775078845831.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "simXy",
+      "x": 440,
+      "y": 5440,
+      "name": "cat-cow-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775078878200.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ali6U",
+      "x": 660,
+      "y": 5440,
+      "name": "cobra-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775078901811.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "p5bXa",
+      "x": 0,
+      "y": 5660,
+      "name": "crescent-hamstring-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775078928367.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "vLuCR",
+      "x": 220,
+      "y": 5660,
+      "name": "crescent-lunge-var-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775078953454.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "zNLgK",
+      "x": 440,
+      "y": 5660,
+      "name": "crocodile-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775079666185.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Iut32",
+      "x": 660,
+      "y": 5660,
+      "name": "dancer-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775079695323.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "k5tem",
+      "x": 0,
+      "y": 5880,
+      "name": "dangling-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775079718401.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "UzEOe",
+      "x": 220,
+      "y": 5880,
+      "name": "dolphin-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775079752386.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "dS5KB",
+      "x": 440,
+      "y": 5880,
+      "name": "ext-mountain-backbend-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775079783797.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "WoTHh",
+      "x": 660,
+      "y": 5880,
+      "name": "ext-side-angle-var-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775079807364.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "kpow7",
+      "x": 0,
+      "y": 6100,
+      "name": "fish-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775079829296.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "kKuaz",
+      "x": 220,
+      "y": 6100,
+      "name": "forearm-plank-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775079851011.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "2uUBf",
+      "x": 440,
+      "y": 6100,
+      "name": "full-body-stretch-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775079878236.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "gisv8",
+      "x": 660,
+      "y": 6100,
+      "name": "gorilla-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775079899525.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "QmeK1",
+      "x": 0,
+      "y": 6320,
+      "name": "half-chair-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775079923902.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "GJncV",
+      "x": 220,
+      "y": 6320,
+      "name": "half-fwd-fold-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775079948397.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "E3Q4R",
+      "x": 440,
+      "y": 6320,
+      "name": "half-lord-fishes-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775079977990.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "wLRaW",
+      "x": 660,
+      "y": 6320,
+      "name": "half-moon-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775080006906.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "pfd5s",
+      "x": 0,
+      "y": 6540,
+      "name": "half-moon-var-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775080030143.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "3Xhtj",
+      "x": 220,
+      "y": 6540,
+      "name": "half-splits-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775080055173.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "j19vY",
+      "x": 0,
+      "y": 11540,
+      "name": "goddess-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777321503979.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "hx2bw",
+      "x": 220,
+      "y": 11540,
+      "name": "halfway-lift-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777321526170.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "YMoxp",
+      "x": 440,
+      "y": 11540,
+      "name": "half-wind-release-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "R8KVu",
+      "x": 660,
+      "y": 11540,
+      "name": "happy-baby-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "2NGZN",
+      "x": 0,
+      "y": 11760,
+      "name": "head-to-knee-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "kLK0S",
+      "x": 220,
+      "y": 11760,
+      "name": "intense-leg-stretch-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "pwzh6",
+      "x": 440,
+      "y": 11760,
+      "name": "lizard-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777320333832.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "IetYj",
+      "x": 660,
+      "y": 11760,
+      "name": "locust-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "BbaLD",
+      "x": 0,
+      "y": 11980,
+      "name": "low-lunge-hands-knee-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "ZFa6h",
+      "x": 220,
+      "y": 11980,
+      "name": "low-lunge-twist-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "qm8oc",
+      "x": 440,
+      "y": 11980,
+      "name": "low-plank-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "H8ifx",
+      "x": 660,
+      "y": 11980,
+      "name": "mountain-namaste-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "Bbv2E",
+      "x": 0,
+      "y": 12200,
+      "name": "one-legged-mountain-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "cP1PZ",
+      "x": 220,
+      "y": 12200,
+      "name": "palm-tree-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "mLxcO",
+      "x": 440,
+      "y": 12200,
+      "name": "plank-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "nTHET",
+      "x": 660,
+      "y": 12200,
+      "name": "plough-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "jdgRx",
+      "x": 0,
+      "y": 12420,
+      "name": "puppy-dog-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "ciNIK",
+      "x": 220,
+      "y": 12420,
+      "name": "reclined-knee-circles-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "QrK7c",
+      "x": 440,
+      "y": 12420,
+      "name": "reclining-bound-angle-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "EDyiz",
+      "x": 660,
+      "y": 12420,
+      "name": "revolved-low-lunge-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "L79no",
+      "x": 0,
+      "y": 12640,
+      "name": "revolved-lunge-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "5IanY",
+      "x": 220,
+      "y": 12640,
+      "name": "revolved-side-angle-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "J1XL0",
+      "x": 440,
+      "y": 12640,
+      "name": "runners-lunge-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "Bjza4",
+      "x": 660,
+      "y": 12640,
+      "name": "seated-straddle-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "Upfe1",
+      "x": 0,
+      "y": 12860,
+      "name": "shoulderstand-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "lp3sW",
+      "x": 220,
+      "y": 12860,
+      "name": "side-lying-corpse-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "VQqLR",
+      "x": 440,
+      "y": 12860,
+      "name": "sphinx-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "DGN1K",
+      "x": 660,
+      "y": 12860,
+      "name": "supine-spinal-twist-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "3Z95c",
+      "x": 0,
+      "y": 13080,
+      "name": "table-top-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777320355689.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "JUlf2",
+      "x": 220,
+      "y": 13080,
+      "name": "thread-the-needle-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "w3wFH",
+      "x": 440,
+      "y": 13080,
+      "name": "three-legged-dog-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "9IH8Q",
+      "x": 660,
+      "y": 13080,
+      "name": "upward-facing-dog-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "3hEzu",
+      "x": 0,
+      "y": 13300,
+      "name": "wind-release-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "yVPx5",
+      "x": 220,
+      "y": 13300,
+      "name": "wind-release-nose-knee-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "ZMZVe",
+      "x": 0,
+      "y": 9500,
+      "name": "palm-tree-side-bend-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "s8bil",
+      "x": 440,
+      "y": 13300,
+      "name": "wide-child-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "wGCFV",
+      "x": 660,
+      "y": 13300,
+      "name": "wide-squat-one-leg-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "TXvm3",
+      "x": 0,
+      "y": 13520,
+      "name": "easy-pose-side-bend-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "6fyZM",
+      "x": 220,
+      "y": 9500,
+      "name": "reclined-figure-four-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "hyP2H",
+      "x": 440,
+      "y": 9500,
+      "name": "reverse-pigeon-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "PSSHG",
+      "x": 660,
+      "y": 9500,
+      "name": "reverse-triangle-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "STaMM",
+      "x": 0,
+      "y": 9720,
+      "name": "reverse-warrior-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "AzOm5",
+      "x": 220,
+      "y": 9720,
+      "name": "revolved-easy-pose-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "cLrpo",
+      "x": 440,
+      "y": 9720,
+      "name": "revolved-head-knee-prep-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "byjRE",
+      "x": 660,
+      "y": 9720,
+      "name": "revolved-wide-fwd-bend-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "jojuX",
+      "x": 0,
+      "y": 9940,
+      "name": "seated-cat-cow-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "vwM9n",
+      "x": 220,
+      "y": 9940,
+      "name": "seated-neck-rolls-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "j6abN",
+      "x": 440,
+      "y": 9940,
+      "name": "seated-rock-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "ujZPU",
+      "x": 660,
+      "y": 9940,
+      "name": "seated-shoulder-rolls-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "Wvp2W",
+      "x": 0,
+      "y": 10160,
+      "name": "seated-torso-circles-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "56ewI",
+      "x": 220,
+      "y": 10160,
+      "name": "seated-windshield-wiper-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "vh2Ki",
+      "x": 440,
+      "y": 10160,
+      "name": "side-plank-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "dtKHx",
+      "x": 660,
+      "y": 10160,
+      "name": "sleeping-swan-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "vw0yY",
+      "x": 0,
+      "y": 10380,
+      "name": "staff-pose-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "JdL92",
+      "x": 220,
+      "y": 10380,
+      "name": "standing-figure-four-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "279IF",
+      "x": 440,
+      "y": 10380,
+      "name": "standing-forward-fold-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "InuqT",
+      "x": 660,
+      "y": 10380,
+      "name": "standing-split-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "mXDrj",
+      "x": 0,
+      "y": 10600,
+      "name": "standing-wide-legged-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "0QlBv",
+      "x": 220,
+      "y": 10600,
+      "name": "standing-wind-release-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "vYhLO",
+      "x": 440,
+      "y": 10600,
+      "name": "thunderbolt-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "FKYFQ",
+      "x": 660,
+      "y": 10600,
+      "name": "tiger-pose-var-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "svZ1D",
+      "x": 0,
+      "y": 10820,
+      "name": "triangle-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "eANmc",
+      "x": 220,
+      "y": 10820,
+      "name": "volcano-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "tFkAo",
+      "x": 440,
+      "y": 10820,
+      "name": "warrior-i-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "fjQUG",
+      "x": 660,
+      "y": 10820,
+      "name": "warrior-iii-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "Se4Sw",
+      "x": 0,
+      "y": 11040,
+      "name": "waterfall-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "BKWO2",
+      "x": 220,
+      "y": 11040,
+      "name": "wild-thing-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "11hzm",
+      "x": 440,
+      "y": 11040,
+      "name": "yogi-toe-lock-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "dxOxo",
+      "x": 660,
+      "y": 11040,
+      "name": "easy-pose-neck-stretch-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "JUmHn",
+      "x": 0,
+      "y": 11260,
+      "name": "easy-pose-arms-knees-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "zEYFy",
+      "x": 220,
+      "y": 11260,
+      "name": "high-lunge-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "9QMMm",
+      "x": 440,
+      "y": 11260,
+      "name": "ext-side-angle-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "zdE4m",
+      "x": 660,
+      "y": 11260,
+      "name": "five-pointed-star-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "LU3iE",
+      "x": 0,
+      "y": 11480,
+      "name": "five-pointed-star-arms-up-v3",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "OUXeN",
+      "x": 440,
+      "y": 5660,
+      "name": "test-frame",
+      "width": 200,
+      "height": 200,
+      "fill": "#0B1119"
+    },
+    {
+      "type": "frame",
+      "id": "KwGBx",
+      "x": 440,
+      "y": 5660,
+      "name": "crocodile-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775224639094.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "uYcvz",
+      "x": 660,
+      "y": 5660,
+      "name": "dancer-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775224660808.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "G5UVO",
+      "x": 0,
+      "y": 5880,
+      "name": "dangling-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775224685739.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ed5IT",
+      "x": 220,
+      "y": 5880,
+      "name": "dolphin-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1775224711139.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "YHVCp",
+      "x": 0,
+      "y": 13760,
+      "name": "neck-bend-exercise",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777319427057.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "08EMH",
+      "x": 220,
+      "y": 13760,
+      "name": "neck-twists",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777319608041.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "QHHIs",
+      "x": 440,
+      "y": 13760,
+      "name": "easy-pose-neck-rotation",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777319628979.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "qYtbK",
+      "x": 660,
+      "y": 13760,
+      "name": "shoulder-socket-rotation",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777319640540.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "HAaTn",
+      "x": 0,
+      "y": 13980,
+      "name": "revolved-butterfly-pose-left",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777319739578.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "8qEvn",
+      "x": 220,
+      "y": 13980,
+      "name": "revolved-butterfly-pose-right",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777319757549.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "KwsSh",
+      "x": 440,
+      "y": 13980,
+      "name": "cat-cow-pose-with-leg-to-side-left",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777319784273.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "vOxsa",
+      "x": 660,
+      "y": 13980,
+      "name": "cat-cow-pose-with-leg-to-side-right",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777319801796.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "o7U4p",
+      "x": 0,
+      "y": 14200,
+      "name": "wide-hero-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777319826839.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "RoKWd",
+      "x": 220,
+      "y": 14200,
+      "name": "half-easy-pose-half-forward-bend-left",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777319837790.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sqT78",
+      "x": 440,
+      "y": 14200,
+      "name": "half-easy-pose-half-forward-bend-right",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777319893569.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "tcYgb",
+      "x": 660,
+      "y": 14200,
+      "name": "mountain-pose-palms-facing-forward",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777319909713.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "XwB0Y",
+      "x": 0,
+      "y": 14420,
+      "name": "triangle-prep",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777319959165.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "y6afs",
+      "x": 220,
+      "y": 14420,
+      "name": "triangle-pose-variation-hand-on-shin-left",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777319979339.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "e7TqT",
+      "x": 440,
+      "y": 14420,
+      "name": "triangle-pose-variation-hand-on-shin-right",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777319996571.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "K4nC4",
+      "x": 660,
+      "y": 14420,
+      "name": "triangle-pose-variation-bent-knee-left",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777320013511.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rVz06",
+      "x": 0,
+      "y": 14640,
+      "name": "triangle-pose-variation-bent-knee-right",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777320040244.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "CeF6R",
+      "x": 220,
+      "y": 14640,
+      "name": "goddess-pose-variation-hands",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777320050554.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "9tAEp",
+      "x": 440,
+      "y": 14640,
+      "name": "goddess-pose-variation-namaste",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777320113761.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "hHTr6",
+      "x": 660,
+      "y": 14640,
+      "name": "easy-side-reclining-leg-lift-pose-left",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777320129841.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "EuYQ6",
+      "x": 0,
+      "y": 14860,
+      "name": "easy-side-reclining-leg-lift-pose-right",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777320153707.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "N6ixL",
+      "x": 220,
+      "y": 14860,
+      "name": "corpse-pose-variation-side-bolster",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777320175184.png",
+          "mode": "fill"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "z4Yb9",
+      "x": 440,
+      "y": 14860,
+      "name": "half-pigeon-watercolor",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1777320194045.png",
           "mode": "fill"
         }
       ]

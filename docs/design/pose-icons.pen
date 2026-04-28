@@ -1,0 +1,741 @@
+{
+  "version": "2.9",
+  "children": [
+    {
+      "type": "frame",
+      "id": "F0iIy",
+      "x": 0,
+      "y": 0,
+      "name": "WhisperCue Pose Icons",
+      "width": 1080,
+      "fill": "#030303",
+      "layout": "vertical",
+      "gap": 32,
+      "padding": 48,
+      "children": [
+        {
+          "type": "frame",
+          "id": "G6h41",
+          "name": "hdr",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "children": [
+            {
+              "type": "text",
+              "id": "uvToK",
+              "name": "ttl",
+              "fill": "#F8F9FA",
+              "content": "Pose Icon Library",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 48,
+              "fontWeight": "300",
+              "fontStyle": "italic"
+            },
+            {
+              "type": "text",
+              "id": "jgzmp",
+              "name": "sub",
+              "fill": "#7999C1",
+              "content": "Hand-drawn illustrations — diverse bodies, inclusive practice",
+              "fontFamily": "Georgia",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "v1Nr6",
+          "name": "Row 1",
+          "width": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "uKZvn",
+              "name": "Sukhasana",
+              "width": "fill_container",
+              "height": 240,
+              "fill": "#0d1117",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "89Fup",
+                  "name": "c1i",
+                  "width": 150,
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../assets/poses/sukhasana.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "SPZNR",
+                  "name": "c1l",
+                  "fill": "#43B1E8",
+                  "content": "sukhasana",
+                  "textAlign": "center",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jUjoW",
+              "name": "Malasana",
+              "width": "fill_container",
+              "height": 240,
+              "fill": "#0d1117",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "VDY4E",
+                  "name": "c2i",
+                  "width": 150,
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../assets/poses/malasana.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "Kln1b",
+                  "name": "c2l",
+                  "fill": "#43B1E8",
+                  "content": "mālāsana",
+                  "textAlign": "center",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oI0g3",
+              "name": "Virabhadrasana II",
+              "width": "fill_container",
+              "height": 240,
+              "fill": "#0d1117",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "le2Sm",
+                  "name": "c3i",
+                  "width": 150,
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../assets/poses/virabhadrasana-ii.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "1zSjs",
+                  "name": "c3l",
+                  "fill": "#43B1E8",
+                  "content": "vīrabhadrāsana II",
+                  "textAlign": "center",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ey36j",
+              "name": "Padmasana",
+              "width": "fill_container",
+              "height": 240,
+              "fill": "#0d1117",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "88MXH",
+                  "name": "c4i",
+                  "width": 150,
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../assets/poses/padmasana.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "S6nwu",
+                  "name": "c4l",
+                  "fill": "#43B1E8",
+                  "content": "padmāsana",
+                  "textAlign": "center",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "E9vPx",
+          "name": "Row 2",
+          "width": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "0ws2p",
+              "name": "Vrksasana",
+              "width": "fill_container",
+              "height": 240,
+              "fill": "#0d1117",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "trDKE",
+                  "name": "c5i",
+                  "width": 150,
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../assets/poses/vrksasana.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "p59qz",
+                  "name": "c5l",
+                  "fill": "#43B1E8",
+                  "content": "vṛkṣāsana",
+                  "textAlign": "center",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "luwVI",
+              "name": "Bakasana",
+              "width": "fill_container",
+              "height": 240,
+              "fill": "#0d1117",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "5LIro",
+                  "name": "c6i",
+                  "width": 150,
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../assets/poses/bakasana.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "Sf02u",
+                  "name": "c6l",
+                  "fill": "#43B1E8",
+                  "content": "bakāsana",
+                  "textAlign": "center",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PRUSV",
+              "name": "Anjaneyasana",
+              "width": "fill_container",
+              "height": 240,
+              "fill": "#0d1117",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "6qvTr",
+                  "name": "c7i",
+                  "width": 150,
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../assets/poses/anjaneyasana.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "DBTyH",
+                  "name": "c7l",
+                  "fill": "#43B1E8",
+                  "content": "añjaneyāsana",
+                  "textAlign": "center",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pbQ6x",
+              "name": "Adho Mukha Svanasana",
+              "width": "fill_container",
+              "height": 240,
+              "fill": "#0d1117",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hrEkb",
+                  "name": "c8i",
+                  "width": 150,
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../assets/poses/adho-mukha-svanasana.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "mJIL8",
+                  "name": "c8l",
+                  "fill": "#43B1E8",
+                  "content": "adho mukha śvānāsana",
+                  "textAlign": "center",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "2Xyij",
+          "name": "Row 3",
+          "width": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "HgBOe",
+              "name": "Virasana",
+              "width": "fill_container",
+              "height": 240,
+              "fill": "#0d1117",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Jf1iV",
+                  "name": "c9i",
+                  "width": 150,
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../assets/poses/virasana.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "QpjFB",
+                  "name": "c9l",
+                  "fill": "#43B1E8",
+                  "content": "vīrāsana",
+                  "textAlign": "center",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "03Chx",
+              "name": "Baddha Konasana",
+              "width": "fill_container",
+              "height": 240,
+              "fill": "#0d1117",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KTNMB",
+                  "name": "c10i",
+                  "width": 150,
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../assets/poses/baddha-konasana.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "XYTa6",
+                  "name": "c10l",
+                  "fill": "#43B1E8",
+                  "content": "baddha koṇāsana",
+                  "textAlign": "center",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "a3kqZ",
+              "name": "Chaturanga Dandasana",
+              "width": "fill_container",
+              "height": 240,
+              "fill": "#0d1117",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ZVoRz",
+                  "name": "c11i",
+                  "width": 150,
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../assets/poses/chaturanga-dandasana.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "aueiZ",
+                  "name": "c11l",
+                  "fill": "#43B1E8",
+                  "content": "caturaṅga daṇḍāsana",
+                  "textAlign": "center",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "z4iBU",
+              "name": "Urdhva Dhanurasana",
+              "width": "fill_container",
+              "height": 240,
+              "fill": "#0d1117",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Bzszu",
+                  "name": "c12i",
+                  "width": 150,
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../assets/poses/urdhva-dhanurasana.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "HhatZ",
+                  "name": "c12l",
+                  "fill": "#43B1E8",
+                  "content": "ūrdhva dhanurāsana",
+                  "textAlign": "center",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zbDK5",
+              "name": "Whisper Cue",
+              "width": "fill_container",
+              "height": 240,
+              "fill": "#0d1117",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QMcs7",
+                  "name": "c13i",
+                  "width": 150,
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../assets/poses/whisper-cue.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "7lL4H",
+                  "name": "c13l",
+                  "fill": "#43B1E8",
+                  "content": "whisper cue",
+                  "textAlign": "center",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "oK8Ay",
+      "x": 0,
+      "y": 1200,
+      "name": "Whisper Cue Wordmark",
+      "width": 500,
+      "height": 150,
+      "fill": "#030303",
+      "layout": "vertical",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "AlMQ3",
+          "name": "img",
+          "width": 600,
+          "height": 200,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774623501528.png",
+            "mode": "fill"
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "4Rn20",
+      "x": 0,
+      "y": 0,
+      "name": "child-pose",
+      "width": 200,
+      "height": 200,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "./images/generated-1774719305383.png",
+        "mode": "fill"
+      }
+    },
+    {
+      "type": "frame",
+      "id": "Gx3ZW",
+      "x": 220,
+      "y": 0,
+      "name": "mountain-pose",
+      "width": 200,
+      "height": 200,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "./images/generated-1774719327231.png",
+        "mode": "fill"
+      }
+    },
+    {
+      "type": "frame",
+      "id": "yJGch",
+      "x": 440,
+      "y": 0,
+      "name": "chair-pose",
+      "width": 200,
+      "height": 200,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "./images/generated-1774719342749.png",
+        "mode": "fill"
+      }
+    },
+    {
+      "type": "frame",
+      "id": "RCGug",
+      "x": 660,
+      "y": 0,
+      "name": "revolved-chair-pose",
+      "width": 200,
+      "height": 200,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "./images/generated-1774719360405.png",
+        "mode": "fill"
+      }
+    },
+    {
+      "type": "frame",
+      "id": "7YUyr",
+      "x": 0,
+      "y": 220,
+      "name": "knee-to-nose-pose",
+      "width": 200,
+      "height": 200,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "./images/generated-1774719386636.png",
+        "mode": "fill"
+      }
+    },
+    {
+      "type": "frame",
+      "id": "T6kYD",
+      "x": 220,
+      "y": 220,
+      "name": "eagle-pose",
+      "width": 200,
+      "height": 200,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "./images/generated-1774719407764.png",
+        "mode": "fill"
+      }
+    }
+  ]
+}

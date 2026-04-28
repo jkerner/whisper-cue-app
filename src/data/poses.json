@@ -1521,5 +1521,166 @@
     "kind": "practice",
     "englishName": "Closing",
     "sanskritName": null
+  },
+  {
+    "id": "hero-pose",
+    "kind": "pose",
+    "englishName": "Hero Pose",
+    "sanskritName": "Virasana",
+    "styles": ["prenatal", "vinyasa", "restorative"]
+  },
+  {
+    "id": "neck-bend-exercise",
+    "kind": "pose",
+    "englishName": "Neck Bend Exercise",
+    "sanskritName": "Griva Shakti Vikasaka I",
+    "styles": ["prenatal"]
+  },
+  {
+    "id": "neck-twists",
+    "kind": "pose",
+    "englishName": "Neck Twists",
+    "sanskritName": null,
+    "styles": ["prenatal"]
+  },
+  {
+    "id": "easy-pose-neck-rotation",
+    "kind": "pose",
+    "englishName": "Easy Pose Neck Rotation",
+    "sanskritName": "Sukhasana Neck Rotation",
+    "styles": ["prenatal"]
+  },
+  {
+    "id": "shoulder-socket-rotation",
+    "kind": "pose",
+    "englishName": "Shoulder Socket Rotation",
+    "sanskritName": "Skandha Chakra",
+    "styles": ["prenatal"]
+  },
+  {
+    "id": "revolved-butterfly-pose-left",
+    "kind": "pose",
+    "englishName": "Revolved Butterfly Pose (Left Side)",
+    "sanskritName": "Parivrtta Baddha Konasana",
+    "styles": ["prenatal"]
+  },
+  {
+    "id": "revolved-butterfly-pose-right",
+    "kind": "pose",
+    "englishName": "Revolved Butterfly Pose (Right Side)",
+    "sanskritName": "Parivrtta Baddha Konasana",
+    "styles": ["prenatal"]
+  },
+  {
+    "id": "cat-cow-pose-with-leg-to-side-left",
+    "kind": "pose",
+    "englishName": "Cat Cow Pose With Leg To Side (Left Side)",
+    "sanskritName": "Bitilasana Marjaryasana With Leg To Side",
+    "styles": ["prenatal"]
+  },
+  {
+    "id": "cat-cow-pose-with-leg-to-side-right",
+    "kind": "pose",
+    "englishName": "Cat Cow Pose With Leg To Side (Right Side)",
+    "sanskritName": "Bitilasana Marjaryasana With Leg To Side",
+    "styles": ["prenatal"]
+  },
+  {
+    "id": "wide-hero-pose",
+    "kind": "pose",
+    "englishName": "Wide Hero Pose",
+    "sanskritName": "Prasarita Virasana",
+    "styles": ["prenatal"]
+  },
+  {
+    "id": "half-easy-pose-half-forward-bend-left",
+    "kind": "pose",
+    "englishName": "Half Easy Pose Half Forward Bend (Left Side)",
+    "sanskritName": "Ardha Sukhasana Ardha Uttanasana",
+    "styles": ["prenatal"]
+  },
+  {
+    "id": "half-easy-pose-half-forward-bend-right",
+    "kind": "pose",
+    "englishName": "Half Easy Pose Half Forward Bend (Right Side)",
+    "sanskritName": "Ardha Sukhasana Ardha Uttanasana",
+    "styles": ["prenatal"]
+  },
+  {
+    "id": "mountain-pose-palms-facing-forward",
+    "kind": "pose",
+    "englishName": "Mountain Pose Palms Facing Forward",
+    "sanskritName": "Tadasana",
+    "styles": ["prenatal", "vinyasa"]
+  },
+  {
+    "id": "triangle-prep",
+    "kind": "pose",
+    "englishName": "Triangle Prep",
+    "sanskritName": null,
+    "styles": ["prenatal", "vinyasa"]
+  },
+  {
+    "id": "triangle-pose-variation-hand-on-shin-left",
+    "kind": "pose",
+    "englishName": "Triangle Pose Variation Hand On Shin (Left Side)",
+    "sanskritName": "Trikonasana Variation",
+    "styles": ["prenatal", "vinyasa"]
+  },
+  {
+    "id": "triangle-pose-variation-hand-on-shin-right",
+    "kind": "pose",
+    "englishName": "Triangle Pose Variation Hand On Shin (Right Side)",
+    "sanskritName": "Trikonasana Variation",
+    "styles": ["prenatal", "vinyasa"]
+  },
+  {
+    "id": "triangle-pose-variation-bent-knee-left",
+    "kind": "pose",
+    "englishName": "Triangle Pose Variation Bent Knee (Left Side)",
+    "sanskritName": "Trikonasana Variation",
+    "styles": ["prenatal"]
+  },
+  {
+    "id": "triangle-pose-variation-bent-knee-right",
+    "kind": "pose",
+    "englishName": "Triangle Pose Variation Bent Knee (Right Side)",
+    "sanskritName": "Trikonasana Variation",
+    "styles": ["prenatal"]
+  },
+  {
+    "id": "goddess-pose-variation-hands",
+    "kind": "pose",
+    "englishName": "Goddess Pose Variation Hands",
+    "sanskritName": "Utkata Konasana Variation",
+    "styles": ["prenatal", "vinyasa"]
+  },
+  {
+    "id": "goddess-pose-variation-namaste",
+    "kind": "pose",
+    "englishName": "Goddess Pose Variation Namaste",
+    "sanskritName": "Utkata Konasana Variation",
+    "styles": ["prenatal"]
+  },
+  {
+    "id": "easy-side-reclining-leg-lift-pose-left",
+    "kind": "pose",
+    "englishName": "Easy Side Reclining Leg Lift Pose (Left Side)",
+    "sanskritName": "Sahaja Anantasana",
+    "styles": ["prenatal"]
+  },
+  {
+    "id": "easy-side-reclining-leg-lift-pose-right",
+    "kind": "pose",
+    "englishName": "Easy Side Reclining Leg Lift Pose (Right Side)",
+    "sanskritName": "Sahaja Anantasana",
+    "styles": ["prenatal"]
+  },
+  {
+    "id": "corpse-pose-variation-side-bolster",
+    "kind": "pose",
+    "englishName": "Corpse Pose Variation Side Bolster",
+    "sanskritName": "Savasana Variation",
+    "styles": ["prenatal", "restorative"]
   }
 ]

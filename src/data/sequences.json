@@ -1359,5 +1359,729 @@
         "adjustment": "Honor the practice exactly as it was today. Nothing to change."
       }
     ]
+  },
+  {
+    "id": "julies-paint-and-flow-fundraiser",
+    "name": "Julie's Paint and Flow Fundraiser",
+    "subtitle": "Paint, Sing & Flow: A May Day Offering for Immigrant Defense Project",
+    "style": "Vinyasa",
+    "duration": 90,
+    "theme": "Collective power, community, internal fire. Fundraiser for Immigrant Defense Project on May Day.",
+    "steps": [
+      {
+        "poseId": "easy-pose",
+        "orderIndex": 1,
+        "section": "Opening — Arrive + Frame",
+        "cues": [
+          "Find a comfortable seat — cross-legged, on a block, or any shape that lets the spine be tall.",
+          "Eyes soft or closed. Let yourself arrive."
+        ],
+        "breaths": 5
+      },
+      {
+        "poseId": "theme-reading",
+        "orderIndex": 2,
+        "section": "Opening — Arrive + Frame",
+        "cues": [
+          "Today we gather on May Day — International Workers' Day — a holiday born from the labor movement, from immigrants and workers who fought, organized, and bled for the eight-hour workday, for dignity, for the radical idea that working people deserve rest and joy and beauty. May Day has always belonged to the people. It's a day of solidarity that reminds us that no one is free until we are all free.",
+          "We're here to raise funds for the Immigrant Defense Project, an organization that fights for the rights of immigrants facing deportation and detention, that defends people whose lives are being torn apart by an unjust system. IDP doesn't just provide legal defense — they organize, they educate, and they refuse to let anyone be disappeared without a fight.",
+          "Today we're weaving three practices together: movement — the body remembering it is powerful. Voice — the throat that has been told to stay quiet learning to sing. And paint — the hand that creates rather than only produces. These are the same tools that movements have always used. Workers sang on picket lines. Communities painted murals on their buildings. Bodies marched in the streets. We're not doing anything new — we're remembering."
+        ],
+        "adjustment": "GROUP MOMENT — opening framing. Let it land wherever it needs to."
+      },
+      {
+        "poseId": "hakini-mudra-breathwork",
+        "orderIndex": 3,
+        "section": "Hakini Mudra Breathwork",
+        "cues": [
+          "Bring fingertips of both hands together in front of the chest or belly — thumb to thumb, index to index, all the way through pinky to pinky. Fingers spread wide, palms apart. This is hakini mudra.",
+          "This shape is older than any of us. It's a gesture of gathering — of bringing what is scattered back together. Notice that your two hands, which usually move independently, are now in conversation. This is the same practice we'll do all day: bringing things that seem separate into relationship. Body and breath. Self and community. You and the person on the mat next to you.",
+          "A few natural breaths, just feeling the fingertip contact.",
+          "Inhale through the nose for 4 counts. Exhale through the nose for 6 counts.",
+          "On each inhale, draw energy in through the fingertips toward the heart. On each exhale, let the shoulders drop, jaw soften, belly release. 8–10 rounds.",
+          "Each fingertip touch is a small reminder: nothing in you is meant to be alone. The breath that fills your lungs has been around the world. It has been breathed by people you love and people you'll never meet. It has been breathed by every immigrant who has ever crossed a border looking for safety, for work, for family. We share air. We have always shared air.",
+          "Inhale — gathering. Exhale — softening. We're not building anything yet. We're just arriving.",
+          "One final deep inhale, hold briefly at the top, long sighing exhale through the mouth. Release the mudra, hands rest on thighs or come to heart."
+        ],
+        "breaths": 10,
+        "adjustment": "GROUP MOMENT — hakini mudra breathwork. Inhale 4, exhale 6."
+      },
+      {
+        "poseId": "seated-cat-cow-pose",
+        "orderIndex": 4,
+        "section": "Integration Sequence",
+        "cues": [
+          "Hands on knees, eyes closed. Begin to move with your breath — 5 rounds of seated cat-cow."
+        ],
+        "breaths": 5
+      },
+      {
+        "poseId": "easy-pose-side-bend",
+        "orderIndex": 5,
+        "section": "Integration Sequence",
+        "cues": [
+          "Right arm reaches overhead, left hand grounds beside you. Side body opens. Making space for what wants to come through.",
+          "3 breaths here, then switch sides."
+        ],
+        "breaths": 3,
+        "adjustment": "Right side first, then left."
+      },
+      {
+        "poseId": "revolved-easy-pose",
+        "orderIndex": 6,
+        "section": "Integration Sequence",
+        "cues": [
+          "Seated twist to the right — right hand behind you, left hand to right knee. Lengthen on the inhale, twist deeper on the exhale.",
+          "3 breaths, then switch to the left."
+        ],
+        "breaths": 3,
+        "adjustment": "Right first, then left."
+      },
+      {
+        "poseId": "table-top-pose",
+        "orderIndex": 7,
+        "section": "Integration Sequence",
+        "cues": [
+          "Make your way to tabletop. Hands under shoulders, knees under hips."
+        ]
+      },
+      {
+        "poseId": "cat-cow-pose",
+        "orderIndex": 8,
+        "section": "Integration Sequence",
+        "cues": [
+          "3 rounds of cat-cow. Let it be slow. Spine undulates with the breath."
+        ],
+        "breaths": 3
+      },
+      {
+        "poseId": "thread-the-needle-pose",
+        "orderIndex": 9,
+        "section": "Integration Sequence",
+        "cues": [
+          "Thread the needle — right arm slides under the left, right cheek to the mat. 5 breaths.",
+          "Come back through tabletop, then thread the left arm under. 5 breaths."
+        ],
+        "breaths": 5,
+        "adjustment": "Right first, then left."
+      },
+      {
+        "poseId": "child-pose",
+        "orderIndex": 10,
+        "section": "Integration Sequence",
+        "cues": [
+          "Press back to child's pose, arms reaching forward. The collective bow.",
+          "Let your forehead soften to the mat. 5 breaths."
+        ],
+        "breaths": 5,
+        "adjustment": "The collective bow."
+      },
+      {
+        "poseId": "puppy-dog-pose",
+        "orderIndex": 11,
+        "section": "Integration Sequence",
+        "cues": [
+          "Walk the hands forward into puppy pose — hips stack over knees, chest melts toward the floor. 5 breaths."
+        ],
+        "breaths": 5
+      },
+      {
+        "poseId": "downward-facing-dog-pose",
+        "orderIndex": 12,
+        "section": "Integration Sequence",
+        "cues": [
+          "Tuck your toes, lift the hips. First downward dog of the day. 3 long breaths — pedal out the heels, let the spine lengthen."
+        ],
+        "breaths": 3
+      },
+      {
+        "poseId": "half-way-lift",
+        "orderIndex": 13,
+        "section": "Integration Sequence",
+        "cues": [
+          "Walk to the top of your mat. Halfway lift — flat back, gaze forward.",
+          "Exhale, fold. Let the head hang heavy."
+        ],
+        "breaths": 2
+      },
+      {
+        "poseId": "mountain-pose",
+        "orderIndex": 14,
+        "section": "Integration Sequence",
+        "cues": [
+          "Roll up slowly to stand. Arms sweep wide and overhead.",
+          "Gathering the energy of everyone in this room."
+        ]
+      },
+      {
+        "poseId": "surya-a-breath-movement",
+        "orderIndex": 15,
+        "section": "Integration Sequence",
+        "cues": [
+          "3 slow rounds of breath-with-movement Sun A: Mountain → forward fold → halfway lift → fold → mountain. No jump backs yet. Just the breath.",
+          "Notice the person breathing next to you. You are not flowing alone."
+        ],
+        "breaths": 9,
+        "adjustment": "3 slow rounds. Breath is the guide."
+      },
+      {
+        "poseId": "mountain-pose",
+        "orderIndex": 16,
+        "section": "Sun A",
+        "cues": [
+          "Inhale, arms sweep up — mountain with full reach."
+        ]
+      },
+      {
+        "poseId": "standing-forward-fold-pose",
+        "orderIndex": 17,
+        "section": "Sun A",
+        "cues": [
+          "Exhale, forward fold."
+        ]
+      },
+      {
+        "poseId": "half-way-lift",
+        "orderIndex": 18,
+        "section": "Sun A",
+        "cues": [
+          "Inhale, halfway lift — long spine."
+        ]
+      },
+      {
+        "poseId": "four-limbed-staff-pose",
+        "orderIndex": 19,
+        "section": "Sun A",
+        "cues": [
+          "Exhale, step or float back to plank, lower through chaturanga — elbows graze the ribs."
+        ]
+      },
+      {
+        "poseId": "upward-facing-dog-pose",
+        "orderIndex": 20,
+        "section": "Sun A",
+        "cues": [
+          "Inhale, upward facing dog — chest lifts, tops of feet press."
+        ]
+      },
+      {
+        "poseId": "downward-facing-dog-pose",
+        "orderIndex": 21,
+        "section": "Sun A",
+        "cues": [
+          "Exhale, downward dog. 3 breaths here."
+        ],
+        "breaths": 3
+      },
+      {
+        "poseId": "three-legged-downward-facing-dog-pose",
+        "orderIndex": 22,
+        "section": "Sun A",
+        "cues": [
+          "Inhale, right leg lifts to three-legged dog."
+        ],
+        "adjustment": "Right side."
+      },
+      {
+        "poseId": "three-legged-dog-knee-to-elbow",
+        "orderIndex": 23,
+        "section": "Sun A",
+        "cues": [
+          "Exhale, right knee to right elbow — or right tricep for more challenge."
+        ]
+      },
+      {
+        "poseId": "three-legged-downward-facing-dog-pose",
+        "orderIndex": 24,
+        "section": "Sun A",
+        "cues": [
+          "Inhale back to three-legged dog."
+        ]
+      },
+      {
+        "poseId": "lizard-pose",
+        "orderIndex": 25,
+        "section": "Sun A",
+        "cues": [
+          "Exhale, step right foot outside right hand — lizard pose. Low to the ground, close to the source.",
+          "5 breaths."
+        ],
+        "breaths": 5,
+        "adjustment": "Right side. Low to the ground, close to the source."
+      },
+      {
+        "poseId": "garland-pose",
+        "orderIndex": 26,
+        "section": "Sun A",
+        "cues": [
+          "Plant both hands, step left foot to meet right — lower into malasana, deep squat. Hands at heart.",
+          "This is the squat of every grandmother in every culture. This is the shape of being close to the earth, of waiting, of cooking, of birthing, of resting. You are in good company in this shape.",
+          "5 breaths."
+        ],
+        "breaths": 5,
+        "adjustment": "Malasana — garland pose. Heels lifted or supported."
+      },
+      {
+        "poseId": "five-pointed-star-pose-arms-up",
+        "orderIndex": 27,
+        "section": "Sun A",
+        "cues": [
+          "Rise to star pose, facing the front of the mat, arms wide. 5 breaths.",
+          "Take up space. Some of us have been told our whole lives to make ourselves smaller. Not today."
+        ],
+        "breaths": 5,
+        "adjustment": "Take up space."
+      },
+      {
+        "poseId": "vinyasa-transition",
+        "orderIndex": 28,
+        "section": "Sun A",
+        "cues": [
+          "Forward fold, halfway lift, step back to plank. Vinyasa — chaturanga, upward dog, downward dog."
+        ],
+        "adjustment": "Repeat Sun A on left side (steps 16–28), then return to downward dog."
+      },
+      {
+        "poseId": "three-legged-downward-facing-dog-pose",
+        "orderIndex": 29,
+        "section": "Sun B",
+        "cues": [
+          "From downward dog, inhale right leg to three-legged dog."
+        ],
+        "adjustment": "Right side first."
+      },
+      {
+        "poseId": "lizard-pose",
+        "orderIndex": 30,
+        "section": "Sun B",
+        "cues": [
+          "Exhale, step right foot outside right hand — lizard pose. 5 breaths."
+        ],
+        "breaths": 5,
+        "adjustment": "Right side."
+      },
+      {
+        "poseId": "standing-wide-legged-pose-hands-on-hips",
+        "orderIndex": 31,
+        "section": "Sun B",
+        "cues": [
+          "Plant both hands, step left foot back. Walk feet wide to wide-legged forward fold. 5 breaths — let the spine lengthen."
+        ],
+        "breaths": 5
+      },
+      {
+        "poseId": "five-pointed-star-pose",
+        "orderIndex": 32,
+        "section": "Sun B",
+        "cues": [
+          "Rise to star pose. 3 breaths."
+        ],
+        "breaths": 3
+      },
+      {
+        "poseId": "triangle-pose",
+        "orderIndex": 33,
+        "section": "Sun B",
+        "cues": [
+          "Turn right toes out, left toes slightly in. Triangle pose, right side — reach long through the right arm, stack the left arm overhead. 5 breaths."
+        ],
+        "breaths": 5,
+        "adjustment": "Right side."
+      },
+      {
+        "poseId": "half-moon-pose",
+        "orderIndex": 34,
+        "section": "Sun B",
+        "cues": [
+          "Bend the right knee, shift weight forward, lift the left leg into half moon, right side. Right hand to the floor or a block. 5 breaths."
+        ],
+        "breaths": 5,
+        "adjustment": "Right side."
+      },
+      {
+        "poseId": "skandasana",
+        "orderIndex": 35,
+        "section": "Sun B",
+        "cues": [
+          "Lower back to triangle, then bend the right knee deeply — sweep into skandasana, right knee bent, left leg long. 3 breaths."
+        ],
+        "breaths": 3,
+        "adjustment": "Right side. Wide squat lateral lunge — weight over right knee."
+      },
+      {
+        "poseId": "sky-archer-pose",
+        "orderIndex": 36,
+        "section": "Sun B",
+        "cues": [
+          "Shift the weight to the left side — sky archer, parsva sukhasana left side. 5 breaths.",
+          "You are drawing back the bow. What are you aiming your energy toward?"
+        ],
+        "breaths": 5,
+        "adjustment": "Left side. Lateral lunge over left leg, right leg extended."
+      },
+      {
+        "poseId": "low-lunge-hands-to-knee",
+        "orderIndex": 37,
+        "section": "Sun B",
+        "cues": [
+          "Sweep back through skandasana to a low lunge, right foot forward. Low lunge flow — inhale arms up, exhale hands frame the foot. 3 rounds."
+        ],
+        "breaths": 6,
+        "adjustment": "Right foot forward. 3 rounds breath-with-movement."
+      },
+      {
+        "poseId": "half-splits-pose",
+        "orderIndex": 38,
+        "section": "Sun B",
+        "cues": [
+          "From low lunge, straighten the right leg — half split. Fold forward over the right leg. 5 breaths.",
+          "Honoring the slow burn, the patience of long struggle."
+        ],
+        "breaths": 5,
+        "adjustment": "Right side. Ardha hanumanasana."
+      },
+      {
+        "poseId": "vinyasa-transition",
+        "orderIndex": 39,
+        "section": "Sun B",
+        "cues": [
+          "Bend back into low lunge, plant hands, step back to plank. Vinyasa — chaturanga, upward dog, downward dog."
+        ],
+        "adjustment": "Repeat Sun B on left side (steps 29–39), then return to downward dog."
+      },
+      {
+        "poseId": "mountain-pose",
+        "orderIndex": 40,
+        "section": "Sun B+ Heat Builder",
+        "cues": [
+          "Walk or hop to the top of the mat. Rise to mountain. Take a breath."
+        ]
+      },
+      {
+        "poseId": "shiva-squat-thrusters",
+        "orderIndex": 41,
+        "section": "Sun B+ Heat Builder",
+        "cues": [
+          "Step wide, lower into goddess. Twist the torso and reach the opposite hand toward the opposite foot, rise and switch sides. 10 reps.",
+          "This is your heat peak — the fire we've been building."
+        ],
+        "adjustment": "Shiva squat / side-to-side squat thrusters. 10 reps."
+      },
+      {
+        "poseId": "goddess-pose",
+        "orderIndex": 42,
+        "section": "Sun B+ Heat Builder",
+        "cues": [
+          "Settle into goddess pose. Cactus arms — elbows wide, palms forward. Pulse down 8 times.",
+          "This is the shape of fierce protection. Goddess Durga rides into battle in this stance."
+        ],
+        "breaths": 4,
+        "adjustment": "Cactus arms, 8 pulses."
+      },
+      {
+        "poseId": "goddess-pose",
+        "orderIndex": 43,
+        "section": "Sun B+ Heat Builder",
+        "cues": [
+          "Goddess twists — drop the opposite elbow toward the opposite knee, alternating. 8 reps."
+        ],
+        "adjustment": "Alternating sides, 8 reps."
+      },
+      {
+        "poseId": "skandasana",
+        "orderIndex": 44,
+        "section": "Sun B+ Heat Builder",
+        "cues": [
+          "Skandasana flow — flowing side to side through a low squat, 6 reps.",
+          "The collective swaying, the way crowds move together."
+        ],
+        "adjustment": "6 reps side to side."
+      },
+      {
+        "poseId": "eagle-pose",
+        "orderIndex": 45,
+        "section": "Sun B+ Heat Builder",
+        "cues": [
+          "Horse stance — feet wide, knees bent. Eagle arms right side: right arm under left, wrap and lift. 5 breaths.",
+          "Switch arms — left under right. 5 breaths."
+        ],
+        "breaths": 10,
+        "adjustment": "Horse stance with eagle arms — both sides."
+      },
+      {
+        "poseId": "vinyasa-transition",
+        "orderIndex": 46,
+        "section": "Sun B+ Heat Builder",
+        "cues": [
+          "Vinyasa to cool the surface — chaturanga, upward dog, downward dog."
+        ]
+      },
+      {
+        "poseId": "collective-ha-exhales",
+        "orderIndex": 47,
+        "section": "Voice Integration — Breaking Silence",
+        "cues": [
+          "Walk to the top of the mat. Rise to a wide stance. One hand on belly, one on heart.",
+          "10 sharp 'HA!' exhales — loud, releasing sound from the belly. All together.",
+          "Pause. Inhale deeply."
+        ],
+        "adjustment": "GROUP MOMENT — voice integration. Loud, collective, from the belly."
+      },
+      {
+        "poseId": "collective-ahhhh",
+        "orderIndex": 48,
+        "section": "Voice Integration — Breaking Silence",
+        "cues": [
+          "One long collective 'AHHHH' — hold together for 30 seconds. Everyone at once.",
+          "Pause. One natural breath.",
+          "One more long collective 'AHHHH' — let it get louder, fuller.",
+          "This is the sound of breaking silence. The sound IDP's clients are too often not allowed to make. We make it for them and with them.",
+          "Hands to heart. One natural breath. Step feet together at the top of the mat."
+        ],
+        "adjustment": "GROUP MOMENT — 30-second collective tone, twice."
+      },
+      {
+        "poseId": "mountain-pose",
+        "orderIndex": 49,
+        "section": "Balancing Peak",
+        "cues": [
+          "Mountain pose. 3 breaths — settle here before the sequence begins."
+        ],
+        "breaths": 3
+      },
+      {
+        "poseId": "tree-pose",
+        "orderIndex": 50,
+        "section": "Balancing Peak",
+        "cues": [
+          "Tree pose, right side — root the left foot down, lift the right foot to inner thigh or calf. Hands at heart or branches overhead.",
+          "Roots."
+        ],
+        "breaths": 5,
+        "adjustment": "Right side first."
+      },
+      {
+        "poseId": "standing-figure-four-pose",
+        "orderIndex": 51,
+        "section": "Balancing Peak",
+        "cues": [
+          "Release to standing figure four, right side — sit the hips back, hands at heart. 5 breaths.",
+          "The bend before the leap."
+        ],
+        "breaths": 5,
+        "adjustment": "Right side."
+      },
+      {
+        "poseId": "chair-pose",
+        "orderIndex": 52,
+        "section": "Balancing Peak",
+        "cues": [
+          "Rise to chair pose. 5 breaths.",
+          "Sitting in the unseen seat, the strength that doesn't need a throne."
+        ],
+        "breaths": 5
+      },
+      {
+        "poseId": "warrior-pose-iii",
+        "orderIndex": 53,
+        "section": "Balancing Peak",
+        "cues": [
+          "Shift weight to the left foot, lift the right leg back — Warrior 3, right side. Arms in prayer, airplane, or extended forward. 5 breaths.",
+          "The body as arrow, as flag, as banner."
+        ],
+        "breaths": 5,
+        "adjustment": "Right side — balanced on left foot."
+      },
+      {
+        "poseId": "standing-split-pose",
+        "orderIndex": 54,
+        "section": "Balancing Peak",
+        "cues": [
+          "Lower the torso further, lift the back leg higher — standing splits, right side. 5 breaths."
+        ],
+        "breaths": 5,
+        "adjustment": "Right side."
+      },
+      {
+        "poseId": "dancer-pose",
+        "orderIndex": 55,
+        "section": "Balancing Peak",
+        "cues": [
+          "Bend the standing knee, catch the right foot behind you with the right hand. Rise into dancer's pose, right side. 5 breaths.",
+          "The body curved like a wave, like a dancer at every protest, at every wedding, at every funeral. We dance because they told us not to."
+        ],
+        "breaths": 5,
+        "adjustment": "PEAK POSE — right side. Natarajasana."
+      },
+      {
+        "poseId": "warrior-pose-ii",
+        "orderIndex": 56,
+        "section": "Balancing Peak",
+        "cues": [
+          "Release dancer, step right foot back into Warrior 2, right side. 5 breaths."
+        ],
+        "breaths": 5,
+        "adjustment": "Right side."
+      },
+      {
+        "poseId": "reverse-warrior-pose",
+        "orderIndex": 57,
+        "section": "Balancing Peak",
+        "cues": [
+          "Reverse Warrior, right. 3 breaths."
+        ],
+        "breaths": 3,
+        "adjustment": "Right side."
+      },
+      {
+        "poseId": "extended-side-angle-pose",
+        "orderIndex": 58,
+        "section": "Balancing Peak",
+        "cues": [
+          "Extended Side Angle, right. 5 breaths."
+        ],
+        "breaths": 5,
+        "adjustment": "Right side."
+      },
+      {
+        "poseId": "triangle-pose",
+        "orderIndex": 59,
+        "section": "Balancing Peak",
+        "cues": [
+          "Triangle, right. 5 breaths."
+        ],
+        "breaths": 5,
+        "adjustment": "Right side."
+      },
+      {
+        "poseId": "vinyasa-transition",
+        "orderIndex": 60,
+        "section": "Balancing Peak",
+        "cues": [
+          "Cartwheel hands down, step back to plank. Vinyasa — chaturanga, upward dog, downward dog."
+        ],
+        "adjustment": "Repeat entire balance sequence on left side (steps 50–60), then return to downward dog."
+      },
+      {
+        "poseId": "tree-pose",
+        "orderIndex": 61,
+        "section": "Collective Peak — Center-Facing Tree",
+        "cues": [
+          "Have everyone turn to face the center of the room. Step into tree pose — any side, dealer's choice. Branches reaching up and slightly toward the center.",
+          "Hold together for 5–8 long breaths.",
+          "This is what the immigrant rights movement looks like. Individual roots, individual sky-reaching, but moving as one forest. You are not holding this alone. You have never been holding this alone.",
+          "Release tree, hands to heart, slight bow toward the center of the room. Turn back to face the front of your mat."
+        ],
+        "breaths": 8,
+        "adjustment": "GROUP MOMENT — all face center, hold tree together."
+      },
+      {
+        "poseId": "seated-straddle-pose",
+        "orderIndex": 62,
+        "section": "Cooling + Floor Series",
+        "cues": [
+          "Step or hop to a seat at the top of the mat. Wide-legged seated forward fold — upavistha konasana. Walk hands forward, fold from the hips. 8 breaths."
+        ],
+        "breaths": 8
+      },
+      {
+        "poseId": "head-to-knee-pose",
+        "orderIndex": 63,
+        "section": "Cooling + Floor Series",
+        "cues": [
+          "Janu sirsasana, right — right leg extended, left foot to inner right thigh. Fold over the right leg. 5 breaths.",
+          "Then switch — left leg extended, fold over the left. 5 breaths."
+        ],
+        "breaths": 10,
+        "adjustment": "Right then left, 5 breaths each."
+      },
+      {
+        "poseId": "seated-forward-bend-pose",
+        "orderIndex": 64,
+        "section": "Cooling + Floor Series",
+        "cues": [
+          "Both legs extended — seated forward fold, paschimottanasana. 8 breaths."
+        ],
+        "breaths": 8
+      },
+      {
+        "poseId": "reclined-revolved-figure-four-pose",
+        "orderIndex": 65,
+        "section": "Cooling + Floor Series",
+        "cues": [
+          "Roll down to your back. Reclined pigeon, right side — right ankle crosses left knee, flex the right foot, draw both legs toward the chest. 8 breaths.",
+          "Switch sides — left ankle crosses right knee. 8 breaths."
+        ],
+        "breaths": 16,
+        "adjustment": "Right then left, 8 breaths each. Supta kapotasana."
+      },
+      {
+        "poseId": "happy-baby-pose",
+        "orderIndex": 66,
+        "section": "Cooling + Floor Series",
+        "cues": [
+          "Happy baby — soles of the feet to the sky, hands catch the outer edges of the feet. Rock gently. 5 breaths."
+        ],
+        "breaths": 5
+      },
+      {
+        "poseId": "supine-spinal-twist-pose",
+        "orderIndex": 67,
+        "section": "Cooling + Floor Series",
+        "cues": [
+          "Reclined twist, right — knees stack to the left, arms open wide. 5 breaths.",
+          "Switch to the left — knees stack to the right. 5 breaths."
+        ],
+        "breaths": 10,
+        "adjustment": "Right then left, 5 breaths each."
+      },
+      {
+        "poseId": "bridge-pose",
+        "orderIndex": 68,
+        "section": "Cooling + Floor Series",
+        "cues": [
+          "Bridge pose — feet hip-width, press into the floor, lift the hips. 5 breaths.",
+          "Lower, pause, then a second round. 5 breaths."
+        ],
+        "breaths": 10,
+        "adjustment": "2 rounds, 5 breaths each."
+      },
+      {
+        "poseId": "fish-pose",
+        "orderIndex": 69,
+        "section": "Cooling + Floor Series",
+        "cues": [
+          "Supported fish — place a bolster or block under the shoulder blades if available, or take the pose without support. Heart lifts toward the sky, throat opens. 8 breaths.",
+          "Opening the heart and throat for what comes next."
+        ],
+        "breaths": 8,
+        "adjustment": "Supported with bolster or block under shoulder blades, optional."
+      },
+      {
+        "poseId": "hakini-mudra-closing",
+        "orderIndex": 70,
+        "section": "Transition to Voice + Paint",
+        "cues": [
+          "Roll to one side, press up to a comfortable seat. Spine tall.",
+          "Bring hands back into hakini mudra — fingertips touching, the same shape we started in.",
+          "We started this practice gathering ourselves. Now we return to that gesture, but with a body that has been through something. The fire is built. The voice has cracked open. The hands are ready to make.",
+          "Inhale through nose for 4. Hold gently at the top for 4. Sigh out through the mouth, audibly. 4 rounds."
+        ],
+        "breaths": 4,
+        "adjustment": "Inhale 4, hold 4, sigh out. 4 rounds."
+      },
+      {
+        "poseId": "closing-dedication",
+        "orderIndex": 71,
+        "section": "Transition to Voice + Paint",
+        "cues": [
+          "The fire you built today doesn't stay on this mat. It walks out with you. Every dollar raised today goes to IDP, to lawyers and organizers fighting in courts and on streets. Your breath was a contribution. Your sweat was a contribution. Your voice and your painting are contributions. This is what mutual aid looks like when it has a body.",
+          "Take a moment to silently dedicate your practice to one person — named or unnamed — who is impacted by the immigration system. Hold them in your mind. Hold them in your hands.",
+          "One final breath together. Bow forward.",
+          "Hand off to the song leader, or invite students to begin painting."
+        ],
+        "adjustment": "GROUP MOMENT — closing dedication. Bow. Hand off to song leader."
+      }
+    ]
   }
 ]

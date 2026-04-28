@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   View,
   Text,
@@ -11,19 +11,18 @@ import {
 } from "react-native";
 import { useRouter, useLocalSearchParams } from "expo-router";
 import { Feather } from "@expo/vector-icons";
-import { Pose, Sequence } from "../src/types";
-import sequencesData from "../src/data/sequences.json";
-import posesData from "../src/data/poses.json";
+import { builderStore } from "../src/lib/builder-store";
 import Svg, { Circle } from "react-native-svg";
 
-const sequences = sequencesData as Sequence[];
-const poses = posesData as Pose[];
-const sequence = sequences[0];
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 const RING_SIZE = SCREEN_WIDTH * 0.55;
 
-function getPose(poseId: string): Pose | undefined {
-  return poses.find((p) => p.id === poseId);
+interface TeachStep {
+  title: string;
+  sanskrit?: string;
+  cues: string[];
+  adjustment?: string;
+  section: string;
 }
 
 function formatTime(seconds: number): string {
@@ -32,7 +31,6 @@ function formatTime(seconds: number): string {
   return `${m}:${s.toString().padStart(2, "0")}`;
 }
 
-// Progress ring
 function ProgressRing({
   progress,
   size,
@@ -48,7 +46,6 @@ function ProgressRing({
 
   return (
     <Svg width={size} height={size} style={StyleSheet.absoluteFill}>
-      {/* Dashed inner ring */}
       <Circle
         cx={size / 2}
         cy={size / 2}
@@ -58,7 +55,6 @@ function ProgressRing({
         strokeDasharray="4 6"
         fill="none"
       />
-      {/* Background ring */}
       <Circle
         cx={size / 2}
         cy={size / 2}
@@ -67,7 +63,6 @@ function ProgressRing({
         strokeWidth={strokeWidth}
         fill="none"
       />
-      {/* Progress arc */}
       <Circle
         cx={size / 2}
         cy={size / 2}
@@ -88,6 +83,22 @@ function ProgressRing({
 export default function LiveTeachScreen() {
   const router = useRouter();
   const { startIndex } = useLocalSearchParams<{ startIndex?: string }>();
+
+  const steps = useMemo<TeachStep[]>(() => {
+    const sections = builderStore.getSections();
+    return sections.flatMap((section) =>
+      section.poses.map((pose) => ({
+        title: pose.title,
+        sanskrit: pose.sanskrit || undefined,
+        cues: pose.description
+          ? pose.description.split("\n").filter((s) => s.trim())
+          : [],
+        adjustment: pose.deepening || undefined,
+        section: section.name,
+      }))
+    );
+  }, []);
+
   const [currentIndex, setCurrentIndex] = useState(
     startIndex ? parseInt(startIndex, 10) : 0
   );
@@ -95,48 +106,28 @@ export default function LiveTeachScreen() {
   const [paused, setPaused] = useState(false);
   const fadeAnim = useRef(new Animated.Value(1)).current;
 
-  const totalSteps = sequence.steps.length;
-  const step = sequence.steps[currentIndex];
-  const pose = getPose(step.poseId);
-  const progress = (currentIndex + 1) / totalSteps;
+  const totalSteps = steps.length;
+  const step = steps[currentIndex];
+  const progress = totalSteps > 0 ? (currentIndex + 1) / totalSteps : 0;
+  const nextStep = currentIndex < totalSteps - 1 ? steps[currentIndex + 1] : null;
 
-  // Next pose
-  const nextStep =
-    currentIndex < totalSteps - 1 ? sequence.steps[currentIndex + 1] : null;
-  const nextPose = nextStep ? getPose(nextStep.poseId) : null;
-
-  // Timer
   useEffect(() => {
     if (paused) return;
-    const timer = setInterval(() => {
-      setElapsed((e) => e + 1);
-    }, 1000);
+    const timer = setInterval(() => setElapsed((e) => e + 1), 1000);
     return () => clearInterval(timer);
   }, [paused]);
 
-  // Fade transition
   const animateTransition = (callback: () => void) => {
     Animated.sequence([
-      Animated.timing(fadeAnim, {
-        toValue: 0,
-        duration: 150,
-        useNativeDriver: true,
-      }),
-      Animated.timing(fadeAnim, {
-        toValue: 1,
-        duration: 200,
-        useNativeDriver: true,
-      }),
+      Animated.timing(fadeAnim, { toValue: 0, duration: 150, useNativeDriver: true }),
+      Animated.timing(fadeAnim, { toValue: 1, duration: 200, useNativeDriver: true }),
     ]).start();
     setTimeout(callback, 150);
   };
 
   const goNext = () => {
     if (currentIndex >= totalSteps - 1) {
-      router.replace({
-        pathname: "/practice-complete",
-        params: { elapsed: elapsed.toString() },
-      });
+      router.replace({ pathname: "/practice-complete", params: { elapsed: elapsed.toString() } });
       return;
     }
     animateTransition(() => setCurrentIndex((i) => i + 1));
@@ -147,7 +138,6 @@ export default function LiveTeachScreen() {
     animateTransition(() => setCurrentIndex((i) => i - 1));
   };
 
-  // Ring scrub — drag around the ring to jump to a step
   const [scrubbing, setScrubbing] = useState(false);
   const lastScrubIndex = useRef(currentIndex);
 
@@ -162,9 +152,7 @@ export default function LiveTeachScreen() {
         return dist > ringRadius * 0.55 && dist < ringRadius * 1.15;
       },
       onMoveShouldSetPanResponder: () => true,
-      onPanResponderGrant: () => {
-        setScrubbing(true);
-      },
+      onPanResponderGrant: () => setScrubbing(true),
       onPanResponderMove: (evt) => {
         const { locationX, locationY } = evt.nativeEvent;
         const dx = locationX - RING_SIZE / 2;
@@ -177,17 +165,22 @@ export default function LiveTeachScreen() {
           setCurrentIndex(idx);
         }
       },
-      onPanResponderRelease: () => {
-        setScrubbing(false);
-      },
+      onPanResponderRelease: () => setScrubbing(false),
     })
   ).current;
 
-  // Join cues into readable text
+  if (!step) {
+    return (
+      <View style={[styles.container, { alignItems: "center", justifyContent: "center" }]}>
+        <Text style={{ color: "#7999C1", fontSize: 15 }}>No sequence loaded.</Text>
+        <Pressable onPress={() => router.back()} style={{ marginTop: 24 }}>
+          <Text style={{ color: "#43B1E8", letterSpacing: 2, fontSize: 12 }}>← BACK</Text>
+        </Pressable>
+      </View>
+    );
+  }
+
   const cueText = step.cues.join(" ");
-  const section = (step as any).section || "";
-  const adjustment = (step as any).adjustment || "";
-  const breaths = (step as any).breaths;
 
   return (
     <View style={styles.container}>
@@ -198,7 +191,7 @@ export default function LiveTeachScreen() {
             <Feather name="list" size={18} color="#7999C1" />
           </Pressable>
           <View>
-            <Text style={styles.sectionName}>{section}</Text>
+            <Text style={styles.sectionName}>{step.section}</Text>
             <Text style={styles.sectionStep}>
               {currentIndex + 1}
               <Text style={styles.sectionMuted}> / {totalSteps}</Text>
@@ -217,7 +210,6 @@ export default function LiveTeachScreen() {
         </View>
       </View>
 
-      {/* Paused overlay */}
       {paused && (
         <View style={styles.pausedBanner}>
           <Text style={styles.pausedText}>PAUSED</Text>
@@ -226,72 +218,52 @@ export default function LiveTeachScreen() {
 
       {/* Progress bar */}
       <View style={styles.progressBarTrack}>
-        <View
-          style={[styles.progressBarFill, { width: `${progress * 100}%` }]}
-        />
+        <View style={[styles.progressBarFill, { width: `${progress * 100}%` }]} />
       </View>
 
-      {/* Central ring area */}
+      {/* Ring */}
       <Animated.View style={[styles.ringArea, { opacity: scrubbing ? 1 : fadeAnim }]}>
         <View
           style={[styles.ringContainer, { width: RING_SIZE, height: RING_SIZE }]}
           {...panResponder.panHandlers}
         >
           <ProgressRing progress={progress} size={RING_SIZE} strokeWidth={2.5} />
-
-          {/* Content inside ring */}
           <View style={styles.ringContent}>
-            {/* Breath count label */}
-            {breaths && (
-              <Text style={styles.breathLabel}>
-                HOLD {breaths} BREATH{breaths > 1 ? "S" : ""}
-              </Text>
-            )}
-
-            {/* Pose name */}
-            <Text style={styles.poseName}>{pose?.englishName}</Text>
-
-            {/* Sanskrit */}
-            {pose?.sanskritName && (
+            <Text style={styles.poseName}>{step.title}</Text>
+            {step.sanskrit && (
               <Text style={styles.sanskrit}>
-                {pose.sanskritName.replace(/^\w/, (c: string) => c.toUpperCase())}
+                {step.sanskrit.replace(/^\w/, (c) => c.toUpperCase())}
               </Text>
             )}
-
           </View>
         </View>
       </Animated.View>
 
       {/* Cue text */}
       <Animated.View style={[styles.cueArea, { opacity: fadeAnim }]}>
-        <ScrollView
-          showsVerticalScrollIndicator={false}
-          contentContainerStyle={styles.cueScroll}
-        >
+        <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.cueScroll}>
           <Text style={styles.cueText}>{cueText}</Text>
-
-          {/* Adjustment callout */}
-          {adjustment ? (
+          {step.adjustment ? (
             <View style={styles.adjustmentRow}>
               <Text style={styles.adjustmentIcon}>⚡</Text>
-              <Text style={styles.adjustmentText}>{adjustment}</Text>
+              <Text style={styles.adjustmentText}>{step.adjustment}</Text>
             </View>
           ) : null}
         </ScrollView>
       </Animated.View>
 
-      {/* Up Next card — tappable to advance */}
+      {/* Up Next */}
       <Pressable style={styles.upNextCard} onPress={goNext}>
-        {nextPose ? (
+        {nextStep ? (
           <>
             <View style={styles.upNextTop}>
               <Text style={styles.upNextLabel}>UP NEXT</Text>
               <Text style={styles.upNextArrow}>→</Text>
             </View>
-            <Text style={styles.upNextName}>{nextPose.englishName}</Text>
-            {nextPose.sanskritName && (
+            <Text style={styles.upNextName}>{nextStep.title}</Text>
+            {nextStep.sanskrit && (
               <Text style={styles.upNextSanskrit}>
-                {nextPose.sanskritName.replace(/^\w/, (c: string) => c.toUpperCase())}
+                {nextStep.sanskrit.replace(/^\w/, (c) => c.toUpperCase())}
               </Text>
             )}
           </>
@@ -303,7 +275,6 @@ export default function LiveTeachScreen() {
         )}
       </Pressable>
 
-      {/* Back hint — subtle, bottom */}
       <Pressable style={styles.backHint} onPress={goPrev}>
         <Text style={styles.backHintText}>← PREVIOUS</Text>
       </Pressable>
@@ -318,8 +289,6 @@ const styles = StyleSheet.create({
     paddingTop: 60,
     paddingBottom: 24,
   },
-
-  // Top bar — SQ Market Regular
   topBar: {
     flexDirection: "row",
     justifyContent: "space-between",
@@ -327,11 +296,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
     marginBottom: 8,
   },
-  topLeft: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 12,
-  },
+  topLeft: { flexDirection: "row", alignItems: "center", gap: 12 },
   topBtn: {
     width: 36,
     height: 36,
@@ -340,45 +305,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  sectionName: {
-    color: "#F8F9FA",
-    fontSize: 12,
-    fontWeight: "600",
-    letterSpacing: 1,
-  },
-  sectionStep: {
-    color: "#7999C1",
-    fontSize: 11,
-    fontVariant: ["tabular-nums"],
-    marginTop: 1,
-  },
-  sectionMuted: {
-    color: "#7999C1",
-    fontWeight: "400",
-  },
-  topRight: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 12,
-  },
-  topTimer: {
-    color: "#7999C1",
-    fontSize: 15,
-    fontWeight: "300",
-    fontVariant: ["tabular-nums"],
-  },
-  pausedBanner: {
-    alignItems: "center",
-    paddingVertical: 6,
-  },
-  pausedText: {
-    color: "#43B1E8",
-    fontSize: 9,
-    fontWeight: "600",
-    letterSpacing: 4,
-  },
-
-  // Progress bar
+  sectionName: { color: "#F8F9FA", fontSize: 12, fontWeight: "600", letterSpacing: 1 },
+  sectionStep: { color: "#7999C1", fontSize: 11, fontVariant: ["tabular-nums"], marginTop: 1 },
+  sectionMuted: { color: "#7999C1", fontWeight: "400" },
+  topRight: { flexDirection: "row", alignItems: "center", gap: 12 },
+  topTimer: { color: "#7999C1", fontSize: 15, fontWeight: "300", fontVariant: ["tabular-nums"] },
+  pausedBanner: { alignItems: "center", paddingVertical: 6 },
+  pausedText: { color: "#43B1E8", fontSize: 9, fontWeight: "600", letterSpacing: 4 },
   progressBarTrack: {
     height: 2,
     backgroundColor: "#1a2230",
@@ -386,37 +319,15 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     borderRadius: 1,
   },
-  progressBarFill: {
-    height: 2,
-    backgroundColor: "#43B1E8",
-    borderRadius: 1,
-  },
-
-  // Ring
-  ringArea: {
-    alignItems: "center",
-    justifyContent: "center",
-    paddingVertical: 16,
-  },
-  ringContainer: {
-    alignItems: "center",
-    justifyContent: "center",
-  },
+  progressBarFill: { height: 2, backgroundColor: "#43B1E8", borderRadius: 1 },
+  ringArea: { alignItems: "center", justifyContent: "center", paddingVertical: 16 },
+  ringContainer: { alignItems: "center", justifyContent: "center" },
   ringContent: {
     alignItems: "center",
     justifyContent: "center",
     gap: 4,
     paddingHorizontal: RING_SIZE * 0.15,
   },
-  // SQ Market Regular, uppercase, tracked
-  breathLabel: {
-    color: "#43B1E8",
-    fontSize: 10,
-    fontWeight: "500",
-    letterSpacing: 3,
-    marginBottom: 8,
-  },
-  // SQ Market Bold — pose name
   poseName: {
     color: "#F8F9FA",
     fontSize: 26,
@@ -425,25 +336,15 @@ const styles = StyleSheet.create({
     letterSpacing: -0.3,
     textAlign: "center",
   },
-  // Cormorant Garamond Italic — Sanskrit in Chandra (light purple)
   sanskrit: {
     color: "#AAA8D6",
     fontSize: 16,
     fontFamily: "CormorantGaramond-Italic",
-    fontVariant: ["lining-nums"],
     textAlign: "center",
     marginTop: 2,
   },
-
-  // Cue — Circular (system sans), centered
-  cueArea: {
-    flex: 1,
-    paddingHorizontal: 32,
-    paddingTop: 20,
-  },
-  cueScroll: {
-    paddingBottom: 16,
-  },
+  cueArea: { flex: 1, paddingHorizontal: 32, paddingTop: 20 },
+  cueScroll: { paddingBottom: 16 },
   cueText: {
     color: "#F8F9FA",
     fontSize: 20,
@@ -453,7 +354,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
     opacity: 0.85,
   },
-  // SQ Market Regular, uppercase — adjustment
   adjustmentRow: {
     flexDirection: "row",
     alignItems: "flex-start",
@@ -461,10 +361,7 @@ const styles = StyleSheet.create({
     marginTop: 16,
     gap: 6,
   },
-  adjustmentIcon: {
-    fontSize: 12,
-    marginTop: 2,
-  },
+  adjustmentIcon: { fontSize: 12, marginTop: 2 },
   adjustmentText: {
     color: "#F59E0B",
     fontSize: 10,
@@ -475,8 +372,6 @@ const styles = StyleSheet.create({
     maxWidth: 300,
     lineHeight: 16,
   },
-
-  // Up Next card
   upNextCard: {
     marginHorizontal: 24,
     backgroundColor: "#0d1117",
@@ -492,43 +387,20 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginBottom: 8,
   },
-  // SQ Market Regular, uppercase, tracked
-  upNextLabel: {
-    color: "#7999C1",
-    fontSize: 11,
-    fontWeight: "500",
-    letterSpacing: 3,
-  },
-  upNextArrow: {
-    color: "#43B1E8",
-    fontSize: 20,
-  },
-  // Cormorant Garamond Bold — matches pose name in ring
+  upNextLabel: { color: "#7999C1", fontSize: 11, fontWeight: "500", letterSpacing: 3 },
+  upNextArrow: { color: "#43B1E8", fontSize: 20 },
   upNextName: {
     color: "#F8F9FA",
     fontSize: 24,
     fontFamily: "CircularStd-Bold",
     fontWeight: "normal",
   },
-  // Cormorant Garamond Italic
   upNextSanskrit: {
     color: "#43B1E8",
     fontSize: 16,
     fontFamily: "CormorantGaramond-Italic",
-    fontVariant: ["lining-nums"],
     marginTop: 4,
   },
-
-  // Back hint
-  backHint: {
-    alignItems: "center",
-    paddingVertical: 12,
-  },
-  backHintText: {
-    color: "#7999C1",
-    fontSize: 9,
-    fontWeight: "500",
-    letterSpacing: 2,
-    opacity: 0.4,
-  },
+  backHint: { alignItems: "center", paddingVertical: 12 },
+  backHintText: { color: "#7999C1", fontSize: 9, fontWeight: "500", letterSpacing: 2, opacity: 0.4 },
 });

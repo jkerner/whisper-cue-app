@@ -75,6 +75,22 @@ const TEMPLATES: Template[] = [
     level: "ALL LEVELS",
     sections: ["Centering", "Pranayama", "Guided Meditation", "Dedication + Close"],
   },
+  {
+    id: "prenatal-flow-60",
+    name: "Prenatal Flow",
+    subtitle: "Gentle, supported, and deeply nourishing",
+    duration: "60 MIN",
+    level: "PRENATAL",
+    sections: ["Arrival + Breathwork", "Seated Opening", "Kneeling + Floor", "Standing Series", "Side-Lying", "Savasana"],
+    sectionPoses: {
+      "Arrival + Breathwork": ["easy-pose-neck-rotation", "neck-bend-exercise", "neck-twists", "shoulder-socket-rotation"],
+      "Seated Opening": ["bound-angle-pose", "revolved-butterfly-pose-left", "revolved-butterfly-pose-right", "cat-cow-pose", "cat-cow-pose-with-leg-to-side-left", "cat-cow-pose-with-leg-to-side-right"],
+      "Kneeling + Floor": ["hero-pose", "wide-hero-pose", "seated-straddle-pose", "half-easy-pose-half-forward-bend-left", "half-easy-pose-half-forward-bend-right", "table-top-pose", "puppy-dog-pose", "wide-child-pose"],
+      "Standing Series": ["mountain-pose", "palm-tree-pose", "chair-pose", "triangle-prep", "triangle-pose-variation-hand-on-shin-left", "triangle-pose-variation-hand-on-shin-right", "goddess-pose-variation-hands", "goddess-pose-variation-namaste"],
+      "Side-Lying": ["easy-side-reclining-leg-lift-pose-right", "easy-side-reclining-leg-lift-pose-left", "supine-spinal-twist-pose"],
+      "Savasana": ["corpse-pose-variation-side-bolster"],
+    },
+  },
 ];
 
 const LEVEL_COLORS: Record<string, string> = {
@@ -82,6 +98,7 @@ const LEVEL_COLORS: Record<string, string> = {
   "BEGINNER": "#7DCFA8",
   "INTERMEDIATE": "#AAA8D6",
   "ADVANCED": "#E88C43",
+  "PRENATAL": "#E8A4B8",
 };
 
 export default function TemplatePickerScreen() {
@@ -116,7 +133,7 @@ export default function TemplatePickerScreen() {
       <View style={styles.titleArea}>
         <Text style={styles.eyebrow}>TEMPLATES</Text>
         <Text style={styles.title}>Choose a{"\n"}starting point</Text>
-        <Text style={styles.subtitle}>Pick a format and make it yours.</Text>
+        <Text style={styles.subtitle}>Each template becomes your own — fully editable.</Text>
       </View>
 
       <ScrollView
@@ -124,7 +141,7 @@ export default function TemplatePickerScreen() {
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
       >
-        {TEMPLATES.map((template) => (
+        {TEMPLATES.filter((t) => t.sectionPoses).map((template) => (
           <Pressable
             key={template.id}
             style={styles.card}
@@ -136,11 +153,6 @@ export default function TemplatePickerScreen() {
                 <Text style={[styles.level, { color: LEVEL_COLORS[template.level] || "#43B1E8" }]}>
                   {template.level}
                 </Text>
-                {template.sectionPoses && (
-                  <View style={styles.filledBadge}>
-                    <Text style={styles.filledBadgeText}>PRE-FILLED</Text>
-                  </View>
-                )}
               </View>
               <Feather name="chevron-right" size={16} color="#7999C1" />
             </View>
@@ -239,13 +251,4 @@ const styles = StyleSheet.create({
     borderColor: "#1e2a38",
   },
   chipText: { color: "#7999C1", fontSize: 11, letterSpacing: 0.5 },
-  filledBadge: {
-    backgroundColor: "#0d2a1a",
-    borderRadius: 6,
-    borderWidth: 1,
-    borderColor: "#7DCFA8",
-    paddingVertical: 2,
-    paddingHorizontal: 7,
-  },
-  filledBadgeText: { color: "#7DCFA8", fontSize: 8, fontWeight: "700", letterSpacing: 1.5 },
 });

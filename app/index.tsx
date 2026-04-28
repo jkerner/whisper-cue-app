@@ -155,8 +155,27 @@ export default function HomeScreen() {
     ]).start();
   }, []);
 
-  const totalPoses = (seq: SavedSequence) =>
-    (seq.sections || []).reduce((sum: number, s: any) => sum + (s.poses?.length || 0), 0);
+  const handleDelete = async (seq: SavedSequence) => {
+    Alert.alert(
+      "Delete sequence",
+      `Delete "${seq.name}"? This can't be undone.`,
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Delete",
+          style: "destructive",
+          onPress: async () => {
+            const { error } = await supabase.from("sequences").delete().eq("id", seq.id);
+            if (error) {
+              Alert.alert("Couldn't delete", error.message);
+            } else {
+              setSequences((prev) => prev.filter((s) => s.id !== seq.id));
+            }
+          },
+        },
+      ]
+    );
+  };
 
   const handleShare = async (seq: SavedSequence) => {
     let token = (seq as any).share_token as string | null;
@@ -240,8 +259,6 @@ export default function HomeScreen() {
             <>
               <Text style={[styles.sectionLabel, { marginTop: 28 }]}>YOUR SEQUENCES</Text>
               {sequences.map((seq) => {
-                const poseCount = totalPoses(seq);
-                const sectionCount = (seq.sections || []).length;
                 return (
                   <Pressable
                     key={seq.id}
@@ -259,13 +276,17 @@ export default function HomeScreen() {
                     }}
                   >
                     <View style={styles.cardRow}>
-                      <Text style={styles.cardEyebrow}>
-                        {sectionCount} SECTIONS{poseCount > 0 ? ` · ${poseCount} POSES` : ""}
-                        {seq.estimated_minutes ? ` · ${seq.estimated_minutes} MIN` : ""}
-                      </Text>
-                      <Pressable onPress={(e) => { e.stopPropagation(); handleShare(seq); }} hitSlop={8}>
-                        <Feather name="share" size={14} color="#7999C1" />
-                      </Pressable>
+                      {seq.estimated_minutes ? (
+                        <Text style={styles.cardEyebrow}>{seq.estimated_minutes} MIN</Text>
+                      ) : null}
+                      <View style={styles.cardActions}>
+                        <Pressable onPress={(e) => { e.stopPropagation(); handleShare(seq); }} hitSlop={8}>
+                          <Feather name="share" size={14} color="#7999C1" />
+                        </Pressable>
+                        <Pressable onPress={(e) => { e.stopPropagation(); handleDelete(seq); }} hitSlop={8}>
+                          <Feather name="trash-2" size={14} color="#7999C1" />
+                        </Pressable>
+                      </View>
                     </View>
                     <Text style={styles.cardTitle}>{seq.name}</Text>
                     {seq.description ? (
@@ -355,6 +376,7 @@ const styles = StyleSheet.create({
   },
   sequencesWrap: { width: "100%", gap: 10 },
   cardRow: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 6 },
+  cardActions: { flexDirection: "row", gap: 16, alignItems: "center" },
   sequenceList: { width: "100%", gap: 10 },
   card: {
     backgroundColor: "#0d1117",

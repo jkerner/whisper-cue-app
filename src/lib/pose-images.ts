@@ -133,6 +133,31 @@ const poseImages: Record<string, any> = {
   "wind-release-pose": require("../../assets/poses/wind-release-pose.png"),
   "wind-release-pose-nose-to-knee": require("../../assets/poses/wind-release-pose-nose-to-knee.png"),
   "yogi-toe-lock-pose": require("../../assets/poses/yogi-toe-lock-pose.png"),
+
+  // Prenatal poses
+  "hero-pose": require("../../assets/poses/virasana.png"),
+  "neck-bend-exercise": require("../../assets/poses/neck-bend-exercise.png"),
+  "neck-twists": require("../../assets/poses/neck-twists.png"),
+  "easy-pose-neck-rotation": require("../../assets/poses/easy-pose-neck-rotation.png"),
+  "shoulder-socket-rotation": require("../../assets/poses/shoulder-socket-rotation.png"),
+  "revolved-butterfly-pose-left": require("../../assets/poses/revolved-butterfly-pose-left.png"),
+  "revolved-butterfly-pose-right": require("../../assets/poses/revolved-butterfly-pose-right.png"),
+  "cat-cow-pose-with-leg-to-side-left": require("../../assets/poses/cat-cow-pose-with-leg-to-side-left.png"),
+  "cat-cow-pose-with-leg-to-side-right": require("../../assets/poses/cat-cow-pose-with-leg-to-side-right.png"),
+  "wide-hero-pose": require("../../assets/poses/wide-hero-pose.png"),
+  "half-easy-pose-half-forward-bend-left": require("../../assets/poses/half-easy-pose-half-forward-bend-left.png"),
+  "half-easy-pose-half-forward-bend-right": require("../../assets/poses/half-easy-pose-half-forward-bend-right.png"),
+  "mountain-pose-palms-facing-forward": require("../../assets/poses/mountain-pose-palms-facing-forward.png"),
+  "triangle-prep": require("../../assets/poses/triangle-prep.png"),
+  "triangle-pose-variation-hand-on-shin-left": require("../../assets/poses/triangle-pose-variation-hand-on-shin-left.png"),
+  "triangle-pose-variation-hand-on-shin-right": require("../../assets/poses/triangle-pose-variation-hand-on-shin-right.png"),
+  "triangle-pose-variation-bent-knee-left": require("../../assets/poses/triangle-pose-variation-bent-knee-left.png"),
+  "triangle-pose-variation-bent-knee-right": require("../../assets/poses/triangle-pose-variation-bent-knee-right.png"),
+  "goddess-pose-variation-hands": require("../../assets/poses/goddess-pose-variation-hands.png"),
+  "goddess-pose-variation-namaste": require("../../assets/poses/goddess-pose-variation-namaste.png"),
+  "easy-side-reclining-leg-lift-pose-left": require("../../assets/poses/easy-side-reclining-leg-lift-pose-left.png"),
+  "easy-side-reclining-leg-lift-pose-right": require("../../assets/poses/easy-side-reclining-leg-lift-pose-right.png"),
+  "corpse-pose-variation-side-bolster": require("../../assets/poses/corpse-pose-variation-side-bolster.png"),
 };
 
 export default poseImages;

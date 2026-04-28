@@ -1,0 +1,491 @@
+{
+  "version": "2.9",
+  "children": [
+    {
+      "type": "frame",
+      "id": "GnmYR",
+      "x": 220,
+      "y": 0,
+      "name": "mountain-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726759641.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "E25FN",
+      "x": 440,
+      "y": 0,
+      "name": "chair-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726774636.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "dahz4",
+      "x": 660,
+      "y": 0,
+      "name": "revolved-chair-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726801024.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "PwMVJ",
+      "x": 660,
+      "y": 0,
+      "name": "revolved-chair-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726823394.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sIdbE",
+      "x": 220,
+      "y": 220,
+      "name": "eagle-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726845092.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "8vuiM",
+      "x": 220,
+      "y": 220,
+      "name": "eagle-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726871874.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ikyw7",
+      "x": 0,
+      "y": 680,
+      "name": "knee-to-nose-v2",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726981535.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "CtRBa",
+      "x": 220,
+      "y": 680,
+      "name": "parsvottanasana-v2",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774727000987.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "IcclX",
+      "x": 660,
+      "y": 680,
+      "name": "constructive-rest-v2",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774727026146.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sgwnq",
+      "x": 440,
+      "y": 900,
+      "name": "knee-to-nose-v3",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774727077854.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "NXVcF",
+      "x": 220,
+      "y": 1120,
+      "name": "tadasana-v2",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774727093982.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "IWHwS",
+      "x": 440,
+      "y": 1120,
+      "name": "utkatasana-v2",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774727125939.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "RIqpf",
+      "x": 660,
+      "y": 1120,
+      "name": "parivrtta-v2",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774727126772.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "zaa7Y",
+      "x": 0,
+      "y": 1340,
+      "name": "garudasana-v2",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726744843.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rxPyC",
+      "x": 660,
+      "y": 1340,
+      "name": "pigeon-v2",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726774227.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "10BWy",
+      "x": 0,
+      "y": 1560,
+      "name": "constructive-rest-v2",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726800060.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Q63Tb",
+      "x": 0,
+      "y": 1800,
+      "name": "balasana-final",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726830896.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "biLHK",
+      "x": 0,
+      "y": 2240,
+      "name": "utkatasana-final",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726849934.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "04oxA",
+      "x": 220,
+      "y": 2240,
+      "name": "knee-nose-final",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726872606.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "LAeKC",
+      "x": 660,
+      "y": 2240,
+      "name": "parsvottanasana-final",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726899570.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "odECK",
+      "x": 0,
+      "y": 2641,
+      "name": "paschimottanasana-final",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726919243.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "g4TBp",
+      "x": 220,
+      "y": 2460,
+      "name": "savasana-final",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726932086.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "hYKv0",
+      "x": 440,
+      "y": 2680,
+      "name": "savasana-fix",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726949631.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "5paze",
+      "x": 660,
+      "y": 2680,
+      "name": "knee-nose-fix",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774726968698.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "alJwP",
+      "x": 0,
+      "y": 3120,
+      "name": "knee-nose-bigger",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774727012969.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "QH1oZ",
+      "x": 660,
+      "y": 3120,
+      "name": "bow-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774727082790.png",
+          "mode": "fit"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "XeOfI",
+      "x": 220,
+      "y": 3340,
+      "name": "tabletop-pose",
+      "width": 200,
+      "height": 200,
+      "fill": [
+        "#0B1119",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "./images/generated-1774727103799.png",
+          "mode": "fit"
+        }
+      ]
+    }
+  ]
+}

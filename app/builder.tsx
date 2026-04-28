@@ -9,6 +9,7 @@ import {
   SafeAreaView,
   Alert,
   ActivityIndicator,
+  Share,
 } from "react-native";
 import { useRouter, useLocalSearchParams } from "expo-router";
 import { Feather } from "@expo/vector-icons";
@@ -25,14 +26,47 @@ export default function BuilderScreen() {
   );
   const [editingId, setEditingId] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
+  const [hasEdits, setHasEdits] = useState(false);
 
   useEffect(() => {
+    let first = true;
     return builderStore.subscribe(() => {
       setSections([...builderStore.getSections()]);
+      if (first) { first = false; return; }
+      setHasEdits(true);
     });
   }, []);
 
-  const totalPoses = sections.reduce((sum, s) => sum + s.poses.length, 0);
+  const handleDelete = async () => {
+    if (!params.sequenceId) return;
+    Alert.alert(
+      "Delete sequence",
+      `Delete "${title}"? This can't be undone.`,
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Delete",
+          style: "destructive",
+          onPress: async () => {
+            const { error } = await supabase.from("sequences").delete().eq("id", params.sequenceId!);
+            if (error) { Alert.alert("Couldn't delete", error.message); return; }
+            router.replace("/");
+          },
+        },
+      ]
+    );
+  };
+
+  const handleShare = async () => {
+    if (!params.sequenceId) return;
+    let { data } = await supabase.from("sequences").select("share_token").eq("id", params.sequenceId).single();
+    let token = data?.share_token as string | null;
+    if (!token) {
+      token = Math.random().toString(36).slice(2, 10);
+      await supabase.from("sequences").update({ share_token: token }).eq("id", params.sequenceId);
+    }
+    Share.share({ message: `Check out my yoga sequence on WhisperCue: https://whispercue.app/s/${token}` });
+  };
 
   const handleSave = async () => {
     if (sections.length === 0) {
@@ -76,6 +110,16 @@ export default function BuilderScreen() {
           <Pressable onPress={() => router.back()}>
             <Feather name="arrow-left" size={20} color="#43B1E8" />
           </Pressable>
+          {params.sequenceId && (
+            <View style={styles.headerActions}>
+              <Pressable onPress={handleShare} hitSlop={8}>
+                <Feather name="share" size={18} color="#7999C1" />
+              </Pressable>
+              <Pressable onPress={handleDelete} hitSlop={8}>
+                <Feather name="trash-2" size={18} color="#7999C1" />
+              </Pressable>
+            </View>
+          )}
         </View>
 
         {/* Title area */}
@@ -96,18 +140,6 @@ export default function BuilderScreen() {
             placeholderTextColor="#1a2230"
           />
 
-          {/* Stats */}
-          <View style={styles.metaRow}>
-            <View style={styles.metaItem}>
-              <Text style={styles.metaValue}>{sections.length}</Text>
-              <Text style={styles.metaLabel}>SECTIONS</Text>
-            </View>
-            <View style={styles.metaDivider} />
-            <View style={styles.metaItem}>
-              <Text style={styles.metaValue}>{totalPoses}</Text>
-              <Text style={styles.metaLabel}>POSES</Text>
-            </View>
-          </View>
         </View>
 
         {/* Section list */}
@@ -229,19 +261,32 @@ export default function BuilderScreen() {
           </Pressable>
         </ScrollView>
 
-        {/* Save CTA */}
+        {/* CTAs */}
         <View style={styles.ctaContainer}>
-          <Pressable
-            style={[styles.cta, saving && styles.ctaDisabled]}
-            disabled={saving}
-            onPress={handleSave}
-          >
-            {saving ? (
-              <ActivityIndicator color="#030303" />
-            ) : (
-              <Text style={styles.ctaText}>SAVE SEQUENCE</Text>
-            )}
-          </Pressable>
+          {params.sequenceId && (
+            <Pressable
+              style={styles.ctaBegin}
+              onPress={() => router.push("/live-teach")}
+            >
+              <Feather name="play" size={14} color="#F8F9FA" />
+              <Text style={styles.ctaBeginText}>BEGIN CLASS</Text>
+            </Pressable>
+          )}
+          {(!params.sequenceId || hasEdits) && (
+            <Pressable
+              style={[styles.cta, saving && styles.ctaDisabled]}
+              disabled={saving}
+              onPress={handleSave}
+            >
+              {saving ? (
+                <ActivityIndicator color="#030303" />
+              ) : (
+                <Text style={styles.ctaText}>
+                  {params.sequenceId ? "SAVE CHANGES" : "SAVE SEQUENCE"}
+                </Text>
+              )}
+            </Pressable>
+          )}
         </View>
       </View>
     </SafeAreaView>
@@ -260,6 +305,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingTop: 8,
     paddingBottom: 12,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  headerActions: {
+    flexDirection: "row",
+    gap: 20,
+    alignItems: "center",
   },
   titleArea: {
     paddingHorizontal: 24,
@@ -411,11 +464,29 @@ const styles = StyleSheet.create({
     letterSpacing: 3,
   },
 
-  // Save CTA
+  // CTAs
   ctaContainer: {
     paddingHorizontal: 24,
     paddingBottom: 24,
     paddingTop: 12,
+    gap: 10,
+  },
+  ctaBegin: {
+    backgroundColor: "#0d1117",
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: "#1a2230",
+    paddingVertical: 18,
+    alignItems: "center",
+    flexDirection: "row",
+    justifyContent: "center",
+    gap: 8,
+  },
+  ctaBeginText: {
+    color: "#F8F9FA",
+    fontSize: 14,
+    fontWeight: "600",
+    letterSpacing: 3,
   },
   cta: {
     backgroundColor: "#43B1E8",
