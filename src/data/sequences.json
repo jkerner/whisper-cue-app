@@ -8,7 +8,7 @@
         "orderIndex": 1,
         "section": "Integration",
         "cues": [
-          "Find your seat. Hands rest on your thighs, spine tall.",
+          "Hold, Easy Pose, find your seat with hands on thighs and spine tall.",
           "Close your eyes if that feels good. Arrive here."
         ],
         "breaths": 3,
@@ -53,9 +53,8 @@
         "orderIndex": 5,
         "section": "Warm-Up",
         "cues": [
-          "Make your way to Child's Pose. Knees wide, big toes kiss.",
-          "Walk your hands forward and let your forehead find your mat.",
-          "Melt your heart down with every exhale. Stay here, 5 slow breaths."
+          "Exhale, Child's Pose, knees wide, big toes touch. Walk your hands forward and let your forehead find your mat.",
+          "Melt your heart down with every exhale. 5 slow breaths."
         ],
         "breaths": 5,
         "adjustment": "Let your hips be heavier than your shoulders. No effort in your neck."
@@ -65,8 +64,8 @@
         "orderIndex": 6,
         "section": "Warm-Up",
         "cues": [
-          "Rise to all fours. Wrists right under your shoulders, knees under your hips.",
-          "Spread your fingers wide — press the earth away."
+          "Hold, Table Top, stack your wrists under your shoulders and knees under your hips.",
+          "Spread your fingers wide and press the earth away."
         ],
         "adjustment": "Distribute weight evenly between hands and knees. Gaze between the thumbs."
       },
@@ -75,9 +74,8 @@
         "orderIndex": 7,
         "section": "Warm-Up",
         "cues": [
-          "On your inhale, drop your belly, lift your gaze — let your heart pour forward.",
-          "As you exhale, round your spine, tuck your chin, press the floor away.",
-          "Three rounds, let your breath move you."
+          "Inhale, Cat Cow, drop your belly and lift your gaze.",
+          "Exhale, round your spine and tuck your chin. 3 rounds, let your breath move you."
         ],
         "breaths": 3,
         "adjustment": "Close your eyes if you can. Let your movement come from your spine, not your neck."
@@ -87,8 +85,7 @@
         "orderIndex": 8,
         "section": "Warm-Up",
         "cues": [
-          "Tuck your toes, lift your hips high and back. First Down Dog — make it yours.",
-          "Pedal your feet, shake your head yes and no. Stay here, 5 breaths."
+          "Exhale, Downward Dog, tuck your toes and lift your hips high. Pedal your feet and shake your head. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "Bend your knees as much as you need. The priority is length in your spine."
@@ -98,8 +95,7 @@
         "orderIndex": 9,
         "section": "Warm-Up",
         "cues": [
-          "On your inhale, roll forward to Plank. Shoulders right over your wrists.",
-          "One long line from your crown of your head to your heels."
+          "Inhale, Plank, roll forward to your wrists. One long line from crown to heels, shoulders over wrists."
         ],
         "adjustment": "Fire up your quads. Hips in line with your shoulders — not piking up."
       },
@@ -108,8 +104,7 @@
         "orderIndex": 10,
         "section": "Warm-Up",
         "cues": [
-          "Lower all the way to your belly. Hands under your shoulders, inhale peel your chest up.",
-          "Keep your elbows bent and hugging in. Shoulders roll back and down."
+          "Inhale, Cobra, lower to your belly and peel your chest up. Keep your elbows bent and shoulders rolling back."
         ],
         "breaths": 2,
         "adjustment": "Keep the tops of your feet pressing down. Elbows stay close to your ribs."
@@ -119,8 +114,7 @@
         "orderIndex": 11,
         "section": "Warm-Up",
         "cues": [
-          "Exhale, press back to Down Dog. Hips high, heels reach toward your mat.",
-          "Settle in here, 3 full breaths."
+          "Exhale, Downward Dog, press back and lift your hips. 3 full breaths."
         ],
         "breaths": 3,
         "adjustment": "Let your heels be heavy, even if they don't touch. Relax your neck completely."
@@ -130,8 +124,7 @@
         "orderIndex": 12,
         "section": "Warm-Up",
         "cues": [
-          "Walk your feet to the top of your mat. Feet hip-width, soft bend in your knees.",
-          "Let your head hang heavy, maybe grab opposite elbows and sway."
+          "Hold, Dangling Pose, walk your feet to the top of your mat. Soft bend in your knees, let your head hang heavy."
         ],
         "breaths": 3,
         "adjustment": "Soften behind your knees. Let your weight of your head decompress your spine."
@@ -141,7 +134,7 @@
         "orderIndex": 13,
         "section": "Warm-Up",
         "cues": [
-          "Inhale, hands to your shins, flat back. Long spine, gaze just past your mat."
+          "Inhale, Halfway Lift, hands to your shins and find a flat back. Long spine, gaze past your mat."
         ],
         "adjustment": "Draw your shoulder blades toward each other. Neck stays long, gaze just past your mat."
       },
@@ -150,8 +143,7 @@
         "orderIndex": 14,
         "section": "Warm-Up",
         "cues": [
-          "Inhale, rise all the way to standing. Feet together, arms by your sides.",
-          "Stand tall — feel the ground under your feet."
+          "Inhale, Mountain Pose, rise all the way to standing. Feet together, feel the ground under your feet."
         ],
         "breaths": 1,
         "adjustment": "Root through all four corners of your feet. Lift your kneecaps gently."
@@ -161,7 +153,7 @@
         "orderIndex": 15,
         "section": "Sun A",
         "cues": [
-          "Top of your mat. Feet together, palms open. Take one full breath here."
+          "Hold, Mountain Pose, feet together, palms open. Take one full breath before you begin."
         ],
         "breaths": 1,
         "adjustment": "Ground evenly through both feet. Let your shoulders melt away from your ears."
@@ -171,7 +163,7 @@
         "orderIndex": 16,
         "section": "Sun A",
         "cues": [
-          "Inhale, sweep your arms overhead. Palms face each other, ribs knit in."
+          "Inhale, Volcano Pose, sweep your arms overhead. Palms face each other, ribs knit in."
         ],
         "adjustment": "Reach through your fingertips, not your shoulders. Ribs stay knit."
       },
@@ -180,7 +172,7 @@
         "orderIndex": 17,
         "section": "Sun A",
         "cues": [
-          "Exhale, swan dive down. Hinge at your hips, belly toward your thighs."
+          "Exhale, Forward Fold, swan dive down and hinge at your hips, belly toward your thighs."
         ],
         "adjustment": "Soft bend in your knees is fine. Let your head hang fully."
       },
@@ -189,7 +181,7 @@
         "orderIndex": 18,
         "section": "Sun A",
         "cues": [
-          "Inhale, halfway lift. Hands to your shins, flat back, long spine."
+          "Inhale, Halfway Lift, hands to your shins and find a flat back. Long spine."
         ],
         "adjustment": "Fingertips or palms on your shins — not your knees. Keep your neck long."
       },
@@ -198,7 +190,7 @@
         "orderIndex": 19,
         "section": "Sun A",
         "cues": [
-          "Exhale, plant your hands, step back and lower halfway — or all the way to your belly."
+          "Exhale, Chaturanga, plant your hands, step back, and lower halfway — or all the way to your belly."
         ],
         "adjustment": "Shoulders stay no lower than elbows. Knees down is always an option."
       },
@@ -207,7 +199,7 @@
         "orderIndex": 20,
         "section": "Sun A",
         "cues": [
-          "Inhale, Cobra or Upward Facing Dog. Peel your chest forward and up."
+          "Inhale, Cobra, peel your chest forward and up. Shoulders roll back and down."
         ],
         "adjustment": "Lighten your hands — let the back do the lifting. Broaden across your collarbones."
       },
@@ -216,7 +208,7 @@
         "orderIndex": 21,
         "section": "Sun A",
         "cues": [
-          "Exhale, press back to Down Dog. 5 breaths here — find stillness, let your breath be steady."
+          "Exhale, Downward Dog, press back and find length through your spine. 5 breaths here."
         ],
         "breaths": 5,
         "adjustment": "Spin your inner thighs toward the ceiling. Let your breath fill the side ribs."
@@ -226,7 +218,7 @@
         "orderIndex": 22,
         "section": "Sun A",
         "cues": [
-          "Inhale, look forward. Step or float to the top — halfway lift."
+          "Inhale, Halfway Lift, step or float to the top."
         ],
         "adjustment": "Engage your core as you step forward. Land light."
       },
@@ -235,7 +227,7 @@
         "orderIndex": 23,
         "section": "Sun A",
         "cues": [
-          "Exhale, fold. Head heavy."
+          "Exhale, Forward Fold, let your head hang heavy."
         ],
         "adjustment": "Relax your jaw. Let the fold happen from your hip crease."
       },
@@ -244,7 +236,7 @@
         "orderIndex": 24,
         "section": "Sun A",
         "cues": [
-          "Inhale, rise all the way up. Arms sweep overhead."
+          "Inhale, Volcano Pose, rise all the way up with arms overhead."
         ],
         "adjustment": "Root down through your feet as you rise. Arms track alongside your ears."
       },
@@ -253,7 +245,7 @@
         "orderIndex": 25,
         "section": "Sun A",
         "cues": [
-          "Exhale, hands to heart. That's one."
+          "Exhale, Mountain Pose, hands to heart. That's one."
         ],
         "adjustment": "Soften the thumbs toward your sternum. Feel the heartbeat."
       },
@@ -262,7 +254,7 @@
         "orderIndex": 26,
         "section": "Sun A",
         "cues": [
-          "Inhale, arms rise. Let your breath lead your movement."
+          "Inhale, Volcano Pose, arms rise. Let your breath lead your movement."
         ],
         "adjustment": "Reach tall without gripping your shoulders. Let your breath initiate your movement."
       },
@@ -271,7 +263,7 @@
         "orderIndex": 27,
         "section": "Sun A",
         "cues": [
-          "Exhale, fold. Belly draws toward your thighs."
+          "Exhale, Forward Fold, belly draws toward your thighs."
         ],
         "adjustment": "Weight shifts slightly forward into the balls of your feet as you fold."
       },
@@ -280,7 +272,7 @@
         "orderIndex": 28,
         "section": "Sun A",
         "cues": [
-          "Inhale, halfway lift. Flat back."
+          "Inhale, Halfway Lift, flat back."
         ],
         "adjustment": "Pull your chest forward, not up. Create length between your pelvis and your crown."
       },
@@ -289,7 +281,7 @@
         "orderIndex": 29,
         "section": "Sun A",
         "cues": [
-          "Exhale, Chaturanga. Elbows hug your ribs."
+          "Exhale, Chaturanga, elbows hug your ribs."
         ],
         "adjustment": "Elbows shoot straight back, not wide. Take your knees down if you need to."
       },
@@ -298,7 +290,7 @@
         "orderIndex": 30,
         "section": "Sun A",
         "cues": [
-          "Inhale, Cobra. Chest peels up, shoulders back."
+          "Inhale, Cobra, chest peels up and shoulders roll back."
         ],
         "adjustment": "Roll your shoulders back before you lift. Let your inhale do the work."
       },
@@ -307,7 +299,7 @@
         "orderIndex": 31,
         "section": "Sun A",
         "cues": [
-          "Exhale, Down Dog. 3 breaths here."
+          "Exhale, Downward Dog, 3 breaths here."
         ],
         "breaths": 3,
         "adjustment": "Press the index finger and thumb firmly into your mat. Relax your neck."
@@ -317,7 +309,7 @@
         "orderIndex": 32,
         "section": "Sun A",
         "cues": [
-          "Look forward, step or float — halfway lift."
+          "Inhale, Halfway Lift, step or float forward."
         ],
         "adjustment": "Use your core to draw your feet forward. Light hands, strong center."
       },
@@ -326,7 +318,7 @@
         "orderIndex": 33,
         "section": "Sun A",
         "cues": [
-          "Exhale, fold."
+          "Exhale, Forward Fold, release your head."
         ],
         "adjustment": "Surrender here. Nothing to fix, just fold."
       },
@@ -335,7 +327,7 @@
         "orderIndex": 34,
         "section": "Sun A",
         "cues": [
-          "Inhale, rise. Arms overhead."
+          "Inhale, Volcano Pose, rise up with arms overhead."
         ],
         "adjustment": "Strong legs, soft face. Rise with intention."
       },
@@ -344,7 +336,7 @@
         "orderIndex": 35,
         "section": "Sun A",
         "cues": [
-          "Exhale, hands to heart. Two down."
+          "Exhale, Mountain Pose, hands to heart. Two down."
         ],
         "adjustment": "Pause at the top. Feel the echo of your movement before you go again."
       },
@@ -353,7 +345,7 @@
         "orderIndex": 36,
         "section": "Sun A",
         "cues": [
-          "Last round. Inhale, arms rise — move with your breath."
+          "Inhale, Volcano Pose, last round — move with your breath."
         ],
         "adjustment": "Match the pace of your arms to the pace of your inhale."
       },
@@ -362,7 +354,7 @@
         "orderIndex": 37,
         "section": "Sun A",
         "cues": [
-          "Exhale, fold forward."
+          "Exhale, Forward Fold, hinge forward."
         ],
         "adjustment": "Exhale everything — belly draws in and up as you fold."
       },
@@ -371,7 +363,7 @@
         "orderIndex": 38,
         "section": "Sun A",
         "cues": [
-          "Inhale, lift halfway."
+          "Inhale, Halfway Lift, flat back and long spine."
         ],
         "adjustment": "Clean lines. Flat back, strong core, steady gaze."
       },
@@ -380,7 +372,7 @@
         "orderIndex": 39,
         "section": "Sun A",
         "cues": [
-          "Exhale, Chaturanga — you know the way."
+          "Exhale, Chaturanga, you know the way."
         ],
         "adjustment": "Body stays in one long plank as you lower. Control the descent."
       },
@@ -389,7 +381,7 @@
         "orderIndex": 40,
         "section": "Sun A",
         "cues": [
-          "Inhale, Up Dog if you'd like. Tops of your feet press down, thighs lift."
+          "Inhale, Upward Dog, press the tops of your feet down and lift your chest. Thighs lift off the mat."
         ],
         "adjustment": "Press the tops of your feet down firmly. Thighs lift away from your mat."
       },
@@ -398,7 +390,7 @@
         "orderIndex": 41,
         "section": "Sun A",
         "cues": [
-          "Exhale, Down Dog. 5 steady breaths. You're warm now."
+          "Exhale, Downward Dog, 5 steady breaths. You're warm now."
         ],
         "breaths": 5,
         "adjustment": "Send your breath into any tight spots. You're warm now — let it show."
@@ -408,7 +400,7 @@
         "orderIndex": 42,
         "section": "Sun A",
         "cues": [
-          "Look forward, step to the top — halfway lift."
+          "Inhale, Halfway Lift, step or float to the top."
         ],
         "adjustment": "Trust your legs. Step forward with control."
       },
@@ -417,7 +409,7 @@
         "orderIndex": 43,
         "section": "Sun A",
         "cues": [
-          "Exhale, fold."
+          "Exhale, Forward Fold, head heavy."
         ],
         "adjustment": "Let go of effort. Just release."
       },
@@ -426,7 +418,7 @@
         "orderIndex": 44,
         "section": "Sun A",
         "cues": [
-          "Inhale, rise tall."
+          "Inhale, Volcano Pose, rise tall."
         ],
         "adjustment": "Rise like you mean it. Full breath, full body."
       },
@@ -435,7 +427,7 @@
         "orderIndex": 45,
         "section": "Sun A",
         "cues": [
-          "Exhale, hands to heart. Three complete rounds."
+          "Exhale, Mountain Pose, hands to heart. Three complete rounds."
         ],
         "adjustment": "Three rounds complete. Notice how your body has shifted."
       },
@@ -444,8 +436,7 @@
         "orderIndex": 46,
         "section": "Sun B",
         "cues": [
-          "Inhale, bend your knees, sink your hips — Chair Pose. Arms reach overhead.",
-          "Weight in your heels, knees track over your toes."
+          "Inhale, Chair Pose, bend your knees and sit your hips back. Arms reach overhead, weight in your heels."
         ],
         "adjustment": "Draw the low belly in and up. Soften your shoulders away from your ears.",
         "breaths": 3
@@ -455,7 +446,7 @@
         "orderIndex": 47,
         "section": "Sun B",
         "cues": [
-          "Exhale, fold forward. Straighten your legs as you go."
+          "Exhale, Forward Fold, straighten your legs as you go."
         ],
         "adjustment": "Keep your knees soft as you straighten. Fold from your hips, not the waist."
       },
@@ -464,7 +455,7 @@
         "orderIndex": 48,
         "section": "Sun B",
         "cues": [
-          "Inhale, halfway lift."
+          "Inhale, Halfway Lift, flat back."
         ],
         "adjustment": "Shoulders draw away from your ears. Gaze a few inches past your fingertips."
       },
@@ -473,7 +464,7 @@
         "orderIndex": 49,
         "section": "Sun B",
         "cues": [
-          "Exhale, Chaturanga."
+          "Exhale, Chaturanga, lower with control."
         ],
         "adjustment": "Lower with control. Elbows stay tight to your body."
       },
@@ -482,7 +473,7 @@
         "orderIndex": 50,
         "section": "Sun B",
         "cues": [
-          "Inhale, Up Dog."
+          "Inhale, Upward Dog, press through the tops of your feet and lift your chest."
         ],
         "adjustment": "Tops of your feet press down. Legs engage to lift your thighs off your mat."
       },
@@ -491,7 +482,7 @@
         "orderIndex": 51,
         "section": "Sun B",
         "cues": [
-          "Exhale, Down Dog."
+          "Exhale, Downward Dog, press the earth away and breathe."
         ],
         "adjustment": "Even out your weight between both hands. Let your head hang between your arms."
       },
@@ -500,8 +491,7 @@
         "orderIndex": 52,
         "section": "Sun B",
         "cues": [
-          "On your inhale, step your right foot forward. Spin your back heel down — Warrior I.",
-          "Hips square to the front. Arms reach overhead, shoulders soften."
+          "Hold, Warrior One, step your right foot forward and spin your back heel down. Hips square, arms reach overhead and shoulders soften."
         ],
         "adjustment": "Front knee stacks over your ankle. Back foot is at about a 45-degree angle.",
         "breaths": 5
@@ -511,8 +501,7 @@
         "orderIndex": 53,
         "section": "Sun B",
         "cues": [
-          "Open up to Warrior II. Arms spread wide, gaze past the front fingertips.",
-          "Sink a little deeper into your front knee."
+          "Hold, Warrior Two, open your hips and arms wide. Gaze past your front fingertips. Sink a little deeper into your front knee."
         ],
         "adjustment": "Front knee tracks toward the pinky toe. Shoulders stack over your hips.",
         "breaths": 3
@@ -522,8 +511,7 @@
         "orderIndex": 54,
         "section": "Sun B",
         "cues": [
-          "Flip the front palm, inhale — Reverse Warrior. Back hand slides down your back leg.",
-          "Big stretch through your right side body."
+          "Inhale, Reverse Warrior, flip your front palm and reach your right arm back. Big stretch through your right side body."
         ],
         "breaths": 2,
         "adjustment": "Keep your front knee bent as you reach back. Side body stays long."
@@ -542,8 +530,7 @@
         "orderIndex": 56,
         "section": "Sun B",
         "cues": [
-          "Left foot steps forward. Back heel spins down — Warrior I, left side.",
-          "Square your hips, arms lift."
+          "Hold, Warrior One, left foot steps forward, back heel down. Square your hips and lift your arms."
         ],
         "adjustment": "Front knee stacks over your ankle. Back foot is at about a 45-degree angle.",
         "breaths": 5
@@ -553,7 +540,7 @@
         "orderIndex": 57,
         "section": "Sun B",
         "cues": [
-          "Open to Warrior II. Arms wide, gaze past the left fingertips."
+          "Hold, Warrior Two, open to Warrior Two — left side. Arms wide, gaze past your left fingertips."
         ],
         "adjustment": "Front knee tracks toward the pinky toe. Shoulders stack over your hips.",
         "breaths": 3
@@ -563,7 +550,7 @@
         "orderIndex": 58,
         "section": "Sun B",
         "cues": [
-          "Reverse Warrior. Inhale, reach back. Big stretch through your left side body."
+          "Inhale, Reverse Warrior, flip your front palm and reach back. Big stretch through your left side body."
         ],
         "breaths": 2,
         "adjustment": "Keep depth in your front knee. Let the back hand slide, don't grip."
@@ -582,7 +569,7 @@
         "orderIndex": 60,
         "section": "Sun B",
         "cues": [
-          "Round 2. Step to the top, bend your knees — Chair. Breathe into it."
+          "Inhale, Chair Pose, step to the top, bend your knees, and reach your arms up. Breathe into it."
         ],
         "breaths": 2,
         "adjustment": "Shift your weight back into your heels. Chest stays lifted."
@@ -592,7 +579,7 @@
         "orderIndex": 61,
         "section": "Sun B",
         "cues": [
-          "Exhale, fold."
+          "Exhale, Forward Fold, release forward."
         ],
         "adjustment": "Empty the lungs completely as you fold. Make space for the next inhale."
       },
@@ -601,7 +588,7 @@
         "orderIndex": 62,
         "section": "Sun B",
         "cues": [
-          "Inhale, lift halfway."
+          "Inhale, Halfway Lift, flat back."
         ],
         "adjustment": "Even a quick halfway lift deserves a long spine. Don't skip the form."
       },
@@ -619,7 +606,7 @@
         "orderIndex": 64,
         "section": "Sun B",
         "cues": [
-          "Right foot forward — Warrior I. You know the shape, breathe into it."
+          "Hold, Warrior One, right foot forward. You know this shape — breathe into it."
         ],
         "breaths": 3,
         "adjustment": "Sink deeper into your front knee. Let your hip flexors open."
@@ -629,7 +616,7 @@
         "orderIndex": 65,
         "section": "Sun B",
         "cues": [
-          "Open to Warrior II. Settle in, let your breath do the work."
+          "Hold, Warrior Two, open wide. Let your breath do the work."
         ],
         "breaths": 3,
         "adjustment": "Relax the tops of your shoulders. Energy reaches through both fingertips equally."
@@ -639,7 +626,7 @@
         "orderIndex": 66,
         "section": "Sun B",
         "cues": [
-          "Reverse Warrior. Reach and breathe."
+          "Inhale, Reverse Warrior, reach and breathe."
         ],
         "breaths": 2,
         "adjustment": "Soften the effort. Keep the depth, lose the tension."
@@ -658,7 +645,7 @@
         "orderIndex": 68,
         "section": "Sun B",
         "cues": [
-          "Left foot forward — Warrior I. Arms rise, hips square."
+          "Hold, Warrior One, left foot forward. Arms rise and hips square."
         ],
         "breaths": 3,
         "adjustment": "Front thigh works toward parallel. Back leg stays strong and straight."
@@ -668,7 +655,7 @@
         "orderIndex": 69,
         "section": "Sun B",
         "cues": [
-          "Warrior II. Gaze steady, breath steady."
+          "Hold, Warrior Two, gaze steady, breath steady."
         ],
         "breaths": 3,
         "adjustment": "Widen through your collarbones. Let your breath be steady and full."
@@ -678,7 +665,7 @@
         "orderIndex": 70,
         "section": "Sun B",
         "cues": [
-          "Reverse Warrior. Last breath here."
+          "Inhale, Reverse Warrior, last breath here — reach back."
         ],
         "breaths": 2,
         "adjustment": "Keep your back leg engaged. Let the reach come from your side body."
@@ -697,8 +684,7 @@
         "orderIndex": 72,
         "section": "Chair Twists + Fold Series",
         "cues": [
-          "Step or float to the top. Bend your knees, Chair Pose.",
-          "Hands to heart center. On your exhale, twist to the left — right elbow outside your left knee."
+          "Inhale, Revolved Chair, step to the top and bend your knees. Exhale, hands at heart and twist left — right elbow outside your left knee."
         ],
         "adjustment": "Keep your knees even. Press the palms together to deepen the twist.",
         "breaths": 5
@@ -708,8 +694,7 @@
         "orderIndex": 73,
         "section": "Chair Twists + Fold Series",
         "cues": [
-          "Come back through center. Exhale, twist to the right — left elbow outside your right knee.",
-          "Breathe into the space you create."
+          "Hold, Revolved Chair, come back through center. Exhale, twist to the right — left elbow outside your right knee. Breathe into the space you create."
         ],
         "adjustment": "Keep your knees even. Press the palms together to deepen the twist.",
         "breaths": 5
@@ -719,8 +704,7 @@
         "orderIndex": 74,
         "section": "Chair Twists + Fold Series",
         "cues": [
-          "Straighten your legs, fold forward. Grab the big toes with your peace fingers.",
-          "On your inhale, lengthen. On your exhale, fold a little deeper."
+          "Hold, Yogi Toe Lock, straighten your legs and fold forward. Grab your big toes with your peace fingers and lengthen on your inhale, fold deeper on the exhale."
         ],
         "breaths": 5,
         "adjustment": "Pull up on your toes as you fold to engage the arches. Elbows bend wide."
@@ -730,8 +714,7 @@
         "orderIndex": 75,
         "section": "Chair Twists + Fold Series",
         "cues": [
-          "Slide your hands under your feet, palms face up — Gorilla Pose.",
-          "Let your weight of your head be heavy. Breathe into the backs of your legs."
+          "Hold, Gorilla Pose, slide your hands under your feet with palms up. Let the weight of your head be heavy and breathe into the backs of your legs."
         ],
         "breaths": 5,
         "adjustment": "Step on the palms — let your wrists get some love. Soft knees if needed."
@@ -750,8 +733,7 @@
         "orderIndex": 77,
         "section": "Sun B+",
         "cues": [
-          "From Down Dog, inhale your right leg high. Exhale, round your spine — knee to nose.",
-          "Shoulders over your wrists, draw your belly in."
+          "Exhale, Knee to Nose, from Downward Dog inhale your right leg high. Exhale, round your spine and draw your right knee toward your nose. Belly draws in."
         ],
         "breaths": 2,
         "adjustment": "Dome your upper back as your knee draws in. Shoulders stay over your wrists."
@@ -761,8 +743,7 @@
         "orderIndex": 78,
         "section": "Sun B+",
         "cues": [
-          "Step your right foot through. Drop your back knee. Inhale, rise up — then twist to the right.",
-          "Left hand to the earth or a block, right arm reaches to the sky."
+          "Inhale, Low Lunge Twist, step your right foot through and drop your back knee. Rise up, then exhale and twist right — left hand to earth, right arm to the sky."
         ],
         "adjustment": "Keep your front knee over your ankle. Stack your shoulders.",
         "breaths": 5
@@ -772,7 +753,7 @@
         "orderIndex": 79,
         "section": "Sun B+",
         "cues": [
-          "Spin your back heel down. Rise up to Warrior II. Arms wide, gaze forward."
+          "Hold, Warrior Two, spin your back heel down and rise. Arms wide, gaze past your front fingertips."
         ],
         "adjustment": "Front knee tracks toward the pinky toe side of your foot.",
         "breaths": 3
@@ -782,8 +763,7 @@
         "orderIndex": 80,
         "section": "Sun B+",
         "cues": [
-          "Extended Side Angle. Right forearm to the right thigh, or right hand to the earth.",
-          "Left arm reaches overhead — one long line from your back foot through your fingertips."
+          "Hold, Extended Side Angle, right forearm rests on your right thigh — or right hand to the earth. Left arm reaches overhead, one long line from back foot to fingertips."
         ],
         "adjustment": "Roll the top shoulder open. Gaze can be up or straight ahead.",
         "breaths": 5
@@ -793,7 +773,7 @@
         "orderIndex": 81,
         "section": "Sun B+",
         "cues": [
-          "Inhale, Reverse Warrior. Flip the front palm, reach back."
+          "Inhale, Reverse Warrior, flip your front palm and reach back. Breathe into your right side."
         ],
         "breaths": 2,
         "adjustment": "Keep your front knee tracking forward even as you reach back."
@@ -803,8 +783,7 @@
         "orderIndex": 82,
         "section": "Sun B+",
         "cues": [
-          "Straighten your front leg. Right fingertips to the earth — Half Moon.",
-          "Stack your hips, left arm reaches to the sky. Find your steady point."
+          "Hold, Half Moon, straighten your front leg and reach your right fingertips to the earth. Stack your hips and lift your left arm to the sky. Find your steady point."
         ],
         "adjustment": "Bottom hand about a foot in front of the standing foot. Flex the top foot, engage the top leg.",
         "breaths": 5
@@ -814,8 +793,7 @@
         "orderIndex": 83,
         "section": "Sun B+",
         "cues": [
-          "Lower your left foot back to your mat. Reverse Triangle — right arm reaches up and back.",
-          "Keep both legs straight, big stretch through your right side."
+          "Hold, Revolved Triangle, lower your left foot and reach your right arm up and back. Keep both legs straight and breathe into your right side body."
         ],
         "breaths": 3,
         "adjustment": "Hips face the side of your mat. Engage both legs — no locking out."
@@ -834,7 +812,7 @@
         "orderIndex": 85,
         "section": "Sun B+",
         "cues": [
-          "Left leg rises on your inhale. Exhale, knee to nose — round your spine."
+          "Exhale, Knee to Nose, inhale your left leg high. Exhale, round your spine and draw your left knee toward your nose. Hollow through your belly."
         ],
         "breaths": 2,
         "adjustment": "Hollow your belly as you round. Make yourself compact."
@@ -844,8 +822,7 @@
         "orderIndex": 86,
         "section": "Sun B+",
         "cues": [
-          "Step your left foot through. Back knee lowers. Rise and twist to the left.",
-          "Right hand to the earth, left arm lifts."
+          "Inhale, Low Lunge Twist, step your left foot through and drop your back knee. Rise up, exhale and twist left — right hand to earth, left arm lifts to the sky."
         ],
         "adjustment": "Keep your front knee over your ankle. Stack your shoulders.",
         "breaths": 5
@@ -855,7 +832,7 @@
         "orderIndex": 87,
         "section": "Sun B+",
         "cues": [
-          "Spin your back heel down — Warrior II, left side. Settle in."
+          "Hold, Warrior Two, spin your back heel down — left side. Settle into the shape."
         ],
         "adjustment": "Front knee tracks toward the pinky toe side of your foot.",
         "breaths": 3
@@ -865,7 +842,7 @@
         "orderIndex": 88,
         "section": "Sun B+",
         "cues": [
-          "Extended Side Angle. Left forearm to the left thigh, right arm reaches long."
+          "Hold, Extended Side Angle, left forearm to your left thigh and right arm reaching long overhead. Long through the right side body."
         ],
         "adjustment": "Roll the top shoulder open. One long line from back foot to fingertips.",
         "breaths": 5
@@ -875,7 +852,7 @@
         "orderIndex": 89,
         "section": "Sun B+",
         "cues": [
-          "Inhale, Reverse Warrior. Reach back and breathe."
+          "Inhale, Reverse Warrior, flip your front palm and reach back. Breathe into your left side."
         ],
         "breaths": 2,
         "adjustment": "Let the reach be easy. The depth in your front knee does the work."
@@ -885,8 +862,7 @@
         "orderIndex": 90,
         "section": "Sun B+",
         "cues": [
-          "Straighten your front leg — Half Moon. Left hand to the earth, right arm reaches up.",
-          "Stack your hips, steady gaze."
+          "Hold, Half Moon, straighten your front leg and reach your left fingertips to the earth. Stack your hips and lift your right arm to the sky. Steady gaze."
         ],
         "adjustment": "Bottom hand about a foot in front of the standing foot. Flex the top foot.",
         "breaths": 5
@@ -896,8 +872,7 @@
         "orderIndex": 91,
         "section": "Sun B+",
         "cues": [
-          "Right foot returns to your mat. Reverse Triangle — left arm reaches up and back.",
-          "Both legs straight, breathe into your left side body."
+          "Hold, Revolved Triangle, right foot returns to your mat. Left arm reaches up and back. Breathe into your left side body."
         ],
         "breaths": 3,
         "adjustment": "Both legs stay active. Ground through the outer edge of your back foot."
@@ -916,9 +891,7 @@
         "orderIndex": 93,
         "section": "Balance Series",
         "cues": [
-          "Step to the top. Stand tall on both feet.",
-          "Right leg wraps over the left — Eagle Pose. Right arm under the left, palms press together.",
-          "Sit low, lift your elbows. Find a point to focus on."
+          "Hold, Eagle Pose, stand tall at the top of your mat. Right leg wraps over the left, right arm under the left. Sit low and lift your elbows. Find one steady point to focus on."
         ],
         "adjustment": "Sink your hips like you're sitting in a chair. Draw your elbows away from your chest.",
         "breaths": 5
@@ -928,8 +901,7 @@
         "orderIndex": 94,
         "section": "Balance Series",
         "cues": [
-          "Slowly unwind. Stand on your left leg, right knee lifts to hip height.",
-          "Hands to your hips or arms reach up. Steady here."
+          "Hold, One-Legged Mountain, unwind from Eagle. Stand on your left leg with your right knee lifted to hip height. Hands on hips or arms reach up."
         ],
         "breaths": 5,
         "adjustment": "Standing foot roots down through all four corners. Micro-bend in the standing knee."
@@ -939,8 +911,7 @@
         "orderIndex": 95,
         "section": "Balance Series",
         "cues": [
-          "Cross the right ankle over your left knee — Standing Figure Four.",
-          "Sit your hips back, hands at heart center. Breathe into the right hip."
+          "Hold, Standing Figure Four, cross your right ankle over your left knee and sit your hips back. Hands at heart center. Breathe into your right hip."
         ],
         "adjustment": "Flex your right foot to protect your knee. Keep the standing knee tracking forward.",
         "breaths": 5
@@ -950,8 +921,7 @@
         "orderIndex": 96,
         "section": "Balance Series",
         "cues": [
-          "Right foot to the inner left thigh or calf — Tree Pose. Never on your knee.",
-          "Arms overhead, or hands at heart. Root down to rise up."
+          "Hold, Tree Pose, lift your right foot to your inner left thigh or calf — never on your knee. Arms overhead or hands at heart. Root down to rise up."
         ],
         "adjustment": "Press your foot and your leg into each other. Keep the standing hip from jutting out.",
         "breaths": 5
@@ -961,8 +931,7 @@
         "orderIndex": 97,
         "section": "Balance Series",
         "cues": [
-          "Switch sides. Left leg wraps over the right, left arm under the right.",
-          "Eagle Pose. Sink low, lift your elbows."
+          "Hold, Eagle Pose, switch sides — left leg wraps over right, left arm under right. Sink low and lift your elbows."
         ],
         "adjustment": "Sink your hips like you're sitting in a chair. Draw your elbows away from your chest.",
         "breaths": 5
@@ -972,7 +941,7 @@
         "orderIndex": 98,
         "section": "Balance Series",
         "cues": [
-          "Unwind. Stand on your right leg, left knee lifts. Find your center."
+          "Hold, One-Legged Mountain, unwind from Eagle. Stand on your right leg with your left knee lifted. Find your center."
         ],
         "breaths": 5,
         "adjustment": "Soften the standing hip. Let the lifted knee float rather than grip."
@@ -982,8 +951,7 @@
         "orderIndex": 99,
         "section": "Balance Series",
         "cues": [
-          "Left ankle crosses over your right knee. Sit back — Standing Figure Four.",
-          "Breathe into the left hip. Stay focused."
+          "Hold, Standing Figure Four, cross your left ankle over your right knee and sit your hips back. Breathe into your left hip. Stay focused."
         ],
         "adjustment": "Flex your left foot to protect your knee.",
         "breaths": 5
@@ -993,8 +961,7 @@
         "orderIndex": 100,
         "section": "Balance Series",
         "cues": [
-          "Left foot to the inner right thigh or calf — Tree Pose.",
-          "Find your drishti. 5 breaths here."
+          "Hold, Tree Pose, left foot to your inner right thigh or calf. Find your drishti. 5 breaths."
         ],
         "adjustment": "Press your foot and your leg into each other.",
         "breaths": 5
@@ -1004,8 +971,7 @@
         "orderIndex": 101,
         "section": "Standing Peak Series",
         "cues": [
-          "Step your right foot forward, left foot back. Square your hips — Pyramid Pose.",
-          "On your exhale, fold over your front leg. Hands frame your foot or find blocks."
+          "Hold, Pyramid Pose, step your right foot forward and left foot back. Square your hips, then exhale and fold over your front leg. Hands frame your foot or find blocks."
         ],
         "adjustment": "Microbend your front knee if hamstrings are tight. Hips stay square.",
         "breaths": 5
@@ -1015,8 +981,7 @@
         "orderIndex": 102,
         "section": "Standing Peak Series",
         "cues": [
-          "Walk your hands forward, shift weight to your right foot. Left leg lifts — Standing Split.",
-          "Let your head hang. It's not about how high your leg goes."
+          "Hold, Standing Splits, walk your hands forward and shift your weight to your right foot. Left leg lifts as your head hangs. It's not about how high the leg goes."
         ],
         "breaths": 5,
         "adjustment": "Hips stay level. Flex the lifted foot and engage the inner thigh."
@@ -1026,7 +991,7 @@
         "orderIndex": 103,
         "section": "Standing Peak Series",
         "cues": [
-          "Step your left foot back, open to Warrior II. Arms wide, sink into it."
+          "Hold, Warrior Two, step your left foot back and open wide. Arms reach in both directions."
         ],
         "adjustment": "Front knee over your ankle. Torso stays centered between your legs.",
         "breaths": 3
@@ -1036,8 +1001,7 @@
         "orderIndex": 104,
         "section": "Standing Peak Series",
         "cues": [
-          "Straighten your front leg — Triangle Pose. Right hand to your shin, block, or earth.",
-          "Left arm reaches to the sky. Open through your chest."
+          "Hold, Triangle Pose, straighten your front leg and reach your right hand down to your shin, block, or earth. Left arm extends to the sky and chest opens."
         ],
         "adjustment": "Engage your front thigh to protect your knee. Stack your shoulders.",
         "breaths": 5
@@ -1047,7 +1011,7 @@
         "orderIndex": 105,
         "section": "Standing Peak Series",
         "cues": [
-          "Rise up to Star Pose. Wide legs, arms wide. Take up space here."
+          "Hold, Star Pose, rise up with legs wide and arms wide. Take up space here."
         ],
         "breaths": 2,
         "adjustment": "Ground through the outer edges of both feet. Spread your fingers wide."
@@ -1057,8 +1021,7 @@
         "orderIndex": 106,
         "section": "Standing Peak Series",
         "cues": [
-          "Hands to your hips, hinge forward — Wide-Legged Forward Fold.",
-          "Crown of your head reaches toward your mat. 5 deep breaths."
+          "Exhale, Wide-Legged Forward Fold, hands to your hips and hinge forward. Crown of your head reaches toward your mat. 5 deep breaths."
         ],
         "breaths": 5,
         "adjustment": "Walk your hands between your feet. Elbows bend toward the back of the room."
@@ -1068,8 +1031,7 @@
         "orderIndex": 107,
         "section": "Standing Peak Series",
         "cues": [
-          "Walk your hands forward. Pivot to face the left — Pyramid, left side.",
-          "Fold over your left leg. Breathe into the hamstring."
+          "Hold, Pyramid Pose, walk your hands forward and pivot to face the left side. Fold over your left leg. Breathe into your hamstring."
         ],
         "adjustment": "Microbend your front knee if needed. Hips stay square.",
         "breaths": 5
@@ -1079,8 +1041,7 @@
         "orderIndex": 108,
         "section": "Standing Peak Series",
         "cues": [
-          "Shift forward — Standing Split on your left leg. Right leg rises.",
-          "Relax your neck. Breathe."
+          "Hold, Standing Splits, shift your weight forward onto your left leg. Right leg rises. Relax your neck and breathe."
         ],
         "breaths": 5,
         "adjustment": "Keep your hips square even as your leg lifts. It's about balance, not height."
@@ -1090,7 +1051,7 @@
         "orderIndex": 109,
         "section": "Standing Peak Series",
         "cues": [
-          "Right foot steps back — Warrior II, left side. Settle in."
+          "Hold, Warrior Two, step your right foot back — left side. Settle in."
         ],
         "adjustment": "Front knee over your ankle. Torso centered.",
         "breaths": 3
@@ -1100,7 +1061,7 @@
         "orderIndex": 110,
         "section": "Standing Peak Series",
         "cues": [
-          "Straighten your front leg — Triangle, left side. Left hand reaches down, right arm reaches up."
+          "Hold, Triangle Pose, straighten your front leg — left side. Left hand reaches down, right arm extends to the sky."
         ],
         "adjustment": "Engage your front thigh. Stack your shoulders.",
         "breaths": 5
@@ -1110,7 +1071,7 @@
         "orderIndex": 111,
         "section": "Standing Peak Series",
         "cues": [
-          "Rise up to Star. One breath, feel the expanse."
+          "Inhale, Star Pose, rise up. One breath — feel the expanse."
         ],
         "breaths": 1,
         "adjustment": "Open your chest. One breath of expansion before you fold."
@@ -1120,7 +1081,7 @@
         "orderIndex": 112,
         "section": "Standing Peak Series",
         "cues": [
-          "Wide-Legged Forward Fold. Let gravity do the work. 5 breaths."
+          "Exhale, Wide-Legged Forward Fold, let gravity do the work. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "Release your crown of your head toward the earth. Soften the inner groins."
@@ -1139,8 +1100,7 @@
         "orderIndex": 114,
         "section": "Backbends",
         "cues": [
-          "Forehead to your mat, arms alongside your body. On your inhale, lift everything — legs, chest, arms.",
-          "Reach your fingertips toward your heels. Gaze stays down to protect your neck."
+          "Inhale, Locust Pose, forehead to your mat and arms alongside your body. On your inhale lift your legs, chest, and arms. Reach your fingertips toward your heels."
         ],
         "breaths": 5,
         "adjustment": "Reach your sternum forward, not up. Keep the back of your neck long."
@@ -1150,8 +1110,7 @@
         "orderIndex": 115,
         "section": "Backbends",
         "cues": [
-          "Interlace your hands behind the back. On your inhale, lift and open your chest.",
-          "Squeeze your shoulder blades together. Legs stay lifted."
+          "Inhale, Bound Locust, interlace your hands behind your back. Lift your chest and open your heart. Squeeze your shoulder blades together, legs stay lifted."
         ],
         "breaths": 5,
         "adjustment": "Knuckles point toward the ceiling. Broaden across the front of your chest."
@@ -1161,8 +1120,7 @@
         "orderIndex": 116,
         "section": "Backbends",
         "cues": [
-          "Bend your knees, reach back and grab the outer ankles — Bow Pose.",
-          "On your inhale, kick your feet into your hands and lift. Breathe wide into your ribs."
+          "Inhale, Bow Pose, bend your knees and reach back to grab your outer ankles. Kick your feet into your hands and lift on your inhale. Breathe wide into your ribs."
         ],
         "adjustment": "Keep your knees hip-width, not splaying out. Kick into your hands to lift higher.",
         "breaths": 5
@@ -1172,8 +1130,7 @@
         "orderIndex": 117,
         "section": "Backbends",
         "cues": [
-          "Release everything. Press back to Child's Pose.",
-          "Let your spine neutralize. Breathe into your low back."
+          "Exhale, Child's Pose, release everything and press back. Let your spine neutralize. Breathe into your low back."
         ],
         "breaths": 5,
         "adjustment": "Breathe into the back body. Let your belly soften toward your thighs."
@@ -1183,8 +1140,7 @@
         "orderIndex": 118,
         "section": "Seated Folds",
         "cues": [
-          "Come to a seat, legs extended. Inhale, lengthen your spine.",
-          "Exhale, fold forward — Seated Forward Fold. Let your head be heavy."
+          "Exhale, Seated Forward Bend, come to a seat with legs extended. Inhale and lengthen. Exhale and fold forward, head heavy."
         ],
         "breaths": 8,
         "adjustment": "Sit up on a blanket if your low back rounds. Lead with your chest, not your head."
@@ -1194,8 +1150,7 @@
         "orderIndex": 119,
         "section": "Seated Folds",
         "cues": [
-          "Bend your right knee, sole of your right foot to the inner left thigh.",
-          "Inhale, lengthen. Exhale, fold over your left leg — Janu Sirsasana."
+          "Exhale, Head to Knee Pose, bend your right knee and place your foot to your inner left thigh. Inhale, lengthen. Exhale, fold over your left leg."
         ],
         "breaths": 8,
         "adjustment": "Keep the extended leg active — press through your heel. Rotate toward the straight leg."
@@ -1205,8 +1160,7 @@
         "orderIndex": 120,
         "section": "Seated Folds",
         "cues": [
-          "Switch sides. Left knee bends, fold over your right leg.",
-          "Soften your jaw. Let your breath be easy."
+          "Exhale, Head to Knee Pose, switch sides — left knee bends. Fold over your right leg. Soften your jaw and let your breath be easy."
         ],
         "breaths": 8,
         "adjustment": "Relax the grip. Let the fold be a surrender, not a pull."
@@ -1216,8 +1170,7 @@
         "orderIndex": 121,
         "section": "Seated Folds",
         "cues": [
-          "Open both legs wide — Seated Wide-Legged Fold.",
-          "Walk your hands forward. Let gravity draw you down. 8 slow breaths."
+          "Exhale, Seated Straddle, open both legs wide and walk your hands forward. Let gravity draw you down. 8 slow breaths."
         ],
         "breaths": 8,
         "adjustment": "Flex both feet. Walk your hands only as far as your spine stays long."
@@ -1227,8 +1180,7 @@
         "orderIndex": 122,
         "section": "Hip Openers + Bridge",
         "cues": [
-          "Make your way to Down Dog. Right knee comes forward behind the right wrist — Pigeon.",
-          "Walk your hands forward and lower down. Breathe into the right hip."
+          "Hold, Half Pigeon, from Downward Dog bring your right knee behind your right wrist. Walk your hands forward and lower down. Breathe into your right hip. 10 deep breaths."
         ],
         "breaths": 10,
         "adjustment": "If your hip is off the ground, slide a blanket underneath. Protect your back knee."
@@ -1238,8 +1190,7 @@
         "orderIndex": 123,
         "section": "Hip Openers + Bridge",
         "cues": [
-          "Press back to Down Dog. Left knee forward — Pigeon, left side.",
-          "Settle in. Let your hip open at its own pace. 10 deep breaths."
+          "Hold, Half Pigeon, press back to Downward Dog and switch sides. Left knee comes forward. Let your hip open at its own pace. 10 deep breaths."
         ],
         "breaths": 10,
         "adjustment": "Don't force depth. your hip opens on its own timeline."
@@ -1249,9 +1200,7 @@
         "orderIndex": 124,
         "section": "Hip Openers + Bridge",
         "cues": [
-          "Roll onto your back. Feet flat, hip-width apart, close to your sit bones.",
-          "On your inhale, press through your feet and lift your hips — Bridge Pose.",
-          "Interlace your hands underneath you, walk your shoulders together."
+          "Inhale, Bridge Pose, feet flat and hip-width, close to your sit bones. Press through your feet and lift your hips. Interlace your hands underneath you and walk your shoulders together."
         ],
         "adjustment": "Keep your knees tracking over your ankles, not splaying out. Press evenly through all four corners of your feet.",
         "breaths": 8
@@ -1261,9 +1210,7 @@
         "orderIndex": 125,
         "section": "Hip Openers + Bridge",
         "cues": [
-          "Lower down. Round 2 — Bridge again, or if it's in your practice, set up for Wheel.",
-          "Hands by your ears, fingers face your shoulders. Press up on your inhale.",
-          "Stay with Bridge if that serves you better today."
+          "Inhale, Bridge or Wheel, lower down for round two. Stay with Bridge — or place your hands by your ears and press up into Wheel on your inhale. Stay with what serves you today."
         ],
         "adjustment": "In Wheel, straighten your arms fully. Press through your hands and feet evenly.",
         "breaths": 8
@@ -1273,8 +1220,7 @@
         "orderIndex": 126,
         "section": "Cooling Shapes",
         "cues": [
-          "Lower down gently. Feet as wide as your mat, let your knees knock in.",
-          "Hands rest on your belly. Constructive Rest. Let your low back release."
+          "Hold, Constructive Rest, lower down gently. Feet as wide as your mat, knees falling in. Hands rest on your belly. Let your low back release."
         ],
         "breaths": 8,
         "adjustment": "Let the whole back body release into the floor. Nothing to hold."
@@ -1284,8 +1230,7 @@
         "orderIndex": 127,
         "section": "Cooling Shapes",
         "cues": [
-          "Draw your knees in. Grab the outer edges of your feet — Happy Baby.",
-          "Rock gently side to side. Smile if it finds you."
+          "Hold, Happy Baby, draw your knees in and catch the outer edges of your feet. Rock gently side to side."
         ],
         "breaths": 8,
         "adjustment": "Keep your tailbone reaching toward your mat. Elbows can bend wide."
@@ -1295,8 +1240,7 @@
         "orderIndex": 128,
         "section": "Cooling Shapes",
         "cues": [
-          "Draw your knees into your chest. Drop both knees to the right — Supine Twist.",
-          "Left arm reaches wide. Gaze over the left shoulder. Let your spine wring out."
+          "Exhale, Supine Twist, drop both knees to the right and reach your left arm wide. Gaze over your left shoulder. Let your spine wring out."
         ],
         "breaths": 8,
         "adjustment": "Both shoulders stay grounded. Knees don't have to touch the floor."
@@ -1306,8 +1250,7 @@
         "orderIndex": 129,
         "section": "Cooling Shapes",
         "cues": [
-          "Knees come back through center. Drop both knees to the left.",
-          "Right arm reaches wide. Breathe into your right side of your body."
+          "Exhale, Supine Twist, bring your knees back through center and drop to the left. Right arm reaches wide. Breathe into your right side."
         ],
         "breaths": 8,
         "adjustment": "Let the twist happen in the mid-spine. Keep your belly soft."
@@ -1317,9 +1260,7 @@
         "orderIndex": 130,
         "section": "Cooling Shapes",
         "cues": [
-          "Come back to center. Extend your legs straight up — Waterfall.",
-          "If you'd like, take Shoulderstand or Plow instead. Otherwise, legs up, let the blood flow back.",
-          "Stay for 10 slow breaths."
+          "Hold, Waterfall, extend your legs straight up and let the blood flow back toward your heart. 10 slow breaths."
         ],
         "breaths": 10,
         "adjustment": "If your low back lifts, bend your knees slightly. Let your legs feel heavy."
@@ -1329,9 +1270,7 @@
         "orderIndex": 131,
         "section": "Savasana + Close",
         "cues": [
-          "Lower your legs down. Arms by your sides, palms face up. Let your feet splay.",
-          "Close your eyes. Let every muscle release. Full rest — you've earned this.",
-          "Nothing to do. Nowhere to be. Just breathe."
+          "Hold, Savasana, lower your legs and let your arms rest by your sides, palms up. Close your eyes and let every muscle release. Nothing to do. Nowhere to be."
         ],
         "breaths": 30,
         "adjustment": "Scan from your crown of your head to your toes. Release anything still holding."
@@ -1351,9 +1290,8 @@
         "orderIndex": 133,
         "section": "Savasana + Close",
         "cues": [
-          "Roll to your right side. Press yourself up to a seat.",
-          "Hands to heart center. Bow your chin to your fingertips.",
-          "Thank you for showing up today. Namaste."
+          "Hold, Easy Pose, roll to your right side and press yourself up to a seat. Hands to heart center.",
+          "Bow your chin toward your fingertips. Thank you for showing up today. Namaste."
         ],
         "breaths": 3,
         "adjustment": "Honor the practice exactly as it was today. Nothing to change."
@@ -1373,7 +1311,7 @@
         "orderIndex": 1,
         "section": "Opening — Arrive + Frame",
         "cues": [
-          "Find a comfortable seat — cross-legged, on a block, or any shape that lets the spine be tall.",
+          "Hold, Easy Pose, find a comfortable seat and let your spine grow tall.",
           "Eyes soft or closed. Let yourself arrive."
         ],
         "breaths": 5
@@ -1411,7 +1349,7 @@
         "orderIndex": 4,
         "section": "Integration Sequence",
         "cues": [
-          "Hands on knees, eyes closed. Begin to move with your breath — 5 rounds of seated cat-cow."
+          "Inhale, Seated Cat Cow, drop your belly and lift your gaze. Exhale, round your spine and release your head."
         ],
         "breaths": 5
       },
@@ -1420,8 +1358,8 @@
         "orderIndex": 5,
         "section": "Integration Sequence",
         "cues": [
-          "Right arm reaches overhead, left hand grounds beside you. Side body opens. Making space for what wants to come through.",
-          "3 breaths here, then switch sides."
+          "Inhale, Easy Pose Side Bend, reach your right arm overhead and let your left hand ground beside you.",
+          "Hold and breathe into the left side of your body. Switch sides after 3 breaths."
         ],
         "breaths": 3,
         "adjustment": "Right side first, then left."
@@ -1431,8 +1369,8 @@
         "orderIndex": 6,
         "section": "Integration Sequence",
         "cues": [
-          "Seated twist to the right — right hand behind you, left hand to right knee. Lengthen on the inhale, twist deeper on the exhale.",
-          "3 breaths, then switch to the left."
+          "Inhale, Revolved Easy Pose, lengthen through your crown.",
+          "Exhale, twist to the right — right hand behind you, left hand to your right knee. 3 breaths, then switch to the left."
         ],
         "breaths": 3,
         "adjustment": "Right first, then left."
@@ -1442,7 +1380,7 @@
         "orderIndex": 7,
         "section": "Integration Sequence",
         "cues": [
-          "Make your way to tabletop. Hands under shoulders, knees under hips."
+          "Hold, Table Top, stack your wrists under your shoulders and your knees under your hips. Spread your fingers wide."
         ]
       },
       {
@@ -1450,7 +1388,7 @@
         "orderIndex": 8,
         "section": "Integration Sequence",
         "cues": [
-          "3 rounds of cat-cow. Let it be slow. Spine undulates with the breath."
+          "Inhale, Cat Cow, drop your belly and lift your gaze. Exhale, round your spine and tuck your chin. 3 slow rounds."
         ],
         "breaths": 3
       },
@@ -1459,8 +1397,8 @@
         "orderIndex": 9,
         "section": "Integration Sequence",
         "cues": [
-          "Thread the needle — right arm slides under the left, right cheek to the mat. 5 breaths.",
-          "Come back through tabletop, then thread the left arm under. 5 breaths."
+          "Exhale, Thread the Needle, slide your right arm under the left and let your right cheek rest on the mat. 5 breaths.",
+          "Return to tabletop, then thread your left arm under. 5 breaths on this side."
         ],
         "breaths": 5,
         "adjustment": "Right first, then left."
@@ -1470,7 +1408,7 @@
         "orderIndex": 10,
         "section": "Integration Sequence",
         "cues": [
-          "Press back to child's pose, arms reaching forward. The collective bow.",
+          "Exhale, Child's Pose, press your hips back toward your heels and reach your arms long.",
           "Let your forehead soften to the mat. 5 breaths."
         ],
         "breaths": 5,
@@ -1481,7 +1419,7 @@
         "orderIndex": 11,
         "section": "Integration Sequence",
         "cues": [
-          "Walk the hands forward into puppy pose — hips stack over knees, chest melts toward the floor. 5 breaths."
+          "Exhale, Puppy Pose, walk your hands forward and let your chest melt toward the floor, hips stacked over knees."
         ],
         "breaths": 5
       },
@@ -1490,7 +1428,7 @@
         "orderIndex": 12,
         "section": "Integration Sequence",
         "cues": [
-          "Tuck your toes, lift the hips. First downward dog of the day. 3 long breaths — pedal out the heels, let the spine lengthen."
+          "Exhale, Downward Dog, tuck your toes and lift your hips. Pedal through your heels and lengthen your spine."
         ],
         "breaths": 3
       },
@@ -1499,8 +1437,8 @@
         "orderIndex": 13,
         "section": "Integration Sequence",
         "cues": [
-          "Walk to the top of your mat. Halfway lift — flat back, gaze forward.",
-          "Exhale, fold. Let the head hang heavy."
+          "Inhale, Halfway Lift, walk to the top of your mat and find a flat back.",
+          "Exhale, Forward Fold, let your head hang heavy."
         ],
         "breaths": 2
       },
@@ -1509,8 +1447,8 @@
         "orderIndex": 14,
         "section": "Integration Sequence",
         "cues": [
-          "Roll up slowly to stand. Arms sweep wide and overhead.",
-          "Gathering the energy of everyone in this room."
+          "Inhale, Mountain Pose, roll up slowly and sweep your arms wide overhead.",
+          "Feel the ground beneath you."
         ]
       },
       {
@@ -1529,7 +1467,7 @@
         "orderIndex": 16,
         "section": "Sun A",
         "cues": [
-          "Inhale, arms sweep up — mountain with full reach."
+          "Inhale, Mountain Pose, sweep your arms overhead and press your feet into the earth."
         ]
       },
       {
@@ -1537,7 +1475,7 @@
         "orderIndex": 17,
         "section": "Sun A",
         "cues": [
-          "Exhale, forward fold."
+          "Exhale, Forward Fold, hinge from your hips and let your head hang heavy."
         ]
       },
       {
@@ -1545,7 +1483,7 @@
         "orderIndex": 18,
         "section": "Sun A",
         "cues": [
-          "Inhale, halfway lift — long spine."
+          "Inhale, Halfway Lift, find a flat back and lengthen through your crown."
         ]
       },
       {
@@ -1553,7 +1491,7 @@
         "orderIndex": 19,
         "section": "Sun A",
         "cues": [
-          "Exhale, step or float back to plank, lower through chaturanga — elbows graze the ribs."
+          "Exhale, Chaturanga, step or float back to plank and lower with your elbows grazing the ribs."
         ]
       },
       {
@@ -1561,7 +1499,7 @@
         "orderIndex": 20,
         "section": "Sun A",
         "cues": [
-          "Inhale, upward facing dog — chest lifts, tops of feet press."
+          "Inhale, Upward Dog, press the tops of your feet down and lift your chest."
         ]
       },
       {
@@ -1569,7 +1507,7 @@
         "orderIndex": 21,
         "section": "Sun A",
         "cues": [
-          "Exhale, downward dog. 3 breaths here."
+          "Exhale, Downward Dog, press the earth away and find length through your spine. 3 breaths."
         ],
         "breaths": 3
       },
@@ -1578,7 +1516,7 @@
         "orderIndex": 22,
         "section": "Sun A",
         "cues": [
-          "Inhale, right leg lifts to three-legged dog."
+          "Inhale, Three-Legged Dog, lift your right leg high and square your hips."
         ],
         "adjustment": "Right side."
       },
@@ -1587,7 +1525,7 @@
         "orderIndex": 23,
         "section": "Sun A",
         "cues": [
-          "Exhale, right knee to right elbow — or right tricep for more challenge."
+          "Exhale, Knee to Elbow, draw your right knee toward your right elbow and round through your spine."
         ]
       },
       {
@@ -1595,7 +1533,7 @@
         "orderIndex": 24,
         "section": "Sun A",
         "cues": [
-          "Inhale back to three-legged dog."
+          "Inhale, Three-Legged Dog, extend your right leg long and open through your hip."
         ]
       },
       {
@@ -1603,8 +1541,7 @@
         "orderIndex": 25,
         "section": "Sun A",
         "cues": [
-          "Exhale, step right foot outside right hand — lizard pose. Low to the ground, close to the source.",
-          "5 breaths."
+          "Exhale, Lizard Pose, step your right foot outside your right hand and sink your hips toward the mat. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "Right side. Low to the ground, close to the source."
@@ -1614,9 +1551,8 @@
         "orderIndex": 26,
         "section": "Sun A",
         "cues": [
-          "Plant both hands, step left foot to meet right — lower into malasana, deep squat. Hands at heart.",
-          "This is the squat of every grandmother in every culture. This is the shape of being close to the earth, of waiting, of cooking, of birthing, of resting. You are in good company in this shape.",
-          "5 breaths."
+          "Exhale, Garland Pose, step your feet together and lower into a deep squat with your hands at heart center.",
+          "Heels can lift or rest on a support. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "Malasana — garland pose. Heels lifted or supported."
@@ -1626,8 +1562,7 @@
         "orderIndex": 27,
         "section": "Sun A",
         "cues": [
-          "Rise to star pose, facing the front of the mat, arms wide. 5 breaths.",
-          "Take up space. Some of us have been told our whole lives to make ourselves smaller. Not today."
+          "Inhale, Star Pose, step wide and reach your arms overhead. Take up every inch of space. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "Take up space."
@@ -1646,7 +1581,7 @@
         "orderIndex": 29,
         "section": "Sun B",
         "cues": [
-          "From downward dog, inhale right leg to three-legged dog."
+          "Inhale, Three-Legged Dog, lift your right leg from downward dog and square your hips."
         ],
         "adjustment": "Right side first."
       },
@@ -1655,7 +1590,7 @@
         "orderIndex": 30,
         "section": "Sun B",
         "cues": [
-          "Exhale, step right foot outside right hand — lizard pose. 5 breaths."
+          "Exhale, Lizard Pose, step your right foot outside your right hand. Keep your hips low. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "Right side."
@@ -1665,7 +1600,7 @@
         "orderIndex": 31,
         "section": "Sun B",
         "cues": [
-          "Plant both hands, step left foot back. Walk feet wide to wide-legged forward fold. 5 breaths — let the spine lengthen."
+          "Exhale, Wide-Legged Forward Fold, step your feet wide and fold forward with a long spine. 5 breaths."
         ],
         "breaths": 5
       },
@@ -1674,7 +1609,7 @@
         "orderIndex": 32,
         "section": "Sun B",
         "cues": [
-          "Rise to star pose. 3 breaths."
+          "Inhale, Star Pose, rise tall with your arms wide and feel the length through your fingertips. 3 breaths."
         ],
         "breaths": 3
       },
@@ -1683,7 +1618,7 @@
         "orderIndex": 33,
         "section": "Sun B",
         "cues": [
-          "Turn right toes out, left toes slightly in. Triangle pose, right side — reach long through the right arm, stack the left arm overhead. 5 breaths."
+          "Hold, Triangle Pose, turn your right toes out and reach long through your right arm. Stack your left arm toward the sky. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "Right side."
@@ -1693,7 +1628,7 @@
         "orderIndex": 34,
         "section": "Sun B",
         "cues": [
-          "Bend the right knee, shift weight forward, lift the left leg into half moon, right side. Right hand to the floor or a block. 5 breaths."
+          "Inhale, Half Moon, bend your front knee and shift your weight forward as your left leg lifts. Right hand to the floor or a block. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "Right side."
@@ -1703,7 +1638,7 @@
         "orderIndex": 35,
         "section": "Sun B",
         "cues": [
-          "Lower back to triangle, then bend the right knee deeply — sweep into skandasana, right knee bent, left leg long. 3 breaths."
+          "Exhale, Skandasana, bend your right knee deeply and extend your left leg long beside you. 3 breaths."
         ],
         "breaths": 3,
         "adjustment": "Right side. Wide squat lateral lunge — weight over right knee."
@@ -1713,8 +1648,7 @@
         "orderIndex": 36,
         "section": "Sun B",
         "cues": [
-          "Shift the weight to the left side — sky archer, parsva sukhasana left side. 5 breaths.",
-          "You are drawing back the bow. What are you aiming your energy toward?"
+          "Hold, Sky Archer, shift your weight to the left side and reach long through both arms like drawing back a bow. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "Left side. Lateral lunge over left leg, right leg extended."
@@ -1724,7 +1658,7 @@
         "orderIndex": 37,
         "section": "Sun B",
         "cues": [
-          "Sweep back through skandasana to a low lunge, right foot forward. Low lunge flow — inhale arms up, exhale hands frame the foot. 3 rounds."
+          "Inhale, Low Lunge, sweep your arms overhead and sink low. Exhale, hands frame your front foot. 3 rounds."
         ],
         "breaths": 6,
         "adjustment": "Right foot forward. 3 rounds breath-with-movement."
@@ -1734,8 +1668,7 @@
         "orderIndex": 38,
         "section": "Sun B",
         "cues": [
-          "From low lunge, straighten the right leg — half split. Fold forward over the right leg. 5 breaths.",
-          "Honoring the slow burn, the patience of long struggle."
+          "Exhale, Half Splits, straighten your front leg and fold forward over it, keeping a long spine. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "Right side. Ardha hanumanasana."
@@ -1754,7 +1687,7 @@
         "orderIndex": 40,
         "section": "Sun B+ Heat Builder",
         "cues": [
-          "Walk or hop to the top of the mat. Rise to mountain. Take a breath."
+          "Inhale, Mountain Pose, walk or hop to the top of your mat and roll up to stand."
         ]
       },
       {
@@ -1772,8 +1705,7 @@
         "orderIndex": 42,
         "section": "Sun B+ Heat Builder",
         "cues": [
-          "Settle into goddess pose. Cactus arms — elbows wide, palms forward. Pulse down 8 times.",
-          "This is the shape of fierce protection. Goddess Durga rides into battle in this stance."
+          "Hold, Goddess Pose, step wide and bend your knees. Lift your arms to cactus — elbows wide, palms forward. Pulse down 8 times."
         ],
         "breaths": 4,
         "adjustment": "Cactus arms, 8 pulses."
@@ -1783,7 +1715,7 @@
         "orderIndex": 43,
         "section": "Sun B+ Heat Builder",
         "cues": [
-          "Goddess twists — drop the opposite elbow toward the opposite knee, alternating. 8 reps."
+          "Hold, Goddess Pose, drop your right elbow toward your left knee. Alternate sides for 8 reps."
         ],
         "adjustment": "Alternating sides, 8 reps."
       },
@@ -1792,8 +1724,7 @@
         "orderIndex": 44,
         "section": "Sun B+ Heat Builder",
         "cues": [
-          "Skandasana flow — flowing side to side through a low squat, 6 reps.",
-          "The collective swaying, the way crowds move together."
+          "Hold, Skandasana, shift side to side through a low squat, letting the breath guide you. 6 reps."
         ],
         "adjustment": "6 reps side to side."
       },
@@ -1802,8 +1733,7 @@
         "orderIndex": 45,
         "section": "Sun B+ Heat Builder",
         "cues": [
-          "Horse stance — feet wide, knees bent. Eagle arms right side: right arm under left, wrap and lift. 5 breaths.",
-          "Switch arms — left under right. 5 breaths."
+          "Hold, Eagle Arms, stand wide with soft knees. Wrap your right arm under your left and lift your elbows. 5 breaths, then switch sides."
         ],
         "breaths": 10,
         "adjustment": "Horse stance with eagle arms — both sides."
@@ -1845,7 +1775,7 @@
         "orderIndex": 49,
         "section": "Balancing Peak",
         "cues": [
-          "Mountain pose. 3 breaths — settle here before the sequence begins."
+          "Hold, Mountain Pose, root through both feet and let your breath settle. 3 breaths."
         ],
         "breaths": 3
       },
@@ -1854,8 +1784,7 @@
         "orderIndex": 50,
         "section": "Balancing Peak",
         "cues": [
-          "Tree pose, right side — root the left foot down, lift the right foot to inner thigh or calf. Hands at heart or branches overhead.",
-          "Roots."
+          "Hold, Tree Pose, root your left foot into the earth and lift your right foot to your inner calf or thigh. Hands at heart."
         ],
         "breaths": 5,
         "adjustment": "Right side first."
@@ -1865,8 +1794,7 @@
         "orderIndex": 51,
         "section": "Balancing Peak",
         "cues": [
-          "Release to standing figure four, right side — sit the hips back, hands at heart. 5 breaths.",
-          "The bend before the leap."
+          "Hold, Standing Figure Four, cross your right ankle over your left thigh and sit your hips back. Hands at heart. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "Right side."
@@ -1876,8 +1804,7 @@
         "orderIndex": 52,
         "section": "Balancing Peak",
         "cues": [
-          "Rise to chair pose. 5 breaths.",
-          "Sitting in the unseen seat, the strength that doesn't need a throne."
+          "Inhale, Chair Pose, sweep your arms overhead and sit your hips back toward an invisible seat. 5 breaths."
         ],
         "breaths": 5
       },
@@ -1886,8 +1813,7 @@
         "orderIndex": 53,
         "section": "Balancing Peak",
         "cues": [
-          "Shift weight to the left foot, lift the right leg back — Warrior 3, right side. Arms in prayer, airplane, or extended forward. 5 breaths.",
-          "The body as arrow, as flag, as banner."
+          "Hold, Warrior Three, shift your weight to your left foot and hinge forward as your right leg lifts behind you. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "Right side — balanced on left foot."
@@ -1897,7 +1823,7 @@
         "orderIndex": 54,
         "section": "Balancing Peak",
         "cues": [
-          "Lower the torso further, lift the back leg higher — standing splits, right side. 5 breaths."
+          "Exhale, Standing Splits, hinge deeper and lift your right leg as high as it will go. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "Right side."
@@ -1907,8 +1833,7 @@
         "orderIndex": 55,
         "section": "Balancing Peak",
         "cues": [
-          "Bend the standing knee, catch the right foot behind you with the right hand. Rise into dancer's pose, right side. 5 breaths.",
-          "The body curved like a wave, like a dancer at every protest, at every wedding, at every funeral. We dance because they told us not to."
+          "Hold, Dancer Pose, bend your standing knee, catch your right foot behind you, and press your foot into your hand as you rise and extend. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "PEAK POSE — right side. Natarajasana."
@@ -1918,7 +1843,7 @@
         "orderIndex": 56,
         "section": "Balancing Peak",
         "cues": [
-          "Release dancer, step right foot back into Warrior 2, right side. 5 breaths."
+          "Hold, Warrior Two, step your right foot back and bend your front knee over your ankle. Arms reach long in both directions. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "Right side."
@@ -1928,7 +1853,7 @@
         "orderIndex": 57,
         "section": "Balancing Peak",
         "cues": [
-          "Reverse Warrior, right. 3 breaths."
+          "Inhale, Reverse Warrior, flip your front palm and arc your right arm up and back. 3 breaths."
         ],
         "breaths": 3,
         "adjustment": "Right side."
@@ -1938,7 +1863,7 @@
         "orderIndex": 58,
         "section": "Balancing Peak",
         "cues": [
-          "Extended Side Angle, right. 5 breaths."
+          "Hold, Extended Side Angle, lower your right forearm to your thigh and reach your left arm overhead. Long through the left side body. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "Right side."
@@ -1948,7 +1873,7 @@
         "orderIndex": 59,
         "section": "Balancing Peak",
         "cues": [
-          "Triangle, right. 5 breaths."
+          "Hold, Triangle Pose, straighten your front leg and reach your right hand down as your left arm extends toward the sky. 5 breaths."
         ],
         "breaths": 5,
         "adjustment": "Right side."
@@ -1980,7 +1905,7 @@
         "orderIndex": 62,
         "section": "Cooling + Floor Series",
         "cues": [
-          "Step or hop to a seat at the top of the mat. Wide-legged seated forward fold — upavistha konasana. Walk hands forward, fold from the hips. 8 breaths."
+          "Exhale, Seated Straddle, open your legs wide and walk your hands forward, folding from your hips. 8 breaths."
         ],
         "breaths": 8
       },
@@ -1989,8 +1914,7 @@
         "orderIndex": 63,
         "section": "Cooling + Floor Series",
         "cues": [
-          "Janu sirsasana, right — right leg extended, left foot to inner right thigh. Fold over the right leg. 5 breaths.",
-          "Then switch — left leg extended, fold over the left. 5 breaths."
+          "Exhale, Head to Knee Pose, extend your right leg and fold forward over it with a long spine. 5 breaths, then switch sides."
         ],
         "breaths": 10,
         "adjustment": "Right then left, 5 breaths each."
@@ -2000,7 +1924,7 @@
         "orderIndex": 64,
         "section": "Cooling + Floor Series",
         "cues": [
-          "Both legs extended — seated forward fold, paschimottanasana. 8 breaths."
+          "Exhale, Seated Forward Bend, extend both legs and fold forward, reaching through your feet. 8 breaths."
         ],
         "breaths": 8
       },
@@ -2009,8 +1933,7 @@
         "orderIndex": 65,
         "section": "Cooling + Floor Series",
         "cues": [
-          "Roll down to your back. Reclined pigeon, right side — right ankle crosses left knee, flex the right foot, draw both legs toward the chest. 8 breaths.",
-          "Switch sides — left ankle crosses right knee. 8 breaths."
+          "Hold, Reclined Pigeon, cross your right ankle over your left knee, flex your right foot, and draw both legs toward your chest. 8 breaths, then switch sides."
         ],
         "breaths": 16,
         "adjustment": "Right then left, 8 breaths each. Supta kapotasana."
@@ -2020,7 +1943,7 @@
         "orderIndex": 66,
         "section": "Cooling + Floor Series",
         "cues": [
-          "Happy baby — soles of the feet to the sky, hands catch the outer edges of the feet. Rock gently. 5 breaths."
+          "Hold, Happy Baby, catch the outer edges of your feet and let your spine melt into the mat. Rock gently. 5 breaths."
         ],
         "breaths": 5
       },
@@ -2029,8 +1952,7 @@
         "orderIndex": 67,
         "section": "Cooling + Floor Series",
         "cues": [
-          "Reclined twist, right — knees stack to the left, arms open wide. 5 breaths.",
-          "Switch to the left — knees stack to the right. 5 breaths."
+          "Exhale, Supine Twist, stack your knees to the left and open your arms wide. Let your spine release. 5 breaths, then switch sides."
         ],
         "breaths": 10,
         "adjustment": "Right then left, 5 breaths each."
@@ -2040,8 +1962,7 @@
         "orderIndex": 68,
         "section": "Cooling + Floor Series",
         "cues": [
-          "Bridge pose — feet hip-width, press into the floor, lift the hips. 5 breaths.",
-          "Lower, pause, then a second round. 5 breaths."
+          "Inhale, Bridge Pose, press through your feet and lift your hips toward the sky. 5 breaths. Lower and repeat."
         ],
         "breaths": 10,
         "adjustment": "2 rounds, 5 breaths each."
@@ -2051,8 +1972,7 @@
         "orderIndex": 69,
         "section": "Cooling + Floor Series",
         "cues": [
-          "Supported fish — place a bolster or block under the shoulder blades if available, or take the pose without support. Heart lifts toward the sky, throat opens. 8 breaths.",
-          "Opening the heart and throat for what comes next."
+          "Inhale, Fish Pose, place support under your shoulder blades and let your chest open toward the sky. Throat softens. 8 breaths."
         ],
         "breaths": 8,
         "adjustment": "Supported with bolster or block under shoulder blades, optional."
