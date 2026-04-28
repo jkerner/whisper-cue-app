@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhisperCue — your practice, your voice</title>
+  <meta name="description" content="Real-time cueing for yoga and meditation teachers. Flow with confidence. WhisperCue puts your cues, postures, and sequence right in your hands." />
+  <meta property="og:title" content="WhisperCue" />
+  <meta property="og:description" content="Real-time cueing for yoga and meditation teachers." />
+  <meta property="og:image" content="https://whispercue.app/app-icon.png" />
+  <meta property="og:url" content="https://whispercue.app" />
+  <link rel="icon" type="image/png" href="/app-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #030303;
+      --bg-card: #0f0f0f;
+      --bg-card-border: #1e1e1e;
+      --text: #f0f0f0;
+      --text-muted: #888;
+      --cyan: #7dd3e0;
+      --cyan-dim: rgba(125, 211, 224, 0.12);
+      --cyan-glow: rgba(125, 211, 224, 0.06);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 40px;
+      border-bottom: 1px solid var(--bg-card-border);
+    }
+    nav img.nav-logo {
+      height: 36px;
+      opacity: 0.92;
+    }
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--text); }
+
+    /* ── HERO ── */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 100px 24px 80px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .hero-logo {
+      width: min(360px, 80vw);
+      margin-bottom: 32px;
+      opacity: 0.95;
+    }
+    .hero h1 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--cyan);
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 500px;
+      margin-bottom: 40px;
+    }
+    .app-store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      border-radius: 12px;
+      padding: 12px 24px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .app-store-badge span.dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--cyan);
+      display: inline-block;
+    }
+
+    /* ── FEATURES ── */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1px;
+      background: var(--bg-card-border);
+      border-top: 1px solid var(--bg-card-border);
+      border-bottom: 1px solid var(--bg-card-border);
+      max-width: 960px;
+      margin: 0 auto 80px;
+    }
+    .feature {
+      background: var(--bg);
+      padding: 40px 36px;
+    }
+    .feature-icon {
+      font-size: 1.6rem;
+      margin-bottom: 14px;
+      display: block;
+    }
+    .feature h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .feature p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* ── ALPHA SECTION ── */
+    .alpha {
+      max-width: 600px;
+      margin: 0 auto 100px;
+      padding: 0 24px;
+      text-align: center;
+    }
+    .alpha-card {
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      border-radius: 20px;
+      padding: 56px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .alpha-card::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, var(--cyan-glow) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .alpha-tag {
+      display: inline-block;
+      background: var(--cyan-dim);
+      color: var(--cyan);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+    .alpha-card h2 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 400;
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+    .alpha-card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 36px;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--cyan);
+      color: #030303;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      padding: 16px 36px;
+      border-radius: 100px;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover {
+      opacity: 0.88;
+      transform: translateY(-1px);
+    }
+    .btn-primary svg {
+      width: 16px;
+      height: 16px;
+    }
+    .alpha-note {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--bg-card-border);
+      padding: 32px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    footer p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    footer nav {
+      border: none;
+      padding: 0;
+      gap: 24px;
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 600px) {
+      nav { padding: 20px 24px; }
+      .alpha-card { padding: 40px 28px; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <img class="nav-logo" src="/logo-lockup.png" alt="WhisperCue" />
+    <nav>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+    </nav>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-logo" src="/logo-lockup.png" alt="WhisperCue — your practice, your voice" />
+    <h1>Teach from memory.<br /><em>Not from notes.</em></h1>
+    <p>WhisperCue puts your cues, postures, and sequences right in your hands — so you can stay present with your students and flow with confidence.</p>
+    <div class="app-store-badge">
+      <span class="dot"></span>
+      Coming soon to the App Store
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <div class="features">
+    <div class="feature">
+      <span class="feature-icon">🎙</span>
+      <h3>Live Cueing</h3>
+      <p>Scroll through your sequence in real time while you teach. One pose, one cue — nothing between you and your class.</p>
+    </div>
+    <div class="feature">
+      <span class="feature-icon">✦</span>
+      <h3>Sequence Builder</h3>
+      <p>Build and save sequences with sections, poses, breath cues, and timing. Built for yoga teachers, by a yoga teacher.</p>
+    </div>
+    <div class="feature">
+      <span class="feature-icon">◯</span>
+      <h3>Share Anywhere</h3>
+      <p>Generate a link to share any sequence — with other teachers, students, or anyone you'd like to flow with.</p>
+    </div>
+  </div>
+
+  <!-- ALPHA ACCESS -->
+  <section class="alpha">
+    <div class="alpha-card">
+      <span class="alpha-tag">Alpha Access</span>
+      <h2>Try WhisperCue<br />before it launches</h2>
+      <p>We're currently in private alpha testing on iOS. Request access to try the app, explore real sequences, and give feedback that shapes what gets built next.</p>
+      <a class="btn-primary" href="https://testflight.apple.com/join/REPLACE_WITH_YOUR_LINK" target="_blank" rel="noopener">
+        Request Access
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <p class="alpha-note">Opens TestFlight on iOS. Requires an iPhone or iPad.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 WhisperCue. All rights reserved.</p>
+    <nav>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Service</a>
+      <a href="mailto:support@whispercue.app">Contact</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
