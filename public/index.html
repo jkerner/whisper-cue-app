@@ -12,19 +12,20 @@
   <link rel="icon" type="image/png" href="/app-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg: #030303;
-      --bg-card: #0f0f0f;
-      --bg-card-border: #1e1e1e;
-      --text: #f0f0f0;
-      --text-muted: #888;
-      --cyan: #7dd3e0;
-      --cyan-dim: rgba(125, 211, 224, 0.12);
-      --cyan-glow: rgba(125, 211, 224, 0.06);
+      --bg:           #030303;
+      --cave:         #0d1117;
+      --twilight:     #1a2230;
+      --akasha:       #43B1E8;
+      --akasha-dim:   rgba(67, 177, 232, 0.12);
+      --akasha-glow:  rgba(67, 177, 232, 0.06);
+      --vayu:         #7999C1;
+      --chandra:      #AAA8D6;
+      --text:         #F8F9FA;
     }
 
     html { scroll-behavior: smooth; }
@@ -43,15 +44,33 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 24px 40px;
-      border-bottom: 1px solid var(--bg-card-border);
+      padding: 20px 40px;
+      border-bottom: 1px solid var(--twilight);
     }
-    nav img.nav-logo {
-      height: 36px;
-      opacity: 0.92;
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nav-brand img.nav-icon {
+      height: 32px;
+      width: 32px;
+      border-radius: 8px;
+    }
+    .nav-brand span {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      color: var(--text);
+      letter-spacing: 0.02em;
+    }
+    nav .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
     }
     nav a {
-      color: var(--text-muted);
+      color: var(--vayu);
       text-decoration: none;
       font-size: 0.85rem;
       letter-spacing: 0.02em;
@@ -65,19 +84,28 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 100px 24px 80px;
-      max-width: 720px;
+      padding: 96px 24px 80px;
+      max-width: 800px;
       margin: 0 auto;
     }
-    .hero-logo {
-      width: min(360px, 80vw);
+    .hero-eyebrow {
+      display: inline-block;
+      color: var(--chandra);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+    .hero-wordmark {
+      width: min(480px, 85vw);
       margin-bottom: 32px;
-      opacity: 0.95;
+      opacity: 0.96;
     }
     .hero h1 {
-      font-family: 'DM Serif Display', Georgia, serif;
-      font-size: clamp(2rem, 5vw, 3rem);
-      font-weight: 400;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(2.2rem, 5.5vw, 3.4rem);
+      font-weight: 300;
       line-height: 1.2;
       letter-spacing: -0.01em;
       color: var(--text);
@@ -85,33 +113,74 @@
     }
     .hero h1 em {
       font-style: italic;
-      color: var(--cyan);
+      color: var(--akasha);
     }
     .hero p {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      max-width: 500px;
-      margin-bottom: 40px;
+      font-size: 1.05rem;
+      color: var(--vayu);
+      max-width: 480px;
+      margin-bottom: 44px;
+      line-height: 1.7;
     }
-    .app-store-badge {
+
+    /* ── CTA AREA ── */
+    .hero-ctas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .btn-primary {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: var(--bg-card);
-      border: 1px solid var(--bg-card-border);
-      border-radius: 12px;
-      padding: 12px 24px;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      letter-spacing: 0.08em;
+      background: var(--akasha);
+      color: #030303;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
+      text-decoration: none;
+      padding: 16px 40px;
+      border-radius: 100px;
+      transition: opacity 0.2s, transform 0.15s;
     }
-    .app-store-badge span.dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--cyan);
-      display: inline-block;
+    .btn-primary:hover {
+      opacity: 0.88;
+      transform: translateY(-1px);
+    }
+    .btn-primary svg {
+      width: 14px;
+      height: 14px;
+    }
+    .hero-note {
+      font-size: 0.78rem;
+      color: var(--twilight);
+      letter-spacing: 0.02em;
+    }
+
+    /* ── MADE BY ── */
+    .made-by {
+      text-align: center;
+      padding: 0 24px 72px;
+    }
+    .made-by p {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--vayu);
+    }
+    .made-by p::before,
+    .made-by p::after {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--twilight);
     }
 
     /* ── FEATURES ── */
@@ -119,32 +188,33 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 1px;
-      background: var(--bg-card-border);
-      border-top: 1px solid var(--bg-card-border);
-      border-bottom: 1px solid var(--bg-card-border);
+      background: var(--twilight);
+      border-top: 1px solid var(--twilight);
+      border-bottom: 1px solid var(--twilight);
       max-width: 960px;
       margin: 0 auto 80px;
     }
     .feature {
       background: var(--bg);
-      padding: 40px 36px;
+      padding: 44px 36px;
     }
     .feature-icon {
-      font-size: 1.6rem;
-      margin-bottom: 14px;
+      font-size: 1.5rem;
+      margin-bottom: 16px;
       display: block;
     }
     .feature h3 {
-      font-size: 1rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
       font-weight: 500;
-      letter-spacing: 0.01em;
-      margin-bottom: 8px;
+      letter-spacing: 0.04em;
+      margin-bottom: 10px;
       color: var(--text);
     }
     .feature p {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      line-height: 1.55;
+      font-size: 0.88rem;
+      color: var(--vayu);
+      line-height: 1.6;
     }
 
     /* ── ALPHA SECTION ── */
@@ -155,8 +225,8 @@
       text-align: center;
     }
     .alpha-card {
-      background: var(--bg-card);
-      border: 1px solid var(--bg-card-border);
+      background: var(--cave);
+      border: 1px solid var(--twilight);
       border-radius: 20px;
       padding: 56px 48px;
       position: relative;
@@ -170,69 +240,48 @@
       transform: translateX(-50%);
       width: 300px;
       height: 300px;
-      background: radial-gradient(circle, var(--cyan-glow) 0%, transparent 70%);
+      background: radial-gradient(circle, var(--akasha-glow) 0%, transparent 70%);
       pointer-events: none;
     }
     .alpha-tag {
       display: inline-block;
-      background: var(--cyan-dim);
-      color: var(--cyan);
-      font-size: 0.75rem;
+      background: var(--akasha-dim);
+      color: var(--akasha);
+      font-size: 0.72rem;
       font-weight: 500;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
-      padding: 5px 14px;
+      padding: 5px 16px;
       border-radius: 100px;
       margin-bottom: 24px;
     }
     .alpha-card h2 {
-      font-family: 'DM Serif Display', Georgia, serif;
-      font-size: clamp(1.5rem, 4vw, 2rem);
-      font-weight: 400;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 300;
       line-height: 1.25;
       margin-bottom: 16px;
     }
-    .alpha-card p {
-      font-size: 0.95rem;
-      color: var(--text-muted);
+    .alpha-card > p {
+      font-size: 0.93rem;
+      color: var(--vayu);
       margin-bottom: 36px;
-      max-width: 420px;
+      max-width: 400px;
       margin-left: auto;
       margin-right: auto;
-    }
-    .btn-primary {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: var(--cyan);
-      color: #030303;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 500;
-      letter-spacing: 0.02em;
-      text-decoration: none;
-      padding: 16px 36px;
-      border-radius: 100px;
-      transition: opacity 0.2s, transform 0.15s;
-    }
-    .btn-primary:hover {
-      opacity: 0.88;
-      transform: translateY(-1px);
-    }
-    .btn-primary svg {
-      width: 16px;
-      height: 16px;
+      line-height: 1.7;
     }
     .alpha-note {
       margin-top: 20px;
-      font-size: 0.8rem;
-      color: var(--text-muted);
+      font-size: 0.78rem;
+      color: var(--vayu);
+      opacity: 0.6;
     }
 
     /* ── FOOTER ── */
     footer {
-      border-top: 1px solid var(--bg-card-border);
-      padding: 32px 40px;
+      border-top: 1px solid var(--twilight);
+      padding: 28px 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -240,8 +289,9 @@
       gap: 12px;
     }
     footer p {
-      font-size: 0.8rem;
-      color: var(--text-muted);
+      font-size: 0.78rem;
+      color: var(--vayu);
+      opacity: 0.5;
     }
     footer nav {
       border: none;
@@ -251,32 +301,48 @@
 
     /* ── MOBILE ── */
     @media (max-width: 600px) {
-      nav { padding: 20px 24px; }
+      nav { padding: 18px 20px; }
+      .hero { padding: 72px 20px 60px; }
       .alpha-card { padding: 40px 28px; }
-      footer { flex-direction: column; align-items: flex-start; }
+      footer { flex-direction: column; align-items: flex-start; padding: 24px 20px; }
+      .made-by p::before, .made-by p::after { display: none; }
     }
   </style>
 </head>
 <body>
 
   <nav>
-    <img class="nav-logo" src="/logo-lockup.png" alt="WhisperCue" />
-    <nav>
+    <div class="nav-brand">
+      <img class="nav-icon" src="/logo-icon.png" alt="WhisperCue" />
+      <span>WhisperCue</span>
+    </div>
+    <div class="nav-links">
       <a href="/privacy">Privacy</a>
       <a href="/terms">Terms</a>
-    </nav>
+    </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
-    <img class="hero-logo" src="/logo-lockup.png" alt="WhisperCue — your practice, your voice" />
+    <span class="hero-eyebrow">Now in private alpha</span>
+    <img class="hero-wordmark" src="/whisper-cue-wordmark.png" alt="WhisperCue — your practice, your voice" />
     <h1>Teach from memory.<br /><em>Not from notes.</em></h1>
-    <p>WhisperCue puts your cues, postures, and sequences right in your hands — so you can stay present with your students and flow with confidence.</p>
-    <div class="app-store-badge">
-      <span class="dot"></span>
-      Coming soon to the App Store
+    <p>WhisperCue puts your cues, postures, and sequence right in your hands — so you can stay present with your students and flow with confidence.</p>
+    <div class="hero-ctas">
+      <a class="btn-primary" href="https://testflight.apple.com/join/Q6rnXmB7" target="_blank" rel="noopener">
+        Request Alpha Access
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <p class="hero-note">Opens TestFlight on iOS · iPhone and iPad</p>
     </div>
   </section>
+
+  <!-- MADE BY TEACHERS -->
+  <div class="made-by">
+    <p>Made for teachers, by a teacher</p>
+  </div>
 
   <!-- FEATURES -->
   <div class="features">
@@ -300,7 +366,7 @@
   <!-- ALPHA ACCESS -->
   <section class="alpha">
     <div class="alpha-card">
-      <span class="alpha-tag">Alpha Access</span>
+      <span class="alpha-tag">Private Alpha</span>
       <h2>Try WhisperCue<br />before it launches</h2>
       <p>We're currently in private alpha testing on iOS. Request access to try the app, explore real sequences, and give feedback that shapes what gets built next.</p>
       <a class="btn-primary" href="https://testflight.apple.com/join/Q6rnXmB7" target="_blank" rel="noopener">
