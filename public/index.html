@@ -167,7 +167,11 @@
     }
 
     .hero-wordmark {
-      width: min(440px, 84vw);
+      font-family: 'Dancing Script', cursive;
+      font-weight: 700;
+      font-size: clamp(3.2rem, 10vw, 6rem);
+      color: var(--text);
+      line-height: 1.1;
       margin-bottom: 14px;
       animation: fadeUp 0.8s ease-out 0.4s both;
     }
@@ -451,7 +455,7 @@
       <img class="hero-icon" src="/whisper-cue-icon.png" alt="" aria-hidden="true" />
     </div>
 
-    <img class="hero-wordmark" src="/whisper-cue-wordmark.png" alt="WhisperCue" />
+    <h1 class="hero-wordmark">Whisper Cue</h1>
     <p class="hero-subtitle">Real-time cueing for yoga teachers<br />Made for teachers by teachers</p>
 
     <p class="hero-body">We're in private alpha on iOS. Request access to try the app, explore real sequences, and give feedback that shapes what gets built next.</p>
