@@ -96,6 +96,17 @@ whisper-cue-app/
 └── CLAUDE.md                  # AI assistant briefing
 ```
 
+## Supabase Data Safety Rules
+
+**Never run a migration script without following these steps:**
+
+1. **Match by exact ID or exact name** — never fuzzy/partial matches. Always print the target row before touching it.
+2. **Confirm before executing** — the script must show what will change and wait for a go-ahead before running any PATCH/UPDATE/DELETE.
+3. **One row at a time** — never batch-update multiple rows unless explicitly requested for each one.
+4. **No irreversible scripts without a backup** — if the operation can't be undone, take a snapshot first.
+
+Violating these rules has permanently destroyed user data before. Don't repeat it.
+
 ## Roadmap
 
 - **Phase 0** — MVP: 1 sequence, live teach mode ✓
