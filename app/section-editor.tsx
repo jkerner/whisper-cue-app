@@ -373,7 +373,7 @@ export default function SectionEditorScreen() {
 const styles = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: "#030303",
+    backgroundColor: "#0B1119",
   },
   container: {
     flex: 1,
