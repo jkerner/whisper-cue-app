@@ -100,19 +100,46 @@ Yoga pose figures use a watercolor illustration style — bold, simple silhouett
 | **Style** | Watercolor silhouettes — bold shapes with soft, bleeding color washes. Hand-painted feel, minimal detail. Must read clearly at small sizes (24–48px). |
 | **Color Washes** | Each pose gets a single dominant color wash. Rotate through palette-adjacent tones: indigo, teal, coral, amber, sage, lavender, terracotta. No outlines. |
 | **Diversity** | Figures represent diverse body types, skin tones, genders, hair textures, and clothing. The practice is for everyone. |
-| **Backgrounds** | MUST be transparent. Icons float on the app's `#030303` Void background — black on black, no visible square or container behind the figure. When exporting or regenerating icons, always strip dark pixels (r<45, g<45, b<55) to ensure transparency. |
+| **Backgrounds** | MUST be transparent. Icons float on the app's `#030303` Void background — black on black, no visible square or container behind the figure. Exported v3 icons have `#0B1119` (r=11, g=17, b=25) backgrounds that must be stripped before committing. Run the Python script below. |
 | **Sizes** | 24px (inline label), 48px (sequence list card), 96px (Live Teach active pose), 150px (library/detail hero). |
 | **Format** | PNG with transparency, generated from AI watercolor prompts. Source `.pen` file at `docs/design/pose-icons.pen`. |
 
 **Pose Library**
 
-All 123 poses have watercolor icon PNGs at `assets/poses/`. Background color: `#0B1119`. Figures are monotone watercolor with varied colors (teal, coral, amber, sage, lavender, indigo, terracotta, dusty rose, mint, peach).
+All 123 poses have watercolor icon PNGs at `assets/poses/`. Figures are monotone watercolor with varied colors (teal, coral, amber, sage, lavender, indigo, terracotta, dusty rose, mint, peach). Backgrounds must be transparent.
 
 Source .pen files:
 - `docs/design/section-icons.pen` — 13 section header icons for sequence overview
 - `docs/design/pose-library.pen` — full pose library icons for sequence builder
 
 Image map: `src/lib/pose-images.ts` — maps all 123 pose IDs to their require() paths.
+
+**Stripping dark backgrounds from exported icons:**
+
+Icons exported from Pencil have a solid `#0B1119` background. Strip it with Pillow before committing:
+
+```python
+from PIL import Image
+import os
+
+BG = (11, 17, 25)   # #0B1119
+TOLERANCE = 20
+
+for fname in os.listdir('assets/poses'):
+    if not fname.endswith('.png'):
+        continue
+    path = f'assets/poses/{fname}'
+    img = Image.open(path).convert('RGBA')
+    data = list(img.getdata())
+    new_data = [
+        (p[0], p[1], p[2], 0) if all(abs(p[i]-BG[i]) <= TOLERANCE for i in range(3)) else p
+        for p in data
+    ]
+    img.putdata(new_data)
+    img.save(path)
+```
+
+Run the same script targeting `public/poses/` for the landing page hero images.
 
 **Section Icons**
 

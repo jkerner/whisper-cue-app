@@ -89,6 +89,8 @@ whisper-cue-app/
 ├── assets/
 │   ├── fonts/                 # Circular Std, SQ Market
 │   └── poses/                 # Watercolor pose icon PNGs (transparent bg)
+                                # ⚠ Icons exported from Pencil have #0B1119 backgrounds.
+                                # Strip with Pillow before committing (see docs/design.md).
 ├── docs/
 │   ├── feature-briefs.md      # Product roadmap and feature specs
 │   └── whispercue_prd.docx    # Full PRD
