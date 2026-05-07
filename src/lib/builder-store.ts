@@ -138,6 +138,18 @@ export const builderStore = {
     notify();
   },
 
+  reorderPoses: (sectionId: string, from: number, to: number) => {
+    const section = sections.find((s) => s.id === sectionId);
+    if (!section) return;
+    const arr = [...section.poses];
+    const [moved] = arr.splice(from, 1);
+    arr.splice(to, 0, moved);
+    sections = sections.map((s) =>
+      s.id === sectionId ? { ...s, poses: arr } : s
+    );
+    notify();
+  },
+
   movePose: (sectionId: string, index: number, direction: "up" | "down") => {
     const section = sections.find((s) => s.id === sectionId);
     if (!section) return;

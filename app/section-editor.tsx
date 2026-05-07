@@ -13,6 +13,11 @@ import {
 } from "react-native";
 import { useRouter, useLocalSearchParams } from "expo-router";
 import { Feather } from "@expo/vector-icons";
+import DraggableFlatList, {
+  RenderItemParams,
+  ScaleDecorator,
+} from "react-native-draggable-flatlist";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { Pose, SequencePose } from "../src/types";
 import posesData from "../src/data/poses.json";
 import { builderStore } from "../src/lib/builder-store";
@@ -126,7 +131,67 @@ export default function SectionEditorScreen() {
     setShowCreateModal(false);
   };
 
+  const renderDraggablePose = ({
+    item: pose,
+    getIndex,
+    drag,
+    isActive,
+  }: RenderItemParams<SequencePose>) => {
+    const index = getIndex() ?? 0;
+    return (
+      <ScaleDecorator>
+        <View
+          style={[
+            styles.addedRow,
+            isActive && styles.addedRowActive,
+          ]}
+        >
+          <Pressable
+            style={styles.addedRowContent}
+            onPress={() =>
+              router.push({
+                pathname: "/pose-editor",
+                params: { sectionId, poseId: pose.id },
+              })
+            }
+          >
+            {pose.sourcePoseId && poseImages[pose.sourcePoseId] ? (
+              <Image
+                source={poseImages[pose.sourcePoseId]}
+                style={styles.addedRowImage}
+                resizeMode="contain"
+              />
+            ) : (
+              <View style={styles.addedRowImagePlaceholder}>
+                <Feather name="user" size={16} color="#1a2230" />
+              </View>
+            )}
+            <Text style={styles.addedRowText} numberOfLines={1}>
+              {pose.title}
+            </Text>
+          </Pressable>
+          <Pressable
+            onPress={() => removePose(index)}
+            hitSlop={8}
+            style={styles.addedRowAction}
+          >
+            <Feather name="x" size={14} color="#7999C1" />
+          </Pressable>
+          <Pressable
+            onLongPress={drag}
+            delayLongPress={150}
+            style={styles.addedRowHandle}
+            hitSlop={8}
+          >
+            <Feather name="menu" size={16} color="#7999C1" />
+          </Pressable>
+        </View>
+      </ScaleDecorator>
+    );
+  };
+
   return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
     <SafeAreaView style={styles.safe}>
       <View style={styles.container}>
         {/* Header */}
@@ -143,46 +208,23 @@ export default function SectionEditorScreen() {
           <View style={{ width: 36 }} />
         </View>
 
-        {/* Added poses strip */}
+        {/* Added poses — draggable vertical list */}
         {addedPoses.length > 0 && (
           <View style={styles.addedSection}>
             <Text style={styles.addedLabel}>
               {addedPoses.length} POSE{addedPoses.length !== 1 ? "S" : ""} IN
               THIS SECTION
             </Text>
-            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-              {addedPoses.map((pose, i) => (
-                <View key={`added-${i}`} style={styles.addedChip}>
-                  <Pressable
-                    style={styles.addedChipTouchable}
-                    onPress={() =>
-                      router.push({
-                        pathname: "/pose-editor",
-                        params: { sectionId, poseId: pose.id },
-                      })
-                    }
-                  >
-                    {pose.sourcePoseId && poseImages[pose.sourcePoseId] && (
-                      <Image
-                        source={poseImages[pose.sourcePoseId]}
-                        style={styles.addedChipImage}
-                        resizeMode="contain"
-                      />
-                    )}
-                    <Text style={styles.addedChipText} numberOfLines={1}>
-                      {pose.title}
-                    </Text>
-                  </Pressable>
-                  <Pressable
-                    onPress={() => removePose(i)}
-                    hitSlop={8}
-                    style={styles.addedChipRemove}
-                  >
-                    <Feather name="x" size={12} color="#7999C1" />
-                  </Pressable>
-                </View>
-              ))}
-            </ScrollView>
+            <DraggableFlatList
+              data={addedPoses}
+              keyExtractor={(item) => item.id}
+              renderItem={renderDraggablePose}
+              onDragEnd={({ from, to }) => {
+                if (sectionId) builderStore.reorderPoses(sectionId, from, to);
+              }}
+              scrollEnabled={false}
+              activationDistance={5}
+            />
           </View>
         )}
 
@@ -367,6 +409,7 @@ export default function SectionEditorScreen() {
         </View>
       </Modal>
     </SafeAreaView>
+    </GestureHandlerRootView>
   );
 }
 
@@ -405,9 +448,9 @@ const styles = StyleSheet.create({
     fontWeight: "normal",
   },
 
-  // Added poses horizontal strip
+  // Added poses draggable list
   addedSection: {
-    paddingLeft: 24,
+    paddingHorizontal: 24,
     paddingBottom: 12,
   },
   addedLabel: {
@@ -417,36 +460,56 @@ const styles = StyleSheet.create({
     letterSpacing: 3,
     marginBottom: 8,
   },
-  addedChip: {
+  addedRow: {
     flexDirection: "row",
     alignItems: "center",
     backgroundColor: "#0d1117",
-    borderRadius: 20,
-    paddingVertical: 6,
-    paddingLeft: 6,
-    paddingRight: 10,
-    marginRight: 8,
-    gap: 6,
+    borderRadius: 12,
+    paddingVertical: 8,
+    paddingLeft: 10,
+    paddingRight: 4,
+    marginBottom: 6,
     borderWidth: 1,
     borderColor: "#1a2230",
+    gap: 8,
   },
-  addedChipImage: {
-    width: 24,
-    height: 24,
-    borderRadius: 12,
+  addedRowActive: {
+    backgroundColor: "#131820",
+    borderColor: "#43B1E8",
+    shadowColor: "#43B1E8",
+    shadowOpacity: 0.15,
+    shadowRadius: 8,
+    elevation: 4,
   },
-  addedChipTouchable: {
+  addedRowContent: {
+    flex: 1,
     flexDirection: "row",
     alignItems: "center",
-    gap: 6,
+    gap: 10,
   },
-  addedChipRemove: {
-    padding: 4,
+  addedRowImage: {
+    width: 32,
+    height: 32,
+    borderRadius: 6,
   },
-  addedChipText: {
+  addedRowImagePlaceholder: {
+    width: 32,
+    height: 32,
+    borderRadius: 6,
+    backgroundColor: "#131820",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  addedRowText: {
     color: "#F8F9FA",
-    fontSize: 12,
-    maxWidth: 120,
+    fontSize: 14,
+    flex: 1,
+  },
+  addedRowAction: {
+    padding: 8,
+  },
+  addedRowHandle: {
+    padding: 8,
   },
 
   // Search
